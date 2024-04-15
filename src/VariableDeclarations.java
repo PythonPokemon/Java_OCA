@@ -44,5 +44,10 @@ public class VariableDeclarations {
         System.out.println(x - y); // 10 - 20  = -10
         System.out.println(x * y); // 10 * 20 = 200
         System.out.println(y / x); // 20 / 10 = 2
+
+        // Konstante feste nichte veränderbare Zahlen
+        final double PI = 3.1415;
+        PI = 3.1415; // unterstreicht PI als Konstante und sagt damit das der wert nicht neu zugewiesen werden kann
+
     }
 }
