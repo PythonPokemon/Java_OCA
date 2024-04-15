@@ -47,7 +47,7 @@ public class VariableDeclarations {
 
         // Konstante feste nichte veränderbare Zahlen
         final double PI = 3.1415;
-        PI = 3.1415; // unterstreicht PI als Konstante und sagt damit das der wert nicht neu zugewiesen werden kann
+        // unterstreicht PI als Konstante und sagt damit das der wert nicht neu zugewiesen werden kann
 
     }
 }
