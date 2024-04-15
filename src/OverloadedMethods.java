@@ -10,7 +10,7 @@
  * kennenlernen
  */
 public class OverloadedMethods {
-    // Überladene Methoden die unterschiedliche dinge ausgeben können
+    // Überladene Methoden print | println die unterschiedliche dinge ausgeben können
     public static void main(String[] args) {
         System.out.print("Hallo"); // einfach nur print heißt ausgabe in der gleichen zeile ohne zeilenumbruch
         System.out.print(" ");
