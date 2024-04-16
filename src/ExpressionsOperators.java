@@ -114,5 +114,7 @@ public class ExpressionsOperators {
         // ganze funktion in eine string packen und Initialisieren
         String s = "Zufallszahl " + Math.random();
         System.out.println(s);
+
+
     }
 }
