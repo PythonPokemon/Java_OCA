@@ -13,7 +13,7 @@ public class WhileLoop {
 //    while (Math.random() > 0.1)
 //        System.out.println("Rumpf");
 
-//        // Variante 1 | Zum Testen Auskommentieren |
+//        // Variante 1 | Zum Testen auskommentieren |
 //        int number = 1234567;               // ganzzahl number anfangswert zuweisung = 1234567 deklaration
 //        int digit = 0;                      // ganzzahl aufzählung anfangswert zuweisung = 0 deklaration
 //        while (number > 0){                 // solnage number größer 0 ist
@@ -22,15 +22,19 @@ public class WhileLoop {
 //            System.out.println("Anzahl Aufzählung: " + digit + " und noch teilbarer Restwert " + number);     // gibt in der konsole number aus
 //        }
 
-        // Variante 2 | Zum Testen Auskommentieren |
-        int counter = 0;
-        final int LIMIT = 100;
-        while ( Math.random() > 0.0001 ) {
-            if ( counter >= LIMIT )
-                break;
-            System.out.println("Rumpf " + counter);
-            counter++;
-        }
+//        // Variante 2 | Zum Testen auskommentieren |
+//        int counter = 0;
+//        final int LIMIT = 100;
+//        while ( Math.random() > 0.01 ) {
+//            if ( counter >= LIMIT )
+//                break;
+//            System.out.println("Rumpf " + counter);
+//            counter++;
+//        }
+
+        // Variante 3 | zum Test auskommentieren |
+
+
     }
 }
 
