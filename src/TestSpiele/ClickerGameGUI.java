@@ -37,6 +37,10 @@ public class ClickerGameGUI {
     private double autoClickMultiplier;
     private long lastActiveTime;
 
+    // Variables for highest money player
+    private int highestMoney;
+    private String playerNameWithHighestMoney;
+
     public ClickerGameGUI() {
         frame = new JFrame("Clicker Game");
         frame.setSize(500, 400);
@@ -69,6 +73,7 @@ public class ClickerGameGUI {
                     clickValueLabel.setText("Click Value: $" + clickValue);
                     clickCounter = 0;
                 }
+                updateHighestMoney(); // Update highest money when player clicks
             }
         });
         frame.add(clickButton);
@@ -106,6 +111,7 @@ public class ClickerGameGUI {
                     agileScrumUnlocked = true;
                     buyAgileScrumButton.setEnabled(false);
                     upgradeCostLabel.setText("Upgrade Cost: $100");
+                    updateHighestMoney(); // Update highest money when player buys Agile Scrum Project
                 }
             }
         });
@@ -167,6 +173,9 @@ public class ClickerGameGUI {
         clickMultiplier = 1.0;
         autoClickMultiplier = 1.0;
 
+        highestMoney = 0;
+        playerNameWithHighestMoney = "";
+
         lastActiveTime = System.currentTimeMillis();
         Timer timer = new Timer(1000, new ActionListener() {
             public void actionPerformed(ActionEvent e) {
@@ -193,6 +202,7 @@ public class ClickerGameGUI {
             clickMultiplier += 0.5;
             autoClickMultiplier += 0.01;
             clickValueLabel.setText("Click Value: $" + (int) (clickValue * clickMultiplier));
+            updateHighestMoney(); // Update highest money when player buys a manager
         }
     }
 
@@ -249,20 +259,22 @@ public class ClickerGameGUI {
         upgradeCostLabel.setText("Upgrade Cost: $" + upgradeCost);
     }
 
+    private void updateHighestMoney() {
+        if (money > highestMoney) {
+            highestMoney = money;
+            playerNameWithHighestMoney = nameField.getText();
+        }
+    }
+
     private void saveProgress() {
-        // Hier kannst du den aktuellen Spielstand speichern, z. B. in eine Datei oder eine Datenbank
-        String playerName = nameField.getText();
-        // Speichere playerName, money, clickValue, upgradeCost und die Status der freigeschalteten Manager
-        // Zum Beispiel: playerName, money, clickValue, upgradeCost, frontendManagerUnlocked usw.
-        System.out.println("Progress saved for player: " + playerName);
+        // Speichere den Spieler mit dem höchsten Geldbetrag
+        System.out.println("Player with highest money: " + playerNameWithHighestMoney + " - $" + highestMoney);
     }
 
     private void loadProgress() {
-        // Hier kannst du den gespeicherten Spielstand laden und das Spiel entsprechend wiederherstellen
-        String playerName = nameField.getText();
-        // Lade den Spielstand basierend auf playerName und aktualisiere die Spielvariablen entsprechend
-        // Zum Beispiel: Lade money, clickValue, upgradeCost und den Status der freigeschalteten Manager
-        System.out.println("Progress loaded for player: " + playerName);
+        // Hier kannst du den Spielstand laden, falls du eine Möglichkeit zur Speicherung implementierst
+        // In diesem Beispiel wird der Spielstand nicht geladen, da keine Speicherung implementiert ist
+        System.out.println("Loading progress...");
     }
 
     public static void main(String[] args) {
