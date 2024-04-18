@@ -1,283 +1,192 @@
-package TestSpiele;
-
 import javax.swing.*;
 import java.awt.*;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
+import java.io.*;
+import java.util.ArrayList;
+import java.util.List;
 
 public class ClickerGameGUI {
     private JFrame frame;
-    private JButton clickButton;
-    private JButton buyFrontendButton;
-    private JButton buyBackendButton;
-    private JButton buyFullstackButton;
-    private JButton buyAgileScrumButton;
-    private JButton buyProductOwnerButton;
-    private JButton buyScrumMasterButton;
-    private JButton buyDevTeamButton;
-    private JButton saveButton;
-    private JButton loadButton;
     private JLabel moneyLabel;
     private JLabel clickValueLabel;
-    private JLabel upgradeCostLabel;
-    private JLabel nameLabel;
-    private JTextField nameField;
-    private int money;
-    private int clickValue;
-    private int upgradeCost;
-    private int clickCounter;
-    private boolean frontendManagerUnlocked;
-    private boolean backendManagerUnlocked;
-    private boolean fullstackManagerUnlocked;
-    private boolean agileScrumUnlocked;
-    private boolean productOwnerUnlocked;
-    private boolean scrumMasterUnlocked;
-    private boolean devTeamUnlocked;
-    private double clickMultiplier;
-    private double autoClickMultiplier;
-    private long lastActiveTime;
-
-    // Variables for highest money player
-    private int highestMoney;
-    private String playerNameWithHighestMoney;
+    private JButton clickButton;
+    private JButton[] managerButtons;
+    private JButton upgradeClickRateButton;
+    private int[] managerCosts = {1, 100, 1000};
+    private boolean[] managerUnlocked = new boolean[3];
+    private int money = 0;
+    private int clickValue = 1;
+    private int clickRateUpgradeCost = 50;
+    private Timer timer;
+    private List<Achievement> achievements = new ArrayList<>();
 
     public ClickerGameGUI() {
         frame = new JFrame("Clicker Game");
         frame.setSize(500, 400);
         frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
-        frame.setLayout(new GridLayout(11, 2));
+        frame.setLayout(new GridLayout(5, 2));
 
-        nameLabel = new JLabel("Enter your name:");
-        frame.add(nameLabel);
-
-        nameField = new JTextField(10);
-        frame.add(nameField);
-
-        moneyLabel = new JLabel("Money: $0");
+        moneyLabel = new JLabel("Money: $" + money);
         frame.add(moneyLabel);
 
-        clickValueLabel = new JLabel("Click Value: $1");
+        clickValueLabel = new JLabel("Click Value: $" + clickValue);
         frame.add(clickValueLabel);
-
-        upgradeCostLabel = new JLabel("Upgrade Cost: $10");
-        frame.add(upgradeCostLabel);
 
         clickButton = new JButton("Click");
         clickButton.addActionListener(new ActionListener() {
             public void actionPerformed(ActionEvent e) {
                 money += clickValue;
                 moneyLabel.setText("Money: $" + money);
-                clickCounter++;
-                if (clickCounter == 10) {
-                    clickValue *= 2;
-                    clickValueLabel.setText("Click Value: $" + clickValue);
-                    clickCounter = 0;
-                }
-                updateHighestMoney(); // Update highest money when player clicks
+                checkAchievements();
             }
         });
         frame.add(clickButton);
 
-        buyFrontendButton = new JButton("Buy Frontend Developer ($1)");
-        buyFrontendButton.addActionListener(new ActionListener() {
-            public void actionPerformed(ActionEvent e) {
-                buyManager(1, "Frontend Developer", 1);
-            }
-        });
-        frame.add(buyFrontendButton);
+        managerButtons = new JButton[3];
+        for (int i = 0; i < managerButtons.length; i++) {
+            managerButtons[i] = new JButton("Buy Manager " + (i + 1) + " ($" + managerCosts[i] + ")");
+            int index = i;
+            managerButtons[i].addActionListener(new ActionListener() {
+                public void actionPerformed(ActionEvent e) {
+                    if (!managerUnlocked[index] && money >= managerCosts[index]) {
+                        managerUnlocked[index] = true;
+                        money -= managerCosts[index];
+                        clickValue += 1; // Increase click value when a manager is bought
+                        updateLabels();
+                        startAutoClick();
+                        checkAchievements();
+                    }
+                }
+            });
+            frame.add(managerButtons[i]);
+        }
 
-        buyBackendButton = new JButton("Buy Backend Developer ($100)");
-        buyBackendButton.addActionListener(new ActionListener() {
+        upgradeClickRateButton = new JButton("Upgrade Click Rate ($" + clickRateUpgradeCost + ")");
+        upgradeClickRateButton.addActionListener(new ActionListener() {
             public void actionPerformed(ActionEvent e) {
-                buyManager(100, "Backend Developer", 1);
-            }
-        });
-        frame.add(buyBackendButton);
-
-        buyFullstackButton = new JButton("Buy Fullstack Developer ($1000)");
-        buyFullstackButton.addActionListener(new ActionListener() {
-            public void actionPerformed(ActionEvent e) {
-                buyManager(1000, "Fullstack Developer", 1);
-            }
-        });
-        frame.add(buyFullstackButton);
-
-        buyAgileScrumButton = new JButton("Buy Agile Scrum Project ($10000)");
-        buyAgileScrumButton.addActionListener(new ActionListener() {
-            public void actionPerformed(ActionEvent e) {
-                if (money >= 10000 && !agileScrumUnlocked) {
-                    money -= 10000;
-                    moneyLabel.setText("Money: $" + money);
-                    agileScrumUnlocked = true;
-                    buyAgileScrumButton.setEnabled(false);
-                    upgradeCostLabel.setText("Upgrade Cost: $100");
-                    updateHighestMoney(); // Update highest money when player buys Agile Scrum Project
+                if (money >= clickRateUpgradeCost) {
+                    money -= clickRateUpgradeCost;
+                    clickRateUpgradeCost *= 2;
+                    clickValue += 1;
+                    updateLabels();
+                    checkAchievements();
                 }
             }
         });
-        frame.add(buyAgileScrumButton);
-
-        buyProductOwnerButton = new JButton("Buy Product Owner ($100)");
-        buyProductOwnerButton.addActionListener(new ActionListener() {
-            public void actionPerformed(ActionEvent e) {
-                buyManager(100, "Product Owner", 1);
-            }
-        });
-        frame.add(buyProductOwnerButton);
-
-        buyScrumMasterButton = new JButton("Buy Scrum Master ($500)");
-        buyScrumMasterButton.addActionListener(new ActionListener() {
-            public void actionPerformed(ActionEvent e) {
-                buyManager(500, "Scrum Master", 1);
-            }
-        });
-        frame.add(buyScrumMasterButton);
-
-        buyDevTeamButton = new JButton("Buy Dev Team ($1000)");
-        buyDevTeamButton.addActionListener(new ActionListener() {
-            public void actionPerformed(ActionEvent e) {
-                buyManager(1000, "Dev Team", 1);
-            }
-        });
-        frame.add(buyDevTeamButton);
-
-        saveButton = new JButton("Save Progress");
-        saveButton.addActionListener(new ActionListener() {
-            public void actionPerformed(ActionEvent e) {
-                saveProgress();
-            }
-        });
-        frame.add(saveButton);
-
-        loadButton = new JButton("Load Progress");
-        loadButton.addActionListener(new ActionListener() {
-            public void actionPerformed(ActionEvent e) {
-                loadProgress();
-            }
-        });
-        frame.add(loadButton);
+        frame.add(upgradeClickRateButton);
 
         frame.setVisible(true);
 
-        money = 0;
-        clickValue = 1;
-        upgradeCost = 10;
-        clickCounter = 0;
-        frontendManagerUnlocked = false;
-        backendManagerUnlocked = false;
-        fullstackManagerUnlocked = false;
-        agileScrumUnlocked = false;
-        productOwnerUnlocked = false;
-        scrumMasterUnlocked = false;
-        devTeamUnlocked = false;
-        clickMultiplier = 1.0;
-        autoClickMultiplier = 1.0;
-
-        highestMoney = 0;
-        playerNameWithHighestMoney = "";
-
-        lastActiveTime = System.currentTimeMillis();
-        Timer timer = new Timer(1000, new ActionListener() {
+        timer = new Timer(1000, new ActionListener() {
             public void actionPerformed(ActionEvent e) {
-                long currentTime = System.currentTimeMillis();
-                long idleTime = currentTime - lastActiveTime;
-                if (idleTime > 0) {
-                    double idleHours = idleTime / (1000.0 * 60 * 60);
-                    double expectedEarnings = clickValue * autoClickMultiplier * idleHours;
-                    money += (int) expectedEarnings;
-                    moneyLabel.setText("Money: $" + money);
-                    lastActiveTime = currentTime;
+                for (int i = 0; i < managerUnlocked.length; i++) {
+                    if (managerUnlocked[i]) {
+                        money += clickValue;
+                        updateLabels();
+                        checkAchievements();
+                    }
                 }
             }
         });
-        timer.start();
+
+        // Load achievements from file
+        loadAchievements();
     }
 
-    private void buyManager(int cost, String managerName, double upgradeMultiplier) {
-        if (money >= cost && agileScrumUnlocked && !managerUnlocked(managerName)) {
-            money -= cost;
-            moneyLabel.setText("Money: $" + money);
-            unlockManager(managerName);
-            updateUpgradeCost();
-            clickMultiplier += 0.5;
-            autoClickMultiplier += 0.01;
-            clickValueLabel.setText("Click Value: $" + (int) (clickValue * clickMultiplier));
-            updateHighestMoney(); // Update highest money when player buys a manager
+    private void updateLabels() {
+        moneyLabel.setText("Money: $" + money);
+        clickValueLabel.setText("Click Value: $" + clickValue);
+        for (int i = 0; i < managerButtons.length; i++) {
+            if (!managerUnlocked[i] && money >= managerCosts[i]) {
+                managerButtons[i].setEnabled(true);
+            } else {
+                managerButtons[i].setEnabled(false);
+            }
+        }
+        upgradeClickRateButton.setText("Upgrade Click Rate ($" + clickRateUpgradeCost + ")");
+    }
+
+    private void startAutoClick() {
+        if (!timer.isRunning()) {
+            timer.start();
         }
     }
 
-    private boolean managerUnlocked(String managerName) {
-        switch (managerName) {
-            case "Frontend Developer":
-                return frontendManagerUnlocked;
-            case "Backend Developer":
-                return backendManagerUnlocked;
-            case "Fullstack Developer":
-                return fullstackManagerUnlocked;
-            case "Product Owner":
-                return productOwnerUnlocked;
-            case "Scrum Master":
-                return scrumMasterUnlocked;
-            case "Dev Team":
-                return devTeamUnlocked;
-            default:
-                return false;
+    private void checkAchievements() {
+        for (Achievement achievement : achievements) {
+            if (!achievement.isUnlocked() && achievement.checkCondition(money, clickValue)) {
+                achievement.unlock();
+                JOptionPane.showMessageDialog(frame, "Achievement Unlocked: " + achievement.getName());
+            }
         }
     }
 
-    private void unlockManager(String managerName) {
-        switch (managerName) {
-            case "Frontend Developer":
-                frontendManagerUnlocked = true;
-                buyFrontendButton.setEnabled(false);
-                break;
-            case "Backend Developer":
-                backendManagerUnlocked = true;
-                buyBackendButton.setEnabled(false);
-                break;
-            case "Fullstack Developer":
-                fullstackManagerUnlocked = true;
-                buyFullstackButton.setEnabled(false);
-                break;
-            case "Product Owner":
-                productOwnerUnlocked = true;
-                buyProductOwnerButton.setEnabled(false);
-                break;
-            case "Scrum Master":
-                scrumMasterUnlocked = true;
-                buyScrumMasterButton.setEnabled(false);
-                break;
-            case "Dev Team":
-                devTeamUnlocked = true;
-                buyDevTeamButton.setEnabled(false);
-                break;
+    private void loadAchievements() {
+        try {
+            File file = new File("achievements.txt");
+            if (file.exists()) {
+                BufferedReader reader = new BufferedReader(new FileReader(file));
+                String line;
+                while ((line = reader.readLine()) != null) {
+                    String[] parts = line.split(",");
+                    String name = parts[0];
+                    String condition = parts[1];
+                    achievements.add(new Achievement(name, condition));
+                }
+                reader.close();
+            }
+        } catch (IOException e) {
+            e.printStackTrace();
         }
     }
 
-    private void updateUpgradeCost() {
-        upgradeCost *= 2;
-        upgradeCostLabel.setText("Upgrade Cost: $" + upgradeCost);
-    }
-
-    private void updateHighestMoney() {
-        if (money > highestMoney) {
-            highestMoney = money;
-            playerNameWithHighestMoney = nameField.getText();
+    private void saveAchievements() {
+        try {
+            FileWriter writer = new FileWriter("achievements.txt");
+            for (Achievement achievement : achievements) {
+                writer.write(achievement.getName() + "," + achievement.getCondition() + "\n");
+            }
+            writer.close();
+        } catch (IOException e) {
+            e.printStackTrace();
         }
-    }
-
-    private void saveProgress() {
-        // Speichere den Spieler mit dem höchsten Geldbetrag
-        System.out.println("Player with highest money: " + playerNameWithHighestMoney + " - $" + highestMoney);
-    }
-
-    private void loadProgress() {
-        // Hier kannst du den Spielstand laden, falls du eine Möglichkeit zur Speicherung implementierst
-        // In diesem Beispiel wird der Spielstand nicht geladen, da keine Speicherung implementiert ist
-        System.out.println("Loading progress...");
     }
 
     public static void main(String[] args) {
         new ClickerGameGUI();
+    }
+}
+
+class Achievement {
+    private String name;
+    private String condition;
+    private boolean unlocked;
+
+    public Achievement(String name, String condition) {
+        this.name = name;
+        this.condition = condition;
+        this.unlocked = false;
+    }
+
+    public String getName() {
+        return name;
+    }
+
+    public String getCondition() {
+        return condition;
+    }
+
+    public boolean isUnlocked() {
+        return unlocked;
+    }
+
+    public void unlock() {
+        unlocked = true;
+    }
+
+    public boolean checkCondition(int money, int clickValue) {
+        // Implement condition checking logic here
+        return true;
     }
 }
