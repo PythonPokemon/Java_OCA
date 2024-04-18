@@ -1,3 +1,21 @@
+/**
+ * Erstelle eine Klasse mit dem Namen Konto.
+ * Die Klasse soll über folgende Attribute verfügen,
+ * die als private deklariert werden sotten:
+ * - Kontonummer als String
+ * - Kontostand als double
+ * Erstelle einen Konstruktor, der zwei Parameter verwendet.
+ * Als erster Parameter sott die Kontonummer,
+ * als zweiter Parameter der Kontostand übergeben werden.
+ * Der Konstruktor soll dann die übergebenen Werte in die Attribute übertragen.
+ * Erstelle dann für die Klasse Konto die folgenden Methoden:
+ * getKontostand liefert den aktuellen Kontostand zurück.
+ * getKontonummer liefert die Kontonummer zurück.
+ * - einzahlen erhöht den Kontostand um einen bestimmten Betrag.
+ * auszahlen hebt einen Betrag vom Konto ab.
+ * Teste die Klasse.
+ */
+
 package TestAufgaben;
 
 public class Konto {
