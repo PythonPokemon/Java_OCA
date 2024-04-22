@@ -4,7 +4,7 @@ public class LZK9 {
     public static void main(String[] args) {
         float f3 = 100;
         double d1 = 203.22;
-//        float f1 = d1;  // compilerfehler | da d1 schon bei double deklariert und ein zugewiesen wurde!
+//        float f1 = d1;  // compilerfehler | da d1 schon bei double deklariert und ein wert zugewiesen wurde!
         int i5 = 100;
         float f5 = (float) i5;
         float f2 = (float) 1_11.00;
