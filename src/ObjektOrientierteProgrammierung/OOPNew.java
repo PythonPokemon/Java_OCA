@@ -1,4 +1,4 @@
-/*
+package ObjektOrientierteProgrammierung;/*
 * Lernziel:
 * - Objekte haben: Eine Identität, einen Zustand, ein Verhalten
 * - Objekte mit new erzeugen

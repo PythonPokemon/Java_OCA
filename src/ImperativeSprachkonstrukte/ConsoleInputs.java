@@ -1,3 +1,5 @@
+package ImperativeSprachkonstrukte;
+
 /**
  * Lernziel:
  * - Ganzzahl vom Typ int einlesen

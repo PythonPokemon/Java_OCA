@@ -1,3 +1,5 @@
+package ImperativeSprachkonstrukte;
+
 /**
  * Lernziel:
  * - Bedeutung von Methoden verstehen

@@ -1,3 +1,5 @@
+package ImperativeSprachkonstrukte;
+
 /**
  * Lernziel: Einsatzorte vom Schlüsselwort 'var'
  * - loal variable type inteference

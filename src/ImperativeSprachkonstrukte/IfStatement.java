@@ -1,3 +1,5 @@
+package ImperativeSprachkonstrukte;
+
 public class IfStatement {
     public static void main(String[] args) {
         // bei IF muss immer eine bedingung wahr oder falsch sein = Boolean wert

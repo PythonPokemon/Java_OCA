@@ -1,3 +1,5 @@
+package ImperativeSprachkonstrukte;
+
 /**
  * Die Datentypen in Java zerfallen in zwei Kategorien
  *

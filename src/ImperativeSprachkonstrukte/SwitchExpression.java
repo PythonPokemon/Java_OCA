@@ -1,3 +1,5 @@
+package ImperativeSprachkonstrukte;
+
 /**
  * Lernziel: switch - Ausdrücke
  * Gibt etwas zurück anstatt nur eine anweisung durchzuführen

@@ -1,3 +1,5 @@
+package ImperativeSprachkonstrukte;
+
 /**
  * Lernziel:
  * - while schleife = Kopfgesteuerte schleife, prüft zunächst ob bedingung gilt, wenn ja wird diese durchlaufen und das bei jedem durchlauf

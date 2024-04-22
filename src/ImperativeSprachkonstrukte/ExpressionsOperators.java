@@ -1,4 +1,4 @@
-import java.sql.SQLOutput;
+package ImperativeSprachkonstrukte;
 
 /**
  * Ein *Ausdruck* ( *expression*) ergibt bei der Auswertung ein Ergebnis.

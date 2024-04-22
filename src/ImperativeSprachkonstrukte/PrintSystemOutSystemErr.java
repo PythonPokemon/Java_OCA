@@ -1,3 +1,5 @@
+package ImperativeSprachkonstrukte;
+
 /**
  * Quiz: Warum heißt es System.out.println( ... ),nicht println( ...))
  * Lernziel:

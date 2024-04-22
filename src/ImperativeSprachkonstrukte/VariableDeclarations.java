@@ -1,3 +1,5 @@
+package ImperativeSprachkonstrukte;
+
 /**
  * Mit Variablen Daten speichern, die vom Programm gelesen und geschrieben werden können.
  * - Variablendeklarationen
