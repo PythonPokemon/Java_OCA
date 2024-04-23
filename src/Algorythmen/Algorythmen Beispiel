@@ -1,0 +1,43 @@
+Hier sind einige der bekanntesten Algorithmen, die in der Informatik verwendet werden:
+
+---Sortieralgorithmen---
+Bubble Sort
+Insertion Sort
+Selection Sort
+Merge Sort
+Quick Sort
+Heap Sort
+Radix Sort
+
+---Suchalgorithmen---
+Lineare Suche (Linear Search)
+Binäre Suche (Binary Search)
+
+---Graphenalgorithmen---
+Breitensuche (Breadth-First Search, BFS)
+Tiefensuche (Depth-First Search, DFS)
+Dijkstra-Algorithmus
+A*-Algorithmus
+
+---Baumalgorithmen:---
+Baumtraversierung (Inorder, Preorder, Postorder)
+Binärbaum-Einfügung und -Löschung
+AVL-Bäume
+Rot-Schwarz-Bäume
+
+---Hash-Algorithmen:---
+Hashfunktionen (z. B. MD5, SHA-1, SHA-256)
+Kollisionsauflösungsalgorithmen (z. B. Verkettung, offene Adressierung)
+
+---Dynamische Programmierung---
+Rucksackproblem (Knapsack Problem)
+Fibonacci-Zahlen berechnen
+Longest Common Subsequence (Längste gemeinsame Teilfolge)
+
+---Gierige Algorithmen---
+Minimum Spanning Tree (Minimales Spannbaumproblem)
+Kürzeste Pfadprobleme
+
+---Netzwerkflussalgorithmen---
+Maximaler Fluss (Ford-Fulkerson-Algorithmus, Edmonds-Karp-Algorithmus)
+Minimale Schnitte
