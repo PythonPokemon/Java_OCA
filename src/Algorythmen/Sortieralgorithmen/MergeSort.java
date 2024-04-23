@@ -1,5 +1,10 @@
 package Algorythmen.Sortieralgorithmen;
 
+/**
+ * Dieser Algorithmus teilt das Array in zwei Hälften, sortiert jede Hälfte separat und fusioniert dann die sortierten Hälften.
+ * Die Hauptfunktion mergeSort() ruft sich rekursiv auf, um die Hälften zu sortieren, und die merge()-Funktion fügt dann die sortierten Hälften zusammen.
+ * Diese Implementierung hat eine Zeitkomplexität von O(n log n).
+ */
 public class MergeSort {
     public static void main(String[] args) {
         int[] arr = {5, 3, 8, 4, 2};
