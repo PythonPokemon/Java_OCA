@@ -1,6 +1,6 @@
 Hier sind einige der bekanntesten Algorithmen, die in der Informatik verwendet werden:
 
----Sortieralgorithmen---
+---Algorythmen.Sortieralgorithmen---
 Bubble Sort
 Insertion Sort
 Selection Sort
@@ -9,11 +9,11 @@ Quick Sort
 Heap Sort
 Radix Sort
 
----Suchalgorithmen---
+---Algorythmen.Suchalgorithmen---
 Lineare Suche (Linear Search)
 Binäre Suche (Binary Search)
 
----Graphenalgorithmen---
+---Algorythmen.Graphenalgorithmen---
 Breitensuche (Breadth-First Search, BFS)
 Tiefensuche (Depth-First Search, DFS)
 Dijkstra-Algorithmus
