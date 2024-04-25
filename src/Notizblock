@@ -1,3 +1,4 @@
 - Methoden gehören zu Klassen und Klassen zu Packeten bsp. import
-- wenn man eine Methode schreibt muss man immer vorschreiben zu welche typen diese Methode gehört.
-- bei klassen muss man immer beschreiben aus welchem packet sie kommen.
+- Wenn man eine Methode schreibt muss man immer vorschreiben zu welche typen diese Methode gehört.
+- Bei klassen muss man immer beschreiben aus welchem packet sie kommen.
+- Der Bytecode ist zu 100% Identisch im direkten vergleich | ob man den selbst schreibt oder per import einbindet

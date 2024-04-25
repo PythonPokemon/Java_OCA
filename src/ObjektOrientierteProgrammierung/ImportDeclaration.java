@@ -1,7 +1,7 @@
 package ObjektOrientierteProgrammierung;
 
 import java.util.Scanner;
-import java.awt.*;
+import java.awt.*;  //gibt alles hinter awt aus
 
 /*
 *   - Volle Qualifizierung vs import Deklaration
@@ -34,5 +34,6 @@ public class ImportDeclaration {
         // Variante 2 point.setLocation(x,y)
         System.out.println(point.distance(0, 0));
 
+        Polygon p = new Polygon();
     }
 }
