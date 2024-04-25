@@ -30,7 +30,23 @@ public class ReferenceIdentityEquals {
         // ACHTUNG | es ist nicht möglich, auf einer Referenz variable, die null ist, eine Methode aufzurufen!
         // = Das wird grundsätzlich immer zur NullPointerException führen.
         System.out.println(p.equals( null ));   // Die Frage würde einfach nur zu False führen!
-        p = null;                               //  aber das zum Error!
-        System.out.println(p.equals( null ));   // Error. .NullPointerException
+//        p = null;                               //  aber führt das zum Error!
+//        System.out.println(p.equals( null ));   // Error. .NullPointerException
+
+        /* 4-Methoden zum Testen von Wahrheitswerten
+        *   Zusammenfassung
+        *   gleich == | != ungleich
+        *   .equals(obj) | !equals(obj) negiert
+        *
+        * */
+
+        String input1 = new java.util.Scanner(System.in).nextLine();
+        String input2 = new java.util.Scanner(System.in).nextLine();
+//        System.out.println(input1==input2); // FALSCH
+
+        // Mit dieser Methode wird gefragt ob, die Konsolen eingabe 1 und eingabe zwei den selbern zustand (referenz, oder referenzwert) haben,
+        // wenn der identisch ist = true or false
+        System.out.println(input1.equals(input2));
+        System.out.println(input2.equals(input1));
     }
 }
