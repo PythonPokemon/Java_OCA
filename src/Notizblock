@@ -1,2 +1,3 @@
 - Methoden gehören zu Klassen und Klassen zu Packeten bsp. import
--
+- wenn man eine Methode schreibt muss man immer vorschreiben zu welche typen diese Methode gehört.
+- bei klassen muss man immer beschreiben aus welchem packet sie kommen.
