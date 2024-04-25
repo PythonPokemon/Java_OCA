@@ -20,8 +20,7 @@ public class ImportDeclaration {
 //        // Variante 2 point.setLocation(x,y)
 //        System.out.println(point.distance(0, 0));
 
-//------Import Variante
-        // Variante die auf die obigen Importe bezieht
+//------Import Variante, die auf die obigen Importe verweist
         // import java.util.Scanner;
         // import java.awt.*;
         System.out.println("x=");
