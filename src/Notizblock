@@ -1,11 +1,11 @@
 #   Methoden
 -   gehören zu Klassen und Klassen zu Packeten bsp. import
 -   Wenn man eine Methode schreibt muss man immer vorschreiben zu welche typen diese Methode gehört.
--   In der Praxis wird häufig eine große komplexe Methode Öffentlich gesetzt damit diese sichtab und zugreifbar ist,
-    allerdings wird diese wiederrum in viele kleine Methoden runtergebrochen und diese werden uf Private gestellt
+-   In der Praxis wird häufig eine große komplexe Methode Öffentlich gesetzt damit diese sichtbar und zugreifbar ist,
+    allerdings wird diese wiederrum in viele kleine Methoden runtergebrochen und diese werden uaf Private gestellt.
 
 #   Klassen
--   die man geschrieben hat befinden sich im sogenannten Default Package (standard packet)
+-   die man geschrieben hat, befinden sich im sogenannten Default Package (standard packet)
     wenn man keinen packet verwendet befindet sich der Java Quellcode und der Bytecode, alle in einem großen Verzeichnis
 -   Bei klassen muss man immer beschreiben aus welchem packet sie kommen.
 
