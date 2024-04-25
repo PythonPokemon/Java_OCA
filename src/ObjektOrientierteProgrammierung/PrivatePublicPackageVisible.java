@@ -5,19 +5,18 @@ package ObjektOrientierteProgrammierung;
  * - Paketsichtbarkeit
  * */
 
+import de.Verweise.quote.Quote;
+import de.Verweise.quote.QuotePrinter;
+import de.Verweise.util.Line;
+
 public class PrivatePublicPackageVisible {
     public static void main(String[] args) {
-        Line.longLine();
+// Kommentiere mich aus um zu teste
+//        Line.longLine();
+//        Line.line();
+//        Quote.quote();
+        QuotePrinter.printQuote();
+
     }
 }
 
-class Line {
-    private static void line() {    // private ist für andere nicht sichtbar
-        System.out.println("---");
-    }
-
-
-    public static void longLine() { // wenn nichts steh, it ist default, also öffentlich
-        line(); line();
-    }
-}
