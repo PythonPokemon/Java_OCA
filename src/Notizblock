@@ -1,4 +1,12 @@
-- Methoden gehören zu Klassen und Klassen zu Packeten bsp. import
+# Methoden
+- gehören zu Klassen und Klassen zu Packeten bsp. import
 - Wenn man eine Methode schreibt muss man immer vorschreiben zu welche typen diese Methode gehört.
+
+# Klassen
+- die man geschrieben hat befinden sich im sogenannten Default Package (standard packet)
+  wenn man keinen packet verwendet befindet sich der Java Quellcode und der Bytecode, alle in einem großen Verzeichnis
 - Bei klassen muss man immer beschreiben aus welchem packet sie kommen.
-- Der Bytecode ist zu 100% Identisch im direkten vergleich | ob man den selbst schreibt oder per import einbindet
+
+# Der Bytecode
+- ist zu 100% Identisch, ob man den selbst schreibt oder per import einbindet,
+  das sind lediglich abkürzungen für die Entwickler!
