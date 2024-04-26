@@ -1,5 +1,5 @@
 package TestAufgaben;
-/* Beschreibung.
+/* Code Beschreibung.
 * Es enthält zwei verschachtelte for-Schleifen.
 * Die äußere Schleife wird dreimal durchlaufen, da der Zähler "i" von 0 bis 2 geht (0, 1, 2).
 * Bei jedem Durchlauf wird der Zähler "count" auf 0 zurückgesetzt.

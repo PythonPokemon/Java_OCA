@@ -1,5 +1,5 @@
 package TestAufgaben;
-/*  Beschreibung.
+/*  Code Beschreibung.
 * In der "main" Methode wird ein Array von Strings namens "table" erstellt und mit den Werten "aa", "bb", "cc" und "dd" initialisiert.
 * Die Schleife verwendet eine erweiterte for-Schleife, um jedes Element des Arrays "table" nacheinander zu durchlaufen.
 * Innerhalb der Schleife wird überprüft, ob das aktuelle Element gleich "bb" ist.
