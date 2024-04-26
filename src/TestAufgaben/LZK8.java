@@ -2,10 +2,10 @@ package TestAufgaben;
 
 /* Code Beschreibung.
  * Dieses Java-Programm demonstriert die Verwendung des Plusoperators (+) mit Zeichenketten und ganzen Zahlen.
- * In der ersten Ausgabe wird die Zeichenkette "Result:" mit der Zeichenkette "3" konkateniert, gefolgt von der Zeichenkette "5".
+ * In der ersten Ausgabe wird die Zeichenkette "Result:", mit der Zeichenkette "3" konkateniert, gefolgt von der Zeichenkette "5".
  * Da beide Operanden Zeichenketten sind, wird die Addition als Zeichenkettenkonkatenation interpretiert. Daher wird "Result:35" ausgegeben.
- * In der zweiten Ausgabe wird "(3+5)" innerhalb der Klammern zuerst ausgewertet, was zu der ganzen Zahl 8 führt.
- * Dann wird die Zeichenkette "Result:" mit der ganzen Zahl 8 konkateniert, was zu "Result:8" führt.
+ * In der zweiten Ausgabe wird "(3 + 5)" innerhalb der Klammern zuerst ausgewertet, was zu der ganzen Zahl 8 führt.
+ * Dann wird die Zeichenkette "Result:", mit der ganzen Zahl 8 konkateniert, was zu "Result:8" führt.
  *
  * Die Ausgabe dieses Programms wird sein:
  * Result: 35

@@ -1,5 +1,24 @@
 package TestAufgaben;
 
+/* Code Beschreibung.
+ * Dieses Java-Programm demonstriert die Zuweisung von Werten zwischen verschiedenen Datentypen und die damit verbundenen Compilerfehler.
+ * Die Variable "f3" wird als Gleitkommazahl (float) deklariert und der Wert 100 zugewiesen, was zulässig ist, da 100 als Ganzzahl automatisch in eine Gleitkommazahl umgewandelt wird.
+ * Die Variable "d1" wird als Gleitkommazahl mit doppelter Genauigkeit (double) deklariert und der Wert 203.22 zugewiesen.
+ * Es wird versucht, den Wert der double-Variablen "d1" in eine float-Variablen "f1" ohne explizite Typumwandlung zuzuweisen, was zu einem Compilerfehler führt, da eine implizite Konvertierung von double zu float möglicherweise Genauigkeitsverlust verursachen könnte.
+ * Die Variable "i5" wird als Ganzzahl (int) deklariert und dem Wert 100 zugewiesen.
+ * Die Variable "f5" wird als Gleitkommazahl (float) deklariert und dem Wert der Ganzzahl-Variablen "i5" zugewiesen. Da eine explizite Typumwandlung durchgeführt wird, erfolgt die Zuweisung ohne Fehler.
+ * Die Variable "f2" wird als Gleitkommazahl (float) deklariert und dem Wert 111.00 zugewiesen. Die Angabe "(float)" vor dem Wert dient dazu, den Wert explizit in einen Float zu konvertieren.
+ * Die Variable "f4" wird als Gleitkommazahl (float) deklariert und dem Wert 100F zugewiesen, was eine gültige Art ist, eine Gleitkommazahl mit dem Suffix "F" zu kennzeichnen.
+ *
+ * Die Ausgabe dieses Programms wird sein:
+ * 100.0
+ * 203.22
+ * Compiler fehler
+ * 100
+ * 100.0
+ * 111.0
+ * 100.0
+ * */
 public class LZK9 {
     public static void main(String[] args) {
         float f3 = 100;
