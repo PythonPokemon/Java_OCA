@@ -1,6 +1,6 @@
 package TestAufgaben;
 
-/*
+/* Code Beschreibung.
  * Dieses Java-Programm durchläuft ein Array von Farben und gibt nur diejenigen aus, deren Länge genau 4 Zeichen beträgt.
  * Ein String-Array namens "colors" wird mit den Farben "red", "blue", "green", "yellow", "maroon" und "cyan" initialisiert.
  * Eine for-each-Schleife wird verwendet, um jedes Element des Arrays "colors" zu durchlaufen.
