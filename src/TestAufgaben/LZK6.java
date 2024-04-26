@@ -14,23 +14,23 @@ package TestAufgaben;
 public class LZK6 {
     public static void main(String[] args) {
         int value = 33;
-        if (value >= 0) {
+        if (value >= 0) {                       // wenn 33 größer gleich null, prüfe bedingung und printe 'The'
             if (value != 0)
-                System.out.println("The ");
+                System.out.println("The ");     // printed 'The' weil 33 ungleich 0 ist.
             else
                 System.out.println("quick ");
-            if (value < 10)
+            if (value < 10)                     // trifft nicht zu, da 33 nicht kleiner 10 ist | also weitere bedingung prüfen
                 System.out.println("brown ");
-            else if (value > 30)
+            else if (value > 30)                // trifft zu da, 33 größer 30 ist | also werden weitere else if nicht abgefragt
                 System.out.println("fox ");
             else if (value < 50)
-                System.out.println("jumps ");
+                System.out.println("jumps ");   // wird übersprungen, da die vorherige bedingung zutreffend war.
             else if (value < 10)
-                System.out.println("over ");
+                System.out.println("over ");    // wird übersprungen, da die vorherige bedingung zutreffend war.
             else
-                System.out.println("The ");
+                System.out.println("The ");     // wird übersprungen, da die vorherige bedingung zutreffend war.
             if (value > 10)
-                System.out.println("lazy ");
+                System.out.println("lazy ");    // Prüft ob 33 größer 10 ist, wenn ja print 'lazy'
         } else {
             System.out.println("dog ");
         }
