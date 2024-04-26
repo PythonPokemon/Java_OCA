@@ -4,3 +4,4 @@ Strg + S = Speichern
 Umschalt + F10 = Code ausführen (Run)
 Alt + Einfg = Einfügen (im IntelliJ Verzeichnis) neue Datei oder Ordner anlegen
 Alt + F12 = Terminal aufruf in IntelliJ
+Alt + Enter = wenn man über einer statischen Methode mit der Maus schwebt um diese zu den imports hinzuzufügen
