@@ -1,6 +1,6 @@
 package TestAufgaben;
 
-/*
+/* Code Beschreibung.
 * Dieses Java-Programm führt arithmetische Operationen durch und gibt die Ergebnisse aus.
 * Die Variable "i" wird deklariert und initialisiert mit dem Wert der arithmetischen Operation "(3 * 2 + 4 + 5)".
 * Diese Operation wird von links nach rechts ausgeführt und folgt der Reihenfolge der arithmetischen Operationen (Punkt-vor-Strich-Rechnung).
