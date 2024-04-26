@@ -1,4 +1,4 @@
-package TestAufgaben;
+package LF11aV2_LZK_JAVA;
 
 /* Code Beschreibung.
  * Zuerst wird überprüft, ob "value" größer oder gleich 0 ist.

@@ -1,4 +1,4 @@
-package TestAufgaben;
+package LF11aV2_LZK_JAVA;
 
 /* Code Beschreibung.
  * Das Programm überprüft, ob der Wert "Tom" im Array "cartoons" vorkommt, und inkrementiert den Zähler "counter", wenn "Tom" gefunden wird.

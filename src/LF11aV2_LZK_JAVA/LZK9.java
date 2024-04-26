@@ -1,4 +1,4 @@
-package TestAufgaben;
+package LF11aV2_LZK_JAVA;
 
 /* Code Beschreibung.
  * Dieses Java-Programm demonstriert die Zuweisung von Werten zwischen verschiedenen Datentypen und die damit verbundenen Compilerfehler.

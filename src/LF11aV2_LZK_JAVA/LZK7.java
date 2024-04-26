@@ -1,4 +1,4 @@
-package TestAufgaben;
+package LF11aV2_LZK_JAVA;
 
 /* Code Beschreibung.
  * Dieses Java-Programm berechnet die Summe aller geraden Zahlen in einem Array von ganzen Zahlen.

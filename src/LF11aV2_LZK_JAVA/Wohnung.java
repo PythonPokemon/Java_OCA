@@ -11,7 +11,7 @@
  * in dem du einige Objekte erzeugst und anschließend ihre Werte ausgibst.
  */
 
-package TestAufgaben;
+package LF11aV2_LZK_JAVA;
 
 public class Wohnung {
     private String name;

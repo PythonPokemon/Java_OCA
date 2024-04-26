@@ -1,4 +1,4 @@
-package TestAufgaben;
+package LF11aV2_LZK_JAVA;
 
 /* Code Beschreibung.
  * Dieses Java-Programm demonstriert die Verwendung des Plusoperators (+) mit Zeichenketten und ganzen Zahlen.

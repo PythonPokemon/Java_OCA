@@ -1,4 +1,4 @@
-package TestAufgaben;
+package LF11aV2_LZK_JAVA;
 
 /* Code Beschreibung.
  * In diesem Java-Code wird eine Klasse "LZK2" definiert, die eine Methode "disp()" enthält, aber keine explizite Zuweisung für das Attribut "i" vornimmt.

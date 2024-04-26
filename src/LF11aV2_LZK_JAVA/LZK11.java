@@ -1,4 +1,4 @@
-package TestAufgaben;
+package LF11aV2_LZK_JAVA;
 
 /* Code Beschreibung.
 * Dieses Java-Programm führt arithmetische Operationen durch und gibt die Ergebnisse aus.

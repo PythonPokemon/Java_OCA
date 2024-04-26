@@ -1,4 +1,4 @@
-package TestAufgaben;
+package LF11aV2_LZK_JAVA;
 
 /*  Code Beschreibung.
  * In der "main" Methode wird ein Array von Strings namens "table" erstellt und mit den Werten "aa", "bb", "cc" und "dd" initialisiert.

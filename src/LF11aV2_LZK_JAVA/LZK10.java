@@ -1,4 +1,4 @@
-package TestAufgaben;
+package LF11aV2_LZK_JAVA;
 
 /* Code Beschreibung.
  * Dieses Java-Programm durchläuft ein Array von Farben und gibt nur diejenigen aus, deren Länge genau 4 Zeichen beträgt.

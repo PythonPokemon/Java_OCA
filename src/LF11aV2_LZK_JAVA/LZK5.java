@@ -1,4 +1,4 @@
-package TestAufgaben;
+package LF11aV2_LZK_JAVA;
 
 /* Code Beschreibung.
  * In der "main" Methode werden zwei boolesche Variablen "b1" und "b2" initialisiert und mit den Ergebnissen von logischen Ausdrücken initialisiert.

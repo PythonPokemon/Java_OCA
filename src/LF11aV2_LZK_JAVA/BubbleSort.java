@@ -1,4 +1,4 @@
-package TestAufgaben;
+package LF11aV2_LZK_JAVA;
 import java.util.Arrays;
 
 public class BubbleSort {

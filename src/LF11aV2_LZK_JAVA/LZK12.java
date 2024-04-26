@@ -1,4 +1,4 @@
-package TestAufgaben;
+package LF11aV2_LZK_JAVA;
 
 /* Code Beschreibung.
  * Das Java-Programm definiert eine Schleife, die unendlich oft ausgeführt wird und Einsen ausgibt, solange bestimmte Bedingungen erfüllt sind.

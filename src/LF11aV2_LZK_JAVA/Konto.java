@@ -16,7 +16,7 @@
  * Teste die Klasse.
  */
 
-package TestAufgaben;
+package LF11aV2_LZK_JAVA;
 
 public class Konto {
     private String kontonummer;
