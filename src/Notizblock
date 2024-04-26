@@ -3,7 +3,7 @@
 -   Wenn man eine Methode schreibt muss man immer vorschreiben zu welche typen diese Methode gehört.
 -   In der Praxis wird häufig eine große komplexe Methode Öffentlich gesetzt damit diese sichtbar und zugreifbar ist,
     allerdings wird diese wiederrum in viele kleine Methoden runtergebrochen und diese werden uaf Private gestellt.
--   Wenn man eigene Methoden schreibt gehen diese vor import methoden, die imports werden dann ausgegraut, um konflikte zu vermeiden.
+-   Wenn man eigene Methoden schreibt gehen diese den statischen import methoden vor, die imports werden dann ausgegraut, um konflikte zu vermeiden.
 
 #   Klassen
 -   die man geschrieben hat, befinden sich im sogenannten Default Package (standard packet)
