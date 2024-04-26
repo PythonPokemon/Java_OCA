@@ -1,11 +1,9 @@
 /**
- * löse diese aufgabe: public
- * *
- * class _ 380 _ Ferienwohnungen {
- * Ferienwohnungen
+ * löse diese aufgabe:
+ * public class _ 380 _ Ferienwohnungen.
  * Stelle dir vor, du schreibst ein Programm für einen Anbieter von Ferienwohnungen.
  * Die Grundlage bildet die Klasse "Wohnung".
- * Diese sott den Namen der Wohnung, den Standort, die Anzahl der Betten,
+ * Diese soll den Namen der Wohnung, den Standort, die Anzahl der Betten,
  * und den Preis pro Übernachtung enthalten.
  * Schreibe danach passende Methoden, um die Werte abzurufen
  * und falls notwendig zu verändern.
