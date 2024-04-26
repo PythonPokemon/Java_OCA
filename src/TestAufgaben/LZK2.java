@@ -16,12 +16,12 @@ public class LZK2 {
     private int i;
 
     void disp() {
-        while (i <= 5) {
-            for (int i = 1; i <= 5; ) {
+        while (i <= 5) {    // startet bei durchlauf 0, 1, 2, 3, 4, 5 = die Schleife wird also 6x mal durchlaufen
+            for (int i = 1; i <= 5; ) { // zählt von 1 hoch bis 5
                 System.out.print(i + " ");  //  Printed 6x 1 2 3 4 5 | 1 2 3 4 5 | 1 2 3 4 5 | 1 2 3 4 5 | 1 2 3 4 5 | 1 2 3 4 5
-                i++;
+                i++; // Die Verwendung von "i++" innerhalb der for-Schleife erhöht die lokale Variable "i" um 1 und ermöglicht es der Schleife, von 1 bis 5 zu zählen.
             }
-            i++;
+            i++;    // Die Verwendung von "i++" außerhalb der for-Schleife erhöht die Instanzvariable "i" um 1 und steuert die Bedingung der while-Schleife, die bestimmt, wie oft die for-Schleife durchlaufen wird.
         }
     }
 
