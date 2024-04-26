@@ -15,13 +15,13 @@ package TestAufgaben;
 public class LZK1 {
     public static void main(String[] args) {
         for (int i = 0; i < 3; i++) {
-            int count = 0;
+            int count = 0;  // printed für jeden durchlauf, wenn die bedingung erfüllt ist 0
             for (int j = 3; j > 0; j--) {
                 if (i == j) {
                     count++;
                     break;
                 }
-                System.out.print(count); // durlauf i 000 und j 000 = 000000
+                System.out.print(count); // durchlauf i 000 und j 000 = 000000
                 continue;
             }
         }
