@@ -35,3 +35,10 @@
 -   Der Compiler generiert Bytecode und der Bytecode initialisiert jedes Element.
 -   Deswegen hat jede Variable entsprechend UNI-Code ihre Byte größe, mit der sie initialisiert wird und zwischengespeichert wird.
     Bsp. short 4 byte oder long 8 byte pro string
+
+#   Var-args
+-   Für den Compiler sind Var-args, nicht anderes als Arrays.
+-   Performance consequence, wenn man sehr intensiv mit varargs arbeitet, dann führt das immer dazu,
+    dass temporäre Array objekte aufgebaut werden, Abgerufen und gelöscht!
+    In einer endlosschleife würde das massiven druck auf den Garbage Collector ausüben.
+    Deswegen versucht man möglichst auf varargs in schleifen zu verzichten, damit es nicht zu performance einbussen kommt
