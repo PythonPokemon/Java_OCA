@@ -23,7 +23,7 @@ public class FirstArray {
         // primes.length = 10; geht nicht!
 //        primes = new int[10];             // geht! | da der Garbage collector die neu erzeugte variable über die alte überschreibt!
         System.out.println(primes[0]);      // arrays starten bei 0
-        System.out.println(primes[primes.length - 1]);
+        System.out.println(primes[primes.length - 1]);  // gibt den wert des letzten array aus der konsole wieder!
 
         primes[0] = 2;
         primes[1] = 3;
@@ -34,7 +34,7 @@ public class FirstArray {
 
          /*
         *             +---+---+---+---+----+
-        primes +------> 2 | 3 | 5 | 7 | 11 |
+        primes -----> | 2 | 3 | 5 | 7 | 11 |
         *             +---+---+---+---+----+
         *               0   1   2   3   4   Index
         * */
