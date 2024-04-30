@@ -21,7 +21,7 @@ public class ForEachLoop {
         // modifiziert, erweiterte for schleif
         int count = 1;
         for (String name : new String[]{"lilo", "lola", null, "Max"}) {
-            if ( name == null)
+            if (name == null)
                 continue;   // break = würde bei null, abbrechenS
             System.out.println(count + ". " + name);
             count++;
