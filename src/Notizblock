@@ -14,15 +14,24 @@
 -   ist zu 100% Identisch, ob man den selbst schreibt oder per import einbindet,
     das sind lediglich abkürzungen für die Entwickler!
 
-#   Sichtabarkeit
--   Public, ist für alle sichtar.
--   Private, nicht sichbar
--   Protectet, ist Geschützt
--   Packet Public = bedeutet bsp.weise das alles innerhalb des packetets öffentlich sind,
-    aber für Typen außerhalb des Packetes unsichtbar.
+#   Sichtbarkeit
+-   Public, ist für alle sichtbar.
+-   Private, nicht sichtbar
+-   Protected, ist Geschützt
+-   Packet Public = bedeutet bsp.weise das alles innerhalb des packets öffentlich sind,
+    aber für Typen außerhalb des Packets unsichtbar.
 
-# Eigenschaften
-- Statische Eigenschaften sind kursiv gesetzt. bsp. Math.random();
+#   Eigenschaften
+-   Statische Eigenschaften sind kursiv gesetzt. bsp. Math.random();
 
-# Arrays
-- Wenn man Arrays aufgebaut hat, bleiben sie fest, man kann sie nachträglich nicht mehr ändern.
+#   Arrays
+-   Wenn man Arrays aufgebaut hat, bleiben sie fest, man kann sie nachträglich nicht mehr ändern.
+-   Die Array-Initialisierung ist eine angenehme, kompakte schreibweise, das wir variablen deklarieren und gleichzeitig
+    mit einem wert initialisieren können.
+    Hinter dieser Array-Initialisierung stecken zwei Operationen.
+    Zunächst wird ein Array angelegt mit der richtigen größe und anschließend werden die entsprechenden Zellen, mit entsprechenden Werten belegt
+
+#   Compiler
+-   Der Compiler generiert Bytecode und der Bytecode initialisiert jedes Element.
+-   Deswegen hat jede Variable entsprechend UNI-Code ihre Byte größe, mit der sie initialisiert wird und zwischengespeichert wird.
+    Bsp. short 4 byte oder long 8 byte pro string
