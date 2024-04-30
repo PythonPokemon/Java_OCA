@@ -3,7 +3,7 @@ package Arrays;
 /*
 *   Lernziel:
 *   - Kompakte Array-Initializierung
-* - "Kosten" einschätzen können
+*   - "Kosten" einschätzen können
 * */
 public class ArrayInitializer {
     public static void main(String[] args) {
