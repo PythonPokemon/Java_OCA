@@ -23,3 +23,6 @@
 
 # Eigenschaften
 - Statische Eigenschaften sind kursiv gesetzt. bsp. Math.random();
+
+# Arrays
+- Wenn man Arrays aufgebaut hat bleiben sie fest, man kann sie nachträglich nicht mehr ändern.
