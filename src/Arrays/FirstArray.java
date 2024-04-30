@@ -49,12 +49,41 @@ public class FirstArray {
 //        primes = null;
 //        System.out.println(primes[1]);                // Fehler | .NullPointerException |, wenn die referenz auf ein array nicht gegeben ist
 
-        printArray(primes);
+        printArray(primes);                             // für Methode 1 | void
+
+        int[] newPrimes = firstPrimes();                // für Methode 2 | return |
+        printArray(newPrimes);
+
+        String[] names = new String[2];                 // für Methode 3 | void | String Array
+        System.out.println(names[0]);
+        names[0] = "Fedja";
+        names[1] = " Fjodor";
+        printArray(names);
     }
 
+    // Methode 1 | ohne rückgabewert / void
     static void printArray(int[] array) {
         for (int i = 0; i < array.length; i++) {        // Iteration | ausgabe der chronologischen primes werte aus dem index
-            System.out.println( array [i]);
+            System.out.println(array[i]);
+        }
+    }
+
+    // Methode 2 | mit rückgabewert / return
+    static int[] firstPrimes() {
+        int[] primes = new int[5];
+        primes[0] = 2;
+        primes[1] = 3;
+        primes[2] = 5;
+        primes[3] = 7;
+        primes[4] = primes[3] + 3;  // bedeutet 7 + 3 = 10
+        primes[4]++;                // bedeutet 7 + 3 = 10 | addition plus 1 = 11
+        return primes;
+    }
+
+    // Methode 3 | String Array
+    static void printArray(String[] array) {
+        for (int i = 0; i < array.length; i++) {        // Iteration | ausgabe der chronologischen primes werte aus dem index
+            System.out.println(array[i]);
         }
     }
 }
