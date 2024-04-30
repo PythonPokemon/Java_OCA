@@ -32,14 +32,29 @@ public class FirstArray {
         primes[4] = primes[3] + 3;  // bedeutet 7 + 3 = 10
         primes[4]++;                // bedeutet 7 + 3 = 10 | addition plus 1 = 11
 
-        System.out.println(primes[primes.length / 2]);  // gibt das prime, aus der mitte des index aus
-        System.out.println(primes[primes.length - 1]);  // gibt den wert des letzten array aus der konsole wieder!
-
-        /*
+         /*
         *             +---+---+---+---+----+
         primes +------> 2 | 3 | 5 | 7 | 11 |
         *             +---+---+---+---+----+
         *               0   1   2   3   4   Index
         * */
+
+        System.out.println(primes[primes.length / 2]);  // gibt das prime, aus der mitte des index aus
+        System.out.println(primes[primes.length - 1]);  // gibt den wert des letzten array aus der konsole wieder!
+
+        //----Fehler Möglichkeiten-----
+//        System.out.println(primes[99999]);            // Fehler | .ArrayIndexOutOfBoundsException | da array nur bis 4 geht!
+//        System.out.println(primes[-1]);               // Fehler | .ArrayIndexOutOfBoundsException | da array nicht im minus startet!
+
+//        primes = null;
+//        System.out.println(primes[1]);                // Fehler | .NullPointerException |, wenn die referenz auf ein array nicht gegeben ist
+
+        printArray(primes);
+    }
+
+    static void printArray(int[] array) {
+        for (int i = 0; i < array.length; i++) {        // Iteration | ausgabe der chronologischen primes werte aus dem index
+            System.out.println( array [i]);
+        }
     }
 }
