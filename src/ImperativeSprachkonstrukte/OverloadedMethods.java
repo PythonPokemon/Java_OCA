@@ -12,6 +12,7 @@ package ImperativeSprachkonstrukte;
  * kennenlernen
  */
 public class OverloadedMethods {
+
     // Überladene Methoden print | println die unterschiedliche dinge ausgeben können
     public static void main(String[] args) {
         System.out.print("Hallo"); // einfach nur print heißt ausgabe in der gleichen zeile ohne zeilenumbruch
@@ -21,8 +22,9 @@ public class OverloadedMethods {
         System.out.println("<nach mir kommt der zeilenumbruch>");
         System.out.printf("Hallo%nWelt%n"); // formatiervorlage für einen zeilenumbruch %n
         System.out.println("1+1=2");
+
         // Formatspezifizierer
         System.out.printf("%d+%d=%d%n", 1, 1, 2); // %d d= dezimal %d %d %d entspricht der deklaration 1, 1, 2
-        System.out.printf("%s %s %d", "Hallo", "Welt", 2030); // %s s = string =  wird durch die strings inintiniert Hallo Welt
+        System.out.printf("%s %s %d", "Hallo", "Welt", 2030); // %s s = string =  wird durch die strings initiiert Hallo Welt
     }
 }

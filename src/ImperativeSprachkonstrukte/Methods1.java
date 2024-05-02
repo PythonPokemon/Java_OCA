@@ -7,7 +7,7 @@ package ImperativeSprachkonstrukte;
  * - Methoden aufrufen
  * - Deklarierte Methode und Aufruf in verschiedenen Klassen haben
  * <p>
- * Bps. wird benutz um code dublikationen zu vermeiden mittels copy paste von code schnipseln!
+ * Bps. wird benutz, um code Duplikationen zu vermeiden, mittels copy paste von code schnipseln!
  * = Besser eine Methode erstellen und deklarieren um daraus später werte zu extrahieren
  *
  * return beendet eine Methode
@@ -22,7 +22,7 @@ public class Methods1 {
         Lines();
     }
 
-    // Sichbarkeit der Methode privat
+    // Sichtbarkeit der Methode privat
     private static void Lines() {
         for (int i = 0; i < 10; i++) {
             printHartzIV();
