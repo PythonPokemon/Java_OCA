@@ -2,7 +2,7 @@ package ImperativeSprachkonstrukte;
 
 /**
  * Lernziel:
- * - switch-case
+ * - switch-case = ist eine fallunterscheidung, das was zutrifft wird genommen
  * - default
  * - Durchfallen
  * - Stack-Case-Labels
@@ -13,13 +13,13 @@ public class SwitchCaseStatement {
         int random = (int) (Math.random() * 3); // 0, 1, 2
         switch (random) {
             case 0:
-                System.out.println("rot " + random);
+                System.out.println("rot " + random);    // 0
                 break;
             case 1:
-                System.out.println("grün " + random);
+                System.out.println("grün " + random);   // 1
                 break;
             case 2:
-                System.out.println("blau " + random);
+                System.out.println("blau " + random);   // 2
                 break;
         }
 
