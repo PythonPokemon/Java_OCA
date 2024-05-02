@@ -6,6 +6,7 @@ package ImperativeSprachkonstrukte;
  */
 
 public class SwitchExpression {
+
     public static void main(String[] args) {
 
         String operator = "+";
@@ -20,4 +21,5 @@ public class SwitchExpression {
         };
         System.out.println(s);
     }
+
 }
