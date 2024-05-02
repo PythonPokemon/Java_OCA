@@ -26,8 +26,8 @@ public class ExpressionsOperators {
         System.out.println(age);
         System.out.println(Math.random()); // 0.0 < random < 1.0
         System.out.println(-Math.random()); // -0.0 < random < -1.0
-        System.out.println(-(-Math.random())); // 0.0 < random < 1.0
-        System.out.println(Math.random() * 10); // 0.0 < random < 10.0
+        System.out.println(-(-Math.random())); // 0.0 < random < 1.0        | minus minus ergibt plus
+        System.out.println(Math.random() * 10); // 0.0 < random < 10.0      | zufallszahl mal 10
 
         int number = 10_000_000;
         System.out.println(10_000_000L * number); // 10_000_000L = Long statt int da die Bytes zu wenig speicher haben für so eine große zahl, würde falsches Ergebnis liefern während laufzeitentwicklung
@@ -79,9 +79,9 @@ public class ExpressionsOperators {
 
         System.out.println("Negierte bsp. Rechnung");
         boolean a = 10 * 10 < 99;   // 10 * 10 = 100 kleiner 99 | also false wenn es aber negiert wird dann true!
-        System.out.println(!a);
+        System.out.println(!a);     // hier wird der bezeichner a negiert = !a | bedeutet also das falsch wahr ist
 
-        // Kurzschluss Operanten | benutzt man wenn man das ergebnis kennt und der rest egal ist
+        // Kurzschluss Operanten | benutzt man, wenn man das ergebnis kennt und der rest egal ist
         System.out.println("OR ODER | Kurzschluss Operator");
         System.out.println(true || true || false);
 
@@ -112,8 +112,8 @@ public class ExpressionsOperators {
         System.out.println(1+1+"2"+3+4); // compiler liest von links nach rechts = 2234
 
         // ganze funktion in eine string packen und Initialisieren
-        String s = "Zufallszahl " + Math.random();
-        System.out.println(s);
+        String s = "Zufallszahl " + Math.random();  // hier wird der bezeichner s mit einem string und einer generierten zufallszahl deklariert
+        System.out.println(s);                      // der bezeichner s wird initialisiert und in der konsole ausgegeben
 
 
     }
