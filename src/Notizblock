@@ -37,6 +37,7 @@
     Bsp. short 4 byte oder long 8 byte pro string
 
 #   Var-args
+-   Darf nur ein einziges mal vorkommen und muss am ende der Parameterliste stehen.
 -   Für den Compiler sind Var-args, nicht anderes als Arrays.
 -   Performance consequence, wenn man sehr intensiv mit varargs arbeitet, dann führt das immer dazu,
     dass temporäre Array objekte aufgebaut werden, Abgerufen und gelöscht!
