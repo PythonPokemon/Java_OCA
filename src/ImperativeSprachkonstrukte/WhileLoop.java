@@ -66,31 +66,31 @@ public class WhileLoop {
 //            }
 //        }
 
-//        // Variante 5 | zum Testen auskommentieren | Alternative zur Sprungmarke ist Flag, weil es besser zu lesen ist
-//        int number = 345352224; // liest die zahl von rechts nach links, deswegen wird 4 2 2 2 = 4x in der konsole ausgegebn und 5 wäre
-//        boolean end = false;    // Flag
-//        while ( ! end ) {
-//            int lastDigit = number % 10;
-//            number /= 10;   // number geteilt durch 10
-//            switch (lastDigit) {
-//                case 0:
-//                case 1:
-//                case 2:
-//                case 3:
-//                case 4:
-//                    System.out.println("Letzte Ziffer ist kleiner 5");
-//                    break;
-//                default:
-//                    end = true; // sogenannter Flag
-//            }
-//        }
-
-        // Variante 6 | Zählerschleife
-        int counter = 1;                    // Deklaration counter =1
-        while ( counter < 11 ) {            // schleifen anweisung counter kleiner 11
-            System.out.println(counter);    // konsole gibt counter aus
-            counter++;                      // counter wird 1 dazu addiert bei jedem durchlauf, solange es kleiner 11 ist also = 10 endergebnis Konsolenausgabe
+        // Variante 5 | zum Testen auskommentieren | Alternative zur Sprungmarke ist Flag, weil es besser zu lesen ist
+        int number = 345352224; // liest die zahl von rechts nach links, deswegen wird 4 2 2 2 = 4x in der konsole ausgegeben und 5 wäre
+        boolean end = false;    // Flag
+        while ( ! end ) {
+            int lastDigit = number % 10;
+            number /= 10;   // number geteilt durch 10
+            switch (lastDigit) {
+                case 0:
+                case 1:
+                case 2:
+                case 3:
+                case 4:
+                    System.out.println("Letzte Ziffer ist kleiner 5");
+                    break;
+                default:
+                    end = true; // sogenannter Flag
+            }
         }
+
+//        // Variante 6 | Zählerschleife
+//        int counter = 1;                    // Deklaration counter =1
+//        while ( counter < 11 ) {            // schleifen anweisung counter kleiner 11
+//            System.out.println(counter);    // konsole gibt counter aus
+//            counter++;                      // counter wird 1 dazu addiert bei jedem durchlauf, solange es kleiner 11 ist also = 10 endergebnis Konsolenausgabe
+//        }
 
     }
 }

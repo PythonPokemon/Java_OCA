@@ -19,7 +19,7 @@ public class CopyReferenceAndPassByValue {
         System.out.println(p.y);
 
         //------Methodenzugriffe------
-        printPoint(p);  // gibt wert ausr der Methode aus | static void printPoint(java.awt.Point p)
+        printPoint(p);  // gibt wert aus der Methode aus | static void printPoint(java.awt.Point p)
 
         System.out.println(randomPoint());  // gibt die werte aus der Methode aus | static java.awt.Point randomPoint()
 

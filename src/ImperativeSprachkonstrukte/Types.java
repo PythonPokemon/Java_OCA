@@ -14,7 +14,7 @@ package ImperativeSprachkonstrukte;
  * In Java gibt es zwei Arten eingebauter primitiver Datentypen:
  * <p>
  * -arythmetische Typen
- * 1. Gazte Zahlen, 2. Fließkommazahlen, 3. Unicode-Zeichen
+ * 1. Ganze Zahlen, 2. Fließkommazahlen, 3. Unicode-Zeichen
  * <p>
  * -Wahrheitswerte
  * für die Zustände wahr und Falsch
