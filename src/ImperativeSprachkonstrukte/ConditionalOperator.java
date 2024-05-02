@@ -2,14 +2,14 @@ package ImperativeSprachkonstrukte;
 
 /**
  * Lernziel:
- * - Bediengungsoperator
+ * - Bedingungsoperator
  */
 public class ConditionalOperator {
     public static void main(String[] args) {
         int a = 12;
         int b = 200;
 
-        /** herkömliche vorgehensweise
+        /** herkömmliche vorgehensweise
          * if ( a > b )
          System.out.println(a);
          else
