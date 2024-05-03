@@ -1,9 +1,4 @@
-package JACA_OCA_Test1.Aufgaben1bis10;
-
-import java.time.LocalDate;
-import java.time.Month;
-import java.util.ArrayList;
-import java.util.List;
+package JACA_OCA_Test1.Aufgaben1bis9;
 
 /*
 * Die main()-Methode, die den Einstiegspunkt für die Ausführung eines Java-Programms darstellt, muss immer öffentlich sein und genau die Signatur public static void main(String[] args) haben.

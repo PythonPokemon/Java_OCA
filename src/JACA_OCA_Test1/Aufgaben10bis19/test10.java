@@ -1,7 +1,5 @@
-package JACA_OCA_Test1.Aufgaben1bis10;
+package JACA_OCA_Test1.Aufgaben10bis19;
 
-import java.time.LocalDate;
-import java.time.Month;
 import java.util.ArrayList;
 import java.util.List;
 /*
