@@ -1,4 +1,4 @@
-package JACA_OCA_Test1.Aufgaben1bis9;
+package JACA_OCA_Test_1.Aufgaben_1_bis_9;
 
 /*
 * Die main()-Methode, die den Einstiegspunkt für die Ausführung eines Java-Programms darstellt, muss immer öffentlich sein und genau die Signatur public static void main(String[] args) haben.

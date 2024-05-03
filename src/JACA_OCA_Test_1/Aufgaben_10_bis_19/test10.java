@@ -1,4 +1,4 @@
-package JACA_OCA_Test1.Aufgaben10bis19;
+package JACA_OCA_Test_1.Aufgaben_10_bis_19;
 
 import java.util.ArrayList;
 import java.util.List;

@@ -1,4 +1,4 @@
-package JACA_OCA_Test1.Aufgaben1bis9;
+package JACA_OCA_Test_1.Aufgaben_1_bis_9;
 
 public class test1 {
     public static void main(String[] args) {
