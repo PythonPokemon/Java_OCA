@@ -1,9 +1,9 @@
 /*
-* Der Compiler fehler tritt aufgrund der Unvollständigkeit des ternären Operators (?:) in deinem Code auf.
+* Der Compiler fehler tritt aufgrund der Unvollständigkeit des ternären Operators (?:) in diesem Code auf.
 * In Java muss der ternäre Operator immer drei Operanden haben: ein Bedingungsausdruck gefolgt von einem Ausdruck,
 * der ausgewertet wird, wenn die Bedingung wahr ist, und einem Ausdruck, der ausgewertet wird, wenn die Bedingung falsch ist.
 
-In deinem Code hast du zwei Bedingungsausdrücke hintereinander ohne einen Ausdruck, der ausgewertet wird, wenn die Bedingung wahr ist. Das führt zu einem Compilerfehler.
+In diesem Code sind zwei Bedingungsausdrücke hintereinander ohne einen Ausdruck, der ausgewertet wird, wenn die Bedingung wahr ist. Das führt zu einem Compilerfehler.
 *
 In Java ist das Fragezeichen ? ein ternärer Operator, der als bedingter Operator bekannt ist.
 * Der ternäre Operator hat die folgende Syntax: bedingung ? ausdruck1 : ausdruck2
