@@ -27,7 +27,8 @@ public class test30 {
 
 /*----------------------------------------------------------------------------------------------------------------------
 * Um diesen Fehler zu beheben, können Sie entweder die Case-Werte in byte umwandeln oder den Typ von var in int ändern.
-* Hier sind beide Ansätze:*/
+* Hier sind beide Ansätze:
+* */
 
         // Variante 2 | Case-Werte in byte umwandeln:
         byte var2 = 100;
