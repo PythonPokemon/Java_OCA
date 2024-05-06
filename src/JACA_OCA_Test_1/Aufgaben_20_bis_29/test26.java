@@ -15,11 +15,11 @@ public class test26 {
         // Variante 1
         String str1 = new String("Core");
         String str2 = new String("CoRe");
-        System.out.println(str1 = str2);        // <-- Was kommt raus? | zuweisungsoperator
+        System.out.println(str1 = str2);        // <-- Was, kommt raus? | zuweisungsoperator
 
         // Variante 2 | wo ist der Unterschied?
         String str3 = new String("Core");
         String str4 = new String("CoRe");
-        System.out.println(str3 == str4);        // <-- Was kommt raus? | vergleichsoperator
+        System.out.println(str3 == str4);        // <-- Was, kommt raus? | vergleichsoperator
     }
 }
