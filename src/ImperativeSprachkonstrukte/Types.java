@@ -23,14 +23,14 @@ package ImperativeSprachkonstrukte;
 public class Types {
     public static void main(String[] args) {
         // Primitive Datentypen
-        byte byteValue = 127;
-        short shortValue = 32767;
-        int intValue = 2147483647;
-        long longValue = 9223372036854775807L;
-        float floatValue = 3.4028235E38f;
-        double doubleValue = 1.7976931348623157E308;
-        char charValue = 'A';
-        boolean booleanValue = true;
+        byte byteValue = 127;                           // byte: Bereich von -128 bis 127.
+        short shortValue = 32767;                       // short: Bereich von -32768 bis 32767.
+        int intValue = 2147483647;                      // int: Bereich von -2147483648 bis 2147483647.
+        long longValue = 9223372036854775807L;          // long: Bereich von -9223372036854775808 bis 9223372036854775807.
+        float floatValue = 3.4028235E38f;               // float: Bereich von -3.4028235E38 bis 3.4028235E38.
+        double doubleValue = 1.7976931348623157E308;    // double: Bereich von -1.7976931348623157E308 bis 1.7976931348623157E308.
+        char charValue = 'A';                           // char: Bereich von '\u0000' bis '\uffff' (0 bis 65535).
+        boolean booleanValue = true;                    // boolean: Kann entweder true oder false sein.
 
         // Referenztypen
         String stringValue = "Hallo Welt";
