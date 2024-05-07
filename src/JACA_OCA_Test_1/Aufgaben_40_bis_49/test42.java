@@ -44,8 +44,8 @@ public class test42 {
     // Methoden Aufruf | Beschwörungszauber XD
         test42 obj = new test42();
         obj.variante2(args);        // <--. Aufruf der Methode, in der Variante 2
-        obj.variante3(args);
-        obj.variante4(args);
+        obj.variante3(args);        // <--. Aufruf der Methode, in der Variante 3
+        obj.variante4(args);        // <--. Aufruf der Methode, in der Variante 4
 
     }
 //----------------------------------------------------------------------------------------------------------------------
