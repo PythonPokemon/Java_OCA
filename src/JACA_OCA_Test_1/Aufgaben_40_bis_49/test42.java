@@ -1,3 +1,31 @@
+/*
+* Der gegebene Code demonstriert vier Varianten, wie eine Schleife implementiert werden kann, um bestimmte Elemente eines String-Arrays auszugeben.
+* Das Ziel besteht darin, die Buchstaben "NET" in der Konsole auszugeben.
+*
+* Die möglichen Varianten sind:
+*
+* Variante 1:
+* Diese Variante verwendet eine for-Schleife mit einer Zählervariable a, die von 0 bis zur Länge des Arrays läuft.
+* Die Schleife gibt jedes Element des Arrays aus, wenn der Index ungerade ist.
+*
+* Variante 2:
+* Diese Variante ist eine Methode variante2, die in der main-Methode aufgerufen wird.
+* In dieser Methode wird eine for-Schleife verwendet, um jedes Element des Arrays auszugeben, wenn der Index ungerade ist.
+*
+* Variante 3:
+* Ähnlich wie Variante 2, jedoch wird hier die Zählervariable c initialisiert, um mit 1 zu starten und in jedem Schritt um 2 zu erhöhen.
+* Dies stellt sicher, dass nur die Elemente mit ungeradem Index ausgegeben werden.
+*
+* Variante 4:
+* Diese Variante ist ähnlich wie Variante 3, jedoch wird die Schleifenbedingung so angepasst,
+* dass die Schleife bis zur Länge des Arrays läuft, und nicht bis zu einer Länge, die um 2 größer ist als die Länge des Arrays.
+* Dadurch wird ein Indexfehler vermieden.
+*
+* Die main-Methode ruft jede Variante nacheinander auf und gibt das Ergebnis aus.
+* Am Ende werden die Buchstaben "NET" in der Konsole ausgegeben, da jede Variante so implementiert ist,
+* dass nur die entsprechenden Buchstaben ausgegeben werden, und zwar in der richtigen Reihenfolge.
+* */
+
 package JACA_OCA_Test_1.Aufgaben_40_bis_49;
 
 // How many above options can be used to replace /*INSERT*/, such that on execution, code will print 'NET' on the console?
