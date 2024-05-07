@@ -31,7 +31,6 @@ public class test32 {
 *  Dies wird das erste Vorkommen des Werts 100 in der Liste entfernen.
  * */
 
-
         // Variante 2 | list.remove(Integer.valueOf(100)) Methode
         List<Integer> list = new ArrayList<>();
         list.add(100);
