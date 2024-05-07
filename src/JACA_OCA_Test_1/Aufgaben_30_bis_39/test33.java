@@ -1,13 +1,32 @@
-package JACA_OCA_Test_1.Aufgaben_30_bis_39;
+/*
+* Der Code gibt "Welcome Keller!" aus, weil die main-Methode der Message-Klasse das dritte Element des args-Arrays ausgibt, das "Keller" ist.
+*
+* Lassen Sie mich den Ablauf genauer erklären:
+*
+* Das Programm wird erfolgreich kompiliert.
+* Wenn das Programm ausgeführt wird, werden drei Argumente übergeben: "Clare", "Waight" und "Keller".
+* Die main-Methode der Klasse Guest wird aufgerufen, und diese ruft die main-Methode der Klasse Message auf und übergibt dabei die drei Argumente.
+*
+* In der main-Methode der Klasse Message wird args[2] verwendet, um auf das dritte Element des args-Arrays zuzugreifen.
+* Da Arrays in Java mit 0 indexiert sind, ist args[0] "Clare", args[1] "Waight" und args[2] "Keller".
+*
+* Das Programm gibt dann "Welcome Keller!" aus, da es das dritte Element des args-Arrays verwendet.
+* Das Ergebnis ist also "Welcome Keller!".*/
 
-class Message {
-    static void main(String [] args){
-        System.out.println("Welcome " + args[2] + "!");
-    }
-}
 
-public class test33 {
-    public static void main(String[] args) {
-        de.Verweise.Message.main(args);
-    }
-}
+//package JACA_OCA_Test_1.Aufgaben_30_bis_39;
+//// Guest.java
+//// javac Guest.java
+//// javac Guest Clare Waight Keller
+//
+//class Message {
+//    static void main(String [] args){
+//        System.out.println("Welcome " + args[2] + "!");
+//    }
+//}
+//
+//public class Guest {
+//    public static void main(String[] args) {
+//        Message.main(args);
+//    }
+//}
