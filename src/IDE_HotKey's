@@ -2,6 +2,7 @@ Alt + 1 = Projektverzeichnis aufzeigen
 Strg + Alt + L = Code einrücken
 Strg + S = Speichern
 Umschalt + F10 = Code ausführen (Run)
+Umschalt + F6 = Umbenennung der markierten variable, wird auf alle angewendet!
 Alt + Einfg = Einfügen (im IntelliJ Verzeichnis) neue Datei oder Ordner anlegen
 Alt + F12 = Terminal aufruf in IntelliJ
 Alt + Enter = wenn man über einer statischen Methode mit der Maus schwebt um diese zu den imports hinzuzufügen
