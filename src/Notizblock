@@ -1,5 +1,5 @@
 #   Methoden
--   gehören zu Klassen und Klassen zu Packeten bsp. import
+-   gehören zu Klassen und Klassen zu Packeten bsp. imports
 -   Wenn man eine Methode schreibt muss man immer vorschreiben zu welche typen diese Methode gehört.
 -   In der Praxis wird häufig eine große komplexe Methode Öffentlich gesetzt damit diese sichtbar und zugreifbar ist,
     allerdings wird diese wiederrum in viele kleine Methoden runtergebrochen und diese werden uaf Private gestellt.
