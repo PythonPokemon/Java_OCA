@@ -73,11 +73,11 @@
     Wenn die Exception nicht behandelt wird, führt sie in der Regel zum Absturz des Programms und möglicherweise zur Anzeige einer Fehlermeldung.
 
 #   Parse
--   In Java bedeutet "parse" typischerweise das Konvertieren einer Zeichenfolge (String) in eine andere Datentyprepräsentation,
-    wie beispielsweise einen Integer, ein Datum oder eine Gleitkommazahl. Das Parsen erfolgt gemäß den Regeln und Syntaxanforderungen des Ziel-Datentyps.
+-   In Java bedeutet "parse" typischerweise das Konvertieren einer Zeichenfolge (String) in eine andere Datentyp repräsentation,
+    wie beispielsweise einen Integer, ein Datum oder eine Gleitkommazahl. Das Parsen erfolgt gemäß den Regeln und Syntax anforderungen des Ziel-Datentyps.
     Hier sind einige wichtige Punkte zum Parsen in Java:
--   Syntaxanforderungen:
-    Das Parsen erfordert, dass die Eingabezeichenfolge den Syntaxanforderungen des Ziel-Datentyps entspricht.
+-   Syntax anforderungen:
+    Das Parsen erfordert, dass die Eingabezeichenfolge den Syntax anforderungen des Ziel-Datentyps entspricht.
     Andernfalls kann eine Ausnahme (Exception) ausgelöst werden.
     Exception Handling:
 -   Da das Parsen fehlschlagen kann, ist es wichtig, eine geeignete Fehlerbehandlung zu implementieren.
