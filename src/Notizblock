@@ -43,3 +43,15 @@
     dass temporäre Array objekte aufgebaut werden, Abgerufen und gelöscht!
     In einer endlosschleife würde das massiven druck auf den Garbage Collector ausüben.
     Deswegen versucht man möglichst auf varargs in schleifen zu verzichten, damit es nicht zu performance einbussen kommt
+
+#   Exception
+-   Bedeutet, dass während der Ausführung eines Programms ein Fehler aufgetreten ist, der eine sogenannte "Exception" ausgelöst hat.
+-   Eine Exception ist eine Fehlermeldung, die in Java und anderen Programmiersprachen verwendet wird,
+    um auf unerwartete Ereignisse oder Zustände hinzuweisen, die die normale Ausführung eines Programms unterbrechen oder verhindern können.
+-   "Runtime" bezieht sich auf die Zeit, zu der das Programm tatsächlich ausgeführt wird,
+    im Gegensatz zu "Compile-Time", wenn der Code kompiliert wird. Eine Exception, die zur Laufzeit ausgelöst wird,
+    bedeutet daher, dass der Fehler während der Ausführung des Programms auftritt, nachdem der Code bereits kompiliert wurde
+    und während der tatsächlichen Ausführung im Computer abläuft.
+-   Wenn eine Exception zur Laufzeit auftritt, wird das normale Programmfluss unterbrochen, und das Programm versucht normalerweise,
+    die Exception zu behandeln oder sie an den Aufrufer zurückzugeben, um sie dort zu behandeln.
+    Wenn die Exception nicht behandelt wird, führt sie in der Regel zum Absturz des Programms und möglicherweise zur Anzeige einer Fehlermeldung.
