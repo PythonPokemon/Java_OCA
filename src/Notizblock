@@ -1,3 +1,8 @@
+#   Klassen
+-   die man geschrieben hat, befinden sich im sogenannten Default Package (standard packet)
+    wenn man keinen packet verwendet befindet sich der Java Quellcode und der Bytecode, alle in einem großen Verzeichnis
+-   Bei klassen muss man immer beschreiben aus welchem packet sie kommen.
+
 #   Methoden
 -   gehören zu Klassen und Klassen zu Packeten bsp. imports
 -   Wenn man eine Methode schreibt muss man immer vorschreiben zu welche typen diese Methode gehört.
@@ -5,21 +10,14 @@
     allerdings wird diese wiederrum in viele kleine Methoden runtergebrochen und diese werden uaf Private gestellt.
 -   Wenn man eigene Methoden schreibt gehen diese den statischen import methoden vor, die imports werden dann ausgegraut, um konflikte zu vermeiden.
 
-#   Klassen
--   die man geschrieben hat, befinden sich im sogenannten Default Package (standard packet)
-    wenn man keinen packet verwendet befindet sich der Java Quellcode und der Bytecode, alle in einem großen Verzeichnis
--   Bei klassen muss man immer beschreiben aus welchem packet sie kommen.
-
-#   Der Bytecode
--   ist zu 100% Identisch, ob man den selbst schreibt oder per import einbindet,
-    das sind lediglich abkürzungen für die Entwickler!
-
-#   Sichtbarkeit
--   Public, ist für alle sichtbar.
--   Private, nicht sichtbar
--   Protected, ist Geschützt
--   Packet Public = bedeutet bsp.weise das alles innerhalb des packets öffentlich sind,
-    aber für Typen außerhalb des Packets unsichtbar.
+#   "Instanzvariable" <--- Fazit ---> "Attribut" | Bezeichner
+-   In Java bezieht sich der Begriff "Instanzvariable" oder "Attribut" tatsächlich auf die Variablen,
+    die innerhalb einer Klasse deklariert sind und den Zustand der Objekte dieser Klasse beschreiben.
+-   Diese Variablen werden auch als Instanzvariablen bezeichnet,
+    weil sie jedem einzelnen Objekt (oder jeder Instanz) einer Klasse zugeordnet sind.
+-   Ein Bezeichner, der frei wählbar ist, diese Instanzvariable beschreibt den Zustand eines einzelnen Message-Objekts.
+-   Wenn also von einer "Instanzvariable" oder einem "Attribut" gesprochen wird,
+    bezieht sich dies auf solche Variablen in einer Klasse, die den Zustand der Objekte dieser Klasse beschreiben.
 
 #   Eigenschaften (Properties):
 -   Statische Eigenschaften sind kursiv gesetzt. bsp. Math.random();
@@ -39,6 +37,17 @@
 -   Insgesamt können die Begriffe "Eigenschaften" und "Attribute" oft austauschbar verwendet werden,
     insbesondere wenn sie sich auf die Charakteristika eines Objekts beziehen.
 -   Sie helfen dabei, den Zustand von Objekten zu beschreiben und spielen eine wichtige Rolle in der objektorientierten Programmierung.
+
+#   Der Bytecode
+-   ist zu 100% Identisch, ob man den selbst schreibt oder per import einbindet,
+    das sind lediglich abkürzungen für die Entwickler!
+
+#   Sichtbarkeit
+-   Public, ist für alle sichtbar.
+-   Private, nicht sichtbar
+-   Protected, ist Geschützt
+-   Packet Public = bedeutet bsp.weise das alles innerhalb des packets öffentlich sind,
+    aber für Typen außerhalb des Packets unsichtbar.
 
 #   Arrays
 -   Wenn man Arrays aufgebaut hat, bleiben sie fest, man kann sie nachträglich nicht mehr ändern.
