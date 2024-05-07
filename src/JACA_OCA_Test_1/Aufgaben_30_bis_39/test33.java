@@ -8,7 +8,10 @@
 * Die main-Methode der Klasse Guest wird aufgerufen, und diese ruft die main-Methode der Klasse Message auf und übergibt dabei die drei Argumente.
 *
 * In der main-Methode der Klasse Message wird args[2] verwendet, um auf das dritte Element des args-Arrays zuzugreifen.
-* Da Arrays in Java mit 0 indexiert sind, ist args[0] "Clare", args[1] "Waight" und args[2] "Keller".
+* Da Arrays in Java mit 0 indexiert sind:
+* args[0] "Clare".
+* args[1] "Waight".
+* args[2] "Keller".
 *
 * Das Programm gibt dann "Welcome Keller!" aus, da es das dritte Element des args-Arrays verwendet.
 * Das Ergebnis ist also "Welcome Keller!".*/
