@@ -55,3 +55,23 @@
 -   Wenn eine Exception zur Laufzeit auftritt, wird das normale Programmfluss unterbrochen, und das Programm versucht normalerweise,
     die Exception zu behandeln oder sie an den Aufrufer zurückzugeben, um sie dort zu behandeln.
     Wenn die Exception nicht behandelt wird, führt sie in der Regel zum Absturz des Programms und möglicherweise zur Anzeige einer Fehlermeldung.
+
+#   Parse
+-   In Java bedeutet "parse" typischerweise das Konvertieren einer Zeichenfolge (String) in eine andere Datentyprepräsentation,
+    wie beispielsweise einen Integer, ein Datum oder eine Gleitkommazahl. Das Parsen erfolgt gemäß den Regeln und Syntaxanforderungen des Ziel-Datentyps.
+    Hier sind einige wichtige Punkte zum Parsen in Java:
+-   Syntaxanforderungen:
+    Das Parsen erfordert, dass die Eingabezeichenfolge den Syntaxanforderungen des Ziel-Datentyps entspricht.
+    Andernfalls kann eine Ausnahme (Exception) ausgelöst werden.
+    Exception Handling:
+-   Da das Parsen fehlschlagen kann, ist es wichtig, eine geeignete Fehlerbehandlung zu implementieren.
+    Dies kann das Abfangen von Ausnahmen wie NumberFormatException bei der Konvertierung von Zeichenfolgen in Zahlen oder
+    DateTimeParseException bei der Konvertierung von Zeichenfolgen in Datum und Uhrzeit beinhalten.
+-   Standardbibliothek:
+    Java bietet verschiedene Methoden und Klassen für das Parsen von Zeichenfolgen in verschiedene Datentypen.
+    Zum Beispiel bietet die Integer-Klasse die Methode parseInt() für das Parsen von Zeichenfolgen in Ganzzahlen,
+    die Double-Klasse bietet parseDouble() für das Parsen von Zeichenfolgen in Gleitkommazahlen und die
+    LocalDate-Klasse bietet parse() für das Parsen von Zeichenfolgen in Datumswerte.
+-   Anwendungen:
+    Das Parsen wird in vielen Anwendungsfällen verwendet, wie z.B. der Verarbeitung von Benutzereingaben in Formularen,
+    der Verarbeitung von Dateien mit strukturierten Daten, der Verarbeitung von Datenbankabfragen und der Verarbeitung von APIs, die JSON- oder XML-Daten liefern.
