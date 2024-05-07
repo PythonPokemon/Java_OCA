@@ -21,8 +21,24 @@
 -   Packet Public = bedeutet bsp.weise das alles innerhalb des packets öffentlich sind,
     aber für Typen außerhalb des Packets unsichtbar.
 
-#   Eigenschaften
+#   Eigenschaften (Properties):
 -   Statische Eigenschaften sind kursiv gesetzt. bsp. Math.random();
+-   In Java bezieht sich der Begriff "Eigenschaften" häufig auf die Charakteristika oder Merkmale eines Objekts.
+    Diese Eigenschaften beschreiben den Zustand oder die Attribute eines Objekts.
+-   Die Eigenschaften eines Objekts werden normalerweise durch die Instanzvariablen oder Felder der Klasse repräsentiert.
+    Zum Beispiel kann eine Person eine Eigenschaft wie "Name" haben, die durch eine Instanzvariable name repräsentiert wird.
+-   Eigenschaften können auch durch Getter- und Setter-Methoden manipuliert werden, die den Zugriff auf die Instanzvariablen kontrollieren.
+
+#   Attribute:
+-   Der Begriff "Attribute" wird oft synonym mit "Eigenschaften" verwendet und bezieht sich auf die Merkmale eines Objekts, die seinen Zustand definieren.
+-   In einigen Kontexten kann "Attribute" jedoch spezifischer sein und sich auf die Datenstrukturen oder Metadaten eines Objekts beziehen.
+    Zum Beispiel können "Dateiattribute" Metadaten wie Dateiname, Größe und Erstellungsdatum einer Datei darstellen.
+-   In anderen Kontexten kann "Attribute" auch in Bezug auf die Merkmale von Klassen oder Datenelementen in Datenbanken verwendet werden.
+
+#   "Eigenschaften" <--- Fazit ---> "Attribute"
+-   Insgesamt können die Begriffe "Eigenschaften" und "Attribute" oft austauschbar verwendet werden,
+    insbesondere wenn sie sich auf die Charakteristika eines Objekts beziehen.
+-   Sie helfen dabei, den Zustand von Objekten zu beschreiben und spielen eine wichtige Rolle in der objektorientierten Programmierung.
 
 #   Arrays
 -   Wenn man Arrays aufgebaut hat, bleiben sie fest, man kann sie nachträglich nicht mehr ändern.
