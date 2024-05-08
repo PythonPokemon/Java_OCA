@@ -42,10 +42,11 @@ import java.util.List;
 //}
 //----------------------------------------------------------------------------------------------------------------------
 // Variante 3 | zum Testen auskommentieren
+
 /*
 * In dieser Version durchläuft eine Schleife alle Elemente der Liste und ersetzt jedes "l" durch "L".
 * Dann werden die aktualisierten Strings wieder der Liste hinzugefügt.
- * */
+* */
 public class test46 {
     public static void main(String[] args) {
         String s = new String("Hello");
