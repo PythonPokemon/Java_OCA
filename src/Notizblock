@@ -113,3 +113,19 @@
 -   Anwendungen:
     Das Parsen wird in vielen Anwendungsfällen verwendet, wie z.B. der Verarbeitung von Benutzereingaben in Formularen,
     der Verarbeitung von Dateien mit strukturierten Daten, der Verarbeitung von Datenbankabfragen und der Verarbeitung von APIs, die JSON- oder XML-Daten liefern.
+
+#   Swift-Code
+-   In einem Swift-Code sind die Zeichen an bestimmten Positionen für verschiedene Informationen reserviert.
+    Um den Ländercode zu extrahieren, müssen wir die Positionen der Zeichen kennen, die den Ländercode repräsentieren.
+
+-   Basierend auf der Beschreibung des Swift-Codes:
+
+    Die ersten beiden Zeichen repräsentieren den Bankcode.
+    Die nächsten zwei Zeichen repräsentieren den Ländercode.
+    Die nächsten zwei Zeichen repräsentieren den Ortscode.
+    Die nächsten drei Zeichen repräsentieren den Zweigstellenkode.
+-   Um den Ländercode zu extrahieren, müssen wir also die Zeichen von der dritten bis zur vierten Position des Swift-Codes extrahieren.
+    Da Zeichenindizes in Java bei 0 beginnen, entspricht die Position des ersten Zeichens der Position 0.
+    Daher ist die richtige Antwort swiftCode.substring(4, 6);.
+    Diese Methode extrahiert ein Teilzeichenfolge, beginnend mit dem Zeichen an der Position 4 (einschließlich)
+    und endend mit dem Zeichen an der Position 6 (ausschließlich), was die Positionen für den Ländercode abdeckt.
