@@ -1,3 +1,30 @@
+/*
+* Der Code demonstriert die Verwendung von Lambda-Ausdrücken und der Predicate-Funktionalschnittstelle, um eine Liste von Employee-Objekten zu filtern.
+*
+* Zuerst wird die Klasse Employee definiert, die die Eigenschaften name, age und salary eines Mitarbeiters repräsentiert.
+*
+* Dann wird die Klasse test69 mit der main-Methode definiert.
+*
+* In der main-Methode werden einige Employee-Objekte erstellt und einer Liste list hinzugefügt.
+*
+* Die process-Methode wird aufgerufen, um die list mit Hilfe eines Lambda-Ausdrucks zu filtern.
+* Der Lambda-Ausdruck (Employee e) -> e.getSalary() >= 10000 gibt an, dass ein Employee-Objekt ausgewählt wird,
+* wenn sein Gehalt größer oder gleich 10000 ist.
+* Dies wird durch die Predicate-Funktionalschnittstelle ermöglicht, die als Parameter an die process-Methode übergeben wird.
+*
+* Die process-Methode durchläuft die Liste der Employee-Objekte mithilfe eines Iterators und entfernt diejenigen,
+* die das vom Predicate definierte Kriterium erfüllen.
+* ----------------------------------------------------------------------------------------------------------------------
+* Schließlich wird die gefilterte Liste ausgegeben.
+* Die beiden Ausdrücke:
+* process(list, (Employee e) -> { return e.getSalary() >= 10000; });
+* process(list, (Employee e) -> e.getSalary() >= 10000);
+*
+* sind äquivalent. Der erste verwendet eine geschweifte Klammer für den Lambda-Körper und ein return-Schlüsselwort,
+* um den Wert zurückzugeben, während der zweite den Pfeiloperator verwendet, um den Wert direkt zurückzugeben.
+* Beide Ausdrücke führen zum gleichen Ergebnis.
+* */
+
 package JACA_OCA_Test_1.Aufgaben_60_bis_70;
 import java.util.ArrayList;
 import java.util.Iterator;
