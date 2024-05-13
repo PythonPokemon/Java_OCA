@@ -23,7 +23,7 @@ public class test51 {
         // Character var = 7;
          char var = 7;
         // Integer var = 7;
-
+//----------------------------------------------------------------------------------------------------------------------
         // Variante 2 | Falsch | zum Testen auskommentieren
         // Character var = '7';
         // char var = '7';
