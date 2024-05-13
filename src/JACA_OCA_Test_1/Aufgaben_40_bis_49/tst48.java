@@ -41,7 +41,7 @@ public class tst48 {
             }
         }
         for (Object obj : arr) {
-            System.out.println(obj);
+            System.out.println(obj);    // <-- was kommt raus?
         }
     }
 }
