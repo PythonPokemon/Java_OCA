@@ -10,7 +10,7 @@
 * Dieser Ausdruck vergleicht die Inhalte der Zeichenfolgen s1 und s2 und gibt true aus, wenn die Inhalte gleich sind.
 * */
 
-package JACA_OCA_Test_1.Aufgaben_60_bis_70;
+package JACA_OCA_Test_1.Aufgaben_60_bis_69;
 
 public class test68 {
     public static void main(String[] args) {

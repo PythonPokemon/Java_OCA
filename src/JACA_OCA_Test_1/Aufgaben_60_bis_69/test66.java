@@ -12,7 +12,7 @@
 * Da nur der Name "Smith" hinzugefügt wird, bevor die Schleife durch das continue-Statement unterbrochen wird, enthält die Liste nur ein Element.
  * */
 
-package JACA_OCA_Test_1.Aufgaben_60_bis_70;
+package JACA_OCA_Test_1.Aufgaben_60_bis_69;
 import java.util.ArrayList;
 import java.util.List;
 

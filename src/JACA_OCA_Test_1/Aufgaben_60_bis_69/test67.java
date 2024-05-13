@@ -6,9 +6,8 @@
 * Dies führt dazu, dass die interne Struktur der Liste modifiziert wird, was mit dem Iterator inkompatibel ist und zur ConcurrentModificationException führt.
 * */
 
-package JACA_OCA_Test_1.Aufgaben_60_bis_70;
+package JACA_OCA_Test_1.Aufgaben_60_bis_69;
 import java.util.ArrayList;
-import java.util.Iterator;
 import java.util.List;
 
 // Variante 1 | .ConcurrentModificationException | zum Testen auskommentieren

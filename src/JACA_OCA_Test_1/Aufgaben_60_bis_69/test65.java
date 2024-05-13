@@ -6,7 +6,7 @@
 *
 * Die Liste enthält nach dem Entfernen des Werts 0 die verbleibenden Werte 2 und 1.
 * */
-package JACA_OCA_Test_1.Aufgaben_60_bis_70;
+package JACA_OCA_Test_1.Aufgaben_60_bis_69;
 
 import java.util.ArrayList;
 import java.util.List;

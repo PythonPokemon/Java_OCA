@@ -16,7 +16,7 @@
 
 * */
 
-package JACA_OCA_Test_1.Aufgaben_60_bis_70;
+package JACA_OCA_Test_1.Aufgaben_60_bis_69;
 
 class Student {
     String name;

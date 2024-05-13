@@ -9,7 +9,7 @@ Wenn Sie m('5') aufrufen, wird die Methode m(char x) aufgerufen, da der Wert '5'
 Obwohl das Zeichen '5' als Zeichen konstant dargestellt ist, kann es in einem numerischen Kontext als Zahl verwendet werden. In diesem Fall wird es als ASCII-Wert behandelt, der dem numerischen Wert 53 entspricht.
 * */
 
-package JACA_OCA_Test_1.Aufgaben_60_bis_70;
+package JACA_OCA_Test_1.Aufgaben_60_bis_69;
 
 public class test63 {
     private static void m(int x) {

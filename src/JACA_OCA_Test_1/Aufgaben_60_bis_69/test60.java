@@ -6,7 +6,7 @@
 *
 * Da die Methode m1() eine throws-Klausel für Exception enthält und der Aufruf in der main-Methode nicht in einem try-catch-Block eingefasst ist, tritt ein Compilerfehler auf.
 * */
-package JACA_OCA_Test_1.Aufgaben_60_bis_70;
+package JACA_OCA_Test_1.Aufgaben_60_bis_69;
 
 //// Variante 1 | Compiler fehler | zum Testen auskommentieren
 //public class test60 {

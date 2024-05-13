@@ -13,10 +13,7 @@ B obj2 = (B)obj1; => obj1 is of type A and it is assigned to obj2 (B type), henc
 * sub type can't refer to an object of super type so at runtime B obj2 = (B)obj1; will throw ClassCastException.
 * */
 
-package JACA_OCA_Test_1.Aufgaben_60_bis_70;
-
-import JACA_OCA_Test_1.Aufgaben_60_bis_70.test64A;
-import JACA_OCA_Test_1.Aufgaben_60_bis_70.test64B;
+package JACA_OCA_Test_1.Aufgaben_60_bis_69;
 
 
 public class test64C {
