@@ -13,7 +13,6 @@ Die Ausgabe wird sein: 128:TYPE-C, da wir in der main-Methode die Kapazität und
 * */
 
 package JACA_OCA_Test_1.Aufgaben_50_bis_59;
-
 class PenDrive {
     int capacity;
     PenDrive(int capacity) {
