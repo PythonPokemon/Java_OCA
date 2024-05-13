@@ -81,6 +81,19 @@
     die Exception zu behandeln oder sie an den Aufrufer zurückzugeben, um sie dort zu behandeln.
     Wenn die Exception nicht behandelt wird, führt sie in der Regel zum Absturz des Programms und möglicherweise zur Anzeige einer Fehlermeldung.
 
+#   if, else if und else <--- Fazit --->  (try-catch)-"Exception"
+-   Der Unterschied zwischen if, else if, else und exception ist, das exception ausschließlich zum abfangen von fehlern verwendet wird,
+    wenn man nicht genug if else block verzweigungen implementiert hat die alle variablen abfangen.
+-   Die if, else if und else Blöcke werden verwendet, um verschiedene Bedingungen abzudecken und entsprechend verschiedene Anweisungen auszuführen,
+    basierend auf dem Ergebnis der Bedingungen. Sie sind Teil der Kontrollstruktur, die es ermöglicht, den Programmfluss zu steuern.
+-   Die Ausnahmebehandlung (try-catch), wie du sie als "Exception" bezeichnet hast, dient hingegen dazu,
+    Laufzeitfehler oder Ausnahmen abzufangen und damit umzugehen, die während der Ausführung des Programms auftreten können.
+    Sie wird verwendet, um das Programm vor dem Absturz zu schützen, indem sie die Ausnahme abfängt,
+    die auftritt, wenn ein bestimmtes Ereignis oder eine bestimmte Bedingung nicht erfüllt ist.
+-   In manchen Fällen kann eine Ausnahmebehandlung eine alternative Lösung sein, wenn es schwierig ist,
+    alle möglichen Fälle mit if-else Blöcken abzudecken oder wenn der Code eine spezifische Ausnahme behandeln muss,
+    die außerhalb des normalen Programmflusses liegt.
+
 #   Parse
 -   In Java bedeutet "parse" typischerweise das Konvertieren einer Zeichenfolge (String) in eine andere Datentyp repräsentation,
     wie beispielsweise einen Integer, ein Datum oder eine Gleitkommazahl. Das Parsen erfolgt gemäß den Regeln und Syntax anforderungen des Ziel-Datentyps.
