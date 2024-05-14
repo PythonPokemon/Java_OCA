@@ -19,15 +19,16 @@ public class test10 {
 //        if(list.contains('O')){
 //            list.remove('O');
 //        }
-        //---Zum Testen auskommentieren!---
+//----------------------------------------------------------------------------------------------------------------------
+//        //---Zum Testen auskommentieren!---
 //        // korrekt wäre das!
 //        if(list.contains('O')){
-//            int index = list.indexOf('O');
+//            int index = list.indexOf('O');    //<--
 //            list.remove(index);
 //        }
-
-        for(char ch : list) {
-            System.out.println(ch);
-        }
+//
+//        for(char ch : list) {
+//            System.out.println(ch);
+//        }
     }
 }

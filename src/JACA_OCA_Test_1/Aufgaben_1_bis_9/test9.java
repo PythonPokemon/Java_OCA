@@ -24,12 +24,17 @@
 package JACA_OCA_Test_1.Aufgaben_1_bis_9;
 
 class Point {
-    int x;
-    int y;
+    int x;  // Attribut x des aktuellen Objekts
+    int y;  // Attribut x des aktuellen Objekts
 
     // Y übernimmt die werte von X = x.10 y.20
     void assign(int x, int y) {
+        // Der lokale Parameter x (links) wird auf den Wert des Attributs x (rechts) des aktuellen Objekts gesetzt.
+        // Das bedeutet, dass der Wert des Attributs x des aktuellen Objekts in den lokalen Parameter x kopiert wird.
+        // Dies ist normalerweise nicht das gewünschte Verhalten, da es den Parameter überschreibt und keine Änderung am Attribut des Objekts vornimmt.
         x = this.x;     // bei y ist this.x 10 standartwert, wird aber mit dem standartwert überschrieben| 0 da
+
+        // Der lokale Parameter y wird korrekt dem Attribut y des aktuellen Objekts zugewiesen.
         this.y = y;     // bei y ist 20 standartwert, wird spiegelverkehrt überschrieben also bleibt es bei 20, sonst wäre es auch 0
     }
 
