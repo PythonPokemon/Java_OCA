@@ -38,6 +38,28 @@
     insbesondere wenn sie sich auf die Charakteristika eines Objekts beziehen.
 -   Sie helfen dabei, den Zustand von Objekten zu beschreiben und spielen eine wichtige Rolle in der objektorientierten Programmierung.
 
+#   String
+-   Verwende String, wenn du einen unveränderlichen Text benötigst.
+-   Unveränderlich (immutable): Ein String-Objekt in Java ist unveränderlich. Das bedeutet, dass einmal erstellt,
+    sein Wert nicht mehr geändert werden kann. Jede Modifikation eines String-Objekts führt zur Erstellung eines neuen String-Objekts.
+-   Leistung: Da String unveränderlich ist, kann die wiederholte Konkatenation von String-Objekten ineffizient sein,
+    da jedes Mal ein neues String-Objekt erstellt werden muss.
+-   Verwendung: String wird oft für Textverarbeitungen verwendet, bei denen keine häufigen Änderungen am Text vorgenommen werden.
+-   String str1 = "Hello";
+    String str2 = str1 + " World"; // Ein neues String-Objekt wird erstellt
+
+#   StringBuilder
+-   Verwende StringBuilder, wenn du einen veränderlichen Text hast, der oft geändert werden muss.
+-   Veränderlich (mutable): Ein StringBuilder-Objekt in Java ist veränderlich.
+    Das bedeutet, dass sein Wert nach der Erstellung geändert werden kann, ohne dass neue Objekte erstellt werden.
+-   Leistung: StringBuilder ist effizienter für die wiederholte Modifikation von Strings,
+    da keine neuen Objekte erstellt werden müssen. Es verwendet ein internes Array, um Zeichen zu speichern,
+    und dieses Array kann bei Bedarf erweitert werden.
+-   Verwendung: StringBuilder wird häufig verwendet, wenn viele Änderungen an einem String vorgenommen werden sollen,
+    wie z.B. in Schleifen oder bei der Verkettung vieler Strings.
+-   StringBuilder sb = new StringBuilder("Hello");
+    sb.append(" World"); // Der ursprüngliche StringBuilder wird geändert
+
 #   Der Bytecode
 -   ist zu 100% Identisch, ob man den selbst schreibt oder per import einbindet,
     das sind lediglich abkürzungen für die Entwickler!

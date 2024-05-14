@@ -29,7 +29,7 @@ public class test23 {
 //        String str = "java";
 //        StringBuilder sb = new StringBuilder("java");
 //
-//        // Vergleicht den Inhalt der Zeichenketten
+//        // Vergleicht den tatsächlichen Inhalt der Zeichenketten miteinander "java"
 //        System.out.println(str.equals(sb.toString()) + ":" + sb.toString().equals(str));  // <-- hier ist der Unterschied
 //    }
 }
