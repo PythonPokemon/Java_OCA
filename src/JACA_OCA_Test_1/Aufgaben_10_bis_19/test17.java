@@ -6,9 +6,9 @@ public class test17 {
         System.out.println("Fill in the blanks for the definition of java.lang.Error class:");
         System.out.println("public class java.lang.Error extends___________{...}");
 
-        boolean Throwable = true;
-        boolean RuntimeExcetion = false;
-        boolean Excetion = false;
+        boolean Throwable = true;           //<-- Wurffähig
+        boolean RuntimeExcetion = false;    //<-- RuntimeException
+        boolean Excetion = false;           //<-- Ausnahme
 
         System.out.println(Throwable);
         System.out.println(RuntimeExcetion);

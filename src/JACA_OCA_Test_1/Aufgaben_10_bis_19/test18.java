@@ -13,7 +13,13 @@ import java.time.Period;
 
 public class test18 {
     public static void main(String[] args) {
+
+        // Variante 1
         Period period = Period.of(0, 0, 0);
-        System.out.println(period); // POD
+        System.out.println(period); //<-- POD
+
+        // Variante 2
+        Period period1 = Period.of(1,3,7);
+        System.out.println(period1);//<-- P1Y3M7D
     }
 }

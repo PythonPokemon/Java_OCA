@@ -5,10 +5,10 @@ public class test15 {
         System.out.println("_____ uses access modifiers to protect variables and hide them within a class.");
         System.out.println("Which of the following options accurately fill in the blanks above?");
 
-        boolean Encapsulation = true;   // korrekt answer!
-        boolean Inheritance = false;
-        boolean Abstraction = false;
-        boolean Polymorphism = false;
+        boolean Encapsulation = true;   //<-- Verkapselung | korrekt answer!
+        boolean Inheritance = false;    //<-- Erbschaft
+        boolean Abstraction = false;    //<-- Abstraktion
+        boolean Polymorphism = false;   //<-- Polymorphismus
 
         System.out.println(Encapsulation);
         System.out.println(Inheritance);
