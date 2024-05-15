@@ -13,9 +13,9 @@ public class test30 {
     public static void main(String[] args) {
 
         // Variante 1 | zum Testen auskommentieren | <--- Compiler fehler, warum?
-//        byte var = 100;
+//        byte var = 100;       //<-- byte !
 //        switch (var) {
-//            case 100:
+//            case 100:         //<-- int !
 //                System.out.println("var is 100");
 //                break;
 //            case 200:
@@ -31,9 +31,9 @@ public class test30 {
 * */
 
         // Variante 2 | Case-Werte in byte umwandeln:
-        byte var2 = 100;
+        byte var2 = 100;        //<--
         switch (var2) {
-            case (byte) 100:
+            case (byte) 100:    //<-- explizite byte deklaration notwendig, weil int standart ist
                 System.out.println("var2 is 100");
                 break;
             case (byte) 200:

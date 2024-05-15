@@ -6,7 +6,7 @@ public class test31 {
         // Was kommt raus?
         String question = "Which of these modifiers can be used for a top level interface? ";
         String answer1 = "All of the other options " + " = ist leider: ";
-        String answer2 = "public" + "<---- richtig :) ";
+        String answer2 = "public" + " <---- richtig :) ";
         String answer3 = "protected " + " = ist leider: ";
         String answer4 = "private" + " = ist leider: ";
 
