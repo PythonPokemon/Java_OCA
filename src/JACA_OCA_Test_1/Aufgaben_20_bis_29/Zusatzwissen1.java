@@ -7,7 +7,7 @@
 * Referenzvergleich: Da beide Variablen s1 und s2 auf dasselbe Objekt im String-Pool verweisen, ergibt s1 == s2 true.
 * */
 package JACA_OCA_Test_1.Aufgaben_20_bis_29;
-public class Zusatzwissen {
+public class Zusatzwissen1 {
     public static void main(String[] args) {
         // Variante 1
         String s1 = "OCAJP";

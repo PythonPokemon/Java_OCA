@@ -78,6 +78,18 @@
     Hinter dieser Array-Initialisierung stecken zwei Operationen.
     Zunächst wird ein Array angelegt mit der richtigen größe und anschließend werden die entsprechenden Zellen, mit entsprechenden Werten belegt
 
+#   Heap-Speicher:
+-   Enthält alle Objekte und Klasseninstanzen.
+-   Wird durch die Garbage Collection verwaltet.
+-   Gemeinsamer Speicherbereich für alle Threads.
+-   Langsamere Zugriffszeit im Vergleich zum Stack-Speicher.
+
+#   Stack-Speicher:
+    * Enthält primitive Variablen, Methodenaufrufe und lokale Variablen.
+    * Wird automatisch verwaltet (LIFO-Prinzip).
+    * Jeder Thread hat seinen eigenen Stack.
+    * Schnellere Zugriffszeit im Vergleich zum Heap-Speicher.
+
 #   Compiler
 -   Der Compiler generiert Bytecode und der Bytecode initialisiert jedes Element.
 -   Deswegen hat jede Variable entsprechend UNI-Code ihre Byte größe, mit der sie initialisiert wird und zwischengespeichert wird.
