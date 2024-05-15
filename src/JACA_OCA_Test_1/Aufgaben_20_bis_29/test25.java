@@ -44,7 +44,7 @@ public class test25 {
 
 //       short arr[] = new short[2];           // .ArrayIndexOutOfBoundsException
 //       byte []arr = new byte[10];            // <--- richtig
-//       short[] arr;arr = new short[3];       // <--- richtig
+//       short[] arr; arr = new short[3];       // <--- richtig
 //       short[2] arr;                         // compiler fehler | Die Größe des Arrays kann nicht bei der Deklaration festgelegt werden. Es muss bei der Initialisierung geschehen.
 //       short[3] arr;                         // compiler fehler | Die Größe des Arrays kann nicht bei der Deklaration festgelegt werden. Es muss bei der Initialisierung geschehen.
 //       int[] arr = new int[]{100, 100};      // .ArrayIndexOutOfBoundsException
@@ -57,3 +57,16 @@ public class test25 {
         System.out.println("[" + arr[1] + ", " + arr[2] + "]");
     }
 }
+/*-------------------------------------------ACHTUNG WICHTIG------------------------------------------------------------
+*
+*----------------------Array mit geschweiften Klammern: int[] arr = new int[]{0, 0, 0, 0};------------------------------
+* Initialisiert das Array sofort mit den angegebenen Werten.
+* Syntax erfordert new und geschweifte Klammern {} mit den Werten.
+*
+*--------------------------Array ohne geschweifte Klammern: byte[] arr = new byte[10];----------------------------------
+* Initialisiert das Array mit einer festen Größe.
+* Syntax erfordert nur new und die Größe des Arrays in eckigen Klammern [].
+*
+* Beide Varianten haben ihre spezifischen Anwendungsfälle, und die Wahl hängt davon ab,
+* ob die Werte zum Zeitpunkt der Deklaration bekannt sind oder nicht.
+* */
