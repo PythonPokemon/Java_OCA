@@ -1,17 +1,17 @@
 /*
 *
-* In diesem Code wird zunächst ein StringBuilder-Objekt erstellt und dabei eine Kapazität von 100 angegeben.
-* Diese Kapazität gibt an, wie viele Zeichen der StringBuilder initial speichern kann, bevor er automatisch erweitert wird.
+* new StringBuilder(100) erstellt einen neuen StringBuilder mit einer initialen Kapazität von 100 Zeichen.
+* Dies bedeutet, dass der interne Puffer des StringBuilder Platz für 100 Zeichen hat,
+* ohne dass eine interne Speichererweiterung nötig ist.
 *
-* Beim Aufruf der Methode length() auf dem StringBuilder-Objekt wird die aktuelle Länge des Inhalts zurückgegeben, nicht die Kapazität.
+* Wichtig: Dies bedeutet nicht, dass der StringBuilder bereits 100 Zeichen enthält.
+* Die Länge (length) des StringBuilder ist anfangs 0, da noch keine Zeichen hinzugefügt wurden.
 *
-* Da der StringBuilder-Objekt gerade erstellt wurde und noch keine Zeichen hinzugefügt wurden, ist die Länge des Inhalts 0.
-* Wenn Sie jedoch sb.toString().length() aufrufen, wird der aktuelle Inhalt des StringBuilder in eine Zeichenkette umgewandelt, und dann wird die Länge dieser Zeichenkette zurückgegeben.
+* sb.length() gibt die Anzahl der tatsächlich im StringBuilder enthaltenen Zeichen zurück.
+* Da noch keine Zeichen hinzugefügt wurden, ist dies 0.
+* sb.toString().length() konvertiert den StringBuilder in einen String und gibt die Länge dieses String zurück.
+* Da der StringBuilder leer ist, ist der resultierende String ebenfalls leer und seine Länge ist ebenfalls 0.
 *
-* Da der aktuelle Inhalt des StringBuilder leer ist, ist die Länge der resultierenden Zeichenkette ebenfalls 0.
-*
-* Deshalb wird 0:0 ausgegeben, da beide Längen 0 sind:
-* die Länge des Inhalts des StringBuilder und die Länge der resultierenden Zeichenkette, nachdem der StringBuilder in eine Zeichenkette umgewandelt wurde.
 * */
 
 package JACA_OCA_Test_1.Aufgaben_20_bis_29;
@@ -20,14 +20,14 @@ public class test27 {
     public static void main(String[] args) {
 
         // Variant 1 |
-        StringBuilder sb = new StringBuilder(100);
+        StringBuilder sb = new StringBuilder(100); // kapazität von 100 zeichen!
         System.out.println(sb.length() + ":" + sb.toString().length()); // <-- was, kommt raus?
 
 //----------------------------------------------------------------------------------------------------------------------
 
         // Variante 2 |
         // Ein StringBuilder-Objekt erstellen
-        StringBuilder sb2 = new StringBuilder();
+        StringBuilder sb2 = new StringBuilder(); // ohne Kapazitätsangabe = Standardkapazität von 16 Zeichen | wird automatisch dynamisch erweitert
 
         // Einige Zeichen und Zeichenketten hinzufügen
         sb2.append("Hallo, "); // Zeichenkette hinzufügen
@@ -44,6 +44,15 @@ public class test27 {
 }
 
 /*  Zusatzinfo.
+*
+* Warum funktioniert das ohne Kapazität?
+* Automatische Kapazitätserweiterung: Der StringBuilder verwaltet seine Kapazität intern und erweitert sie automatisch,
+* wenn mehr Speicher benötigt wird. Dies macht es einfach, Zeichen hinzuzufügen, ohne sich um die anfängliche Kapazität kümmern zu müssen.
+* Standardkapazität: Wenn keine Kapazität angegeben ist, verwendet der StringBuilder eine Standardkapazität (normalerweise 16 Zeichen).
+* Diese wird dynamisch erhöht, wenn der Inhalt des StringBuilder wächst.
+
+*-----------------------------------------------------------------------------------------------------------------------
+
 * Der StringBuilder wird in Java verwendet, um effizient Zeichenketten zu erstellen,
 * insbesondere wenn viele Operationen wie das Hinzufügen von Zeichen oder das Zusammenführen von Zeichenketten durchgeführt werden müssen.
 * Im Gegensatz zu herkömmlichen Zeichenketten (String-Objekten), die unveränderlich sind (d. h., sobald sie erstellt wurden, können sie nicht geändert werden),
