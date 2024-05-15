@@ -30,17 +30,20 @@ class Counter {
     }
 
     public String toString() {
-        return "Counter-" + count;
+        return "Counter " + count;
     }
 }
 
 public class test38 {
     public static void main(String[] args) {
         ArrayList<Counter> original = new ArrayList<>();
-        original.add(new Counter(10));
+        original.add(new Counter(10));  // index 0
+        original.add(new Counter(15));  // index 1
+        original.add(new Counter(20));  // index 1
 
-        ArrayList<Counter> cloned = (ArrayList<Counter>) original.clone();
-        cloned.get(0).count = 5;
+        ArrayList<Counter> cloned = (ArrayList<Counter>) original.clone();  // cloned ist eine Methode die, die werte aus dieser methode auf die werte über die der originalen methode überschreibt!
+        cloned.get(0).count = 5;    // .get(0) verweist auf den index der arrayliste
+        cloned.get(1).count = 5;
 
         System.out.println(original);   // was kommt raus?
     }
