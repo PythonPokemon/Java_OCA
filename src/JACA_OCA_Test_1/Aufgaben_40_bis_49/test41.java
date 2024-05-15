@@ -7,11 +7,12 @@
 * Beachten Sie jedoch, dass diese Änderung nur das lokale Message-Objekt m betrifft und nicht das ursprüngliche Message-Objekt, das an die Methode übergeben wurde.
 *
 * Im main()-Methode wird ein neues Message-Objekt obj erstellt und die Methode print() aufgerufen, was zur Ausgabe von "Happy New Year" führt.
-*
-* Dann wird die Methode change(obj) aufgerufen. Hier wird obj, das an die Methode übergeben wird, an die lokale Variable m gebunden.
+*-----------------------------------------------------------------------------------------------------------------------
+* Dann wird die Methode change(obj) aufgerufen.
+* Hier wird obj, das an die Methode übergeben wird, an die lokale Variable m gebunden.
 * Innerhalb der Methode wird m auf ein neues Message-Objekt gesetzt und der Wert von msg auf "Happy Holidays!" geändert.
 * Da jedoch nur die lokale Variable m geändert wird, hat dies keine Auswirkungen auf das ursprüngliche obj.
-*
+*-----------------------------------------------------------------------------------------------------------------------
 * Schließlich wird die Methode print() erneut aufgerufen, und da obj unverändert bleibt, wird "Happy New Year" erneut ausgegeben.
 * */
 
@@ -21,21 +22,21 @@ class Message {
     String msg = "Happy New Year";
 
     public void print() {
-        System.out.println(msg);        // <-- was kommt raus?
+        System.out.println(msg);        // <-- hier kann nichts ausgegeben werden, weil es nicht die main methode ist!
     }
 }
 
 public class test41 {
     public static void change(Message m) {
-        m = new Message();
-        m.msg = "Happy Holidays!";
+        m = new Message();              // erstellt eine neue Message Methode
+        m.msg = "Happy Holidays!";      // ändert die lokale variable innerhalb dieser Message Methode
     }
 
 
     public static void main(String[] args) {
         Message obj = new Message();
-        obj.print();
-        change(obj);
+        obj.print();                    // gibt tatsächlich
+        change(obj);                    // change hat hier keine änderung auf die ausgabe!
         obj.print();
     }
 }
