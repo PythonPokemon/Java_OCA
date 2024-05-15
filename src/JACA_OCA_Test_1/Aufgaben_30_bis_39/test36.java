@@ -11,7 +11,7 @@
  * Die LocalDateTime.of()-Methode erwartet als Argumente: Jahr, Monat, Tag, Stunde, Minute und Sekunde.
  *-----------------------------------------------------------------------------------------------------------------------
  *
- * Da der Monat September 30 Tage hat, ist der 31. September ungültig.
+ * Da der Monat September 30 Tage hat, daher ist der 31.September ungültig.
  * Sie sollten also den Tag auf einen gültigen Wert ändern.
  * */
 
