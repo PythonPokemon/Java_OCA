@@ -1,21 +1,13 @@
-/*
-ist die aufgabe von Greetings
-
-Good Morning!
-Good Evening!
-------------------------------------------------------------------------------------------------------------------------
-
- * */
 package JAVA_OCA_Test_3.Aufgaben_50_bis_59;
 
-public class test51 {
+public class Greetings {
     String msg = null;
 
-    public test51() {
+    public Greetings() {
         this("Good Morning!");
     }
 
-    public test51(String str) {
+    public Greetings(String str) {
         msg = str;
     }
 
