@@ -60,6 +60,14 @@
 -   StringBuilder sb = new StringBuilder("Hello");
     sb.append(" World"); // Der ursprüngliche StringBuilder wird geändert
 
+#   einfachen Anführungszeichen (' ') <--- UNTERSCHIED ---> doppelten Anführungszeichen (" ")
+-   Einfache Anführungszeichen (' ') werden verwendet, um Zeichen (Char) zu definieren.
+    Zum Beispiel, '7' ist das Zeichen 7, dessen ASCII-Wert 55 ist.
+------------------------------------------------------------------------------------------------------------------------
+-   Doppelte Anführungszeichen (" ") werden verwendet, um Zeichenketten (String) zu definieren.
+    Durch die Verwendung von einfachen Anführungszeichen geben Sie also einen einzelnen Charakter an,
+    der in seinem ASCII-Wert verwendet wird, was zu den unterschiedlichen Ergebnissen im switch-Statement führt.
+
 #   Der Bytecode
 -   ist zu 100% Identisch, ob man den selbst schreibt oder per import einbindet,
     das sind lediglich abkürzungen für die Entwickler!
@@ -77,6 +85,17 @@
     mit einem wert initialisieren können.
     Hinter dieser Array-Initialisierung stecken zwei Operationen.
     Zunächst wird ein Array angelegt mit der richtigen größe und anschließend werden die entsprechenden Zellen, mit entsprechenden Werten belegt
+
+#   Lambda
+-   #Ausführlicher Lambda-Ausdruck: (Employee e) -> { return e.getSalary() >= 10000; }
+    Parameter sind explizit typisiert.
+    Der Körper ist in geschweifte Klammern eingeschlossen und verwendet eine return-Anweisung.
+    Nützlich für komplexere Logik oder wenn mehrere Anweisungen benötigt werden.
+------------------------------------------------------------------------------------------------------------------------
+-   #Verkürzter Lambda-Ausdruck: e -> e.getSalary() >= 10000
+    Parameter sind ohne Typdeklaration (Typinferenz).
+    Der Körper ist ein einzelner Ausdruck ohne geschweifte Klammern und return-Anweisung.
+    Ideal für einfache, kurze Ausdrücke.
 
 #   Heap-Speicher:
 -   Enthält alle Objekte und Klasseninstanzen.
