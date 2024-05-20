@@ -109,11 +109,6 @@
     * Jeder Thread hat seinen eigenen Stack.
     * Schnellere Zugriffszeit im Vergleich zum Heap-Speicher.
 
-#   Compiler
--   Der Compiler generiert Bytecode und der Bytecode initialisiert jedes Element.
--   Deswegen hat jede Variable entsprechend UNI-Code ihre Byte größe, mit der sie initialisiert wird und zwischengespeichert wird.
-    Bsp. short 4 byte oder long 8 byte pro string
-
 #   Var-args
 -   Darf nur ein einziges mal vorkommen und muss am ende der Parameterliste stehen.
 -   Für den Compiler sind Var-args, nicht anderes als Arrays.
@@ -121,6 +116,22 @@
     dass temporäre Array objekte aufgebaut werden, Abgerufen und gelöscht!
     In einer endlosschleife würde das massiven druck auf den Garbage Collector ausüben.
     Deswegen versucht man möglichst auf varargs in schleifen zu verzichten, damit es nicht zu performance einbussen kommt
+
+#   Compiler
+-   Der Compiler generiert Bytecode und der Bytecode initialisiert jedes Element.
+-   Deswegen hat jede Variable entsprechend UNI-Code ihre Byte größe, mit der sie initialisiert wird und zwischengespeichert wird.
+    Bsp. short 4 byte oder long 8 byte pro string
+
+
+#   Klassenhierarchie in Java
+-   Throwable ist die Oberklasse für alle Fehler und Ausnahmen.
+-   Error ist eine Unterklasse von Throwable und repräsentiert schwerwiegende Fehler.
+-   Exception ist eine andere Unterklasse von Throwable und repräsentiert Fehlerbedingungen,
+    die von einer Anwendung vernünftigerweise wiederhergestellt werden können.
+-   RuntimeException: RuntimeException ist eine Unterklasse von Exception und wird verwendet, um Ausnahmebedingungen anzuzeigen,
+    die während der normalen Ausführung des Programms auftreten und die vom Programm nicht explizit abgefangen werden müssen.
+-    Error ist jedoch keine Unterklasse von RuntimeException. Daher ist diese Antwort falsch.
+-   Exception: Exception ist eine direkte Unterklasse von Throwable, aber Error erbt nicht direkt von Exception, sondern direkt von Throwable.
 
 #   Exception
 -   Bedeutet, dass während der Ausführung eines Programms ein Fehler aufgetreten ist, der eine sogenannte "Exception" ausgelöst hat.
