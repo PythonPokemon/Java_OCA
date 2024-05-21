@@ -161,7 +161,7 @@
     die von einer Anwendung vernünftigerweise wiederhergestellt werden können.
 -   RuntimeException: RuntimeException ist eine Unterklasse von Exception und wird verwendet, um Ausnahmebedingungen anzuzeigen,
     die während der normalen Ausführung des Programms auftreten und die vom Programm nicht explizit abgefangen werden müssen.
--    Error ist jedoch keine Unterklasse von RuntimeException. Daher ist diese Antwort falsch.
+-   Error ist jedoch keine Unterklasse von RuntimeException. Daher ist diese Antwort falsch.
 -   Exception: Exception ist eine direkte Unterklasse von Throwable, aber Error erbt nicht direkt von Exception, sondern direkt von Throwable.
 
 #   Exception
