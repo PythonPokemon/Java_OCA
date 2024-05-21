@@ -40,8 +40,6 @@
     Konstruktoraufruf: super wird verwendet, um den Konstruktor der Basisklasse aufzurufen.
     Methoden/Felder: super kann auch verwendet werden, um auf Methoden und Felder der Basisklasse zuzugreifen,
     die von der Unterklasse überschrieben oder verdeckt werden.
-------------------------------------------------------------------------------------------------------------------------
-
 
 #   "Instanzvariable" <--- Fazit ---> "Attribut" | Bezeichner
 -   In Java bezieht sich der Begriff "Instanzvariable" oder "Attribut" tatsächlich auf die Variablen,

@@ -1,0 +1,172 @@
+--------------------------------------String Deklaration und Initialisierung--------------------------------------------
+1. Literale
+Erklärung:
+Ein String-Literal ist eine Folge von Zeichen, die in doppelten Anführungszeichen eingeschlossen ist.
+Literale werden im String-Pool gespeichert.
+
+Beispiel:
+String str1 = "Hello";
+String str2 = "World";
+------------------------------------------------------------------------------------------------------------------------
+Konstruktoren
+Erklärung:
+Man kann einen String auch mit dem new-Schlüsselwort und einem Konstruktor erstellen.
+Dies erzeugt ein neues String-Objekt im Heap-Speicher, auch wenn der gleiche Wert bereits im String-Pool existiert.
+
+Beispiel:
+String str3 = new String("Hello");
+------------------------------------------------------------------------------------------------------------------------
+2. String Pool
+Erklärung:
+Der String-Pool ist ein spezieller Speicherbereich, in dem die JVM String-Literale speichert.
+Wenn ein neues String-Literal erstellt wird, überprüft die JVM zuerst den String-Pool,
+um zu sehen, ob ein identischer String bereits existiert.
+Wenn ja, wird eine Referenz auf das vorhandene String-Objekt zurückgegeben.
+
+String str4 = "Hello";
+String str5 = "Hello";
+System.out.println(str4 == str5); // true, da beide auf dasselbe Objekt im String-Pool verweisen
+------------------------------------------------------------------------------------------------------------------------
+3. Immutabilität
+Erklärung:
+Strings in Java sind unveränderlich (immutable).
+Das bedeutet, dass einmal erstellte String-Objekte nicht geändert werden können.
+Wenn eine String-Änderung vorgenommen wird, wird ein neues String-Objekt erstellt.
+
+Beispiel:
+String str6 = "Hello";
+str6 = str6.concat(" World");
+System.out.println(str6); // "Hello World", ein neues String-Objekt wurde erstellt
+------------------------------------------------------------------------------------------------------------------------
+4. Wichtige Methoden der String-Klasse
+length()
+Erklärung:
+Gibt die Länge des Strings zurück.
+
+Beispiel:
+String str7 = "Hello";
+int length = str7.length(); // 5
+------------------------------------------------------------------------------------------------------------------------
+charAt(int index)
+Erklärung:
+Gibt das Zeichen an der angegebenen Position zurück.
+
+Beispiel:
+char ch = str7.charAt(1); // 'e'
+------------------------------------------------------------------------------------------------------------------------
+substring(int beginIndex, int endIndex)
+Erklärung:
+Gibt einen neuen String zurück, der eine Teilzeichenfolge des Original-Strings ist.
+
+Beispiel:
+String subStr = str7.substring(1, 4); // "ell"
+------------------------------------------------------------------------------------------------------------------------
+equals(Object anObject)
+Erklärung:
+Vergleicht den String mit einem anderen Objekt auf Gleichheit.
+
+Beispiel:
+String str8 = "Hello";
+boolean isEqual = str7.equals(str8); // true
+------------------------------------------------------------------------------------------------------------------------
+equalsIgnoreCase(String anotherString)
+Erklärung:
+Vergleicht zwei Strings unabhängig von der Groß-/Kleinschreibung.
+
+Beispiel:
+boolean isEqualIgnoreCase = str7.equalsIgnoreCase("hello"); // true
+------------------------------------------------------------------------------------------------------------------------
+compareTo(String anotherString)
+Erklärung:
+Vergleicht zwei Strings lexikographisch.
+
+Beispiel:
+int comparison = str7.compareTo(str8); // 0, weil beide Strings gleich sind
+------------------------------------------------------------------------------------------------------------------------
+toLowerCase() und toUpperCase()
+Erklärung:
+Konvertiert den String in Kleinbuchstaben bzw. Großbuchstaben.
+
+Beispiel:
+String lowerCase = str7.toLowerCase(); // "hello"
+String upperCase = str7.toUpperCase(); // "HELLO"
+------------------------------------------------------------------------------------------------------------------------
+trim()
+Erklärung:
+Entfernt führende und nachfolgende Leerzeichen.
+
+Beispiel:
+String str9 = "  Hello  ";
+String trimmedStr = str9.trim(); // "Hello"
+------------------------------------------------------------------------------------------------------------------------
+replace(char oldChar, char newChar)
+Erklärung:
+Ersetzt alle Vorkommen eines bestimmten Zeichens durch ein anderes Zeichen.
+
+Beispiel:
+String replacedStr = str7.replace('e', 'a'); // "Hallo"
+------------------------------------------------------------------------------------------------------------------------
+5. StringBuilder und StringBuffer
+StringBuilder
+Erklärung:
+StringBuilder ist eine Klasse, die für veränderliche (mutable) Strings verwendet wird.
+Sie ist nicht threadsicher, aber schneller als StringBuffer.
+
+Beispiel:
+StringBuilder sb = new StringBuilder("Hello");
+sb.append(" World");
+System.out.println(sb.toString()); // "Hello World"
+------------------------------------------------------------------------------------------------------------------------
+StringBuffer
+Erklärung:
+StringBuffer ist ähnlich wie StringBuilder, aber threadsicher, was bedeutet, dass sie synchronisiert ist
+und sicher in einem Multithreading-Kontext verwendet werden kann.
+
+Beispiel:
+StringBuffer sbf = new StringBuffer("Hello");
+sbf.append(" World");
+System.out.println(sbf.toString()); // "Hello World"
+------------------------------------------------------------------------------------------------------------------------
+Zusammenfassung
+Hier sind die Schlüsselkonzepte von Strings in Java chronologisch und mit Beispielen erklärt:
+
+Deklaration und Initialisierung:----------------------------------------------------------------------------------------
+
+Literale: String str1 = "Hello";
+Konstruktoren: String str3 = new String("Hello");
+String Pool:
+
+String str4 = "Hello";
+String str5 = "Hello";
+System.out.println(str4 == str5); // true
+
+Immutabilität:----------------------------------------------------------------------------------------------------------
+
+String str6 = "Hello";
+str6 = str6.concat(" World");
+System.out.println(str6); // "Hello World"
+
+Wichtige Methoden:------------------------------------------------------------------------------------------------------
+
+length():               int length = str7.length(); // 5
+charAt():               char ch = str7.charAt(1); // 'e'
+substring():            String subStr = str7.substring(1, 4); // "ell"
+equals():               boolean isEqual = str7.equals("Hello"); // true
+equalsIgnoreCase():     boolean isEqualIgnoreCase = str7.equalsIgnoreCase("hello"); // true
+compareTo():            int comparison = str7.compareTo("Hello"); // 0
+toLowerCase():          String lowerCase = str7.toLowerCase(); // "hello"
+toUpperCase():          String upperCase = str7.toUpperCase(); // "HELLO"
+trim():                 String trimmedStr = " Hello ".trim(); // "Hello"
+replace():              String replacedStr = str7.replace('e', 'a'); // "Hallo"
+
+StringBuilder und StringBuffer:-----------------------------------------------------------------------------------------
+
+StringBuilder: StringBuilder sb = new StringBuilder("Hello");
+sb.append(" World");
+System.out.println(sb.toString()); // "Hello World"
+
+StringBuffer: StringBuffer sbf = new StringBuffer("Hello");
+sbf.append(" World");
+System.out.println(sbf.toString()); // "Hello World"
+
+Diese Konzepte sind essenziell für die Java OCA-Prüfung und bieten ein grundlegendes Verständnis für den Umgang mit Strings in Java.
