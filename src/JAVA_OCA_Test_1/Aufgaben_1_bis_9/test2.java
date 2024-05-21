@@ -18,12 +18,12 @@ int[] arr3[] = new int[8][];
 
 Erstellt ein Array von Arrays mit 8 Zeilen, aber die Anzahl der Spalten ist noch nicht festgelegt.
 Gibt den Speicherort des Arrays arr3 aus.
-int[] arr1 = new int[8];
 
+int[] arr1 = new int[8];
 Erstellt ein eindimensionales Array mit 8 Elementen.
 Gibt den Speicherort des Arrays arr1 aus.
-int[][] arr2 = new int[8][8];
 
+int[][] arr2 = new int[8][8];
 Erstellt ein zweidimensionales Array mit 8 Zeilen(untereinander) und 8 Spalten(nebeneinander).
 Gibt den Speicherort des Arrays arr2 aus.
 *
