@@ -16,7 +16,7 @@ class Message {
 public class test23 {
     public static void change(Message m) { //Line n5
         m.msg = "Happy Holidays!"; //Line n6
-    }
+    }   // explizite beschwörung
 
     public static void main(String[] args) {
         Message obj = new Message(); //Line n1
