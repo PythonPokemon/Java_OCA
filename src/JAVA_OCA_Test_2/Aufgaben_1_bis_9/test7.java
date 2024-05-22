@@ -1,5 +1,5 @@
 /*
- * Es wird in einer Endlosschleife ablaufen
+ * Es wird in einer Endlosschleife ablaufen, weil kein break
  * */
 package JAVA_OCA_Test_2.Aufgaben_1_bis_9;
 

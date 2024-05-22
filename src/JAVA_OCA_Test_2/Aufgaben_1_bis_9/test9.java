@@ -7,8 +7,8 @@ import java.time.Period;
 
 public class test9 {
     public static void main(String [] args) {
-        LocalDate date = LocalDate.parse("2000-01-01");
+        LocalDate date = LocalDate.parse("2000-01-01"); // string wird in int umgewandelt
         Period period = Period.ofYears(-3000);
-        System.out.println(date.plus(period));
+        System.out.println(date.plus(period)); // Achtung wenn, hier minus wäre, dann (- - = +) Ergebnis--> 5000-01-01
     }
 }
