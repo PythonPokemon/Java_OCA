@@ -1,23 +1,24 @@
 /*
- * Die folgende Anweisung in einem Java-Programm wurde erfolgreich kompiliert:
+Following statement in a Java program compiles successfully:
 
 student.report(course);
 
-Was können Sie mit Sicherheit sagen?
-* report ist der Name der Methode = richtig
+What can you say for sure?
+------------------------------------------------------------------------------------------------------------------------
+Correct answer
+report is the method name
 
-Student ist der Klassenname
+student is the class name
 
-Student ist der Name der Referenzvariablen
+student is the reference variable name
 
-Kurs muss vom Typ String sein
+course must be of String type
 ------------------------------------------------------------------------------------------------------------------------
 *
 * Gesamterklärung
 Es empfiehlt sich, das erste Zeichen des Klassennamens in Großbuchstaben zu schreiben, aber es ist nicht zwingend erforderlich.
 
 Student kann entweder Klassenname oder Referenzvariablenname sein.
-
 
 
 Die Syntax zum Aufrufen der statischen Methode lautet: Class_Name.method_name(<arguments>); ODER reference_variable_name.method_name(<argumente>);

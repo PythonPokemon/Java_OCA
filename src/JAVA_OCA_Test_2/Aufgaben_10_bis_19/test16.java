@@ -17,31 +17,31 @@ public class test16 {
 
     }
 
-    // variante 1
-    public class Clock {
-        public String model;
-        private String getModel() { return model; }
-        private void setModel(String val) { model = val; }
-    }
+//    // variante 1
+//    public class Clock {
+//        public String model;
+//        private String getModel() { return model; }
+//        private void setModel(String val) { model = val; }
+//    }
+//
+//    // variante 2
+//    public class Clock2 {
+//        public String model;
+//    }
 
-    // variante 2
-    public class Clock2 {
-        public String model;
-    }
-
-    // variante 3
+    // variante 3 | Richtig
     public class Clock3 {
         private String model;
         public String getModel() { return model; }
         public void setModel(String val) { model = val; }
     }
 
-    // variante 4
-    public class Clock4 {
-        public String model;
-        public String getModel() { return model; }
-        public void setModel(String val) { model = val; }
-    }
+//    // variante 4
+//    public class Clock4 {
+//        public String model;
+//        public String getModel() { return model; }
+//        public void setModel(String val) { model = val; }
+//    }
 
 }
 

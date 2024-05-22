@@ -15,7 +15,7 @@ A a = new A();
 * Gesamterklärung
 B b = neues A(); -> untergeordnete Klassenreferenz kann nicht auf das übergeordnete Klassenobjekt verweisen. Dies führt zu einem Kompilierungsfehler.
 
-A a = neu B(); -> übergeordnete Klassenreferenz kann auf das untergeordnete Klassenobjekt verweisen. Das ist Polymorphismus.
+A a = new B(); -> übergeordnete Klassenreferenz kann auf das untergeordnete Klassenobjekt verweisen. Das ist Polymorphismus.
 
 B a = neu B(); -> Überhaupt keine Probleme.
 

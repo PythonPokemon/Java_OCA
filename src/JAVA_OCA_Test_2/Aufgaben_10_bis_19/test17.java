@@ -25,21 +25,28 @@ Fügen Sie den protected-Modifikator zur log()-Methode der LogHelper-Klasse hinz
 * Gesamterklärung
 Lassen Sie uns zunächst das Problem herausfinden:
 
-Da Instanzvariablen durch Unterklassen ausgeblendet und nicht überschrieben werden, gelten überschreibende Regeln nicht für die Instanzvariablen. Es gibt keine Probleme mit den Variablen 'num' und 'operation'.
+Da Instanzvariablen durch Unterklassen ausgeblendet und nicht überschrieben werden,
+gelten überschreibende Regeln nicht für die Instanzvariablen.
+Es gibt keine Probleme mit den Variablen 'num' und 'operation'.
 
 Die log()-Methode wird in beiden Klassen mit dem Standardmodifikator deklariert, daher gibt es auch kein Problem mit der log()-Methode.
 
-Die abstrakte Methode help() wird mit dem geschützten Modifikator in der Helper-Klasse und in der LogHelper-Klasse deklariert, sie wird mit dem Standardmodifikator überschrieben, was zu einem Kompilierungsfehler führt. Daher finden Sie folgende Lösungen, um dieses Problem zu beheben:
+Die abstrakte Methode help() wird mit dem geschützten Modifikator in der Helper-Klasse und in der LogHelper-Klasse deklariert,
+sie wird mit dem Standardmodifikator überschrieben, was zu einem Kompilierungsfehler führt.
+Daher finden Sie folgende Lösungen, um dieses Problem zu beheben:
 
-1. Entfernen Sie den geschützten Modifikator aus der help()-Methode der Helper-Klasse: Sowohl die überschriebene als auch die überschreibende Methode haben denselben Standardmodifikator, der zulässig ist
+1. Entfernen Sie den geschützten Modifikator aus der help()-Methode der Helper-Klasse:
+Sowohl die überschriebene als auch die überschreibende Methode haben denselben Standardmodifikator, der zulässig ist
 
 ODER
 
-2. Fügen Sie den geschützten Modifikator zur help()-Methode der LogHelper-Klasse hinzu: Sowohl die überschriebene als auch die überschreibende Methode haben denselben geschützten Modifikator, der zulässig ist
+2. Fügen Sie den geschützten Modifikator zur help()-Methode der LogHelper-Klasse hinzu:
+Sowohl die überschriebene als auch die überschreibende Methode haben denselben geschützten Modifikator, der zulässig ist
 
 ODER
 
-3. Fügen Sie den öffentlichen Modifikator zur help()-Methode der LogHelper-Klasse hinzu: Die überschriebene Methode hat einen geschützten Modifikator und die überschreibende Methode hat einen öffentlichen Modifikator, der zulässig ist
+3. Fügen Sie den öffentlichen Modifikator zur help()-Methode der LogHelper-Klasse hinzu:
+Die überschriebene Methode hat einen geschützten Modifikator und die überschreibende Methode hat einen öffentlichen Modifikator, der zulässig ist
  * */
 
 package JAVA_OCA_Test_2.Aufgaben_10_bis_19;
