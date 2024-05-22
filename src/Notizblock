@@ -14,6 +14,30 @@
 -   Ein Konstruktor ist eine spezielle Methode einer Klasse, die aufgerufen wird, wenn eine Instanz (ein Objekt) dieser Klasse erstellt wird.
     Konstruktoren haben den gleichen Namen wie die Klasse und keinen Rückgabewert (nicht einmal void).
 
+#   Literale
+-   Ein Literal ist ein fester Wert, der direkt im Code geschrieben wird.
+    In Java sind String-Literale Textwerte, die in doppelte Anführungszeichen gesetzt werden.
+-   Zum Beispiel:
+    Hier ist "Hello, World!" ein String-Literal.
+    String-Literale werden zur Kompilierzeit erkannt und im String-Pool gespeichert.
+
+#   Ausdrücke
+-   Ein Ausdruck kann eine Kombination aus Variablen, Literalen, Operatoren und Methodenaufrufen sein, die zur Laufzeit ausgewertet werden.
+    In Java kann ein Ausdruck zur Verkettung von Strings verwendet werden.
+-   Zum Beispiel:
+    String str1 = "Hello, ";
+    String str2 = "World!";
+    String result = str1 + str2;
+    Hier sind str1 und str2 Variablen, die auf String-Literale verweisen, und str1 + str2 ist ein Ausdruck,
+    der zur Laufzeit ausgewertet wird. Die Verkettung der Strings str1 und str2 geschieht zur Laufzeit.
+
+    java
+    Code kopieren
+    String str1 = "Hello, ";
+    String str2 = "World!";
+    String result = str1 + str2;
+    Hier sind str1 und str2 Variablen, die auf String-Literale verweisen, und str1 + str2 ist ein Ausdruck, der zur Laufzeit ausgewertet wird. Die Verkettung der Strings str1 und str2 geschieht zur Laufzeit.
+
 -   Hauptpunkte:
     Name: Der Konstruktor hat den gleichen Namen wie die Klasse.
     Kein Rückgabewert: Konstruktoren haben keinen Rückgabewert.

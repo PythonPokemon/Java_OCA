@@ -31,7 +31,7 @@ public class test5 {
         list.add(new Integer(27));
         list.add(new Integer(27));
 
-        System.out.println(list.get(0) == list.get(1));
-        System.out.println(list.get(2) == list.get(3));
+        System.out.println(list.get(0) == list.get(1));     // vergleicht zwei instanzvariablen = true
+        System.out.println(list.get(2) == list.get(3));     // vergleicht zwei unterschiedliche objekte = false
     }
 }

@@ -1,0 +1,142 @@
+
+In der Java Oracle Certified Associate (OCA) Prüfung sollten Sie verschiedene Arten von Literalen kennen.
+Literale sind feste Werte, die direkt im Code geschrieben werden.
+Hier sind die wichtigsten Typen von Literalen, die Sie für die OCA-Prüfung kennen sollten:
+
+------------------------------------------------------------------------------------------------------------------------
+1. Ganzzahl-Literale (Integer Literals)
+Diese sind Zahlen ohne Dezimalpunkt.
+
+Dezimal (Basis 10): Zahlen, die im üblichen Dezimalsystem geschrieben sind.
+int decimal = 123;
+
+Oktal (Basis 8): Zahlen, die mit einer führenden Null (0) geschrieben werden.
+int octal = 0173;  // entspricht 123 in Dezimal
+
+Hexadezimal (Basis 16): Zahlen, die mit 0x oder 0X beginnen.
+int hex = 0x7B;  // entspricht 123 in Dezimal
+
+Binär (Basis 2): Zahlen, die mit 0b oder 0B beginnen.
+int binary = 0b1111011;  // entspricht 123 in Dezimal
+------------------------------------------------------------------------------------------------------------------------
+2. Gleitkomma-Literale (Floating-Point Literals)
+Diese sind Zahlen mit Dezimalpunkten oder im wissenschaftlichen Notationsformat.
+
+Dezimal (float und double):
+double decimalDouble = 123.45;
+float decimalFloat = 123.45f;  // Suffix 'f' oder 'F' für float
+
+Wissenschaftliche Notation:
+double scientificDouble = 1.2345e2;  // entspricht 123.45
+------------------------------------------------------------------------------------------------------------------------
+3. Zeichen-Literale (Character Literals)
+Einzelne Zeichen, eingeschlossen in einfache Anführungszeichen (').
+
+Einzelnes Zeichen:
+char letter = 'A';
+
+Escape-Sequenzen:
+char newLine = '\n';  // Neue Zeile
+char tab = '\t';      // Tabulator
+char singleQuote = '\'';  // Einzelnes Anführungszeichen
+char backslash = '\\';  // Backslash
+
+Unicode-Escape-Sequenzen:
+char unicodeChar = '\u0041';  // entspricht 'A'
+------------------------------------------------------------------------------------------------------------------------
+4. Zeichenketten-Literale (String Literals)
+Eine Folge von Zeichen, eingeschlossen in doppelte Anführungszeichen (").
+
+
+String greeting = "Hello, World!";
+String escapeExample = "Line 1\nLine 2";
+String unicodeExample = "A\u0041";  // "A" gefolgt von 'A'
+------------------------------------------------------------------------------------------------------------------------
+5. Boolean-Literale
+Die zwei möglichen Wahrheitswerte.
+
+boolean isTrue = true;
+boolean isFalse = false;
+------------------------------------------------------------------------------------------------------------------------
+6. Null-Literal
+Das spezielle Literal, das auf keine Objektinstanz verweist.
+
+String nullString = null;
+------------------------------------------Beispiel mit allen Literalen:-------------------------------------------------
+
+public class LiteralsExample {
+    public static void main(String[] args) {
+        // Ganzzahl-Literale
+        int decimal = 123;
+        int octal = 0173;
+        int hex = 0x7B;
+        int binary = 0b1111011;
+
+        // Gleitkomma-Literale
+        double decimalDouble = 123.45;
+        float decimalFloat = 123.45f;
+        double scientificDouble = 1.2345e2;
+
+        // Zeichen-Literale
+        char letter = 'A';
+        char newLine = '\n';
+        char tab = '\t';
+        char singleQuote = '\'';
+        char backslash = '\\';
+        char unicodeChar = '\u0041';
+
+        // Zeichenketten-Literale
+        String greeting = "Hello, World!";
+        String escapeExample = "Line 1\nLine 2";
+        String unicodeExample = "A\u0041";
+
+        // Boolean-Literale
+        boolean isTrue = true;
+        boolean isFalse = false;
+
+        // Null-Literal
+        String nullString = null;
+
+        // Ausgabe zur Überprüfung
+        System.out.println("Ganzzahl-Literale:");
+        System.out.println("Decimal: " + decimal);
+        System.out.println("Octal: " + octal);
+        System.out.println("Hex: " + hex);
+        System.out.println("Binary: " + binary);
+
+        System.out.println("\nGleitkomma-Literale:");
+        System.out.println("Decimal Double: " + decimalDouble);
+        System.out.println("Decimal Float: " + decimalFloat);
+        System.out.println("Scientific Double: " + scientificDouble);
+
+        System.out.println("\nZeichen-Literale:");
+        System.out.println("Letter: " + letter);
+        System.out.println("New Line: " + newLine);
+        System.out.println("Tab: " + tab);
+        System.out.println("Single Quote: " + singleQuote);
+        System.out.println("Backslash: " + backslash);
+        System.out.println("Unicode Char: " + unicodeChar);
+
+        System.out.println("\nZeichenketten-Literale:");
+        System.out.println("Greeting: " + greeting);
+        System.out.println("Escape Example: " + escapeExample);
+        System.out.println("Unicode Example: " + unicodeExample);
+
+        System.out.println("\nBoolean-Literale:");
+        System.out.println("isTrue: " + isTrue);
+        System.out.println("isFalse: " + isFalse);
+
+        System.out.println("\nNull-Literal:");
+        System.out.println("Null String: " + nullString);
+    }
+}
+------------------------------------------------------------------------------------------------------------------------
+Zusammenfassung:
+Ganzzahl-Literale: Dezimal, Oktal, Hexadezimal, Binär
+Gleitkomma-Literale: Dezimal, Wissenschaftliche Notation
+Zeichen-Literale: Einzelne Zeichen, Escape-Sequenzen, Unicode-Escape-Sequenzen
+Zeichenketten-Literale: Zeichenfolgen in doppelten Anführungszeichen
+Boolean-Literale: true und false
+Null-Literal: null
+
+Diese Literale sollten Sie für die Java OCA-Prüfung kennen und verstehen.

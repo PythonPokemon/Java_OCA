@@ -2,10 +2,14 @@
  * Gesamterklärung
 Bitte beachten Sie, dass Zeichenfolgen, die zur Kompilierzeit durch Verkettung berechnet werden, während der Ausführung vom Zeichenfolgenpool referenziert werden.
 Kompilierzeit Die Verkettung von Strings tritt auf, wenn beide Operanden Kompilierzeitkonstanten sind, z. B. Literal, endgültige Variable usw.
-Während Zeichenfolgen, die durch Verkettung zur Laufzeit berechnet werden (wenn der resultierende Ausdruck kein konstanter Ausdruck ist), neu erstellt werden und daher unterschiedlich sind.
-fName ist eine konstante Variable und lName ist eine nicht konstante Variable.
+*
+Während Zeichenfolgen, die durch Verkettung zur Laufzeit berechnet werden (wenn der resultierende Ausdruck kein konstanter Ausdruck ist),
+* neu erstellt werden und daher unterschiedlich sind.
+*
+-------------------fName ist eine konstante Variable und lName ist eine nicht konstante Variable.-----------------------
 'fName + lName' ist kein konstanter Ausdruck und daher wird der Ausdruck zur Laufzeit berechnet und
 das resultierende String-Objekt "JamesGosling" wird nicht vom String Pool referenziert.
+* ----------------------------------------------------------------------------------------------------------------------
 Da fName eine konstante Variable ist und "Gosling" ein String-Literal ist, ist der Ausdruck 'fName + "Gosling"' ein konstanter Ausdruck,
 daher wird der Ausdruck zur Kompilierzeit berechnet und ergibt das String-Literal "JamesGosling".
 *
@@ -26,12 +30,12 @@ package JAVA_OCA_Test_2.Aufgaben_1_bis_9;
 
 public class test6 {
     public static void main(String[] args) {
-        final String fName = "James";
-        String lName = "Gosling";
-        String name1 = fName + lName;
+        final String fName = "James";       // ist eine konstante variable weil sie final ist
+        String lName = "Gosling";           // nicht konstante variable | wenn es auch final deklariert sein würde | dann wäre der output true:true
+        String name1 = fName + lName;       // kein konstanter ausdruck, wird nicht im Stringpool referenziert, muss zur laufzeit neu berechnet werden.
         String name2 = fName + "Gosling";
         String name3 = "James" + "Gosling";
-        System.out.println(name1 == name2);
-        System.out.println(name2 == name3);
+        System.out.println(name1 == name2); // false, weil name1 = auf 2 bezeichner zurückgreift die nicht im konstanten Stringpool sind
+        System.out.println(name2 == name3); // true
     }
 }
