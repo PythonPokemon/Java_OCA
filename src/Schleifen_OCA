@@ -1,0 +1,97 @@
+1. for-Schleife:
+Aufgabe:
+Die for-Schleife wird verwendet, um eine bestimmte Anzahl von Iterationen durchzuführen, wenn Sie den Startwert,
+die Abbruchbedingung und die Inkrementierung kennen oder definieren können.
+
+Merkmale:
+Sie besteht aus drei Teilen in den Klammern: Initialisierung, Bedingung und Inkrementierung.
+
+Initialisierung: Hier wird eine Variable initialisiert und der Startwert festgelegt.
+Bedingung: Hier wird überprüft, ob die Schleife weiter ausgeführt werden soll.
+Inkrementierung: Hier wird die Variable aktualisiert, um den Fortschritt der Schleife zu steuern.
+Der Initialisierungsausdruck wird zuerst einmalig ausgeführt, dann wird die Bedingung überprüft.
+Wenn die Bedingung true ist, wird der Schleifenkörper ausgeführt.
+Dann wird der Inkrementierungsausdruck ausgeführt, und der Schleifenkörper wird erneut ausgeführt,
+bis die Bedingung false ist.
+------------------------------------------------------------------------------------------------------------------------
+for-Schleife: Syntax:
+
+for (int i = 1; i <= 3; i++) {
+    System.out.println("Wert von i: " + i);
+}
+------------------------------------------------------------------------------------------------------------------------
+------------------------------------------------------------------------------------------------------------------------
+------------------------------------------------------------------------------------------------------------------------
+------------------------------------------------------------------------------------------------------------------------
+2. while-Schleife:
+Aufgabe:
+Die while-Schleife wird verwendet, um eine Anweisung oder einen Block solange auszuführen, wie eine Bedingung true ist.
+
+Merkmale:
+Sie hat eine einfache Syntax und besteht nur aus einer Bedingung.
+Die Bedingung wird am Anfang geprüft. Wenn sie true ist, wird der Schleifenkörper ausgeführt.
+Danach wird die Bedingung erneut geprüft.
+Wenn die Bedingung zu Beginn false ist, wird der Schleifenkörper niemals ausgeführt.
+
+Es ist möglich, dass die Bedingung nie false wird, was zu einer Endlosschleife führt,
+wenn die Bedingung nicht innerhalb der Schleife geändert wird.
+------------------------------------------------------------------------------------------------------------------------
+while-Schleife: Syntax:
+
+int j = 1;
+while (j <= 3) {
+    System.out.println("Wert von j: " + j);
+    j++;
+}
+------------------------------------------------------------------------------------------------------------------------
+------------------------------------------------------------------------------------------------------------------------
+------------------------------------------------------------------------------------------------------------------------
+------------------------------------------------------------------------------------------------------------------------
+3. do-while-Schleife:
+Aufgabe:
+Die do-while-Schleife ist ähnlich wie die while-Schleife, mit dem Unterschied,
+dass die Bedingung am Ende der Schleife überprüft wird.
+Dies garantiert, dass der Schleifenkörper mindestens einmal ausgeführt wird.
+
+Merkmale:
+Die Schleifenbedingung steht am Ende der Schleife.
+Der Schleifenkörper wird mindestens einmal ausgeführt, bevor die Bedingung überprüft wird.
+Wenn die Bedingung zu Beginn false ist, wird der Schleifenkörper mindestens einmal ausgeführt,
+bevor die Bedingung überhaupt geprüft wird.
+------------------------------------------------------------------------------------------------------------------------
+3. do-while-Schleife: Syntax:
+
+int k = 1;
+do {
+    System.out.println("Wert von k: " + k);
+    k++;
+} while (k <= 3);
+------------------------------------------------------------------------------------------------------------------------
+------------------------------------------------------------------------------------------------------------------------
+------------------------------------------------------------------------------------------------------------------------
+------------------------------------------------------------------------------------------------------------------------
+4. for-each-Schleife:
+Aufgabe:
+Die for-each-Schleife (auch als erweiterte for-Schleife bezeichnet)
+ermöglicht das einfache Durchlaufen aller Elemente einer Sammlung, wie z. B. Arrays oder Listen.
+
+Merkmale:
+Sie ist besonders nützlich für Arrays und Collections.
+Sie hat eine einfachere Syntax als die normale for-Schleife.
+Sie benötigt keine explizite Initialisierung oder Inkrementierung einer Schleifenvariable.
+Sie ist besonders gut geeignet,
+wenn Sie den Inhalt einer Sammlung durchlaufen und jedes Element einzeln verarbeiten möchten.
+------------------------------------------------------------------------------------------------------------------------
+4. for-each-Schleife: Syntax:
+
+int[] array = {1, 2, 3};
+for (int num : array) {
+    System.out.println("Wert von num: " + num);
+}
+------------------------------------------------------------------------------------------------------------------------
+
+
+
+
+
+
