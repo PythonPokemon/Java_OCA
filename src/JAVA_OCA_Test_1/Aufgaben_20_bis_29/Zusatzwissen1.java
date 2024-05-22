@@ -1,6 +1,6 @@
 /*
 * Variante 1 | vergleich von Literalen im String-Konstantenpool.
-* String-Konstantenpool: In Java werden String-Literale im sogenannten String-Konstantenpool gespeichert.
+* String-Konstantenpool: In Java werden String-Literale_OCA im sogenannten String-Konstantenpool gespeichert.
 * Wenn ein String-Literal erstellt wird, wird es in den Pool gelegt und wenn ein anderer String mit demselben Wert erstellt wird, wird derselbe Referenzwert zurückgegeben.
 * Kompilierungszeit: s2 = "OCAJP" + "" wird vom Compiler als s2 = "OCAJP" optimiert.
 * Das bedeutet, dass s1 und s2 auf dieselbe String-Instanz im String-Pool verweisen.

@@ -1,7 +1,7 @@
 /*
 * In Java sind die Case-Konstanten im Switch-Statement normalerweise Ganzzahlen, Enums oder Zeichen.
 * Der Datentyp des Ausdrucks, der dem Switch übergeben wird, muss kompatibel sein mit dem Datentyp der Case-Konstanten.
-* In Ihrem Fall ist var vom Typ byte, aber die Case-Konstanten sind Ganzzahlen-Literale, die standardmäßig als int interpretiert werden.
+* In Ihrem Fall ist var vom Typ byte, aber die Case-Konstanten sind Ganzzahlen-Literale_OCA, die standardmäßig als int interpretiert werden.
 *
 * Das bedeutet, dass der Compiler einen Fehler meldet, weil byte und int inkompatible Typen sind,
 * und es besteht die Möglichkeit, dass der Wert von var nicht mit einem der Case-Werte übereinstimmt,

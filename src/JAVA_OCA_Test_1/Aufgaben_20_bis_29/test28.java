@@ -1,6 +1,6 @@
 /*
-* In Java sind Zeichenketten-Literale, die bei der Kompilierung bekannt sind, intern im sogenannten "String-Pool" gespeichert.
-* Das bedeutet, wenn Sie zwei Zeichenketten-Literale mit demselben Inhalt erstellen, zeigt sowohl s1 als auch s2 auf dasselbe Objekt im Speicher.
+* In Java sind Zeichenketten-Literale_OCA, die bei der Kompilierung bekannt sind, intern im sogenannten "String-Pool" gespeichert.
+* Das bedeutet, wenn Sie zwei Zeichenketten-Literale_OCA mit demselben Inhalt erstellen, zeigt sowohl s1 als auch s2 auf dasselbe Objekt im Speicher.
 *
 * In diesem Beispiel sind s1 und s2 tatsächlich gleich, da s2 durch die Verkettung des Zeichenketten-Literals "OCAJP" mit einer leeren Zeichenkette "" erstellt wurde.
 * Diese Verkettung führt dazu, dass der Compiler den Ausdruck "OCAJP" + "" zu "OCAJP" vereinfacht, was identisch mit dem Inhalt von s1 ist.
