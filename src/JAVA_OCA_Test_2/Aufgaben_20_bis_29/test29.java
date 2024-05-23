@@ -6,7 +6,8 @@ switch kann primitive Typen akzeptieren: byte, short, int, char; Wrapper-Typen: 
 ------------------------------------------------------------------------------------------------------------------------
 -----In diesem Fall sind long und double ungültige Werte, die im switch-Ausdruck übergeben werden sollen.--------------
 
-char verwendet 16 Bit (2 Bytes) und sein Bereich reicht von 0 bis 65535 (kein vorzeichenbehaftetes Bit reserviert), sodass es problemlos den Wert 10 speichern kann.
+char verwendet 16 Bit (2 Bytes) und sein Bereich reicht von 0 bis 65535 (kein vorzeichenbehaftetes Bit reserviert),
+sodass es problemlos den Wert 10 speichern kann.
  * */
 
 package JAVA_OCA_Test_2.Aufgaben_20_bis_29;
