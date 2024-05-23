@@ -250,3 +250,23 @@
     Daher ist die richtige Antwort swiftCode.substring(4, 6);.
     Diese Methode extrahiert ein Teilzeichenfolge, beginnend mit dem Zeichen an der Position 4 (einschließlich)
     und endend mit dem Zeichen an der Position 6 (ausschließlich), was die Positionen für den Ländercode abdeckt.
+
+#   java.util.function.Predicate
+-   ist ein funktionales Interface in Java, das eine Operation darstellt, die einen Wert akzeptiert
+    und eine boolesche Aussage zurückgibt.
+    Es hat eine einzige abstrakte Methode namens test(Object o), die den Wert überprüft und true oder false zurückgibt,
+    je nachdem, ob die Bedingung erfüllt ist oder nicht.
+
+-   Das Predicate-Interface wird häufig verwendet, um Filterbedingungen zu definieren oder
+    Elemente einer Sammlung zu überprüfen. Es kann in vielen verschiedenen Kontexten verwendet werden,
+    z. B. beim Filtern von Listen, beim Validieren von Eingaben oder beim Implementieren von Bedingungen in Streams.
+
+#   p -> eine verkürzte Syntax für eine Lambda-Ausdrucksdefinition
+    Ein Lambda-Ausdruck ist eine anonyme Funktion,
+    die als Argument übergeben oder in einer Variablen gespeichert werden kann.
+
+-   Die verkürzte Syntax besteht aus den folgenden Teilen:
+
+    p: Der Parameter, der an die Funktion übergeben wird.
+    ->: Der Pfeil-Operator, der den Parameter vom Körper des Lambda-Ausdrucks trennt.
+    Der Körper des Lambda-Ausdrucks, der die Operation oder Berechnung darstellt.
