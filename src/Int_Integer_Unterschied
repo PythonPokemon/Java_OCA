@@ -1,0 +1,58 @@
+int<--- Unterschied--->Integer
+------------------------------------------------------------------------------------------------------------------------
+int ist ein primitiver Datentyp in Java, der für die Speicherung von ganzen Zahlen ohne Dezimalstellen verwendet wird.
+Es ist Teil der Java-Sprache und nicht Teil des Java-Klassenbibliothek (Java Class Library).
+
+Integer hingegen ist eine Wrapper-Klasse in Java, die den primitiven Datentyp int in ein Objekt kapselt.
+Sie gehört zur Java-Klassenbibliothek und erweitert die Funktionalität des primitiven int,
+indem sie Methoden und Konstruktoren für die Arbeit mit ganzen Zahlen als Objekte bereitstellt.
+------------------------------------------------------------------------------------------------------------------------
+Hier ist ein kurzer Vergleich:
+
+int:
+Primitiver Datentyp.
+Direkte Speicherung von ganzen Zahlen.
+Kann nicht null sein.
+Verwendet für arithmetische Operationen und Variablen mit ganzen Zahlen.
+------------------------------------------------------------------------------------------------------------------------
+Integer:
+Wrapper-Klasse.
+Kapselt einen int in ein Objekt.
+Kann null sein.
+Bietet zusätzliche Methoden und Funktionen für die Arbeit mit ganzen Zahlen als Objekten,
+wie z.B. Konvertierung, Vergleich usw.
+------------------------------------------------------------------------------------------------------------------------
+-----------------------------------------------------WICHTIG------------------------------------------------------------
+Fast jeder primitive Datentyp in Java hat eine entsprechende Wrapper-Klasse,
+die in der Java-Klassenbibliothek bereitgestellt wird.
+
+In Java folgt die Benennung von Klassen und Typen üblicherweise der sogenannten CamelCase-Konvention,
+bei der der Name aus mehreren Wörtern besteht und jedes Wort außer dem ersten mit einem Großbuchstaben beginnt.
+In den meisten Fällen haben die Wrapper-Klassen Namen, die dem Namen des zugehörigen primitiven Datentyps ähneln,
+jedoch mit einem großgeschriebenen ersten Buchstaben.
+
+Hier sind die primitiven Datentypen und ihre entsprechenden Wrapper-Klassen:
+
+byte - Byte
+short - Short
+int - Integer
+long - Long
+float - Float
+double - Double
+char - Character
+boolean - Boolean
+
+Diese Wrapper-Klassen dienen dazu, die entsprechenden primitiven Datentypen in Objekte zu kapseln
+und erweiterte Funktionalität bereitzustellen.
+Sie bieten beispielsweise Methoden für die Konvertierung von Zeichenketten in primitive Werte,
+Vergleiche zwischen Objekten usw.
+
+Die Wrapper-Klassen sind besonders nützlich, wenn man mit Java-Klassen arbeitet, die nur Objekte akzeptieren
+(z.B. Java-Kollektionen wie ArrayList, HashMap usw.), da sie es ermöglichen,
+primitive Werte in Objekte umzuwandeln und umgekehrt (Autoboxing und Unboxing).
+
+
+
+
+
+

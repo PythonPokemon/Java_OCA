@@ -40,24 +40,24 @@ package JAVA_OCA_Test_2.Aufgaben_20_bis_29;
 //    }
 //}
 //----------------------------------------------------------------------------------------------------------------------
-//public class test28 {
-//    public static final int SCORE = 70;
-//
-//    public static void main(String[] args) {
-//        int score = 60;
-//
-//        switch (score) {
-//            default:
-//                System.out.println("Not a valid score");
-//                break;
-//            case 0: // Dummy case to ensure a valid constant case, which won't be used
-//                break;
-//            case SCORE - 10:
-//                System.out.println("Failed");
-//                break;
-//            case SCORE:
-//                System.out.println("Passed");
-//                break;
-//        }
-//    }
-//}
+public class test28 {
+    public static final int SCORE = 70;
+
+    public static void main(String[] args) {
+        int score = 60;
+
+        switch (score) {
+            default:
+                System.out.println("Not a valid score");
+                break;
+            case 0: // Dummy case to ensure a valid constant case, which won't be used
+                break;
+            case SCORE - 10:
+                System.out.println("Failed");
+                break;
+            case SCORE:
+                System.out.println("Passed");
+                break;
+        }
+    }
+}

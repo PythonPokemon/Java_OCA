@@ -13,7 +13,7 @@ test5
 test6
  * */
 
-package Testordner;
+package Good_To_Know_Goody;
 
 import java.util.ArrayList;
 import java.util.List;
