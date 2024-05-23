@@ -10,7 +10,7 @@ import java.util.List;
 public class test38 {
     public static void main(String[] args) {
         List<LocalDate> dates = new ArrayList<>();
-        dates.add(LocalDate.parse("2018-7-11"));
+        dates.add(LocalDate.parse("2018-7-11"));    // Fehler LocalDate Format YYYY-MM-DD ---> 07 | "2018-7-11"
         dates.add(LocalDate.parse("1919-10-25"));
         dates.add(LocalDate.of(2020, 4, 8));
         dates.add(LocalDate.of(1980, Month.DECEMBER, 31));

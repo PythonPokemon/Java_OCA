@@ -1,5 +1,11 @@
 /*
- * class Test gives compilation error
+Gesamterklärung
+FileNotFoundException erweitert IOException, und daher sollte der catch-Block von FileNotFoundException
+vor dem catch-Block von IOException angezeigt werden.
+
+Daher verursacht der Klassentest einen Kompilierungsfehler.
+
+class Test gives compilation error
  * */
 package JAVA_OCA_Test_2.Aufgaben_30_bis_39;
 import java.io.FileNotFoundException;
