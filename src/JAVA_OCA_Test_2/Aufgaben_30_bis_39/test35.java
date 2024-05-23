@@ -1,5 +1,10 @@
 /*
- * James Lucy Bill
+Gesamterklärung
+process(List, Predicate) druckt alle Datensätze, die den Test des Prädikats bestehen, und der Test besteht darin,
+die Datensätze mit einem Alter von mehr als 20 Jahren zu verarbeiten.
+
+Es gibt 3 Datensätze mit einem Alter > 20 Jahren, die im Anzeigenauftrag gedruckt werden.
+HINWEIS: Die Methode toString() gibt nur den Namen zurück.
  * */
 package JAVA_OCA_Test_2.Aufgaben_30_bis_39;
 import java.util.ArrayList;

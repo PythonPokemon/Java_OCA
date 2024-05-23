@@ -1,5 +1,9 @@
 /*
- * false:false:false
+Gesamterklärung
+Die Methoden "parse" und "of" erstellen neue Instanzen, sodass Sie in diesem Fall 4 verschiedene Instanzen
+von LocalDate erhalten, die an 4 verschiedenen Speicheradressen gespeichert sind.
+
+false:false:false
  * */
 package JAVA_OCA_Test_2.Aufgaben_30_bis_39;
 import java.time.LocalDate;
