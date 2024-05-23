@@ -1,0 +1,100 @@
+
+Konstanten sind feste Werte, die während der Laufzeit eines Programms nicht geändert werden können. In Java werden Konstanten normalerweise mit dem Schlüsselwort final deklariert. Konstanten können verschiedene Datentypen haben, wie zum Beispiel int, double, char, String usw.
+
+Eigenschaften von Konstanten
+Unveränderlichkeit: Sobald einer Konstanten ein Wert zugewiesen wurde, kann dieser Wert nicht mehr geändert werden.
+Lesbarkeit: Konstanten machen den Code lesbarer, da sie oft als aussagekräftige Namen verwendet werden, die den Wert beschreiben, den sie repräsentieren.
+Wiederverwendbarkeit: Konstanten können an mehreren Stellen im Code verwendet werden, was den Code konsistenter und wartbarer macht.
+Deklaration und Initialisierung von Konstanten in Java
+In Java können Konstanten auf verschiedene Arten deklariert werden:
+
+1. final Variablen
+Eine final Variable kann nur einmal initialisiert werden.
+Nach der Initialisierung kann ihr Wert nicht mehr geändert werden.
+
+
+public class ConstantsExample {
+    public static void main(String[] args) {
+        final int MAX_SCORE = 100;
+        System.out.println("Max Score: " + MAX_SCORE);
+
+        // MAX_SCORE = 200; // Dies führt zu einem Compilerfehler
+    }
+}
+------------------------------------------------------------------------------------------------------------------------
+2. static final Variablen
+static final Variablen werden oft als Konstanten verwendet.
+Sie gehören zur Klasse und nicht zu einer bestimmten Instanz der Klasse.
+Sie werden oft mit public deklariert, damit sie außerhalb der Klasse zugänglich sind.
+
+
+public class MathConstants {
+    public static final double PI = 3.14159;
+
+    public static void main(String[] args) {
+        System.out.println("Value of PI: " + PI);
+
+        // PI = 3.14; // Dies führt zu einem Compilerfehler
+    }
+}
+------------------------------------------------------------------------------------------------------------------------
+Verwendung von Konstanten in switch-Anweisungen
+In einer switch-Anweisung können nur Konstanten oder enum-Werte als case-Labels verwendet werden.
+Diese müssen zur Kompilierzeit bekannt sein.
+
+public class SwitchExample {
+    public static final int CONSTANT_ONE = 1;
+    public static final int CONSTANT_TWO = 2;
+
+    public static void main(String[] args) {
+        int value = 1;
+
+        switch (value) {
+            case CONSTANT_ONE:
+                System.out.println("Value is one.");
+                break;
+            case CONSTANT_TWO:
+                System.out.println("Value is two.");
+                break;
+            default:
+                System.out.println("Value is unknown.");
+        }
+    }
+}
+------------------------------------------------------------------------------------------------------------------------
+Beispiel zur Verdeutlichung
+Nehmen wir an, wir möchten die Himmelsrichtungen als Konstanten in einem switch-Statement verwenden:
+
+public class DirectionExample {
+    public static final String NORTH = "NORTH";
+    public static final String SOUTH = "SOUTH";
+    public static final String EAST = "EAST";
+    public static final String WEST = "WEST";
+
+    public static void main(String[] args) {
+        String direction = "NORTH";
+
+        switch (direction) {
+            case NORTH:
+                System.out.println("Heading North");
+                break;
+            case SOUTH:
+                System.out.println("Heading South");
+                break;
+            case EAST:
+                System.out.println("Heading East");
+                break;
+            case WEST:
+                System.out.println("Heading West");
+                break;
+            default:
+                System.out.println("Unknown direction");
+        }
+    }
+}
+------------------------------------------------------------------------------------------------------------------------
+Zusammenfassung
+Konstanten sind unveränderliche Werte, die während der Laufzeit des Programms nicht geändert werden können.
+Deklaration erfolgt häufig mit final oder static final, um sie an eine Klasse und nicht an eine Instanz zu binden.
+Verwendung in switch-Anweisungen erfordert, dass sie zur Kompilierzeit bekannt sind.
+Durch die Verwendung von Konstanten können Sie Ihren Code klarer, lesbarer und wartbarer gestalten.
