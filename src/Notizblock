@@ -36,7 +36,8 @@
     String str1 = "Hello, ";
     String str2 = "World!";
     String result = str1 + str2;
-    Hier sind str1 und str2 Variablen, die auf String-Literale verweisen, und str1 + str2 ist ein Ausdruck, der zur Laufzeit ausgewertet wird. Die Verkettung der Strings str1 und str2 geschieht zur Laufzeit.
+    Hier sind str1 und str2 Variablen, die auf String-Literale verweisen, und str1 + str2 ist ein Ausdruck,
+    der zur Laufzeit ausgewertet wird. Die Verkettung der Strings str1 und str2 geschieht zur Laufzeit.
 
 -   Hauptpunkte:
     Name: Der Konstruktor hat den gleichen Namen wie die Klasse.
@@ -147,7 +148,7 @@
     Der Körper ist in geschweifte Klammern eingeschlossen und verwendet eine return-Anweisung.
     Nützlich für komplexere Logik oder wenn mehrere Anweisungen benötigt werden.
 ------------------------------------------------------------------------------------------------------------------------
--   #Verkürzter Lambda-Ausdruck: e -> e.getSalary() >= 10000
+#   Verkürzter Lambda-Ausdruck: e -> e.getSalary() >= 10000
     Parameter sind ohne Typdeklaration (Typinferenz).
     Der Körper ist ein einzelner Ausdruck ohne geschweifte Klammern und return-Anweisung.
     Ideal für einfache, kurze Ausdrücke.
@@ -231,7 +232,8 @@
     LocalDate-Klasse bietet parse() für das Parsen von Zeichenfolgen in Datumswerte.
 -   Anwendungen:
     Das Parsen wird in vielen Anwendungsfällen verwendet, wie z.B. der Verarbeitung von Benutzereingaben in Formularen,
-    der Verarbeitung von Dateien mit strukturierten Daten, der Verarbeitung von Datenbankabfragen und der Verarbeitung von APIs, die JSON- oder XML-Daten liefern.
+    der Verarbeitung von Dateien mit strukturierten Daten, der Verarbeitung von Datenbankabfragen
+    und der Verarbeitung von APIs, die JSON- oder XML-Daten liefern.
 
 #   Swift-Code
 -   In einem Swift-Code sind die Zeichen an bestimmten Positionen für verschiedene Informationen reserviert.
