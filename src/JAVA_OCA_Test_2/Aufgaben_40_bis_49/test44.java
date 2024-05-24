@@ -11,22 +11,27 @@ CharSequence
 Object
  *
  * ---------------------------------------------------------------------------------------------------------------------
- * Gesamterklärung
-Die Methode m1 wird überladen, um 3 verschiedene Parameter zu akzeptieren: String, CharSequence und Object.
+Bei überladenen Methoden in Java spielt die Hierarchie der Klassen und Schnittstellen eine entscheidende Rolle,
+wenn der Compiler entscheidet, welche Methode aufzurufen ist.
+* Der Compiler wählt die am besten passende Methode basierend auf den Typen der Argumente.
+* Wenn mehrere überladene Methoden für ein bestimmtes Argument in Frage kommen,
+* bevorzugt der Compiler die spezifischere Methode gegenüber einer allgemeineren Methode.
 
-String implementiert CharSequence und Object ist die übergeordnete Klasse in Java.
-* Es gibt keinen Konflikt zwischen den überladenen Methoden für den Aufruf m1(null),
-* da er der niedrigsten Klasse in der Hierarchie zugeordnet ist, nämlich der String-Klasse. Daher ist die Ausgabe "String".
+In deinem Beispiel haben wir drei überladene Methoden m1, die jeweils verschiedene Parameter akzeptieren:
+* CharSequence, String und Object.
 
-Wenn Sie nun eine weitere überladene Methode hinzufügen, 'static void m1(StringBuilder s) {...} ' in der Test-Klasse,
-* dann würde 'm1(null);' einen Kompilierungsfehler verursachen, da es sowohl mit den Methoden m1(StringBuilder) als auch m1(String) übereinstimmen würde.
-* In diesem Fall wäre m1(null) also ein mehrdeutiger Aufruf und würde einen Kompilierungsfehler verursachen.
+Hier ist die Klassen- und Schnittstellenhierarchie relevant,
+* da String eine Unterklasse von Object ist und auch die Schnittstelle CharSequence implementiert:
 
-Aus dem gleichen Grund ist System.out.println(null); verursacht einen Kompilierungsfehler, da die println-Methode überladen wird,
-*  um 3 Verweistypen Object, String und char [] zusammen mit primitiven Typen zu akzeptieren.
+Object
+CharSequence (Schnittstelle)
+String
+Wenn du die Methode m1(null) aufrufst, muss der Compiler entscheiden, welche der überladenen Methoden am besten zu null passt. Da null ein gültiger Wert für jeden Referenztyp ist, ist null sowohl mit Object, CharSequence als auch String kompatibel. Die spezifischste Methode wird gewählt, was in diesem Fall die Methode m1(String s) ist.
 
-System.out.println(null); stimmt sowohl mit println(char[]) als auch mit println(String) überein,
-* daher ist es ein mehrdeutiger Aufruf und daher der Kompilierungsfehler.
+Hier ist der Ablauf, wie der Compiler die Entscheidung trifft:
+
+Specificity: String ist spezifischer als CharSequence und Object, weil String eine Unterklasse von Object ist und die CharSequence-Schnittstelle implementiert.
+Method Selection: Der Compiler wählt die Methode, die den spezifischsten Typ akzeptiert, der mit dem Argument null kompatibel ist. Daher wird m1(String s) gewählt.
  * */
 package JAVA_OCA_Test_2.Aufgaben_40_bis_49;
 
