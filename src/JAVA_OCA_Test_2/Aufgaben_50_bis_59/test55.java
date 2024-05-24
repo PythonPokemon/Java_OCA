@@ -14,7 +14,7 @@ import java.time.Period;
 
 public class test55 {
     public static void main(String [] args) {
-        Period period = Period.of(2, 1, 0).ofYears(10).ofMonths(5).ofDays(2);
-        System.out.println(period);
+        Period period = Period.of(2, 1, 0).ofYears(10).ofMonths(5).ofDays(2); // gibt die letzte methode aus mit dem element
+        System.out.println(period); // also anstatt P2Y1MoD wird P2D ausgedruckt
     }
 }

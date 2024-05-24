@@ -18,11 +18,11 @@ public class test58 {
     public static void main(String[] args) {
         List<String> list = new ArrayList<>();
         list.add("X");
-        list.add("Y");
+        list.add("Y"); // <-- also das wird entfernt
         list.add("X");
         list.add("Y");
         list.add("Z");
-        list.remove(new String("Y"));
+        list.remove(new String("Y")); // list.remove(new String("Y")); entfernt das erste Vorkommen von "Y
         System.out.println(list);
     }
 }

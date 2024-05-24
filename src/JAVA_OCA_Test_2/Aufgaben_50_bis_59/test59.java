@@ -17,7 +17,7 @@ public class test59 {
         days.add(new StringBuilder("Monday"));
         days.add(new StringBuilder("Tuesday"));
 
-        if(days.contains(new StringBuilder("Sunday"))) {
+        if(days.contains(new StringBuilder("Sunday"))) {    // dieser code block wird garnicht ausgeführt!
             days.add(new StringBuilder("Wednesday"));
         }
 
