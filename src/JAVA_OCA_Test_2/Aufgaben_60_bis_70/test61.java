@@ -17,10 +17,9 @@ public class test61 {
     }
 
     public class Printer {
-
     }
 //----------------------------------------------------------------------------------------------------------------------
-//package com.udayan.oca;
+//package com.udayan.oca;       // zwei package sind unzulässig
 //package com.udayan.ocp;
 //import java.io.*
 //    public class Printer {
@@ -28,10 +27,10 @@ public class test61 {
 //    }
 //----------------------------------------------------------------------------------------------------------------------
 //    public class Printer {
-//     package com.udayan.oca;
+//     package com.udayan.oca;  // package unter der klasse falsch
 //    }
 //----------------------------------------------------------------------------------------------------------------------
-//package com.udayan.oca;
+//package com.udayan.oca;       // zwei package sind unzulässig
 //package com.udayan.ocp;
 //    public class Printer {
 //

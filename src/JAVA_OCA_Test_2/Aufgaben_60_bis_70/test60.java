@@ -26,22 +26,21 @@ public class test60 {
     //----------------------------------------------------------------------------------------------------------------------
     // Fehlerhaft
 //    public class C4 implements I1 {
-//        public void m1() throws Exception{}
+//        public void m1() throws Exception{}                        // nur Exception  ohne java.io.IO ist falsch!
 //    }
 //----------------------------------------------------------------------------------------------------------------------
     // Variante 1
 //    public class C2 implements I1 {
-//        public void m1() throws java.io.FileNotFoundException{}
+//        public void m1() throws java.io.FileNotFoundException{}   // erweitert java.io. mit FileNotFoundException
 //    }
 //----------------------------------------------------------------------------------------------------------------------
     // Variante 2
 //public class C1 implements I1 {
-//    public void m1() {}
+//    public void m1() {}                                           // leer
 //}
 //----------------------------------------------------------------------------------------------------------------------
     // Variante 3
     public class C3 implements I1 {
-        public void m1() throws java.io.IOException {
-        }
+        public void m1() throws java.io.IOException {}
     }
 }
