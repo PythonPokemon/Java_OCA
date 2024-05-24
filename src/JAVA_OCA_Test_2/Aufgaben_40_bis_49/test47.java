@@ -39,7 +39,7 @@ class Vehicle {
         return 1;
     }
 }
-
+// als car wird mit vehicle durch extens erweitert und bekommt die methode return1, mit @Override
 class Car extends Vehicle {
     @Override
     public int getRegistrationNumber() {

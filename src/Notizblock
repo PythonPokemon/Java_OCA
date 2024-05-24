@@ -270,3 +270,14 @@
     p: Der Parameter, der an die Funktion übergeben wird.
     ->: Der Pfeil-Operator, der den Parameter vom Körper des Lambda-Ausdrucks trennt.
     Der Körper des Lambda-Ausdrucks, der die Operation oder Berechnung darstellt.
+
+#   @Override
+-   Das @Override-Annotation ist optional, aber es bietet eine Sicherheitshinweis für den Fall,
+    dass eine Methode nicht wie beabsichtigt überschrieben wird.
+    Wenn Sie @Override verwenden und es tritt ein Fehler auf, wenn die Methode nicht richtig überschrieben wird,
+    können Sie diesen Fehler während der Kompilierung erkennen, anstatt ihn erst zur Laufzeit zu entdecken.
+-   Das @Override-Annotation wird verwendet, um sicherzustellen,
+    dass eine Methode tatsächlich eine Methode in der Superklasse überschreibt.
+    Wenn Sie versuchen, eine Methode zu überschreiben, aber einen Tippfehler im Methodennamen haben
+    oder die Parameterliste nicht übereinstimmt, wird der Compiler einen Fehler melden,
+    wenn Sie das @Override-Annotation verwenden.
