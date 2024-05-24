@@ -21,7 +21,7 @@ public class test62 {
                 System.out.println("BANANA");
                 break;
             default:
-                System.out.println("ANY FRUIT WILL DO");
+                System.out.println("ANY FRUIT WILL DO");    // weil kein cse zutreffend ist wird abgebrochen und standart default ausgegeben
         }
     }
 }

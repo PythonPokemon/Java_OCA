@@ -299,3 +299,12 @@
     Andernfalls tritt ein Compilerfehler auf.
     Dies liegt daran, dass der Konstruktor der Elternklasse zuerst ausgeführt werden muss,
     um die Zustände der Elternklasse ordnungsgemäß zu initialisieren, bevor die Unterklasse initialisiert wird.
+
+#   ("MM-dd-YYYY");
+    Der einfache Weg, sich daran zu erinnern, ist, dass größere (Großbuchstaben) Buchstaben etwas Größeres darstellen.
+    M steht für den Monat und m für die Minute, D für den Tag des Jahres und d für den Tag des Monats.
+    --------------------------------------------------------------------------------------------------------------------
+    M == Monat
+    m == minuten
+    D == Tag des Jahres
+    d == tag des monats
