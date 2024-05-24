@@ -10,9 +10,18 @@
     allerdings wird diese wiederrum in viele kleine Methoden runtergebrochen und diese werden uaf Private gestellt.
 -   Wenn man eigene Methoden schreibt gehen diese den statischen import methoden vor, die imports werden dann ausgegraut, um konflikte zu vermeiden.
 
-#   Konstruktoren in Java
+#   Konstruktor | super(...) oder this(...) | aber nicht beides!
 -   Ein Konstruktor ist eine spezielle Methode einer Klasse, die aufgerufen wird, wenn eine Instanz (ein Objekt) dieser Klasse erstellt wird.
     Konstruktoren haben den gleichen Namen wie die Klasse und keinen Rückgabewert (nicht einmal void).
+-   Die Methode super() wird in Java-Konstruktoren verwendet, um den Konstruktor der Elternklasse aufzurufen.
+    Normalerweise wird dies implizit durch den Compiler eingefügt, wenn kein expliziter Aufruf vorhanden ist.
+    Wenn Sie jedoch einen Konstruktor in einer Unterklasse schreiben und diesen nicht explizit aufrufen,
+    wird automatisch der Standardkonstruktor der Elternklasse aufgerufen.
+
+-   Es ist wichtig zu beachten, dass der Aufruf von super() als erste Anweisung im Konstruktor der Unterklasse erfolgen muss.
+    Andernfalls tritt ein Compilerfehler auf.
+    Dies liegt daran, dass der Konstruktor der Elternklasse zuerst ausgeführt werden muss,
+    um die Zustände der Elternklasse ordnungsgemäß zu initialisieren, bevor die Unterklasse initialisiert wird.
 
 #   Literale
 -   Ein Literal ist ein fester Wert, der direkt im Code geschrieben wird.
@@ -31,8 +40,6 @@
     Hier sind str1 und str2 Variablen, die auf String-Literale verweisen, und str1 + str2 ist ein Ausdruck,
     der zur Laufzeit ausgewertet wird. Die Verkettung der Strings str1 und str2 geschieht zur Laufzeit.
 
-    java
-    Code kopieren
     String str1 = "Hello, ";
     String str2 = "World!";
     String result = str1 + str2;
@@ -281,3 +288,14 @@
     Wenn Sie versuchen, eine Methode zu überschreiben, aber einen Tippfehler im Methodennamen haben
     oder die Parameterliste nicht übereinstimmt, wird der Compiler einen Fehler melden,
     wenn Sie das @Override-Annotation verwenden.
+
+#   Die Methode super()
+-   wird in Java-Konstruktoren verwendet, um den Konstruktor der Elternklasse aufzurufen.
+    Normalerweise wird dies implizit durch den Compiler eingefügt, wenn kein expliziter Aufruf vorhanden ist.
+    Wenn Sie jedoch einen Konstruktor in einer Unterklasse schreiben und diesen nicht explizit aufrufen,
+    wird automatisch der Standardkonstruktor der Elternklasse aufgerufen.
+
+    Es ist wichtig zu beachten, dass der Aufruf von super() als erste Anweisung im Konstruktor der Unterklasse erfolgen muss.
+    Andernfalls tritt ein Compilerfehler auf.
+    Dies liegt daran, dass der Konstruktor der Elternklasse zuerst ausgeführt werden muss,
+    um die Zustände der Elternklasse ordnungsgemäß zu initialisieren, bevor die Unterklasse initialisiert wird.

@@ -11,6 +11,7 @@ package JAVA_OCA_Test_2.Aufgaben_50_bis_59;
 
 public class test52 {
     public static void main(String[] args) {
+
         System.out.println(args.length);
     }
 }
