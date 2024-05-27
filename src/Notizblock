@@ -8,17 +8,20 @@
 -   Wenn man eine Methode schreibt muss man immer vorschreiben zu welche typen diese Methode gehört.
 -   In der Praxis wird häufig eine große komplexe Methode Öffentlich gesetzt damit diese sichtbar und zugreifbar ist,
     allerdings wird diese wiederrum in viele kleine Methoden runtergebrochen und diese werden uaf Private gestellt.
--   Wenn man eigene Methoden schreibt gehen diese den statischen import methoden vor, die imports werden dann ausgegraut, um konflikte zu vermeiden.
+-   Wenn man eigene Methoden schreibt gehen diese den statischen import methoden vor,
+    die imports werden dann ausgegraut, um konflikte zu vermeiden.
 
 #   Konstruktor | super(...) oder this(...) | aber nicht beides!
--   Ein Konstruktor ist eine spezielle Methode einer Klasse, die aufgerufen wird, wenn eine Instanz (ein Objekt) dieser Klasse erstellt wird.
+-   Ein Konstruktor ist eine spezielle Methode einer Klasse, die aufgerufen wird,
+    wenn eine Instanz (ein Objekt) dieser Klasse erstellt wird.
     Konstruktoren haben den gleichen Namen wie die Klasse und keinen Rückgabewert (nicht einmal void).
 -   Die Methode super() wird in Java-Konstruktoren verwendet, um den Konstruktor der Elternklasse aufzurufen.
     Normalerweise wird dies implizit durch den Compiler eingefügt, wenn kein expliziter Aufruf vorhanden ist.
     Wenn Sie jedoch einen Konstruktor in einer Unterklasse schreiben und diesen nicht explizit aufrufen,
     wird automatisch der Standardkonstruktor der Elternklasse aufgerufen.
 
--   Es ist wichtig zu beachten, dass der Aufruf von super() als erste Anweisung im Konstruktor der Unterklasse erfolgen muss.
+-   Es ist wichtig zu beachten, dass der Aufruf von super()
+    als erste Anweisung im Konstruktor der Unterklasse erfolgen muss.
     Andernfalls tritt ein Compilerfehler auf.
     Dies liegt daran, dass der Konstruktor der Elternklasse zuerst ausgeführt werden muss,
     um die Zustände der Elternklasse ordnungsgemäß zu initialisieren, bevor die Unterklasse initialisiert wird.
@@ -31,8 +34,8 @@
     String-Literale werden zur Kompilierzeit erkannt und im String-Pool gespeichert.
 
 #   Ausdrücke
--   Ein Ausdruck kann eine Kombination aus Variablen, Literalen, Operatoren und Methodenaufrufen sein, die zur Laufzeit ausgewertet werden.
-    In Java kann ein Ausdruck zur Verkettung von Strings verwendet werden.
+-   Ein Ausdruck kann eine Kombination aus Variablen, Literalen, Operatoren und Methodenaufrufen sein,
+    die zur Laufzeit ausgewertet werden. In Java kann ein Ausdruck zur Verkettung von Strings verwendet werden.
 -   Zum Beispiel:
     String str1 = "Hello, ";
     String str2 = "World!";
