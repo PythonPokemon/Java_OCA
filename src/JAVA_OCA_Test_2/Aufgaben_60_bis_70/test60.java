@@ -23,7 +23,7 @@ public class test60 {
         void m1() throws java.io.IOException;
     }
 
-    //----------------------------------------------------------------------------------------------------------------------
+    //------------------------------------------------------------------------------------------------------------------
     // Fehlerhaft
 //    public class C4 implements I1 {
 //        public void m1() throws Exception{}                        // nur Exception  ohne java.io.IO ist falsch!
