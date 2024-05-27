@@ -15,7 +15,7 @@ public class test38 {
         dates.add(LocalDate.of(2020, 4, 8));
         dates.add(LocalDate.of(1980, Month.DECEMBER, 31));
 
-        dates.removeIf(x -> x.getYear() < 2000);
+        dates.removeIf(x -> x.getYear() < 2000);    // entfernt alles was kleiner 2.000 ist
 
         System.out.println(dates);
     }
