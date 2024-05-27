@@ -120,7 +120,7 @@ public class Test {
 ------------------------------------------------------------------------------------------------------------------------
 Fazit
 == vergleicht Referenzen (Speicheradressen).
-equals vergleicht Inhalte der Objekte.
+equals vergleicht Inhalte der Objekte. also die elemente
 
 Bei Wrapper-Klassen und Strings sollte immer .equals verwendet werden, um den Inhalt zu vergleichen.
 Bei Autoboxing und Unboxing kann es je nach Wertbereich Unterschiede im Verhalten des == Operators geben.
