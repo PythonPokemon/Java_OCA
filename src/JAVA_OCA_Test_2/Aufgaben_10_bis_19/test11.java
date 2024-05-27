@@ -13,7 +13,7 @@ public class test11 {
         System.out.println(b1);
 
         str1.trim();
-        b1 = str1.isEmpty();        // bezieht sich immer noch auf den stringmit leerzeichen
+        b1 = str1.isEmpty();        // bezieht sich immer noch auf den string mit leerzeichen
         System.out.println(b1);
     }
 }
