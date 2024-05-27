@@ -47,7 +47,7 @@ public class test37 {
             System.out.print("B");
         } catch (IOException e) {  // allgemeinere Ausnahme danach
             System.out.print("A");
-        } finally {
+        } finally {                 // Finally fängt alles ab, wird sowieso immer ausgeführt!
             System.out.print("C");
         }
     }

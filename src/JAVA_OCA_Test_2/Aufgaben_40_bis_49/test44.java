@@ -26,12 +26,19 @@ Hier ist die Klassen- und Schnittstellenhierarchie relevant,
 Object
 CharSequence (Schnittstelle)
 String
-Wenn du die Methode m1(null) aufrufst, muss der Compiler entscheiden, welche der überladenen Methoden am besten zu null passt. Da null ein gültiger Wert für jeden Referenztyp ist, ist null sowohl mit Object, CharSequence als auch String kompatibel. Die spezifischste Methode wird gewählt, was in diesem Fall die Methode m1(String s) ist.
+Wenn du die Methode m1(null) aufrufst, muss der Compiler entscheiden,
+welche der überladenen Methoden am besten zu null passt.
+Da null ein gültiger Wert für jeden Referenztyp ist, ist null sowohl mit Object,
+CharSequence als auch String kompatibel.
+Die spezifischste Methode wird gewählt, was in diesem Fall die Methode m1(String s) ist.
 
 Hier ist der Ablauf, wie der Compiler die Entscheidung trifft:
 
-Specificity: String ist spezifischer als CharSequence und Object, weil String eine Unterklasse von Object ist und die CharSequence-Schnittstelle implementiert.
-Method Selection: Der Compiler wählt die Methode, die den spezifischsten Typ akzeptiert, der mit dem Argument null kompatibel ist. Daher wird m1(String s) gewählt.
+Specificity: String ist spezifischer als CharSequence und Object, weil String eine Unterklasse von Object ist
+* und die CharSequence-Schnittstelle implementiert.
+
+Method Selection: Der Compiler wählt die Methode, die den spezifischsten Typ akzeptiert, der mit dem Argument null kompatibel ist.
+* Daher wird m1(String s) gewählt.
  * */
 package JAVA_OCA_Test_2.Aufgaben_40_bis_49;
 

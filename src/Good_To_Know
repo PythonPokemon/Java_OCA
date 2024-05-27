@@ -6,4 +6,10 @@ test1
 
 test2
 17 HART
+44 Klassen- und Schnittstellenhierarchie relevant, | Object
+                                                     CharSequence (Schnittstelle)
+                                                     String
+50 syntax prozess methode
+56 .remove() Methode
 59 equals & Stringbuilder überschreiben
+65 primitieve daten syntax

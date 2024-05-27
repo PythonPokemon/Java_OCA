@@ -31,10 +31,10 @@ public class test31 {
         List<String> list = new ArrayList<>();
         list.add("eins");
         list.add("zwei");
-        list.add(null);
-        System.out.println(list.remove(0));
-        System.out.println(list.remove("zwei"));
-        System.out.println(list);   //[null] weil nur noch drinn ist
+//        list.add(null);
+        System.out.println(list.remove(0)); // gibt das element aus das aus dem index entfernt wird
+        System.out.println(list.remove("zwei"));    // gibt true aus wenn das objekt aus der liste entfernt wurde
+//        System.out.println(list);   //[null] weil nur noch drinn ist
     }
 }
 //----------------------------------------------------------------------------------------------------------------------

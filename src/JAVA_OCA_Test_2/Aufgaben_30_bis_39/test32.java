@@ -24,9 +24,11 @@ package JAVA_OCA_Test_2.Aufgaben_30_bis_39;
 public class test32 {
     public static void main(String[] args) {
         StringBuilder sb = new StringBuilder("Hurrah! I Passed..."); // ist 19 zeichen lang
-
+        System.out.println(sb);
         //Der Aufruf sb.delete(0, 100) versucht, alle Zeichen von Index 0 bis 99 zu löschen.
-        sb.delete(0, 100);  // gibt 0 aus | wenn 0, 10 wäre der tatsächliche ausgabe 9, da 10 zeichen gelöscht werden von 19
+        sb.delete(0, 10);  // gibt 0 aus | wenn 0, 10 wäre der tatsächliche ausgabe 9, da 10 zeichen gelöscht werden von 19
+
         System.out.println(sb.length());
+        System.out.println(sb);
     }
 }

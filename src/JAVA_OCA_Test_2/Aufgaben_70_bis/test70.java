@@ -29,21 +29,21 @@ Füge einen catch-Block hinzu, um die Ausnahme zu behandeln.
 * */
 //----------------------------------------------------------------------------------------------------------------------
 //1. Ausnahme abfangen mit try-catch:
-//public class test70 {
-//    private static void m1() throws Exception {
-//        throw new Exception();
-//    }
-//
-//    public static void main(String[] args) {
-//        try {
-//            m1();
-//        } catch (Exception e) {
-//            System.out.println("Exception caught");
-//        } finally {
-//            System.out.println("A");
-//        }
-//    }
-//}
+public class test70 {
+    private static void m1() throws Exception {
+        throw new Exception();
+    }
+
+    public static void main(String[] args) {
+        try {
+            m1();
+        } catch (Exception e) {
+            System.out.println("Exception caught");
+        } finally {
+            System.out.println("A");
+        }
+    }
+}
 //----------------------------------------------------------------------------------------------------------------------
 //2. Variante Ausnahme weitergeben mit throws:
 //public class test70 {
