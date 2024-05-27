@@ -24,7 +24,7 @@ public class test66 {
         list.add(200);
         list.add(100);
         list.add(200);
-        list.remove(new Integer(100));
+        list.remove(new Integer(100)); // entfernt das objekt mit dem element 100 aus dem ersten vorkommen aus der liste
 
         System.out.println(list);
     }
