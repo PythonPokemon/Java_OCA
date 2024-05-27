@@ -30,7 +30,7 @@ package JAVA_OCA_Test_2.Aufgaben_20_bis_29;
 //        switch (score) {
 //            default:
 //                System.out.println("Not a valid score");
-//            case score < 70:
+//            case score < 70:            // bedingte Ausdrücke wie <, <=, >, >= usw. sind f. switch-case nicht erlaubt!
 //                System.out.println("Failed");
 //                break;
 //            case score >= 70:

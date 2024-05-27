@@ -63,7 +63,7 @@ public class test26 {
     public static void main(String[] args) {
         List<String> list = new ArrayList<>();
         list.add(0, "Array");
-        list.add(0, "List");
+        list.add(0, "List");    // bei mehreren listen mit dem gleichen Index wird da wird das erste element, nach rechts geschoben.
 
         System.out.println(list);
     }
