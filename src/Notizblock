@@ -308,3 +308,15 @@
     m == minuten
     D == Tag des Jahres
     d == tag des monats
+
+#   Stack Trace
+-   Fehlersuche: Ein Stack Trace zeigt dir genau, welche Methode in welcher Zeile den Fehler verursacht hat.
+    Das ist besonders nützlich, um den genauen Ort eines Problems im Code zu finden.
+-   Verstehen der Ausführungsreihenfolge: Ein Stack Trace gibt Aufschluss darüber,
+    welche Methodenaufrufe zur Ausnahme geführt haben, was das Verständnis der Programmausführung erleichtert.
+-   Debugging: Mit einem Stack Trace kannst du den Kontext des Fehlers besser verstehen und
+    gezielt den fehlerhaften Codeabschnitt korrigieren.
+
+    Zusammengefasst ist ein Stack Trace ein wesentliches Werkzeug für Entwickler,
+    um Fehler zu identifizieren und zu beheben, da er detaillierte Informationen über die Programmausführung
+    und die genauen Positionen von Fehlern bietet.

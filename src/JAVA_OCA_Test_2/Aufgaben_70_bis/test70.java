@@ -13,7 +13,7 @@ package JAVA_OCA_Test_2.Aufgaben_70_bis;
 //        throw new Exception();
 //    }
 //
-//    public static void main(String[] args) {
+//    public static void main(String[] args)  {
 //        try {
 //            m1();
 //        } finally {
@@ -27,6 +27,7 @@ Korrektur des Codes
 Um den Compilerfehler zu beheben, gibt es zwei Möglichkeiten
 Füge einen catch-Block hinzu, um die Ausnahme zu behandeln.
 * */
+//----------------------------------------------------------------------------------------------------------------------
 //1. Ausnahme abfangen mit try-catch:
 //public class test70 {
 //    private static void m1() throws Exception {
@@ -45,16 +46,18 @@ Füge einen catch-Block hinzu, um die Ausnahme zu behandeln.
 //}
 //----------------------------------------------------------------------------------------------------------------------
 //2. Variante Ausnahme weitergeben mit throws:
-public class test70 {
-    private static void m1() throws Exception {
-        throw new Exception();
-    }
+//public class test70 {
+//    private static void m1() throws Exception {
+//        throw new Exception();
+//    }
+//
+//    public static void main(String[] args) throws Exception {     //<-- gibt die Exception weiter
+//        try {
+//            m1();
+//        } finally {
+//            System.out.println("A");
+//        }
+//    }
+//}
+//----------------------------------------------------------------------------------------------------------------------
 
-    public static void main(String[] args) throws Exception {
-        try {
-            m1();
-        } finally {
-            System.out.println("A");
-        }
-    }
-}
