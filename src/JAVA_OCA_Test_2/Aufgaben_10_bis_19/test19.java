@@ -15,7 +15,8 @@ else
     System.out.println("You failed");
 
 
-Es sollte nichts zwischen if-else-Block stehen, aber in diesem Fall System.out.println("Sie haben bestanden"); liegt zwischen if-else und damit Kompilierungsfehler.
+Es sollte nichts zwischen if-else-Block stehen, aber in diesem Fall System.out.println("Sie haben bestanden");
+* liegt zwischen if-else und damit Kompilierungsfehler.
  * */
 
 package JAVA_OCA_Test_2.Aufgaben_10_bis_19;
@@ -40,6 +41,7 @@ public class test19 {
 
         if (grade > 60)
             System.out.println("Congratulations");
+
         else
             System.out.println("You passed");       // Die else-Anweisung muss hier stehen
         System.out.println("You passed");           // output wird außerhalb der schleife ausgegeben

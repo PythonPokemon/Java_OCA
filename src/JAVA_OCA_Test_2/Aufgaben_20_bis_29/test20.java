@@ -29,15 +29,15 @@ public class test20 {
 
 //----------------------------------------------------------------------------------------------------------------------
 //Richtige Auswahl
-        for (String[] arr : fruits)
-            for (String fruit : arr)
-                System.out.print(fruit + " ");                      // apple mango orange grape
+//        for (String[] arr : fruits)
+//            for (String fruit : arr)
+//                System.out.print(fruit + " ");                      // apple mango orange grape
 
 
 ////Richtige Auswahl
-//        for (int i = 0; i < fruits.length; i++)
-//            for (int j = 0; j < fruits[i].length; j++)
-//                System.out.print(fruits[i][j] + " ");           // apple mango orange grape
+        for (int i = 0; i < fruits.length; i++)
+            for (int j = 0; j < fruits[i].length; j++)
+                System.out.print(fruits[i][j] + " ");           // apple mango orange grape
 //
 //----------------------------------------------------------------------------------------------------------------------
 //        for (int i = 1; i < fruits.length; i++)

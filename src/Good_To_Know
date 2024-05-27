@@ -6,7 +6,7 @@ test1
 
 test2
 17 HART
-20
+20 = mehrdimensianele arrays sollten immer mit 0 starten! zellen in der zelle
 21 standartkonstruktor methode null
 23 standartkonstruktor methode
 37 Try Catch Exception
