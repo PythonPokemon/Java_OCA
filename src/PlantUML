@@ -1,0 +1,4 @@
+@startuml
+eltern --> Vater + Mutter
+
+@enduml
