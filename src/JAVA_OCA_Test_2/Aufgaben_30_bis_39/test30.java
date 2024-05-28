@@ -27,8 +27,9 @@ Punkt(19, 40, 0)
  * */
 package JAVA_OCA_Test_2.Aufgaben_30_bis_39;
 class Point {
-    static int x;
-    int y, z;
+    static int x;   // static heißt statisch bleibt für alle gleich, allerdings wird das zueletzt verwendete element ausgedruckt
+                    // bedeutet p1.x und p2.x teilen sich den wert und da p2.x den wert neu zuweist das zuletzt zugewiesene element!
+    int y, z;       // die daten typen sind für alle individuell
 
     public String toString() {
         return "Point(" + x + ", " + y + ", " + z + ")";
