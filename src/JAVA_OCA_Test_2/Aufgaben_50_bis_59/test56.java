@@ -1,18 +1,5 @@
-/* code 2 | im gegensatz package JAVA_OCA_Test_1.Aufgaben_30_bis_39.test34 | Ausführliche erklärung: Aufgaben_Gegensatz_OCA
-Student[James, 27]
-Student[James, 25]
-Student[James, 25]
-*
-*Gesamterklärung
-Bevor Sie diese Frage beantworten, müssen Sie wissen, dass 5 verschiedene Student-Objekte im Speicher erstellt wurden
- (4 zum Zeitpunkt des Hinzufügens zur Liste und 1 zum Zeitpunkt des Entfernens aus der Liste).
+/* code 2 | im gegensatz JAVA_OCA_Test_1.Aufgaben_30_bis_39.test34 | Ausführliche erklärung: Aufgaben_Gegensatz_OCA
 
-Das bedeutet, dass diese 5 Schülerobjekte an unterschiedlichen Speicheradressen gespeichert werden.
-
-Die Methode remove(Object) entfernt das erste Vorkommen eines übereinstimmenden Objekts und die Methode equals(Object) entscheidet,
-ob 2 Objekte gleich sind oder nicht. Die Methode equals(Object) wurde von der Klasse Student überschrieben und setzt das Objekt basierend auf ihrem Namen und Alter gleich.
-
-3 übereinstimmende Studentenobjekte werden in der Liste gefunden und das 1. Listenelement wird aus der Liste entfernt. Die restlichen 3 Listenelemente werden im Insertionsauftrag gedruckt.
  * */
 package JAVA_OCA_Test_2.Aufgaben_50_bis_59;
 import java.util.ArrayList;
@@ -31,11 +18,12 @@ class Student {
         return "Student[" + name + ", " + age + "]";
     }
 
-    public boolean equals(Object obj) {
-        if(obj instanceof Student) {
-            Student stud = (Student)obj;
-            if(this.name.equals(stud.name) && this.age == stud.age) {
-                return true;
+    // überschreibung der standard .equals() Methode
+    public boolean equals(Object obj) {     // wahrheitswert für das obj das mit den objekten verglichen wird
+        if(obj instanceof Student) {        // wenn die instanzen name, age vom Studenten
+            Student stud = (Student)obj;    // stud wird Student zugewiesen obj
+            if(this.name.equals(stud.name) && this.age == stud.age) {   // wenn die instanzen name gleich stud.name &&
+                return true;    // wird true ausgegeben
             }
         }
         return false;
@@ -50,6 +38,8 @@ public class test56 {
         students.add(new Student("James", 25));
         students.add(new Student("James", 25));
 
+        // vergleicht aufgrund der Überschriebenen .equals() Methode nicht die speicheradressen des Objekts
+        // sondern die Inhalte des Objekts, indem fall name, age, wenn sie true sind, wird das objekt entfernt
         students.remove(new Student("James", 25));
 
         for(Student stud : students) {
@@ -57,3 +47,25 @@ public class test56 {
         }
     }
 }
+/*-----------------------------------------ZUSATZ_WISSEN----------------------------------------------------------------
+Hier wird die equals()-Methode überschrieben,
+um die Objekte basierend auf ihren Attributwerten (Name und Alter) zu vergleichen.
+Dadurch werden zwei Student-Objekte als gleich betrachtet, wenn sie den gleichen Namen und dasselbe Alter haben,
+unabhängig von ihrer Speicheradresse.
+Daher wird das Objekt erfolgreich aus der Liste entfernt.
+------------------------------------------------------------------------------------------------------------------------
+ public boolean equals(Object obj) {
+        if(obj instanceof Student) {
+            Student stud = (Student)obj;
+            if(this.name.equals(stud.name) && this.age == stud.age) { //<--überschreibung der standard .equals() Methode
+                return true;
+            }
+        }
+
+diese Methode überschreibt die Standardimplementierung der equals()-Methode, um anzugeben,
+wann zwei Student-Objekte als gleich betrachtet werden sollen.
+In diesem Fall werden zwei Student-Objekte als gleich betrachtet, wenn ihre Namen und Alter übereinstimmen.
+So kann die Methode remove(Object o) der Liste korrekt feststellen, ob ein bestimmtes Student-Objekt
+aus der Liste entfernt werden soll, indem sie die equals()-Methode aufruft, um Objekte zu vergleichen.
+------------------------------------------------------------------------------------------------------------------------
+* */
