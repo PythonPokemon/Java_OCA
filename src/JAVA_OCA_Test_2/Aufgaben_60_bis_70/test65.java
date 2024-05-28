@@ -38,7 +38,10 @@ public class test65 {
         l = c + i;
         f = c * l * i * f;
         f = l + i + c;
-        i = (int)d;
-        f = (long)d;
+        i = (int)d;     // wandelt double in int um
+        f = (long)d;    // wandelt double in long um
+
+        System.out.println(f);
+        System.out.println(i);
     }
 }
