@@ -6,21 +6,18 @@ In Java gibt es tatsächlich vier Zugriffsmodifizierer:
 von Klassen im selben Paket und von Unterklassen (auch wenn diese in einem anderen Paket sind) möglich.
 
 4.Package-private (default): Der Zugriff ist nur innerhalb desselben Pakets möglich.
-
+------------------------------------------------------------------------------------------------------------------------
 Zusammenfassung der Zugriffsmodifizierer:
-1. Public
-Zugriff von überall:
-java
-Code kopieren
+1. Public | Zugriff von überall:
+
 public class PublicClass {
     public void publicMethod() {
         System.out.println("This is a public method.");
     }
 }
-2. Private
-Zugriff nur innerhalb der eigenen Klasse:
-java
-Code kopieren
+------------------------------------------------------------------------------------------------------------------------
+2. Private | Zugriff nur innerhalb der eigenen Klasse:
+
 public class PrivateClass {
     private void privateMethod() {
         System.out.println("This is a private method.");
@@ -30,10 +27,9 @@ public class PrivateClass {
         privateMethod(); // OK, innerhalb derselben Klasse
     }
 }
-3. Protected
-Zugriff innerhalb desselben Pakets und durch Unterklassen:
-java
-Code kopieren
+------------------------------------------------------------------------------------------------------------------------
+3. Protected | Zugriff innerhalb desselben Pakets und durch Unterklassen:
+
 public class ProtectedClass {
     protected void protectedMethod() {
         System.out.println("This is a protected method.");
@@ -54,6 +50,7 @@ public class SubClassInAnotherPackage extends ProtectedClass {
         protectedMethod(); // OK, weil es eine Unterklasse ist
     }
 }
+------------------------------------------------------------------------------------------------------------------------
 4. Package-private (default)
 Zugriff nur innerhalb desselben Pakets:
 java
@@ -80,11 +77,11 @@ public class AnotherClassInAnotherPackage {
         // defaultClass.defaultMethod(); // Fehler: defaultMethod() ist package-private
     }
 }
+------------------------------------------------------------------------------------------------------------------------
 Beispiel und Anwendung im Kontext der ursprünglichen Frage:
-Schau dir das Beispiel an, um zu sehen, wie verschiedene Zugriffsmodifizierer verwendet werden und wie sie sich auf den Zugriff auswirken:
+Schau dir das Beispiel an, um zu sehen,
+wie verschiedene Zugriffsmodifizierer verwendet werden und wie sie sich auf den Zugriff auswirken:
 
-java
-Code kopieren
 abstract class Helper {
     int num = 100; // package-private (default)
     String operation = null; // package-private (default)
@@ -114,6 +111,7 @@ public class LogHelper extends Helper {
         new LogHelper().help(); // Dies ruft die LogHelper-Implementierung von help() auf
     }
 }
+------------------------------------------------------------------------------------------------------------------------
 In diesem Beispiel gibt es mehrere Zugriffsmodifizierer:
 
 num und operation in Helper sind package-private (default).
@@ -121,4 +119,7 @@ help() in Helper ist protected.
 num in LogHelper ist private.
 operation in LogHelper ist protected.
 log() in LogHelper ist package-private (default).
-Die richtige Auswahl und Verwendung dieser Modifizierer ist wichtig, um sicherzustellen, dass Klassen und Methoden den beabsichtigten Zugriff und die Sichtbarkeit haben.
+
+Die richtige Auswahl und Verwendung dieser Modifizierer ist wichtig, um sicherzustellen,
+dass Klassen und Methoden den beabsichtigten Zugriff und die Sichtbarkeit haben.
+------------------------------------------------------------------------------------------------------------------------
