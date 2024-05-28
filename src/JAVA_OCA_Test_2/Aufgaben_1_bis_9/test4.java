@@ -45,6 +45,6 @@ public class test4 {
     }
 
     public static void main(String[] args) {
-        add(10.0, new Integer(10));
+        add(10.0, new Integer(10)); // .NullPointerException wenn | add(10.0, null)
     }
 }
