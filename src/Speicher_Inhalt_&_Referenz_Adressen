@@ -124,3 +124,75 @@ equals vergleicht Inhalte der Objekte. also die elemente
 
 Bei Wrapper-Klassen und Strings sollte immer .equals verwendet werden, um den Inhalt zu vergleichen.
 Bei Autoboxing und Unboxing kann es je nach Wertbereich Unterschiede im Verhalten des == Operators geben.
+------------------------------------------------------------------------------------------------------------------------
+Um die Speicheradressen von Objekten in einer ArrayList zu vergleichen
+
+List<StringBuilder> list = new ArrayList<>();
+StringBuilder sb1 = new StringBuilder("Hello");
+StringBuilder sb2 = new StringBuilder("Hello");
+
+list.add(sb1);
+
+if (list.contains(sb2)) {
+    // Code, um zu überprüfen, ob beide Referenzen auf dasselbe Objekt zeigen
+    System.out.println("sb1 und sb2 zeigen auf dasselbe Objekt.");
+} else {
+    // Code, wenn die Objekte unterschiedlich sind
+    System.out.println("sb1 und sb2 zeigen auf unterschiedliche Objekte.");
+}
+
+In diesem Beispiel werden sb1 und sb2 auf zwei verschiedene Objekte zeigen, auch wenn ihre Inhalte gleich sind.
+------------------------------------------------------------------------------------------------------------------------
+Ja, es ist durchaus möglich, dass eine ArrayList dasselbe Objekt mehrmals enthält.
+Dies bedeutet, dass mehrere Referenzen auf dasselbe Objekt im Speicher in der Liste gespeichert werden
+
+import java.util.ArrayList;
+import java.util.List;
+
+public class Test {
+    public static void main(String[] args) {
+        List<StringBuilder> list = new ArrayList<>();
+        StringBuilder sb = new StringBuilder("Hello");
+
+        // Hinzufügen desselben Objekts mehrmals zur Liste
+        list.add(sb);
+        list.add(sb);
+        list.add(sb);
+
+        // Ausgabe der Größe der Liste
+        System.out.println("List size: " + list.size()); // Ausgabe: 3
+
+        // Überprüfen, ob alle Elemente in der Liste auf dasselbe Objekt verweisen
+        System.out.println(list.get(0) == list.get(1)); // Ausgabe: true
+        System.out.println(list.get(1) == list.get(2)); // Ausgabe: true
+
+        // Modifizieren des Objekts über eine Referenz in der Liste
+        list.get(0).append(" World!");
+
+        // Überprüfen des Inhalts aller Elemente in der Liste
+        System.out.println(list.get(0)); // Ausgabe: Hello World!
+        System.out.println(list.get(1)); // Ausgabe: Hello World!
+        System.out.println(list.get(2)); // Ausgabe: Hello World!
+    }
+}
+
+In diesem Beispiel wird dasselbe StringBuilder-Objekt dreimal zur Liste hinzugefügt.
+Alle drei Einträge in der Liste verweisen auf dasselbe Objekt im Speicher.
+Wenn du den Inhalt eines dieser Objekte änderst, wird die Änderung in allen Einträgen sichtbar,
+da sie alle auf dasselbe Objekt verweisen.
+------------------------------------------------------------------------------------------------------------------------
+Vergleich der Objekte in der Liste
+Wenn du überprüfen möchtest, ob zwei Elemente in der Liste dasselbe Objekt sind, kannst du den ==-Operator verwenden.
+Der ==-Operator vergleicht die Referenzen der Objekte, also ob sie auf dasselbe Objekt im Speicher verweisen.
+
+StringBuilder sb1 = new StringBuilder("Hello");
+StringBuilder sb2 = sb1; // sb2 verweist auf dasselbe Objekt wie sb1
+
+list.add(sb1);
+list.add(sb2);
+
+System.out.println(list.get(0) == list.get(1)); // Ausgabe: true
+In diesem Beispiel wird sb2 so zugewiesen, dass es auf dasselbe Objekt wie sb1 verweist.
+Wenn beide zur Liste hinzugefügt werden, zeigt der Vergleich list.get(0) == list.get(1),
+dass beide Einträge auf dasselbe Objekt verweisen.
+------------------------------------------------------------------------------------------------------------------------
