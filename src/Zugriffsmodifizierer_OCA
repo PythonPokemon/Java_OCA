@@ -1,0 +1,124 @@
+In Java gibt es tatsächlich vier Zugriffsmodifizierer:
+
+1.Public: Der Zugriff ist von überall möglich.
+2.Private: Der Zugriff ist nur innerhalb der definierten Klasse möglich.
+3.Protected: Der Zugriff ist innerhalb derselben Klasse,
+von Klassen im selben Paket und von Unterklassen (auch wenn diese in einem anderen Paket sind) möglich.
+
+4.Package-private (default): Der Zugriff ist nur innerhalb desselben Pakets möglich.
+
+Zusammenfassung der Zugriffsmodifizierer:
+1. Public
+Zugriff von überall:
+java
+Code kopieren
+public class PublicClass {
+    public void publicMethod() {
+        System.out.println("This is a public method.");
+    }
+}
+2. Private
+Zugriff nur innerhalb der eigenen Klasse:
+java
+Code kopieren
+public class PrivateClass {
+    private void privateMethod() {
+        System.out.println("This is a private method.");
+    }
+
+    public void accessPrivateMethod() {
+        privateMethod(); // OK, innerhalb derselben Klasse
+    }
+}
+3. Protected
+Zugriff innerhalb desselben Pakets und durch Unterklassen:
+java
+Code kopieren
+public class ProtectedClass {
+    protected void protectedMethod() {
+        System.out.println("This is a protected method.");
+    }
+}
+
+// Gleiche Klasse im selben Paket
+class SubClassInSamePackage extends ProtectedClass {
+    public void anotherMethod() {
+        protectedMethod(); // OK, im gleichen Paket
+    }
+}
+
+// Unterklasse in einem anderen Paket
+package anotherPackage;
+public class SubClassInAnotherPackage extends ProtectedClass {
+    public void anotherMethod() {
+        protectedMethod(); // OK, weil es eine Unterklasse ist
+    }
+}
+4. Package-private (default)
+Zugriff nur innerhalb desselben Pakets:
+java
+Code kopieren
+class DefaultClass { // Kein Modifizierer: package-private
+    void defaultMethod() { // Kein Modifizierer: package-private
+        System.out.println("This is a package-private method.");
+    }
+}
+
+// Gleiche Klasse im selben Paket
+public class AnotherClassInSamePackage {
+    public static void main(String[] args) {
+        DefaultClass defaultClass = new DefaultClass();
+        defaultClass.defaultMethod(); // OK, im gleichen Paket
+    }
+}
+
+// Klasse in einem anderen Paket
+package anotherPackage;
+public class AnotherClassInAnotherPackage {
+    public static void main(String[] args) {
+        DefaultClass defaultClass = new DefaultClass();
+        // defaultClass.defaultMethod(); // Fehler: defaultMethod() ist package-private
+    }
+}
+Beispiel und Anwendung im Kontext der ursprünglichen Frage:
+Schau dir das Beispiel an, um zu sehen, wie verschiedene Zugriffsmodifizierer verwendet werden und wie sie sich auf den Zugriff auswirken:
+
+java
+Code kopieren
+abstract class Helper {
+    int num = 100; // package-private (default)
+    String operation = null; // package-private (default)
+
+    protected abstract void help();
+
+    void log() { // package-private (default)
+        System.out.println("Helper-log");
+    }
+}
+
+public class LogHelper extends Helper {
+    private int num = 200; // private
+    protected String operation = "LOGGING"; // protected
+
+    @Override
+    public void help() { // Dies überschreibt die abstrakte Methode in Helper
+        System.out.println("LogHelper-help");
+    }
+
+    @Override
+    void log() { // package-private (default)
+        System.out.println("LogHelper-log");
+    }
+
+    public static void main(String[] args) {
+        new LogHelper().help(); // Dies ruft die LogHelper-Implementierung von help() auf
+    }
+}
+In diesem Beispiel gibt es mehrere Zugriffsmodifizierer:
+
+num und operation in Helper sind package-private (default).
+help() in Helper ist protected.
+num in LogHelper ist private.
+operation in LogHelper ist protected.
+log() in LogHelper ist package-private (default).
+Die richtige Auswahl und Verwendung dieser Modifizierer ist wichtig, um sicherzustellen, dass Klassen und Methoden den beabsichtigten Zugriff und die Sichtbarkeit haben.

@@ -11,7 +11,8 @@ public class test50 {
         String str = process(arr, 3, 8); //Line 5
         System.out.println(str);
     }
-    /*INSERT*/
+                    /*INSERT*/
+    // wichtig datentyp String und am anfang keine zelle
     private static String process(int [] arr, int start, int end) {
         return null;
     }

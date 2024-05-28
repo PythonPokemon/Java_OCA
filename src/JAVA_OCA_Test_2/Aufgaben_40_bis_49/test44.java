@@ -49,13 +49,13 @@ public class test44 {
 
     static void m1(CharSequence s) {
         System.out.println("CharSequence");
-    }
+    }   // Schnittstelle
 
     static void m1(String s) {
         System.out.println("String");
-    }
+    }   // Spezialisiert
 
     static void m1(Object s) {
         System.out.println("Object");
-    }
+    }   // Oberklasse
 }
