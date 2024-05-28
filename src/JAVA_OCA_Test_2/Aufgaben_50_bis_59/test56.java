@@ -1,4 +1,4 @@
-/*
+/* code 2 | im gegensatz package JAVA_OCA_Test_1.Aufgaben_30_bis_39.test34 | Ausführliche erklärung: Aufgaben_Gegensatz_OCA
 Student[James, 27]
 Student[James, 25]
 Student[James, 25]

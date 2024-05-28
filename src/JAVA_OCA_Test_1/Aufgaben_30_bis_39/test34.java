@@ -1,4 +1,5 @@
-/*
+/* code 1 | gegensatz package JAVA_OCA_Test_2.Aufgaben_50_bis_59.test56 | Ausführliche erklärung: Aufgaben_Gegensatz_OCA
+
  * In Java entspricht der Standardverhalten der remove-Methode für Listen nicht dem, was Sie möglicherweise erwarten.
  * Die remove-Methode entfernt ein Objekt aus der Liste basierend auf seiner Referenz. Sie vergleicht nicht die inhaltlichen Werte der Objekte.
  *
