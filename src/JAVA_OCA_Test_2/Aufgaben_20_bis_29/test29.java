@@ -6,7 +6,7 @@ switch kann
 primitive Typen akzeptieren: byte, short, int, char;
 Wrapper-Typen: Byte, Short, Integer, Character; String und Enumerationen.
 ------------------------------------------------------------------------------------------------------------------------
-UNGÜLTIGE WERTE = double, long | die nicht akzeptiert werden in der switch case
+UNGÜLTIGE WERTE = float, double, long | die nicht akzeptiert werden in der switch case
 ------------------------------------------------------------------------------------------------------------------------
 -----In diesem Fall sind long und double ungültige Werte, die im switch-Ausdruck übergeben werden sollen.--------------
 ------------------------------------------------------------------------------------------------------------------------
@@ -35,7 +35,7 @@ public class test29 {
 //        char var = 10;
 
         //Richtige Auswahl
-        Integer var = 10;
+        int var = 10;
         switch(var) {
             case 10:
                 System.out.println("TEN");

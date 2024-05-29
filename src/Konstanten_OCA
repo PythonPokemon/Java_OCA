@@ -1,5 +1,7 @@
 
-Konstanten sind feste Werte, die während der Laufzeit eines Programms nicht geändert werden können. In Java werden Konstanten normalerweise mit dem Schlüsselwort final deklariert. Konstanten können verschiedene Datentypen haben, wie zum Beispiel int, double, char, String usw.
+Konstanten sind feste Werte, die während der Laufzeit eines Programms nicht geändert werden können.
+In Java werden Konstanten normalerweise mit dem Schlüsselwort final deklariert.
+Konstanten können verschiedene Datentypen haben, wie zum Beispiel int, double, char, String usw.
 
 Eigenschaften von Konstanten
 Unveränderlichkeit: Sobald einer Konstanten ein Wert zugewiesen wurde, kann dieser Wert nicht mehr geändert werden.
