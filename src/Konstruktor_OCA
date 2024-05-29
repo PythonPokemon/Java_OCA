@@ -1,0 +1,105 @@
+
+In Java wird das Überladen von Konstruktoren verwendet,
+um mehrere Konstruktoren mit unterschiedlichen Parametern in einer Klasse zu definieren.
+Dies ermöglicht es, Objekte der Klasse auf verschiedene Weisen zu instanziieren.
+Jeder Konstruktor kann eine andere Anzahl oder Art von Parametern haben, und Sie können die gewünschten Werte
+beim Erstellen eines Objekts angeben.
+
+Das Überladen von Konstruktoren kann auch verwendet werden, um alte Werte mit neuen zu überschreiben,
+aber es hat viele andere Zwecke, wie das Bereitstellen von Standardwerten
+oder das Ermöglichen der Erstellung eines Objekts mit unterschiedlichen Datentypen oder Kombinationen von Parametern.
+------------------------------------------------------------------------------------------------------------------------
+Hier sind einige Beispiele:
+
+Beispiel 1: Überladen von Konstruktoren zum Überschreiben alter Werte
+
+class Student {
+    String name;
+    int age;
+
+    // Standardkonstruktor
+    Student() {
+        this.name = "Unknown";
+        this.age = 0;
+    }
+
+    // Überladener Konstruktor
+    Student(String name, int age) {
+        this.name = name;
+        this.age = age;
+    }
+
+    @Override
+    public String toString() {
+        return "Student[name=" + name + ", age=" + age + "]";
+    }
+}
+
+public class Test {
+    public static void main(String[] args) {
+        Student s1 = new Student(); // Standardkonstruktor
+        Student s2 = new Student("James", 25); // Überladener Konstruktor
+
+        System.out.println(s1); // Ausgabe: Student[name=Unknown, age=0]
+        System.out.println(s2); // Ausgabe: Student[name=James, age=25]
+    }
+}
+------------------------------------------------------------------------------------------------------------------------
+Beispiel 2: Überladen von Konstruktoren mit unterschiedlichen Parametern
+
+class Rectangle {
+    int length;
+    int width;
+
+    // Konstruktor mit einem Parameter
+    Rectangle(int side) {
+        this.length = side;
+        this.width = side;
+    }
+
+    // Konstruktor mit zwei Parametern
+    Rectangle(int length, int width) {
+        this.length = length;
+        this.width = width;
+    }
+
+    @Override
+    public String toString() {
+        return "Rectangle[length=" + length + ", width=" + width + "]";
+    }
+}
+
+public class Test {
+    public static void main(String[] args) {
+        Rectangle square = new Rectangle(5); // Konstruktor mit einem Parameter
+        Rectangle rectangle = new Rectangle(5, 10); // Konstruktor mit zwei Parametern
+
+        System.out.println(square); // Ausgabe: Rectangle[length=5, width=5]
+        System.out.println(rectangle); // Ausgabe: Rectangle[length=5, width=10]
+    }
+}
+------------------------------------------------------------------------------------------------------------------------
+Wichtig: Korrekte Definition und Verwendung von Konstruktoren
+Es ist wichtig, dass Konstruktoren korrekt definiert und verwendet werden.
+Ein häufiger Fehler besteht darin, eine Methode mit dem gleichen Namen wie die Klasse,
+aber ohne den richtigen Methodensignatur zu definieren.
+Zum Beispiel:
+
+
+class Student {
+    String name;
+    int age;
+
+    // Dies ist keine Konstruktor, sondern eine Methode, weil der Rückgabewert angegeben ist
+    void Student() {
+        this.name = "Default Name";
+        this.age = 0;
+    }
+
+    // Richtiger Konstruktor
+    Student(String name, int age) {
+        this.name = name;
+        this.age = age;
+    }
+}
+In diesem Beispiel ist void Student() keine Konstruktor, sondern eine Methode,

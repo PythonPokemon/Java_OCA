@@ -1,15 +1,41 @@
 /*
-* Dieser Code erstellt ein String-Array mit den Namen "Smith", "Brown", "Thomas", "Taylor" und "Jones". Dann wird eine leere Liste erstellt.
-*
-* In der Schleife wird jedem Namen in dem Array die Liste hinzugefügt. Innerhalb der Schleife gibt es eine switch-Anweisung.
-* Bei x = 2 wird das continue-Statement erreicht, was dazu führt, dass die aktuelle Iteration abgebrochen wird und die Schleife zum nächsten Schleifendurchlauf springt.
-* Da continue die Schleife vorzeitig beendet, wird der break-Befehl, der danach kommt, nicht erreicht.
-*
-* Da der continue-Fall bei x = 2 auftritt, wird der Name "Thomas" übersprungen, und nach dem Hinzufügen von "Thomas" wird die Schleife abgebrochen.
-*
-* Die Ausgabe des Codes wird sein: 1
-*
-* Da nur der Name "Smith" hinzugefügt wird, bevor die Schleife durch das continue-Statement unterbrochen wird, enthält die Liste nur ein Element.
+Code-Analyse
+1.Initialisierung:
+
+String[] names = { "Smith", "Brown", "Thomas", "Taylor", "Jones" };
+List<String> list = new ArrayList<>();
+
+Ein Array names mit fünf Strings wird erstellt und eine leere ArrayList list wird initialisiert.
+------------------------------------------------------------------------------------------------------------------------
+2.Schleife:
+
+for (int x = 0; x < names.length; x++) {
+    list.add(names[x]);
+    switch (x) {
+        case 2:
+            continue;
+    }
+    break;
+}
+
+Eine for-Schleife läuft von x = 0 bis x = 4 (die Länge des names-Arrays).
+------------------------------------------------------------------------------------------------------------------------
+3.Erster Schleifendurchlauf (x = 0):
+
+list.add(names[x]); fügt den ersten Namen "Smith" zur Liste hinzu.
+switch (x) prüft den Wert von x, der 0 ist, also gibt es keine Übereinstimmung mit case 2.
+Der break-Befehl wird ausgeführt, was die Schleife verlässt.
+Da der break-Befehl die Schleife verlässt, nachdem der erste Name hinzugefügt wurde,
+werden keine weiteren Elemente hinzugefügt.
+------------------------------------------------------------------------------------------------------------------------
+Warum nur ein Element?
+Im ersten Durchlauf (x = 0), wird "Smith" der Liste hinzugefügt.
+Der switch-Block hat keine case-Übereinstimmung für 0, also wird der break-Befehl außerhalb des switch-Blocks ausgeführt.
+break beendet die for-Schleife nach dem ersten Durchlauf.
+------------------------------------------------------------------------------------------------------------------------
+Fazit
+Da die Schleife nach dem ersten Durchlauf beendet wird, wird nur ein Element ("Smith") zur Liste hinzugefügt.
+Daher ist die Größe der Liste 1.
  * */
 
 package JAVA_OCA_Test_1.Aufgaben_60_bis_69;
