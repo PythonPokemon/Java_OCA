@@ -27,8 +27,9 @@ public class test15 {
         fruits.add("grape");
 
         if(fruits.remove("grape"))
-            fruits.remove("papaya");
+            fruits.remove("papaya"); // kein fehler, da die .remove(Objekt) Methode boolisch ist und nur true or false
 
         System.out.println(fruits);
+//        System.out.println(fruits.remove("papaya"));
     }
 }
