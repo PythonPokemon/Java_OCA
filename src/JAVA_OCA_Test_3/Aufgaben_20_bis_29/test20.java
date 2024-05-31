@@ -1,32 +1,32 @@
 /*
-2
-1
+Zusammenfassung der Ausgabe:
+Der erste Wert (2) kommt aus der Methode change, wo die Kopie des Werts (num) um 1 erhöht und dann ausgegeben wurde.
+Der zweite Wert (1) kommt aus der main-Methode, wo der ursprüngliche Wert von i1 ausgegeben wird,
+der nicht verändert wurde.
 
-Gesamterklärung
-Es gibt keine Kompilierungsfehler und die Methode main(String[]) wird beim Ausführen der Testklasse aufgerufen.
-i1 = 1.
-Als nächstes wird 'Test.change(i1)' ausgeführt, der Inhalt von i1 (das ist 1) wird in die Variable 'num' kopiert und die Methode change(int) beginnt mit der Ausführung.
+Schrittweise Ausführung:
+1.int i1 = 1; initialisiert i1 mit 1.
 
-'num++;' erhöht den Wert von num um 1, num = 2. Es gibt keine Änderungen am Wert der Variablen 'i1' der main(String[])-Methode, die immer noch 1 enthält.
+2.test20.change(i1); ruft die Methode change auf und übergibt i1 als Argument:
+num wird zu 1.
+num++ erhöht num auf 2.
+System.out.println(num); gibt 2 aus.
 
-'System.out.println(num);' gibt 2 auf der Konsole aus.
-
-change(int)-Methode beendet ihre Ausführung und die Steuerung geht zurück zur main(String[])-Methode.
-
-'System.out.println(i1);' gibt 1 auf der Konsole aus.
-
+3.Zurück in der main-Methode:
+System.out.println(i1); gibt 1 aus.
+Daher ist die vollständige Ausgabe des Programms "2 1".
  * */
 package JAVA_OCA_Test_3.Aufgaben_20_bis_29;
 
 public class test20 {
-    public static void change(int num) {
-        num++;
-        System.out.println(num);
+    public static void change(int num) {    //num wird zu 1.
+        num++;                              //erhöht num auf 2.
+        System.out.println(num);            //gibt 2 aus.
     }
 
     public static void main(String[] args) {
-        int i1 = 1;
-        test20.change(i1);
-        System.out.println(i1);
+        int i1 = 1;                 // initialisiert i1 mit 1.
+        test20.change(i1);          // ruft die Methode .change() auf und übergibt i1 als Argument:
+        System.out.println(i1);     // gibt 1 aus.
     }
 }
