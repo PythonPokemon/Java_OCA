@@ -19,7 +19,7 @@ import java.time.Period;
 public class test12 {
     public static void main(String [] args) {
         LocalDate date = LocalDate.of(2000, Month.JANUARY, 1);
-        Period period = Period.parse("p-30000y");
+        Period period = Period.parse("p-30000y");   // "p-" korrekte syntax
         System.out.println(date.plus(period));
     }
 }
