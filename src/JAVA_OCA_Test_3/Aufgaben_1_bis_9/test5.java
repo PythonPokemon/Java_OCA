@@ -13,6 +13,6 @@ package JAVA_OCA_Test_3.Aufgaben_1_bis_9;
 public class test5 {
     public static void main(String[] args) {
         String [] arr = new String[1];
-        System.out.println(arr[0].isEmpty());
+        System.out.println(arr[0].isEmpty()); // .isEmpty() methode ist falsch hier
     }
 }

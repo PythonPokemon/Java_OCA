@@ -16,7 +16,7 @@ public class test2 {
     public static void main(String[] args) {
         int [] arr1 = {5, 10, 15};
         int [] arr2 = {'A', 'B'};
-        arr1 = arr2;
+        arr1 = arr2;    // durch diese zuweisung erhält arr1 2 zeichen wie arr2 | 2 + 2 = 4
         System.out.println(arr1.length + arr2.length);
     }
 }
