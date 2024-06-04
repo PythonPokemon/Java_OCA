@@ -2,7 +2,7 @@
 Currently above code causes compilation error.
 
 Which of the options can successfully print TEXT,25 on to the console?
-
+------------------------------------------------------------------------------------------------------------------------
 Replace /*INSERT-1/ with:
 
         this(type);
@@ -29,11 +29,9 @@ Replace /*INSERT-2/ with:
 
 Correct answer
 Replace /*INSERT-1/ with:
-
         this.type = type;
 
 Replace /*INSERT-2/ with:
-
         this(type);
 
 None of the other options
