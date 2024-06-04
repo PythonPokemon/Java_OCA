@@ -8,9 +8,11 @@ System.out.println(i); causes compilation error.
  * */
 package JAVA_OCA_Test_3.Aufgaben_20_bis_29;
 
-//public class test26 {
-//    public static void main(String[] args) {
-//        for(int i=0; i<=2; i++){}
-//        System.out.println(i);
-//    }
-//}
+public class test26 {
+    public static void main(String[] args) {
+        for (int i = 0; i <= 2; i++) {
+            System.out.println(i);    // muss innerhalb der Schleife ausgegeben werden!
+        }
+//        System.out.println(i);          // führt zum compiler fehler
+    }
+}

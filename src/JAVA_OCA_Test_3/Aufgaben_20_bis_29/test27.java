@@ -29,8 +29,14 @@ public class test27 {
         list.add(110);
         list.add(new Integer(110));
         list.add(110);
+        list.add(114);
 
-        list.removeIf(i -> i == 110);
+        // Boolean vergleich
+        list.removeIf(i -> i == 110);// entfernt alle objekte mit dem Element 110 aus der list. wenn sie 110 entsprechen
+        list.remove(1); // entfernt das Objekt das noch übrig ist (114) normalerweise Index 4
+                              // aber da alle vorher schon entfernt wurden, rutscht index 4 auf index 0!
+                              // bedeutet list.remove(1); aus dem Index 1 würde .IndexOutOfBoundsException auslösen!
+
         System.out.println(list);
     }
 }

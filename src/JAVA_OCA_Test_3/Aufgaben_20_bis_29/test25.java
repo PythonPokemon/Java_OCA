@@ -15,8 +15,9 @@ package JAVA_OCA_Test_3.Aufgaben_20_bis_29;
 public class test25 {
     public static void main(String[] args) {
         String msg = "Hello";
-        boolean [] flag = new boolean[1];
-        if(flag[0]) {
+        boolean [] flag = new boolean[1];   // zahl spielt keine rolle, von 1 ... bis
+
+        if(flag[0]) {   // [] Index compiler fehler | Index [1] wäre .ArrayIndexOutOfBoundsException
             msg = "Welcome";
         }
         System.out.println(msg);
