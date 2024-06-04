@@ -18,11 +18,12 @@ package JAVA_OCA_Test_3.Aufgaben_20_bis_29;
 public class test29 {
     public static void main(String[] args) {
         String str = "Good"; //Line 3
-        change(str); //Line 4
+        change(str); //Line 4 wird nicht verändert!
         System.out.println(str); //Line 5
     }
 
-    private static void change(String s) {
-        s.concat("_Morning"); //Line 9
+    private static void change(String s) { // Methode change erstellt ein neues Objekt String s
+        s.concat("Morning"); //Objekt s wendet die methode .concat an
+
     }
 }
