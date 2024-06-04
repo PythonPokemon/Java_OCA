@@ -18,8 +18,9 @@ zuletzt Korrigiert!
 test3 | 29
 
 zuletzt erstellt!
-test4 | 19
+test4 | 29
 ------------------------------------------------------------------------------------------------------------------------
 import java.time.LocalDate;
 import java.util.ArrayList;
 import java.util.List;
+import java.util.function.Predicate;
