@@ -18,7 +18,7 @@ zuletzt Korrigiert!
 test3 | 29
 
 zuletzt erstellt!
-test6 | 1
+test6 | 3
 ------------------------------------------------------------------------------------------------------------------------
 import java.time.LocalDate;
 import java.util.ArrayList;
