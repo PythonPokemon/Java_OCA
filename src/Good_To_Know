@@ -5,6 +5,7 @@ Test2
 
 test3
 29 .concat() methode
+30 .remove methoden
 
 Test4
 
@@ -17,8 +18,6 @@ Test6
 zuletzt Korrigiert!
 test3 | 29
 
-zuletzt erstellt!
-test6 | 3
 ------------------------------------------------------------------------------------------------------------------------
 import java.time.LocalDate;
 import java.util.ArrayList;
@@ -34,3 +33,4 @@ import java.io.FileNotFoundException;
 .ArithmeticException
 .FileNotFoundException;
 .ClassCastException
+.UnsupportedTemporalTypeException
