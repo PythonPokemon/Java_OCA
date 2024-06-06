@@ -19,6 +19,6 @@ class Sub extends Super {
 
 public class test41 {
     public static void main(String[] args) throws Exception {
-        new Sub();
+        new Beb();
     }
 }
