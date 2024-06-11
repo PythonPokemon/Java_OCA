@@ -14,15 +14,15 @@ HINWEIS: Java ermöglicht das Abfangen des Ausnahmetyps. catch(Exception ex) {} 
 package JAVA_OCA_Test_3.Aufgaben_30_bis_39;
 import java.io.FileNotFoundException;
 
-public class test32 {
-    public static void main(String[] args) {
-        try {
-            System.out.println(1);
-        } catch (NullPointerException ex) {
-            System.out.println("ONE");
-        } catch (FileNotFoundException ex) {
-            System.out.println("TWO");
-        }
-        System.out.println("THREE");
-    }
-}
+//public class test32 {
+//    public static void main(String[] args) {
+//        try {
+//            System.out.println(1);
+//        } catch (NullPointerException ex) {
+//            System.out.println("ONE");
+//        } catch (FileNotFoundException ex) {
+//            System.out.println("TWO");
+//        }
+//        System.out.println("THREE");
+//    }
+//}
