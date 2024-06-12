@@ -4,7 +4,7 @@ package Algorythmen.Sortieralgorithmen;
  * Dieser Algorithmus verwendet einen zusätzlichen boolean-Wert swapped,
  * um zu verfolgen, ob während eines Durchlaufs durch das Array ein Tausch durchgeführt wurde.
  * Wenn kein Tausch durchgeführt wurde, ist das Array bereits sortiert, und der Algorithmus kann beendet werden.
- * Dies verbessert die Effizienz des Algorithmus insbesondere für bereits teilweise sortierte Arrays.
+ * Dies verbessert die Effizienz des Algorithmus insbesondere für bereits teilweise sortierte Java_Anfänger_zum_Profi.Arrays.
  */
 public class BubbleSort {
     public static void main(String[] args) {

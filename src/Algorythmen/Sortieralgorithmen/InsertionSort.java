@@ -1,10 +1,10 @@
 package Algorythmen.Sortieralgorithmen;
 
 /**
- * Dieser Algorithmus verwendet eine optimierte Methode, um das Einfügen eines Elements an der richtigen Stelle im sortierten Teil des Arrays zu beschleunigen.
+ * Dieser Algorithmus verwendet eine optimierte Methode, um das Einfügen eines Elements an der richtigen Stelle im sortierten Teil des Java_Anfänger_zum_Profi.Arrays zu beschleunigen.
  * Statt jedes Mal alle vorherigen Elemente zu verschieben, um Platz für das aktuelle Element zu machen,
- * wird nur die Position des aktuellen Elements im sortierten Teil des Arrays gesucht und das aktuelle Element an diese Stelle eingefügt.
- * Dies verbessert die Effizienz des Algorithmus insbesondere für teilweise sortierte Arrays.
+ * wird nur die Position des aktuellen Elements im sortierten Teil des Java_Anfänger_zum_Profi.Arrays gesucht und das aktuelle Element an diese Stelle eingefügt.
+ * Dies verbessert die Effizienz des Algorithmus insbesondere für teilweise sortierte Java_Anfänger_zum_Profi.Arrays.
  */
 public class InsertionSort {
     public static void main(String[] args) {

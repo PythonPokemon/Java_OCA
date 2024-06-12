@@ -2,8 +2,8 @@ package Algorythmen.Sortieralgorithmen;
 
 /**
  * Dieser Algorithmus verwendet eine Optimierung, indem er nicht alle Elemente vergleicht und tauscht,
- * sondern nur das kleinste Element im unsortierten Teil des Arrays auswählt und es mit dem ersten Element dieses Teils tauscht.
- * Dies verbessert die Effizienz des Algorithmus, insbesondere für größere Arrays.
+ * sondern nur das kleinste Element im unsortierten Teil des Java_Anfänger_zum_Profi.Arrays auswählt und es mit dem ersten Element dieses Teils tauscht.
+ * Dies verbessert die Effizienz des Algorithmus, insbesondere für größere Java_Anfänger_zum_Profi.Arrays.
  */
 public class SelectionSort {
     public static void main(String[] args) {
