@@ -31,6 +31,7 @@ public class Instanzvariablen { // Das ist eine Instanz | bezeichner Instanzvari
         Instanzvariablen beispiel = new Instanzvariablen();
         beispiel.methode(); // Aufruf der Methode
 
+
 /*
 Um eine Instanzvariable in einer methode aufzurufen braucht man eine dummy objekt.
 Syntax: Instanzname der klasse, in der sich die Instanzvariable befindet | dummy frei namensgebung | = new Instanzname();
