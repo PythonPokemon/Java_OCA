@@ -20,6 +20,13 @@ Beispiele für Modifizierer sind: public, private, protected und static.
 package JAVA_Insel.Kapitel_2;
 
 public class HalloWelt {
+// public | öffentlich, bedeutet für alle zugänglich, muss sie auch, das dass die main methode ist um das Hauptprogramm
+// zu starten.
+
+// static | bedeutet statisch, alle aufrufe aus dieser Hauptmethode bleiben gleich.
+// void | bedeutet es soll nur etwas aktualisiert oder protokolliert werden, man bekommt keinen rückgabewert zurück
+// String | ist die Oberklasse der String Objekte und methoden die darin implementiert sind.
+// args | sind variablen
     public static void main(String[] args) {
         System.out.println("Hallo Welt");
     }
