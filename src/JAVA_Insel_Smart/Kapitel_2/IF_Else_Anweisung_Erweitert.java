@@ -2,7 +2,7 @@ package JAVA_Insel_Smart.Kapitel_2;
 
 public class IF_Else_Anweisung_Erweitert {
     public static void main(String[] args) {
-        int zahl = 3;
+        int zahl = 100;
 
         if (zahl > 10) {
             System.out.println("Zahl ist größer als 10");
