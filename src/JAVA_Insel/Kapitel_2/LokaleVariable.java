@@ -6,6 +6,8 @@ Andernfalls führt dies zu einem Compiler-Fehler:
 int zahl;
 zahl = 5; // Initialisierung
 ------------------------------------------------------------------------------------------------------------------------
+Instanzvariablen sind Variablen, die innerhalb einer Klasse,
+aber außerhalb einer Methode deklariert werden und zu einer Instanz der Klasse gehören.
 * */
 package JAVA_Insel.Kapitel_2;
 
