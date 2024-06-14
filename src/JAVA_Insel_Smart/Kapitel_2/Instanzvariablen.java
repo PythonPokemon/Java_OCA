@@ -12,7 +12,7 @@ Werden automatisch mit Standardwerten initialisiert (z.B. 0 für int, null für 
 
 //----------------------------------------------------------------------------------------------------------------------
 * */
-package JAVA_Insel.Kapitel_2;
+package JAVA_Insel_Smart.Kapitel_2;
 
 public class Instanzvariablen {
     int instanzVariable = 20;   // Instanzvariable | in der Klasse, aber außerhalb der methode

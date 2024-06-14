@@ -9,7 +9,7 @@ zahl = 5; // Initialisierung
 Instanzvariablen sind Variablen, die innerhalb einer Klasse,
 aber außerhalb einer Methode deklariert werden und zu einer Instanz der Klasse gehören.
 * */
-package JAVA_Insel.Kapitel_2;
+package JAVA_Insel_Smart.Kapitel_2;
 
 // Beispiel 1: Initialisierung und Verwendung innerhalb einer Methode
 public class LokaleVariable {

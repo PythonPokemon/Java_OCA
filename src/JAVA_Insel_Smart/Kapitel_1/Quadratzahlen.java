@@ -1,4 +1,4 @@
-package JAVA_Insel.Kapitel_1;
+package JAVA_Insel_Smart.Kapitel_1;
 
 public class Quadratzahlen {
     public static void main (String [] args) {

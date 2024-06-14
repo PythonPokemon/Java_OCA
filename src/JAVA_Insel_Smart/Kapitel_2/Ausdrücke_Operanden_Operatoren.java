@@ -51,7 +51,7 @@ boolean größerGleich = (5 >= 3); // true
 
 ------------------------------------------------------------------------------------------------------------------------
 * */
-package JAVA_Insel.Kapitel_2;
+package JAVA_Insel_Smart.Kapitel_2;
 
 public class Ausdrücke_Operanden_Operatoren {
     public static void main(String[] args) {

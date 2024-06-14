@@ -26,7 +26,7 @@ int zahl = 5;
 Seit Java 10 können lokale Variablen mit dem Schlüsselwort var deklariert werden, das den Typ automatisch ableitet:
 var zahl = 5; // Typ wird als int abgeleitet
 * */
-package JAVA_Insel.Kapitel_2;
+package JAVA_Insel_Smart.Kapitel_2;
 
 public class Datentypen {
     public static void main(String[] args) {
