@@ -14,13 +14,14 @@ package JAVA_Insel_Smart.Kapitel_2;
 
 public class IF_Else_Anweisung {
     public static void main(String[] args) {
-        int zahl = 3;
+        int zahl = 10;
 
         if (zahl > 5) {
             System.out.println("Zahl ist größer als 5");
         } else {
             System.out.println("Zahl ist nicht größer als 5");
         }
+
 
     }
 }
