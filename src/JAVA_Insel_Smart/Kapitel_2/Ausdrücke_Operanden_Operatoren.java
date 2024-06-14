@@ -48,7 +48,47 @@ boolean größer = (5 > 3); // true
 boolean kleinerGleich = (5 <= 5); // true
 boolean größerGleich = (5 >= 3); // true
 ------------------------------------------------------------------------------------------------------------------------
+Logische Operatoren: Nicht, Und, Oder, XOR
 
+Logische Operatoren werden verwendet, um Wahrheitswerte zu kombinieren: ! (Nicht), && (Und), || (Oder), ^ (XOR):
+boolean nicht = !(5 == 5); // false
+boolean und = (5 == 5) && (3 < 5); // true
+boolean oder = (5 == 5) || (3 > 5); // true
+boolean xor = (5 == 5) ^ (3 > 5); // true
+------------------------------------------------------------------------------------------------------------------------
+Kurzschluss-Operatoren
+
+Die logischen Operatoren && und || sind Kurzschluss-Operatoren, was bedeutet,
+dass der zweite Operand nicht ausgewertet wird, wenn das Ergebnis bereits durch den ersten Operand feststeht:
+
+boolean kurzschluss = (5 > 3) || (5 / 0 == 0); // true, keine Division durch 0
+------------------------------------------------------------------------------------------------------------------------
+Der Rang der Operatoren in der Auswertungsreihenfolge
+
+Java hat eine festgelegte Rangordnung der Operatoren, die bestimmt,
+in welcher Reihenfolge die Ausdrücke ausgewertet werden.
+Zum Beispiel haben Multiplikation und Division einen höheren Rang als Addition und Subtraktion:
+
+int ergebnis = 5 + 3 * 2; // ergebnis ist 11, da Multiplikation vor Addition
+------------------------------------------------------------------------------------------------------------------------
+Die Typumwandlung (das Casting)
+
+In Java können Sie den Typ eines Ausdrucks explizit ändern (casten).
+Dies ist besonders nützlich, wenn Sie mit verschiedenen numerischen Typen arbeiten:
+
+int zahl = (int) 3.14; // zahl ist 3
+------------------------------------------------------------------------------------------------------------------------
+Überladenes Plus für Strings
+
+Der +-Operator ist in Java überladen, um Zeichenketten zu verketten:
+String text = "Hallo" + " Welt"; // "Hallo Welt"
+------------------------------------------------------------------------------------------------------------------------
+Operator vermisst
+
+Falls ein bestimmter Operator in Java fehlt, kann dies durch eine Methode ersetzt werden.
+Beispielsweise kann die Potenzfunktion durch die Methode Math.pow() realisiert werden:
+
+double ergebnis = Math.pow(2, 3); // ergebnis ist 8.0
 ------------------------------------------------------------------------------------------------------------------------
 * */
 package JAVA_Insel_Smart.Kapitel_2;
@@ -75,11 +115,16 @@ public class Ausdrücke_Operanden_Operatoren {
 // Unäres Minus und Plus  - und +
         int positiv = +5;   // 5
         int negativ = -5;   // -5
+        System.out.println(positiv);
+        System.out.println(negativ);
 //----------------------------------------------------------------------------------------------------------------------
 // Präfix- oder Postfix-Inkrement und -Dekrement
         int x = 5;
         int y = ++x;    // y ist 6, x ist 6 (Präfix)
         int z = x--;    // z ist 6, x ist 5 (Postfix)
+        System.out.println(x);
+        System.out.println(y);
+        System.out.println(z);
 //----------------------------------------------------------------------------------------------------------------------
 // Zuweisung mit Operation (Verbundoperator): : +=, -=, *=, /=, %=:
         int zahl1 = 5;
@@ -89,10 +134,60 @@ public class Ausdrücke_Operanden_Operatoren {
 //----------------------------------------------------------------------------------------------------------------------
 // Die relationalen Operatoren und die Gleichheitsoperatoren:
 //  == (gleich), != (ungleich), < (kleiner), > (größer), <= (kleiner oder gleich), >= (größer oder gleich):
-         boolean gleich = (5 == 5);
-
+        boolean gleich = (5 == 5); // true
+        boolean ungleich = (5 != 3); // true
+        boolean kleiner = (3 < 5); // true
+        boolean größer = (5 > 3); // true
+        boolean kleinerGleich = (5 <= 5); // true
+        boolean größerGleich = (5 >= 3); // true
+        System.out.println(gleich);
+        System.out.println(ungleich);
+        System.out.println(kleiner);
+        System.out.println(größer);
+        System.out.println(kleinerGleich);
+        System.out.println(größerGleich);
 //----------------------------------------------------------------------------------------------------------------------
+// Logische Operatoren: Nicht, Und, Oder, XOR
+        boolean nicht = !(5 == 5); // false
+        boolean und = (5 == 5) && (3 < 5); // true
+        boolean oder = (5 == 5) || (3 > 5); // true
+        boolean xor = (5 == 5) ^ (3 > 5); // true
+        System.out.println(nicht);
+        System.out.println(und);
+        System.out.println(oder);
+        System.out.println(xor);
+//----------------------------------------------------------------------------------------------------------------------
+// Kurzschluss-Operatoren  && und ||
+        boolean kurzschluss1 = (5 > 3) || (5 / 0 == 0); // true, keine Division durch 0
+        boolean kurzschluss2 = (5 <= 5 && 1 > 3 || 5 == 5); // true | UND Operation false || ODER true 5 entspricht 5
+        System.out.println(kurzschluss1);
+        System.out.println(kurzschluss2);
+//----------------------------------------------------------------------------------------------------------------------
+// Der Rang der Operatoren in der Auswertungsreihenfolge
+        int ergebnis_1 = 5 + 3 * 2; // ergebnis ist 11, da Multiplikation vor Addition
+        float ergebnis_2 = 2 + 4 / 2;
+        double ergebnis_3 = 2.1 + 2.2;
+        System.out.println(ergebnis_1);
+        System.out.println(ergebnis_2);
+        System.out.println(ergebnis_3);
+//----------------------------------------------------------------------------------------------------------------------
+// Die Typumwandlung (das Casting)
+// Syntax: Datentyp | Bezeichner | zuweisungsoperator = | Gewünschter Datentyp | Variablenwert
+
+        int zahlCast1 = (int) 3.14;     // wandelt die gleitkommazahl in eine ganzzahl um
+        float zahlCast2 = (float) 2;    // wandelt die Ganzzahl in eine Gleitkommazahl um
+        System.out.println(zahlCast1);
+        System.out.println(zahlCast2);
+//----------------------------------------------------------------------------------------------------------------------
+// Überladenes Plus für Strings, um Zeichenketten zu verketten:
+        String verkettungsFrage = "Hallo " + "Welt " + "wie geht " + "es dir heute?";
+        String gesamtAntwort = "Mir geht es gut, danke der nachfrage :-)";
+        System.out.println(verkettungsFrage);
+        System.out.println(gesamtAntwort);
+//----------------------------------------------------------------------------------------------------------------------
+//
 
 
+        System.out.println();
     }
 }
