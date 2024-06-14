@@ -17,7 +17,7 @@ Modifizierer
 Modifizierer sind Schlüsselwörter, die die Sichtbarkeit und das Verhalten von Klassen, Methoden und Variablen ändern.
 Beispiele für Modifizierer sind: public, private, protected und static.
 * */
-package JAVA_Insel_Smart.Kapitel_2;
+package JAVA_Insel_Smart.Kapitel_1;
 
 public class HalloWelt {
 // public | öffentlich, bedeutet für alle zugänglich, muss sie auch, das dass die main methode ist um das Hauptprogramm
