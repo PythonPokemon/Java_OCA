@@ -185,9 +185,11 @@ public class Ausdrücke_Operanden_Operatoren {
         System.out.println(verkettungsFrage);
         System.out.println(gesamtAntwort);
 //----------------------------------------------------------------------------------------------------------------------
-//
-
-
-        System.out.println();
+// Operator vermisst | kann durch die  Math.pow() methode ergänzt werden.
+// Verwendung der Math.pow() Methode zur Berechnung der Potenz
+        double basis = 2.0;
+        double exponent = 3.0;
+        double ergebnis = Math.pow(basis, exponent);    // 2.0 * 2.0 * 2.0 = 8.0
+        System.out.println(basis + " hoch " + exponent + " ist " + ergebnis);
     }
 }
