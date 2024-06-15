@@ -20,7 +20,7 @@ Können über den Klassennamen aufgerufen werden.
 * */
 package JAVA_Insel_Smart.Kapitel_2;
 
-public class Statische_VS_Instanzmethoden {
+public class StatischeMethode_VS_InstanzMethoden {
     int instanzVariable = 42;    // Instanzvariable
 
     // Statische Methode | Können nur auf statische Variablen und andere statische Methoden zugreifen.
@@ -37,9 +37,9 @@ public class Statische_VS_Instanzmethoden {
 
     public static void main(String[] args) {
         // Aufruf der statischen Methode
-        Statische_VS_Instanzmethoden.statischeMethode();    // ohne dummy möglich
+        StatischeMethode_VS_InstanzMethoden.statischeMethode();    // ohne dummy möglich
         // Aufruf der Instanz methode
-        Statische_VS_Instanzmethoden obj = new Statische_VS_Instanzmethoden(); // Dummy Objekt, voraussetzung
+        StatischeMethode_VS_InstanzMethoden obj = new StatischeMethode_VS_InstanzMethoden(); // Dummy Objekt, voraussetzung
 
         // Aufruf der Instanzmethode
         obj.instanzMethode();
