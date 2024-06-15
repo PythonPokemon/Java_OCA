@@ -71,11 +71,11 @@ Autoboxing und Unboxing vereinfachen die Arbeit mit Wrapper-Klassen.
 Durch die Beachtung dieser Regeln kann man sicherstellen,
 dass das Casting in Java korrekt und ohne Laufzeitfehler erfolgt.
 * */
-package JAVA_Insel_Smart.Kapitel_2;
+package JAVA_Insel_Smart.Kapitel_2.Casting;
 
 public class Typumwandlung_Casting {
     public static void main(String[] args) {
-// Implizites Casting (Widening) | kleineren zu einem größeren Typ | Information gehen nicht verloren
+//  Implizites Casting (Widening) | kleineren zu einem größeren Typ | Information gehen nicht verloren
         int myInt = 100;
         long myLong = myInt; // implizites Casting von int zu long
         float myFloat = myLong; // implizites Casting von long zu float
@@ -84,7 +84,7 @@ public class Typumwandlung_Casting {
         System.out.println(myLong);
         System.out.println(myFloat);
 
-//        Überprüfungsmethode, ob der Datentyp sich nach dem Casting verändert hat!
+//  Überprüfungsmethode, ob der Datentyp sich nach dem Casting verändert hat
 //        System.out.println("myInt: " + myInt + " (Type: " + ((Object) myInt).getClass().getSimpleName() + ")");
 //
 //        long myLong = myInt; // implizites Casting von int zu long
@@ -93,20 +93,34 @@ public class Typumwandlung_Casting {
 //        float myFloat = myLong; // implizites Casting von long zu float
 //        System.out.println("myFloat: " + myFloat + " (Type: " + ((Object) myFloat).getClass().getSimpleName() + ")");
 //----------------------------------------------------------------------------------------------------------------------
-// Explizites Casting (Narrowing) | größeren zu einem kleineren Typ | Informationen können verloren gehen
+//  Explizites Casting (Narrowing) | größeren zu einem kleineren Typ | Informationen können verloren gehen
         double myDouble = 9.78;
+
         int myInt2 = (int) myDouble; // explizites Casting von double zu int | Variante 1 | über den bezeichner
         int myInt3 = (int) 9.78;     //                                      | Variante 2 | über den wert
         System.out.println(myInt2);
         System.out.println(myInt3);
 //----------------------------------------------------------------------------------------------------------------------
-//
-        System.out.println();
+//  Casting von Wrapper-Klassen |  Integer, Double, Float, etc.) können auch explizit gecastet werden.
+        Integer myInteger2 = 10;
+
+        Double myDouble2 = (double) myInteger2; // explizites Casting notwendig
+        Double myDouble3 = (double) 10;
+        System.out.println(myDouble2);
+        System.out.println(myDouble3);
 //----------------------------------------------------------------------------------------------------------------------
-//
-        System.out.println();
+//  Autoboxing und Unboxing | automatische Konvertieren zwischen primitiven Datentypen und ihren Wrapper-Klassen
+        int myInt4 = 14;
+
+        Integer myInteger4 = myInt4; // Autoboxing
+        int anotherInt = myInteger4; // Unboxing
+
+        System.out.println(myInt4);
+        System.out.println(myInteger4);
+        System.out.println(anotherInt);
 //----------------------------------------------------------------------------------------------------------------------
-//
+//  Trainingsbereich
+
         System.out.println();
     }
 }

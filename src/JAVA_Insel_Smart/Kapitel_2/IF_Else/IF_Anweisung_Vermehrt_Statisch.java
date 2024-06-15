@@ -4,7 +4,7 @@ Verzweigung mit der if-Anweisung
 Die einfachste Form der bedingten Anweisung ist die if-Anweisung, die einen Block von Anweisungen nur dann ausführt,
 wenn eine Bedingung wahr ist:
 * */
-package JAVA_Insel_Smart.Kapitel_2;
+package JAVA_Insel_Smart.Kapitel_2.IF_Else;
 
 public class IF_Anweisung_Vermehrt_Statisch {
     int zahlNormal = 10;

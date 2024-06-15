@@ -1,4 +1,4 @@
-package JAVA_Insel_Smart.Kapitel_2;
+package JAVA_Insel_Smart.Kapitel_2.IF_Else;
 
 public class IF_Else_Anweisung_Erweitert {
     public static void main(String[] args) {
