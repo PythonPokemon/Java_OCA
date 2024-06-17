@@ -22,18 +22,17 @@ package JAVA_Insel_Smart.Kapitel_3;
 
 public class EqualsMethode {
     public static void main(String[] args) {
-        java.awt.Point player = new java.awt.Point();
-        player.x = player.y = 10;
+        java.awt.Point player = new java.awt.Point();   // erstellung neues Objekt | namens 'player'
+        player.x = player.y = 10;                       // eigenschaften vom Objekt x, y mit den elementen 10
 
-        java.awt.Point door = new java.awt.Point();
-        door.setLocation(10, 10);
+        java.awt.Point door = new java.awt.Point();     // erstellung neues Objekt | namens 'door'
+        door.setLocation(10, 10);                 // eigenschaften vom Objekt x, y mit den elementen 10
 
-        System.out.println(player.equals(door)); // true
-        System.out.println(door.equals(player)); // true
+        System.out.println(player.equals(door)); // true | vergleicht die elemente | sind gleich
+        System.out.println(door.equals(player)); // true | vergleicht die elemente | sind gleich
 
-        java.awt.Point snake = new java.awt.Point();
-        snake.setLocation(20, 22);
-        System.out.println(snake.equals(door)); // false
-
+        java.awt.Point snake = new java.awt.Point();    // erstellung neues Objekt | namens 'snake'
+        snake.setLocation(20, 22);                // eigenschaften vom Objekt x, y mit den elementen 20, 22
+        System.out.println(snake.equals(door)); // false | vergleicht die elemente | sind ungliech
     }
 }
