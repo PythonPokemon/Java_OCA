@@ -1,0 +1,282 @@
+Kapitel 4: Arrays und ihre Anwendungen
+4.1 Arrays
+Ein Array (auch deutsch Feld oder Reihung genannt) ist ein spezieller Datentyp,
+der mehrere Werte zu einer Einheit zusammenfasst.
+Er ist mit einem Setzkasten vergleichbar, in dem die Plätze durchnummeriert sind.
+Angesprochen werden die Elemente über einen ganzzahligen Index.
+Jeder Platz (etwa für Schlümpfe) nimmt immer Werte des gleichen Typs auf (nur Schlümpfe und keine Pokémon).
+Normalerweise liegen die Plätze eines Arrays (seine Elemente) im Speicher hintereinander,
+doch ist dies ein für Programmierer nicht sichtbares Implementierungsdetail der virtuellen Maschine.
+
+Jedes Array beinhaltet Werte nur eines bestimmten Datentyps bzw. Grundtyps.
+Dies können sein:
+
+elementare Datentypen wie int, byte, long usw.
+Referenztypen
+Referenztypen anderer Arrays, um mehrdimensionale Arrays zu realisieren
+------------------------------------------------------------------------------------------------------------------------
+4.1.1 Grundbestandteile
+Für das Arbeiten mit Arrays müssen wir drei neue Dinge kennenlernen:
+
+das Deklarieren von Array-Variablen
+das Initialisieren von Array-Variablen, Platzbeschaffung
+den Zugriff auf Arrays, den lesenden Zugriff ebenso wie den schreibenden
+
+Beispiel:
+Deklariere eine Variable randoms, die ein Array referenziert:
+
+double[] randoms;
+Initialisiere die Variable mit einem Array-Objekt der Größe 10:
+
+randoms = new double[10];
+Belege das erste Element mit einer Zufallszahl und das zweite Element mit dem Doppelten des ersten Elements:
+
+randoms[0] = Math.random();
+randoms[1] = randoms[0] * 2;
+------------------------------------------------------------------------------------------------------------------------
+4.1.2 Deklaration von Array-Variablen
+Eine Array-Variablen-Deklaration ähnelt einer gewöhnlichen Deklaration, nur dass nach dem Datentyp die Zeichen [ und ]
+gesetzt werden.
+
+Beispiel:
+Deklariere zwei Array-Variablen:
+
+int[] primes;
+Point[] points;
+Eine Variable wie primes hat jetzt den Typ „ist Array“ und „speichert int-Elemente“, also eigentlich zwei Typen.
+
+Hinweis:
+Die eckigen Klammern lassen sich bei der Deklaration einer Array-Variablen auch hinter den Namen setzen,
+doch ganz ohne Unterschied ist die Deklaration nicht.
+Das zeigt sich spätestens dann, wenn mehr als eine Variable deklariert wird:
+
+int []primes,
+    matrix[], threeDimMatrix[][];
+Das entspricht dieser Deklaration:
+
+int primes[], matrix[][], threeDimMatrix[][][];
+Damit Irrtümer dieser Art ausgeschlossen werden, sollten Sie in jeder Zeile nur eine Deklaration eines Typs schreiben.
+Nach reiner Java-Lehre gehören die Klammern jedenfalls hinter den Typbezeichner, so der Java-Schöpfer James Gosling.
+------------------------------------------------------------------------------------------------------------------------
+4.1.3 Array-Objekte mit new erzeugen
+Das Anlegen der Array-Referenzvariablen allein erzeugt noch kein Array mit einer bestimmten Länge.
+In Java ist das Anlegen des Arrays genauso dynamisch wie die Objekterzeugung.
+Ein Array muss mit dem Schlüsselwort new erzeugt werden, da Arrays Objekte sind.
+Die Länge des Arrays wird in eckigen Klammern angegeben.
+Hier kann ein beliebiger Integer-Wert stehen, auch eine Variable. Selbst 0 ist möglich.
+Später kann die Größe nicht mehr verändert werden.
+
+Beispiel:
+Deklariere eine Array-Variable und initialisiere sie:
+
+int[] numbers;
+numbers = new int[10];
+Das Array numbers hat nun Platz für zehn Integer-Werte.
+------------------------------------------------------------------------------------------------------------------------
+4.1.4 Arrays mit Inhalt
+Arrays können auch direkt bei der Deklaration initialisiert werden:
+
+int[] primes = { 2, 3, 5, 7, 11, 13 };
+Diese Form der Initialisierung legt gleichzeitig die Länge des Arrays fest.
+------------------------------------------------------------------------------------------------------------------------
+4.1.5 Die Länge eines Arrays über das Attribut length auslesen
+Die Länge eines Arrays kann über das Attribut length ermittelt werden.
+Dies ist ein spezielles Attribut, das jedes Array besitzt:
+
+int[] primes = { 2, 3, 5, 7, 11, 13 };
+System.out.println(primes.length); // Ausgabe: 6
+------------------------------------------------------------------------------------------------------------------------
+4.1.6 Zugriff auf die Elemente über den Index
+Der Zugriff auf die Elemente eines Arrays erfolgt über den Index, der nullbasiert ist.
+Das bedeutet, das erste Element hat den Index 0, das zweite den Index 1 usw.
+
+Beispiel:
+int[] primes = { 2, 3, 5, 7, 11, 13 };
+System.out.println(primes[0]); // Ausgabe: 2
+primes[0] = 17;
+System.out.println(primes[0]); // Ausgabe: 17
+------------------------------------------------------------------------------------------------------------------------
+4.1.7 Typische Array-Fehler
+Typische Fehler im Umgang mit Arrays sind:
+
+Zugriff auf ein Element außerhalb der Array-Grenzen (IndexOutOfBoundsException)
+Verwechslung von Index und Element
+Falsche Initialisierung
+------------------------------------------------------------------------------------------------------------------------
+4.1.8 Arrays als Methodenparameter
+Verweise auf Arrays lassen sich bei Methoden genauso übergeben wie Verweise auf ganz normale Objekte.
+In der Deklaration heißt es dann zum Beispiel foo(int[] val) statt foo(String val).
+
+Beispiel:
+public class Avg1 {
+  static double avg(double[] array) {
+    double sum = 0;
+    for (int i = 0; i < array.length; i++)
+      sum += array[i];
+    return sum / array.length;
+  }
+
+  public static void main(String[] args) {
+    double[] numbers = { 2, 3, 4 };
+    System.out.println(avg(numbers)); // Ausgabe: 3.0
+  }
+}
+
+Null-Referenzen prüfen:
+Referenzen bringen immer das Problem mit sich, dass sie null sein können.
+Syntaktisch gültig ist ein Aufruf von avg(null).
+Daher sollte eine Implementierung auf null testen und ein falsches Argument melden, etwa so:
+
+if (array == null || array.length == 0)
+  throw new IllegalArgumentException("Array null oder leer");
+------------------------------------------------------------------------------------------------------------------------
+4.1.9 Vorinitialisierte Arrays
+Wenn wir in Java ein Array-Objekt erzeugen und gleich mit Werten initialisieren wollen, dann schreiben wir etwa:
+
+int[] primes = { 2, 3, 5, 7, 11, 13 };
+Sollen die Array-Inhalte erst nach der Variablendeklaration initialisiert werden oder soll das Array auch
+ohne Variable als Argument genutzt werden, so erlaubt Java dies nicht:
+
+primes = { 2, 5, 7, 11, 13 }; // Compilerfehler
+avg({ 1.23, 4.94, 9.33, 3.91, 6.34 }); // Compilerfehler
+Ein Versuch wie dieser schlägt mit der Compilermeldung „Array constants can only be used in initializers“ fehl.
+Zur Lösung gibt es zwei Ansätze. Der erste ist die Einführung einer neuen Variablen:
+
+int[] tmpprimes = { 2, 5, 7, 11, 13 };
+primes = tmpprimes;
+------------------------------------------------------------------------------------------------------------------------
+4.1.10 Die erweiterte for-Schleife
+Mit der erweiterten for-Schleife lassen sich Arrays bequem durchlaufen:
+
+int[] primes = { 2, 3, 5, 7, 11, 13 };
+for (int prime : primes) {
+  System.out.println(prime);
+}
+4.1.11 Arrays mit nichtprimitiven Elementen
+Arrays können auch nichtprimitive Elemente enthalten, z.B. Objekte:
+
+String[] words = { "Hello", "World" };
+for (String word : words) {
+  System.out.println(word);
+}
+------------------------------------------------------------------------------------------------------------------------
+4.1.12 Methode mit variabler Argumentanzahl (Varargs)
+Methoden können so definiert werden, dass sie eine variable Anzahl von Argumenten akzeptieren.
+Diese werden intern als Array behandelt:
+
+public static void printNumbers(int... numbers) {
+  for (int number : numbers) {
+    System.out.println(number);
+  }
+}
+
+public static void main(String[] args) {
+  printNumbers(1, 2, 3, 4, 5);
+}
+------------------------------------------------------------------------------------------------------------------------
+4.1.13 Mehrdimensionale Arrays
+Java realisiert mehrdimensionale Arrays durch Arrays von Arrays.
+Sie können etwa für die Darstellung von mathematischen Matrizen oder Rasterbildern Verwendung finden.
+Dieser Abschnitt lehrt, wie Objekte für mehrdimensionale Arrays initialisiert, aufgebaut und abgegrast werden.
+
+Mehrdimensionale Array-Objekte mit new aufbauen:
+Die folgende Zeile deklariert ein zweidimensionales Array mit Platz für insgesamt 32 Zellen,
+die in vier Zeilen und acht Spalten angeordnet sind:
+
+int[][] A = new int[4][8];
+Obwohl mehrdimensionale Arrays im Prinzip Arrays mit Arrays als Elemente sind, sind sie doch immer rechteckig.
+Ein Wert A[2][5] existiert nur, wenn die Indizes in den gültigen Bereichen liegen, d.h., 0 <= 2 < 4 und 0 <= 5 < 8.
+
+Initialisierung mehrdimensionaler Arrays:
+Mehrdimensionale Arrays lassen sich ähnlich wie eindimensionale Arrays initialisieren:
+
+int[][] A = {
+    {1, 2, 3, 4},
+    {5, 6, 7, 8},
+    {9, 10, 11, 12},
+    {13, 14, 15, 16}
+};
+Zugriff auf mehrdimensionale Arrays:
+Der Zugriff auf ein Element eines mehrdimensionalen Arrays erfolgt über die entsprechenden Indizes:
+
+System.out.println(A[2][3]); // Ausgabe: 12
+A[1][2] = 42;
+------------------------------------------------------------------------------------------------------------------------
+4.1.14 Nichtrechteckige Arrays
+Java erlaubt auch nichtrechteckige Arrays.
+Diese entstehen, wenn die Elemente eines Arrays Arrays unterschiedlicher Länge sind:
+
+int[][] A = new int[3][];
+A[0] = new int[2];
+A[1] = new int[3];
+A[2] = new int[4];
+Nun ist A ein Array mit drei Zeilen, wobei die erste Zeile zwei, die zweite drei und die dritte vier Elemente hat.
+------------------------------------------------------------------------------------------------------------------------
+4.1.15 Die Wahrheit über die Array-Initialisierung
+Standardmäßig wird jedes Element eines Arrays mit dem Standardwert des entsprechenden Typs initialisiert:
+
+Für elementare Datentypen wie int ist dies 0.
+Für Referenztypen wie String ist dies null.
+------------------------------------------------------------------------------------------------------------------------
+4.1.16 Mehrere Rückgabewerte
+Arrays bieten eine Möglichkeit, mehrere Werte von einer Methode zurückzugeben:
+
+public static int[] getCoordinates() {
+    return new int[] {10, 20};
+}
+------------------------------------------------------------------------------------------------------------------------
+4.1.17 Klonen kann sich lohnen – Arrays vermehren
+Arrays lassen sich mit der Methode clone() kopieren:
+
+int[] original = {1, 2, 3};
+int[] copy = original.clone();
+Das Klonen eines Arrays erzeugt eine flache Kopie.
+Für ein Array von Objekten bedeutet dies, dass die Elemente selbst nicht geklont werden,
+sondern die Referenzen auf dieselben Objekte wie im Original-Array zeigen.
+------------------------------------------------------------------------------------------------------------------------
+4.1.18 Array-Inhalte kopieren
+Die Klasse System bietet die Methode arraycopy, um Elemente von einem Array in ein anderes zu kopieren:
+
+int[] src = {1, 2, 3};
+int[] dest = new int[3];
+System.arraycopy(src, 0, dest, 0, src.length);
+------------------------------------------------------------------------------------------------------------------------
+4.1.19 Die Klasse Arrays zum Vergleichen, Füllen, Suchen, Sortieren nutzen
+Die Klasse java.util.Arrays bietet zahlreiche nützliche Methoden zum Arbeiten mit Arrays,
+darunter Methoden zum Vergleichen, Füllen, Suchen und Sortieren:
+
+int[] numbers = {5, 3, 2, 8};
+Arrays.sort(numbers);
+System.out.println(Arrays.toString(numbers)); // Ausgabe: [2, 3, 5, 8]
+------------------------------------------------------------------------------------------------------------------------
+4.1.20 Eine lange Schlange
+Mit Arrays lassen sich auch komplexere Datenstrukturen wie Schlangen realisieren.
+Dies wird im Rahmen dieses Abschnitts nicht weiter vertieft, könnte aber für spezialisierte Anwendungen nützlich sein.
+------------------------------------------------------------------------------------------------------------------------
+4.2 Der Einstiegspunkt für das Laufzeitsystem: main(…)
+Die main-Methode ist der Einstiegspunkt eines Java-Programms.
+Diese Methode muss eine ganz bestimmte Signatur haben, damit das Laufzeitsystem sie aufrufen kann:
+
+public static void main(String[] args) {
+    // Programmcode
+}
+------------------------------------------------------------------------------------------------------------------------
+4.2.1 Korrekte Deklaration der Startmethode
+Die main-Methode muss öffentlich (public), statisch (static) und vom Typ void sein.
+Sie nimmt ein Array von Strings als Parameter, das die Kommandozeilenargumente enthält.
+------------------------------------------------------------------------------------------------------------------------
+4.2.2 Kommandozeilenargumente verarbeiten
+Kommandozeilenargumente werden beim Programmstart übergeben und können innerhalb der main-Methode genutzt werden:
+
+public static void main(String[] args) {
+    for (String arg : args) {
+        System.out.println(arg);
+    }
+}
+------------------------------------------------------------------------------------------------------------------------
+4.2.3 Der Rückgabetyp von main(…) und System.exit(int)
+Die main-Methode hat keinen Rückgabewert. Um das Programm mit einem bestimmten Statuscode zu beenden,
+kann System.exit(int) verwendet werden:
+
+System.exit(0); // normales Beenden
+System.exit(1); // Beenden mit Fehler

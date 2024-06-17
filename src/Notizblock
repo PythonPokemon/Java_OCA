@@ -1,3 +1,16 @@
+#   Imports
+    import java.time.LocalDate;
+    import java.util.ArrayList;
+    import java.util.Random;
+    import java.awt.Point;
+    import java.util.List;
+    import java.util.function.Predicate;
+    import java.time.LocalDate;
+    import java.time.format.DateTimeFormatter;
+    import java.io.IOException;
+    import java.sql.SQLException;
+    import java.io.FileNotFoundException;
+
 #   Klassen
 -   die man geschrieben hat, befinden sich im sogenannten Default Package (standard packet)
     wenn man keinen packet verwendet befindet sich der Java Quellcode und der Bytecode, alle in einem großen Verzeichnis
