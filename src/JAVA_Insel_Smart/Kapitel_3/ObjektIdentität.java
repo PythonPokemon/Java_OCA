@@ -23,6 +23,10 @@ einem korrekten Vergleich, so wie wir ihn uns wünschen.
 Ein PunktObjekt könnte etwa zusätzlich die Anzahl der Zugriffe zählen, die
 jedoch für einen Vergleich, der auf der Lage zweier Punkte basiert,
 nicht berücksichtigt werden darf.
+------------------------------------------------------------------------------------------------------------------------
+== Operator
+Der == Operator vergleicht, ob zwei Referenzvariablen auf dasselbe Objekt im Speicher zeigen.
+Er prüft die Referenzgleichheit und nicht die Gleichheit der Inhalte der Objekte.
 * */
 package JAVA_Insel_Smart.Kapitel_3;
 import java.awt.Point;
@@ -37,7 +41,8 @@ public class ObjektIdentität {
         System.out.println( p == q ); // true, da p und q dasselbe Objekt referenzieren
         System.out.println( p == r ); // false, da p und r zwei verschiedene Punkt-
         // Objekte referenzieren, die zufällig dieselben
-// Koordinaten haben
+        // Koordinaten haben
+//----------------------------------------------------------------------------------------------------------------------
 
     }
 }

@@ -10,6 +10,12 @@ Da Spieler und Tür die gleichen Koordinaten besitzen, liefert
 equals(…) die Rückgabe true. Dabei ist es egal, ob wir den Spieler mit
 der Tür oder die Tür mit dem Spieler vergleichen – das Ergebnis bei
 equals(…) sollte immer symmetrisch sein.
+------------------------------------------------------------------------------------------------------------------------
+equals() Methode
+Die Methode equals() wird verwendet, um den inhaltlichen Vergleich von Objekten zu ermöglichen.
+Das bedeutet, dass zwei Objekte als gleich angesehen werden, wenn sie denselben Zustand haben.
+Die equals() Methode ist in der Klasse Object definiert und kann in Unterklassen überschrieben werden,
+um eine spezifische Vergleichslogik zu implementieren.
 
 * */
 package JAVA_Insel_Smart.Kapitel_3;
