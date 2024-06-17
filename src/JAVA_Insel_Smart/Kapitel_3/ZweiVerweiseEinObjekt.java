@@ -12,7 +12,7 @@ public class ZweiVerweiseEinObjekt {
         q.y = 5;
         System.out.println( p.y ); // 5
                                             //<---ACHTUNG WICHTIG--->
-        System.out.println(q.equals(p));    // referenzvariablen p und q verweisen beide auf ein Objekt
-                                            // und sind inhaltlich identisch
+        System.out.println(q.equals(p));    // referenzvariablen p und q verweisen beide auf ein 'Objekt' !!!
+                                            // und sind inhaltlich identisch, deshalb true!
     }
 }
