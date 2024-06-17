@@ -1,0 +1,163 @@
+Kapitel 3: Klassen und Objekte
+
+3.1 Objektorientierte Programmierung (OOP)
+
+3.1.1 Warum überhaupt OOP?
+
+Da Menschen die Welt in Objekten wahrnehmen, wird auch die Analyse von Systemen häufig schon objektorientiert modelliert.
+Doch mit prozeduralen Systemen, die lediglich Unterprogramme als Ausdrucksmittel haben,
+wird die Abbildung des objektorientierten Designs in eine Programmiersprache schwer, und es entsteht ein Bruch.
+Im Laufe der Zeit entwickeln sich Dokumentation und Implementierung auseinander;
+die Software ist dann schwer zu warten und zu erweitern. Besser ist es,
+objektorientiert zu denken und dann eine objektorientierte Programmiersprache zur Abbildung zu haben.
+
+Identität, Zustand, Verhalten
+
+Die in der Software abgebildeten Objekte haben drei wichtige Eigenschaften:
+
+Jedes Objekt hat eine Identität.
+Jedes Objekt hat einen Zustand.
+Jedes Objekt zeigt ein Verhalten.
+
+Diese drei Eigenschaften haben wichtige Konsequenzen:
+Zum einen, dass die Identität des Objekts während seines Lebens bis zu seinem Tod dieselbe bleibt und sich nicht ändern kann.
+Zum anderen werden die Daten und der Programmcode zur Manipulation dieser Daten als zusammengehörig behandelt.
+In prozeduralen Systemen finden sich oft Szenarien wie das folgende: Es gibt einen großen Speicherbereich,
+auf den alle Unterprogramme irgendwie zugreifen können. Bei den Objekten ist das anders,
+da sie logisch ihre eigenen Daten verwalten und die Manipulation überwachen.
+
+In der objektorientierten Softwareentwicklung geht es also darum, in Objekten zu modellieren und dann zu programmieren.
+Das Design nimmt dabei eine zentrale Stellung ein; große Systeme werden zerlegt und immer feiner beschrieben.
+
+3.2 Eigenschaften einer Klasse
+
+Klassen sind das wichtigste Merkmal objektorientierter Programmiersprachen. Eine Klasse definiert einen neuen Typ, beschreibt die Eigenschaften der Objekte und gibt somit den Bauplan an. Jedes Objekt ist ein Exemplar (auch Instanz oder Ausprägung genannt) einer Klasse.
+
+Eine Klasse deklariert im Wesentlichen zwei Dinge:
+
+Attribute (was das Objekt hat)
+Operationen (was das Objekt kann)
+Attribute und Operationen heißen auch Eigenschaften eines Objekts; einige Autoren nennen allerdings nur Attribute Eigenschaften. Welche Eigenschaften eine Klasse tatsächlich besitzen soll, wird in der Analyse- und Designphase festgesetzt. Diese wird in diesem Buch kein Thema sein; für uns liegen die Klassenbeschreibungen schon vor.
+
+Die Operationen einer Klasse setzt die Programmiersprache Java durch Methoden um. Die Attribute eines Objekts definieren die Zustände, und sie werden durch Variablen implementiert (die auch Felder genannt werden).
+
+3.2.1 Klassenarbeit mit Point
+
+Bevor wir uns mit eigenen Klassen beschäftigen, wollen wir zunächst einige Klassen aus der Standardbibliothek kennenlernen. Eine einfache Klasse ist Point. Sie beschreibt durch die Koordinaten x und y einen Punkt in einer zweidimensionalen Ebene und bietet einige Operationen an, mit denen sich Punkt-Objekte verändern lassen.
+
+Zu unserem Punkt können wir in der API-Dokumentation nachsehen.
+
+3.3 Natürlich modellieren mit der UML (Unified Modeling Language)
+
+Für die Darstellung einer Klasse lässt sich Programmcode verwenden, oder aber eine grafische Notation. Eine dieser grafischen Beschreibungsformen ist die UML. Grafische Abbildungen sind für Menschen deutlich besser zu verstehen und erhöhen die Übersicht.
+
+3.3.1 Hintergrund und Geschichte der UML
+
+Die UML ist mehr als eine Notation zur Darstellung von Klassen. Mit ihrer Hilfe lassen sich Analyse und Design im Softwareentwicklungsprozess beschreiben. Mittlerweile hat sich die UML jedoch zu einer allgemeinen Notation für andere Disziplinen entwickelt.
+
+3.3.2 Wichtige Diagrammtypen der UML
+
+Es gibt verschiedene Diagrammtypen in der UML, die jeweils unterschiedliche Aspekte eines Systems darstellen. Die wichtigsten Diagrammtypen sind Klassendiagramme, Sequenzdiagramme und Use-Case-Diagramme.
+
+3.3.3 UML-Werkzeuge
+
+Es gibt verschiedene Software-Tools zur Erstellung und Bearbeitung von UML-Diagrammen, wie zum Beispiel Enterprise Architect und Visual Paradigm.
+
+3.4 Neue Objekte erzeugen
+
+3.4.1 Ein Exemplar einer Klasse mit dem Schlüsselwort new anlegen
+
+Um ein Objekt einer Klasse zu erzeugen, wird das Schlüsselwort new verwendet. Dies reserviert Speicher für das neue Objekt und ruft dessen Konstruktor auf.
+
+3.4.2 Der Zusammenhang von new, Heap und Garbage-Collector
+
+Beim Erzeugen eines neuen Objekts wird Speicher im sogenannten Heap allokiert. Der Garbage Collector kümmert sich später um die Freigabe des Speichers, wenn das Objekt nicht mehr benötigt wird.
+
+3.4.3 Deklarieren von Referenzvariablen
+
+Referenzvariablen werden verwendet, um auf Objekte zu verweisen. Sie müssen deklariert werden, bevor sie verwendet werden können.
+
+3.4.4 Jetzt mach mal ’nen Punkt: Zugriff auf Objektattribute und -methoden
+
+Der Zugriff auf die Attribute und Methoden eines Objekts erfolgt über die Punktnotation.
+
+3.4.5 Überblick über Point-Methoden
+
+Die Klasse Point bietet verschiedene Methoden, um die Koordinaten eines Punkts zu setzen und abzufragen.
+
+3.4.6 Konstruktoren nutzen
+
+Konstruktoren sind spezielle Methoden, die aufgerufen werden, wenn ein neues Objekt einer Klasse erzeugt wird. Sie initialisieren das neue Objekt.
+
+3.5 ZZZZZnake
+
+Ein Beispielprogramm namens ZZZZZnake wird vorgestellt, das die bisher gelernten Konzepte in einem praktischen Szenario anwendet.
+
+3.6 Pakete schnüren, Importe und Kompilationseinheiten
+
+3.6.1 Java-Pakete
+
+Pakete sind Namensräume, die Klassen und Schnittstellen organisieren und strukturieren.
+
+3.6.2 Pakete der Standardbibliothek
+
+Java bietet eine Vielzahl von Standardpaketen, die eine breite Palette von Funktionalitäten abdecken.
+
+3.6.3 Volle Qualifizierung und import-Deklaration
+
+Klassen können durch ihren vollständig qualifizierten Namen oder durch eine import-Deklaration referenziert werden.
+
+3.6.4 Mit import p1.p2. alle Typen eines Pakets erreichen*
+
+Durch Verwendung eines Sternchens (*) im import-Statement können alle Typen eines Pakets importiert werden.
+
+3.6.5 Hierarchische Strukturen über Pakete
+
+Pakete können hierarchisch organisiert werden, um komplexe Strukturen besser zu verwalten.
+
+3.6.6 Die package-Deklaration
+
+Die package-Deklaration am Anfang einer Java-Datei legt fest, zu welchem Paket die Klasse gehört.
+
+3.6.7 Unbenanntes Paket (default package)
+
+Wenn keine package-Deklaration vorhanden ist, gehört die Klasse zum sogenannten unbenannten Paket.
+
+3.6.8 Klassen mit gleichen Namen in unterschiedlichen Paketen
+
+Es können Klassen mit gleichen Namen in unterschiedlichen Paketen existieren.
+
+3.6.9 Kompilationseinheit (Compilation Unit)
+
+Eine Kompilationseinheit ist eine Java-Datei, die genau eine top-level öffentliche Klasse oder Schnittstelle enthalten kann.
+
+3.6.10 Statischer Import
+
+Statischer Import ermöglicht den direkten Zugriff auf statische Mitglieder von Klassen ohne deren Klassennamen zu qualifizieren.
+
+3.7 Mit Referenzen arbeiten, Identität und Gleichheit (Gleichwertigkeit)
+
+3.7.1 null-Referenz und die Frage der Philosophie
+
+null-Referenzen stellen einen speziellen Fall dar und sollten mit Bedacht verwendet werden.
+
+3.7.2 Alles auf null? Referenzen testen
+
+Es ist wichtig zu prüfen, ob eine Referenz null ist, bevor man auf das referenzierte Objekt zugreift.
+
+3.7.3 Zuweisungen bei Referenzen
+
+Referenzen können neuen Objekten zugewiesen werden, was die Referenz auf das neue Objekt ändert.
+
+3.7.4 Methoden mit Referenztypen als Parametern
+
+Methoden können Referenztypen als Parameter akzeptieren und mit diesen Referenzen arbeiten.
+
+3.7.5 Identität von Objekten
+
+Die Identität von Objekten wird durch den Operator == überprüft, der prüft, ob zwei Referenzen auf dasselbe Objekt verweisen.
+
+3.7.6 Gleichheit (Gleichwertigkeit) und die Methode equals(…)
+
+Die Methode equals(…) wird verwendet, um die inhaltliche Gleichheit von Objekten zu überprüfen.
+
