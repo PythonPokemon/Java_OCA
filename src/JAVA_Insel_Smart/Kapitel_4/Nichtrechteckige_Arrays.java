@@ -1,3 +1,10 @@
+/*
+Die Wahrheit über die Array-Initialisierung
+Standardmäßig wird jedes Element eines Arrays mit dem Standardwert des entsprechenden Typs initialisiert:
+
+Für elementare Datentypen wie int ist dies 0.
+Für Referenztypen wie String ist dies null.
+* */
 package JAVA_Insel_Smart.Kapitel_4;
 
 public class Nichtrechteckige_Arrays {
