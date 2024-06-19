@@ -1,3 +1,19 @@
+/*
+Unterschied zwischen target und regex
+
+target:
+Einfache Zeichenfolge, die direkt im String gesucht wird.
+Keine Unterstützung für Muster oder spezielle Modifikatoren.
+Beispiel: "Welt" wird exakt als "Welt" im String gesucht und ersetzt.
+------------------------------------------------------------------------------------------------------------------------
+regex:
+Reguläre Ausdrücke, die komplexe Muster und Suchkriterien definieren können.
+Unterstützung für Modifikatoren wie (?i) für Case-Insensitivity.
+Ermöglicht die Verwendung von Platzhaltern, Quantifikatoren und speziellen Zeichenklassen.
+
+Beispiel: "(?i)Welt" sucht nach "Welt" unabhängig von Groß- und Kleinschreibung.
+* */
+
 package JAVA_Insel_Smart.OCA.Kapitel_5;
 
 public class replace_replaceFirst_replaceAll_Methode {
@@ -11,7 +27,7 @@ public class replace_replaceFirst_replaceAll_Methode {
         String strErsetztAlle = str.replace("Welt", "Java");
         System.out.println("Ersetzt alle 'Welt': " + strErsetztAlle);
         // Ausgabe: "Hallo Java! Java, wie geht es dir? Java"
-
+//----------------------------------------------------------------------------------------------------------------------
         // Ersetzen des ersten Vorkommens von "Welt" durch "Java"
         String strErsetztErstes = str.replaceFirst("Welt", "Java");
         System.out.println("Ersetzt erstes 'Welt' mit 'Java': " + strErsetztErstes);
