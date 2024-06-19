@@ -10,6 +10,7 @@ um primitive Datentypen in String-Repräsentationen zu konvertieren.
 Konvertierung von String zu primitiven Datentypen:
 Verwenden der jeweiligen parse-Methoden der Wrapper-Klassen (Integer.parseInt(), Double.parseDouble(), etc.),
 um String-Repräsentationen in primitive Datentypen zu konvertieren.
+
 Diese Beispiele zeigen, wie man primitive Datentypen in Strings konvertiert und umgekehrt,
 und verdeutlichen die Flexibilität der Java-Wrapper-Klassen für diese Aufgaben.
 * */
