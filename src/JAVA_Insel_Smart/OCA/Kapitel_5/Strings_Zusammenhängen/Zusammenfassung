@@ -1,0 +1,12 @@
+Zusammenfassung
+------------------------------------------------------------------------------------------------------------------------
+Einfach und Kurz: Plus-Operator (+), concat
+Effizient für viele Verkettungen: StringBuilder, StringBuffer
+Liste/Array von Strings: String.join, StringJoiner
+Formatierung: String.format
+Reguläre Ausdrücke: Matcher.appendReplacement, Matcher.appendTail
+IO-Kombination: StringWriter
+
+Jede Methode hat ihre Stärken und ist in unterschiedlichen Kontexten nützlich.
+Wählen Sie die Methode basierend auf Ihren spezifischen Anforderungen an Lesbarkeit,
+Performance und Komplexität der String-Manipulation.

@@ -1,3 +1,14 @@
+/*
+Vorteile:
+String.join ist sehr lesbar und bequem für Arrays oder Listen von Strings.
+StringJoiner bietet mehr Kontrolle über die Verkettung.
+------------------------------------------------------------------------------------------------------------------------
+Nachteile:
+Weniger flexibel als StringBuilder für komplexere Verkettungen.
+------------------------------------------------------------------------------------------------------------------------
+Anwendungsfall:
+Ideal, wenn Sie mehrere Strings mit einem Trennzeichen zusammenfügen müssen (z.B. aus einem Array oder einer Liste).
+* */
 package JAVA_Insel_Smart.OCA.Kapitel_5.Strings_Zusammenhängen;
 import java.util.StringJoiner;
 

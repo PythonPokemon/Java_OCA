@@ -1,3 +1,16 @@
+/*
+Vorteile:
+Sehr effizient für viele und/oder lange Strings.
+StringBuffer ist synchronisiert und damit thread-sicher; StringBuilder ist schneller, aber nicht thread-sicher.
+------------------------------------------------------------------------------------------------------------------------
+Nachteile:
+Etwas umständlicher zu verwenden als der Plus-Operator oder concat.
+------------------------------------------------------------------------------------------------------------------------
+Anwendungsfall:
+Ideal für viele Verkettungsoperationen oder in Schleifen.
+Verwenden Sie StringBuilder für Single-Threaded-Kontexte und StringBuffer für Multi-Threaded-Kontexte.
+* */
+
 package JAVA_Insel_Smart.OCA.Kapitel_5.Strings_Zusammenhängen;
 
 public class StringBuilder_und_StringBuffer {

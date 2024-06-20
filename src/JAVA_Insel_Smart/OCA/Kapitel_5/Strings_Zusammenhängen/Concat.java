@@ -1,3 +1,14 @@
+/*
+Vorteile:
+Klarer als der Plus-Operator für längere Verkettungen.
+------------------------------------------------------------------------------------------------------------------------
+Nachteile:
+Ähnliche Performanceprobleme wie der Plus-Operator, da ebenfalls neue Strings erstellt werden.
+------------------------------------------------------------------------------------------------------------------------
+Anwendungsfall:
+Etwas besser lesbar als der Plus-Operator für Verkettungen, aber ähnliche Limitierungen.
+* */
+
 package JAVA_Insel_Smart.OCA.Kapitel_5.Strings_Zusammenhängen;
 
 public class Concat {

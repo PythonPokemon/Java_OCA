@@ -1,3 +1,14 @@
+/*
+Vorteile:
+Sehr lesbar und flexibel.
+Gut geeignet für komplexere String-Formatierungen.
+------------------------------------------------------------------------------------------------------------------------
+Nachteile:
+Kann etwas langsamer sein als andere Methoden.
+------------------------------------------------------------------------------------------------------------------------
+Anwendungsfall:
+Ideal, wenn Sie Strings mit spezifischen Formatierungen zusammenfügen müssen (z.B. Zahlen mit Dezimalstellen).
+* */
 package JAVA_Insel_Smart.OCA.Kapitel_5.Strings_Zusammenhängen;
 
 public class Format {

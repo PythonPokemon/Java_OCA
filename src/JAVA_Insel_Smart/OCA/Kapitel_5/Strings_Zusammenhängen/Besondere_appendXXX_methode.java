@@ -1,3 +1,13 @@
+/*
+Vorteile:
+Sehr mächtig für komplexe String-Manipulationen, insbesondere mit regulären Ausdrücken.
+------------------------------------------------------------------------------------------------------------------------
+Nachteile:
+Komplexer und schwerer zu lesen.
+------------------------------------------------------------------------------------------------------------------------
+Anwendungsfall:
+Ideal für Textverarbeitung, die reguläre Ausdrücke und komplexe Ersetzungen erfordert.
+* */
 package JAVA_Insel_Smart.OCA.Kapitel_5.Strings_Zusammenhängen;
 import java.util.regex.Matcher;
 import java.util.regex.Pattern;
