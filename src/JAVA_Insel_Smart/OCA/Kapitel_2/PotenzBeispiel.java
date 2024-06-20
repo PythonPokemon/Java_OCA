@@ -1,4 +1,4 @@
-package JAVA_Insel_Smart.OCA.Kapitel_1;
+package JAVA_Insel_Smart.OCA.Kapitel_2;
 
 public class PotenzBeispiel {
     public static void main(String[] args) {
