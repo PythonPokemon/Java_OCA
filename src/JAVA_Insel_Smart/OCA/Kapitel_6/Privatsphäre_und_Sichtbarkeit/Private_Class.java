@@ -1,6 +1,6 @@
 package JAVA_Insel_Smart.OCA.Kapitel_6.Privatsphäre_und_Sichtbarkeit;
 
-class Player {
+class Player2 {
     private String password;
 
     private void displayPassword() {
