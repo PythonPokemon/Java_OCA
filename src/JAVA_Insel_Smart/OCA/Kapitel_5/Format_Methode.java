@@ -16,7 +16,7 @@ Spezifizierer	Steht für
 %e	Wissenschaftliche Notation
 * */
 
-package JAVA_Insel_Smart.OCA.Kapitel_5.String_Zerlegen;
+package JAVA_Insel_Smart.OCA.Kapitel_5;
 
 public class Format_Methode {
     public static void main(String[] args) {
