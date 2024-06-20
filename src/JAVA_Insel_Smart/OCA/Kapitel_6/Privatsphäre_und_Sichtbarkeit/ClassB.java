@@ -17,15 +17,10 @@ class Klasse1a {
 }
 
 public class ClassB {
-    // Methode, die ein Objekt von Klasse1a erstellt und dessen Methode aufruft
-    public void methodeZumKlassenaufruf() { //
-        Klasse1a a = new Klasse1a(); // erstellung eines neuen Objektes/Instanz für die Klasse1a | Name:a
-        a.methodenZumAusgebenDerMethode(); // Instanz der Klasse1a ruf die darin enthaltene methode auf
-    }
-
     // Hauptmethode, die beim Programmstart aufgerufen wird
     public static void main(String[] args) {
-        ClassB b = new ClassB(); // erstellung eines neuen Objektes/Instanz für die ClassB | Name:b
-        b.methodeZumKlassenaufruf(); // das Objekt/Instanz b ruft die methode: methodeZumKlassenaufruf auf
+        Klasse1a a = new Klasse1a(); // erstellung eines neuen Objektes/Instanz für die Klasse1a | Name:a
+        a.methodenZumAusgebenDerMethode(); // Instanz der Klasse1a ruf die darin enthaltene methode auf
+
     }
 }
