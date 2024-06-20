@@ -1,0 +1,11 @@
+Zusammenfassung
+------------------------------------------------------------------------------------------------------------------------
+split(): Zerlegt eine Zeichenkette anhand eines regulären Ausdrucks in ein Array von Teilzeichenketten.
+lines(): Zerlegt eine Zeichenkette in einen Stream von Zeilen.
+Scanner: Eine flexible Klasse zum Parsen von Eingaben, kann auch verwendet werden, um Zeichenketten in Tokens zu zerlegen.
+StringTokenizer: Zerlegt eine Zeichenkette in Tokens basierend auf einzelnen Zeichen als Delimiter.
+BreakIterator: Findet natürliche Grenzen in einer Zeichenkette, wie Wort-, Satz- oder Zeilengrenzen.
+Matcher und Pattern: Verwenden reguläre Ausdrücke, um Muster in einer Zeichenkette zu finden und zu extrahieren.
+------------------------------------------------------------------------------------------------------------------------
+Diese Methoden und Klassen bieten verschiedene Ansätze zum Zerlegen von Zeichenketten in Java,
+die je nach Anwendungsfall nützlich sein können.

@@ -1,3 +1,14 @@
+/*
+Vorteile:
+Nützlich, wenn Sie String-Manipulationen in Verbindung mit anderen IO-Operationen durchführen möchten.
+------------------------------------------------------------------------------------------------------------------------
+Nachteile:
+Weniger gebräuchlich für einfache String-Verkettungen.
+------------------------------------------------------------------------------------------------------------------------
+Anwendungsfall:
+Geeignet, wenn Sie Strings zusammenhängen und gleichzeitig andere IO-Operationen ausführen.
+------------------------------------------------------------------------------------------------------------------------
+* */
 package JAVA_Insel_Smart.OCA.Kapitel_5.Strings_Zusammenhängen;
 
 import java.io.StringWriter;
