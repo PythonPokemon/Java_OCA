@@ -1,0 +1,31 @@
+Der erste an format(…) übergebene String nennt sich Format-String.
+Er enthält neben auszugebenden Zeichen weitere sogenannte Formatspezifizierer, die dem Formatierer darüber Auskunft geben,
+wie er das Argument formatieren soll. %s steht für eine unformatierte Ausgabe eines Strings.
+Nach dem Format-String folgt ein Vararg (oder alternativ das Array direkt) mit den Werten,
+auf die sich die Formatspezifizierer beziehen.
+
+Wichtige Formatspezifizierer:
+
+%n: neue Zeile
+%%: Prozentzeichen
+%s: String
+%d: Dezimalzahl
+%f: Fließkommazahl
+%x: Hexadezimalschreibweise
+%t: Datum und Zeit
+Tabelle der wichtigsten Formatspezifizierer:
+
+Spezifizierer	Steht für:
+%n	Neue Zeile
+%%	Prozentzeichen
+%s	String
+%b	Boolean
+%c	Unicode-Zeichen
+%d	Dezimalzahl
+%x	Hexadezimalschreibweise
+%t	Datum und Zeit
+%f	Fließkommazahl
+%e	Wissenschaftliche Notation
+
+Hinweis: Der Zeilenvorschub ist vom Betriebssystem abhängig, und %n gibt uns ein gutes Mittel an die Hand,
+an dieses Zeilenvorschubzeichen (oder diese Zeichenfolge) zu kommen.
