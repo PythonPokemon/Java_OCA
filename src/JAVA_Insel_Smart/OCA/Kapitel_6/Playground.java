@@ -98,8 +98,8 @@ public class Playground {
         System.out.println("Spieler Gegenstand: " + objektBezeichner.item);
         System.out.println("Spieler macht " + objektBezeichner.dmg + " Schaden!");
 
-//        // In der Playground-Klasse rufen wir die display()-Methode auf:
-//        objektBezeichner.display(); // das Objekt/ die Instanz ruft die Methode auf
+        // In der Playground-Klasse rufen wir die display()-Methode auf:
+        objektBezeichner.display(); // das Objekt/ die Instanz ruft die Methode auf
 
 
 
