@@ -1,0 +1,98 @@
+Der Unterschied zwischen Parametern und Attributen in einer Klasse liegt in ihrem Zweck und ihrer Lebensdauer:
+
+Attribute (auch Instanzvariablen genannt) sind Eigenschaften eines Objekts.
+Sie definieren den Zustand des Objekts und bestehen, solange das Objekt existiert.
+Parameter sind Variablen, die an Methoden übergeben werden.
+Sie haben nur innerhalb der Methode eine Gültigkeit und werden verwendet, um Daten an die Methode zu übergeben.
+------------------------------------------------------------------------------------------------------------------------
+Warum Methoden verwenden?
+------------------------------------------------------------------------------------------------------------------------
+Kapselung und Datenversteckung:
+Durch die Verwendung von Methoden zur Änderung der Attribute wird das Prinzip der Kapselung gefördert.
+Das bedeutet, dass die internen Daten eines Objekts geschützt
+und nur über definierte Schnittstellen (Methoden) zugänglich gemacht werden.
+Direkter Zugriff auf Attribute kann gefährlich sein, weil es die Möglichkeit gibt,
+die Attribute in einem ungültigen Zustand zu belassen.
+
+Wartbarkeit und Erweiterbarkeit:
+Wenn Sie später die Art und Weise ändern müssen, wie Attribute gesetzt oder abgerufen werden
+(z.B. Validierung, Logging, etc.), können Sie dies zentral in den Methoden tun, anstatt alle Stellen im Code zu ändern,
+wo die Attribute direkt geändert werden.
+
+Klarheit und Abstraktion:
+Methoden bieten eine klarere und abstraktere Schnittstelle für die Interaktion mit Objekten.
+Dies kann den Code lesbarer und verständlicher machen.
+Beispiel zur Verdeutlichung
+Hier ist ein Beispiel, das zeigt, warum es sinnvoll sein kann, Methoden zur Manipulation von Attributen zu verwenden:
+
+package JAVA_Insel_Smart.OCA.Kapitel_6;
+
+class Player {
+    private String name;
+    private String item;
+
+    // Methode, um den Namen zu setzen
+    public void setName(String name) {
+        if (name != null && !name.trim().isEmpty()) {
+            this.name = name;
+        } else {
+            System.out.println("Ungültiger Name!");
+        }
+    }
+
+    // Methode, um den Namen abzurufen
+    public String getName() {
+        return this.name;
+    }
+
+    // Methode, um den Gegenstand zu setzen
+    public void setItem(String item) {
+        if (item != null && !item.trim().isEmpty()) {
+            this.item = item;
+        } else {
+            System.out.println("Ungültiger Gegenstand!");
+        }
+    }
+
+    // Methode, um den Gegenstand abzurufen
+    public String getItem() {
+        return this.item;
+    }
+
+    // Methode, um die Attribute anzuzeigen
+    public void display() {
+        System.out.println("Spieler Name: " + this.name);
+        System.out.println("Spieler Gegenstand: " + this.item);
+    }
+}
+
+public class Playground {
+    public static void main(String[] args) {
+        Player player = new Player();
+
+        // Setzen der Attribute über Methoden
+        player.setName("Gandalf der Graue");
+        player.setItem("Kometen Stab");
+
+        // Ausgabe der Attribute über Methoden
+        System.out.println("Spieler Name: " + player.getName());
+        System.out.println("Spieler Gegenstand: " + player.getItem());
+
+        // Aufrufen der display()-Methode
+        player.display();
+    }
+}
+Erklärung:
+Privatisierte Attribute:
+
+Die Attribute name und item sind privat (private), sodass sie nur innerhalb der Klasse Player direkt zugänglich sind.
+Getter- und Setter-Methoden:
+
+Die Methoden setName, getName, setItem und getItem erlauben kontrollierten Zugriff auf die Attribute.
+Zum Beispiel validiert setName, dass der Name nicht leer oder null ist, bevor er gesetzt wird.
+Verwendung in main:
+
+In der main-Methode der Playground-Klasse werden die Attribute des Player-Objekts über die Setter-Methoden gesetzt
+und über die Getter-Methoden abgerufen.
+Durch die Verwendung von Methoden zur Manipulation der Attribute wird sichergestellt,
+dass die Attribute immer in einem gültigen Zustand sind und der Code einfacher zu warten und zu erweitern ist.
