@@ -1,0 +1,2 @@
+Java verwaltet die Speicherbereinigung automatisch durch den Garbage-Collector,
+der nicht mehr referenzierte Objekte entfernt.
