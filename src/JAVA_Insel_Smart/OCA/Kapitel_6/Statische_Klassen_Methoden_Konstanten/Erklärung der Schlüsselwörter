@@ -77,8 +77,13 @@ public class Main {
 }
 
 Zusammenfassung:
-final: Wird verwendet, um eine Konstante zu definieren, deren Wert nach der Initialisierung nicht geändert werden kann.
-static: Wird verwendet, um eine Klassenvariable zu definieren, die von allen Instanzen der Klasse geteilt wird.
+final: Wird verwendet, um aus einem variablen Parameter eine Konstante zu definieren,
+deren Wert nach der Initialisierung nicht geändert werden kann.
+
+static: Wird verwendet, um Parameter der Klassenvariable zu definieren, die von allen Instanzen der Klasse geteilt wird.
+(mit einfachen worten damit alle auf eine sache zugreifen können, in abhängigkeit der access Modifier)
+ps. Access Modifier sind die zugriffsmöglichkeiten: default, public, protected, privat.
+    von links nach rechts immer mehr beschränkungen!
 
 static final: Wird verwendet, um eine Klassenkonstante zu definieren,
 die unveränderlich ist und von allen Instanzen der Klasse geteilt wird.
