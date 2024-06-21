@@ -9,3 +9,42 @@ class Player {
   }
 }
 ------------------------------------------------------------------------------------------------------------------------
+Verwandtschaft von Methode und Konstruktor
+Ein Konstruktor hat keinen Rückgabewert und den gleichen Namen wie die Klasse.
+
+Der Standard-Konstruktor (default constructor)
+Wenn keine Konstruktoren definiert sind, stellt der Compiler einen Standard-Konstruktor bereit.
+
+class Player {
+  // Standard-Konstruktor wird automatisch generiert
+}
+
+------------------------------------------------------------------------------------------------------------------------
+Parametrisierte und überladene Konstruktoren
+Konstruktoren können Parameter haben und überladen werden.
+
+class Player {
+  String name;
+
+  Player() {
+    this("Unknown");
+  }
+
+  Player(String name) {
+    this.name = name;
+  }
+}
+------------------------------------------------------------------------------------------------------------------------
+Copy-Konstruktor
+Ein Copy-Konstruktor erstellt ein neues Objekt als Kopie eines bestehenden Objekts.
+
+class Player {
+  String name;
+
+  Player(Player other) {
+    this.name = other.name;
+  }
+}
+------------------------------------------------------------------------------------------------------------------------
+Einen anderen Konstruktor der gleichen Klasse mit this(…) aufrufen
+Ein Konstruktor kann einen anderen Konstruktor der gleichen Klasse aufrufen.
