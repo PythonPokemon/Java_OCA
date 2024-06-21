@@ -1,0 +1,36 @@
+Hier ist eine einfache Tabelle, die die vier Zugriffsmodifikatoren:
+ (private, default (kein Modifikator), protected, public) und ihre Unterschiede zeigt:
+------------------------------------------------------------------------------------------------------------------------
+Zugriffsmodifikator | Gleiche Klasse | Gleiches Paket | Unterklasse (egal welches Paket) | Überall (alle Pakete)
+private:	        |       Ja       |	    Nein      |	                Nein             |	        Nein
+default: 	        |       Ja       |	    Ja        |	                Nein             |	        Nein
+protected:	        |       Ja       |	    Ja        |	                Ja               |	        Nein
+public:	            |       Ja       |	    Ja        |	                Ja               |	        Ja
+------------------------------------------------------------------------------------------------------------------------
+Erklärung der Tabelle:
+------------------------------------------------------------------------------------------------------------------------
+1.private:
+
+Zugriff nur innerhalb der gleichen Klasse.
+Kein Zugriff von anderen Klassen, selbst wenn sie im gleichen Paket sind.
+Kein Zugriff von Unterklassen, egal ob sie im gleichen Paket oder einem anderen Paket sind.
+Kein Zugriff von überall anders.
+------------------------------------------------------------------------------------------------------------------------
+2.default (kein Modifikator):
+
+Zugriff nur innerhalb der gleichen Klasse und von Klassen im gleichen Paket.
+Kein Zugriff von Unterklassen, wenn diese in einem anderen Paket sind.
+Kein Zugriff von Klassen in anderen Paketen.
+------------------------------------------------------------------------------------------------------------------------
+3.protected:
+
+Zugriff innerhalb der gleichen Klasse und von Klassen im gleichen Paket.
+Zugriff von Unterklassen, egal ob sie im gleichen Paket oder einem anderen Paket sind.
+Kein Zugriff von Klassen in anderen Paketen, die keine Unterklassen sind.
+------------------------------------------------------------------------------------------------------------------------
+4.public:
+
+Zugriff von überall.
+Zugriff innerhalb der gleichen Klasse, von Klassen im gleichen Paket,
+von Unterklassen (egal welches Paket) und von Klassen in anderen Paketen.
+------------------------------------------------------------------------------------------------------------------------
