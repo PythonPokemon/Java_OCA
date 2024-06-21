@@ -27,7 +27,7 @@ Lebensdauer:
 Statische Mitglieder existieren während der gesamten Laufzeit des Programms, unabhängig davon, ob Instanzen der Klasse erstellt werden oder nicht.
 * */
 
-package JAVA_Insel_Smart.OCA.Kapitel_6;
+package JAVA_Insel_Smart.OCA.Kapitel_6.Statische_Klassen_Methoden_Konstanten;
 
 class Game {
     static int playerCount;

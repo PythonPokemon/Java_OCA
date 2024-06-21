@@ -1,0 +1,86 @@
+Um eine Konstante in Java zu deklarieren, ist es üblich, sowohl static als auch final zu verwenden, aber es ist möglich,
+auch nur eines dieser Schlüsselwörter zu verwenden. Es hängt davon ab, was Sie erreichen möchten.
+
+Erklärung der Schlüsselwörter:
+final:
+
+Wenn eine Variable als final deklariert wird, kann ihr Wert nach der Initialisierung nicht mehr geändert werden.
+Das macht die Variable zu einer Konstante.
+
+Beispiel:
+final int MaxSpieler = 10; // Konstante für eine Instanz der Klasse
+static:
+
+Wenn eine Variable als static deklariert wird, gehört sie zur Klasse und nicht zu einer bestimmten Instanz.
+Alle Instanzen der Klasse teilen sich diese Variable.
+
+Beispiel:
+static int MaxSpieler = 10; // Geteilt von allen Instanzen der Klasse
+Verwendung beider Schlüsselwörter:
+static final:
+Diese Kombination wird verwendet, um eine Klassenkonstante zu definieren.
+Die Konstante gehört zur Klasse und ihr Wert kann nicht geändert werden.
+
+Beispiel:
+static final int Maximale_Spieler = 10; // Klassenkonstante
+
+Beispiele:
+1. final ohne static:
+Eine Konstante für eine Instanz der Klasse. Jede Instanz hat ihre eigene Kopie der Konstante.
+
+Beispiel:
+class Spiel {
+    final int Maximale_Spieler = 10; // Instanzkonstante
+}
+
+public class Main {
+    public static void main(String[] args) {
+        Spiel spiel1 = new Spiel();
+        Spiel spiel2 = new Spiel();
+
+        System.out.println(spiel1.Maximale_Spieler); // Ausgabe: 10
+        System.out.println(spiel2.Maximale_Spieler); // Ausgabe: 10
+    }
+}
+
+2. static ohne final:
+Eine Klassenvariable, deren Wert von allen Instanzen geteilt wird und geändert werden kann.
+
+Beispiel:
+class Spiel {
+    static int Maximale_Spieler = 10; // Klassenvariable
+}
+
+public class Main {
+    public static void main(String[] args) {
+        System.out.println(Spiel.Maximale_Spieler); // Ausgabe: 10
+
+        Spiel.Maximale_Spieler = 20;
+        System.out.println(Spiel.Maximale_Spieler); // Ausgabe: 20
+    }
+}
+
+3. static final:
+Eine Klassenkonstante, deren Wert nicht geändert werden kann und von allen Instanzen geteilt wird.
+
+Beispiel:
+class Spiel {
+    static final int Maximale_Spieler = 10; // Klassenkonstante
+}
+
+public class Main {
+    public static void main(String[] args) {
+        System.out.println(Spiel.Maximale_Spieler); // Ausgabe: 10
+
+        // Spiel.Maximale_Spieler = 20; // Fehler: Kann nicht zugewiesen werden, da es final ist
+    }
+}
+
+Zusammenfassung:
+final: Wird verwendet, um eine Konstante zu definieren, deren Wert nach der Initialisierung nicht geändert werden kann.
+static: Wird verwendet, um eine Klassenvariable zu definieren, die von allen Instanzen der Klasse geteilt wird.
+
+static final: Wird verwendet, um eine Klassenkonstante zu definieren,
+die unveränderlich ist und von allen Instanzen der Klasse geteilt wird.
+Es ist nicht zwingend erforderlich, beide Schlüsselwörter zusammen zu verwenden, aber es ist üblich und sinnvoll,
+wenn Sie eine unveränderliche Klassenkonstante erstellen möchten.

@@ -4,7 +4,7 @@ Konstanten sind Variablen, deren Wert nach der Initialisierung nicht mehr geänd
 Sie werden mit den Schlüsselwörtern static und final deklariert.
 * */
 
-package JAVA_Insel_Smart.OCA.Kapitel_6;
+package JAVA_Insel_Smart.OCA.Kapitel_6.Statische_Klassen_Methoden_Konstanten;
 
 class Spiel {
     // Konstante werden mit dem Schlüsselwort static und final deklariert
