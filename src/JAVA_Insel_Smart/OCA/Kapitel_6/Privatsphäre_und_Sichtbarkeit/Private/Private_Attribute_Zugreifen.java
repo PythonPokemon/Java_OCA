@@ -6,7 +6,7 @@ Außerdem benötigen Sie eine Methode zum Setzen des Namens,
 da das Attribut name privat ist und nicht direkt von außerhalb der Klasse Player zugegriffen werden kann.
 * */
 
-package JAVA_Insel_Smart.OCA.Kapitel_6.Privatsphäre_und_Sichtbarkeit;
+package JAVA_Insel_Smart.OCA.Kapitel_6.Privatsphäre_und_Sichtbarkeit.Private;
 
 
 // Variante 1 Test

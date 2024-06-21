@@ -7,7 +7,7 @@ Auf dem Objekt a wird die Methode methodenZumAusgebenDerMethode aufgerufen,
 die den Text "Ausgabe der Methode aus der Klasse1a" auf der Konsole ausgibt.
 * */
 
-package JAVA_Insel_Smart.OCA.Kapitel_6.Privatsphäre_und_Sichtbarkeit;
+package JAVA_Insel_Smart.OCA.Kapitel_6.Privatsphäre_und_Sichtbarkeit.Public;
 
 class Klasse1a {
     // Methode, die einen Text ausgibt

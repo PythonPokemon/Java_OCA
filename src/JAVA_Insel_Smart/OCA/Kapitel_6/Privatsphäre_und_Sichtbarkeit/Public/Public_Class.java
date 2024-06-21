@@ -20,7 +20,7 @@ Aufrufen der display-Methode:
 player.display(); ruft die display-Methode auf, die den Namen des Spielers ausgibt.
 * */
 
-package JAVA_Insel_Smart.OCA.Kapitel_6.Privatsphäre_und_Sichtbarkeit;
+package JAVA_Insel_Smart.OCA.Kapitel_6.Privatsphäre_und_Sichtbarkeit.Public;
 
 //Für die Öffentlichkeit: public
 //Ein public-Attribut oder eine public-Methode ist für alle Klassen zugänglich:

@@ -5,7 +5,7 @@ Es ist eine gute Praxis, Attribute private zu machen und den Zugriff über Metho
 Kein Public Viewing – Passwörter sind privat
 Ein private-Attribut oder eine private-Methode ist nur innerhalb der Klasse sichtbar:
 * */
-package JAVA_Insel_Smart.OCA.Kapitel_6.Privatsphäre_und_Sichtbarkeit;
+package JAVA_Insel_Smart.OCA.Kapitel_6.Privatsphäre_und_Sichtbarkeit.Private;
 
 // Möglichkeit 1: Initialisierung direkt bei der Deklaration
 // Ein private-Attribut oder eine private-Methode ist nur innerhalb der Klasse sichtbar:-------------Von Hier-----------

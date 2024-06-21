@@ -1,0 +1,16 @@
+Erklärung:
+1.Zugriff innerhalb desselben Pakets:
+In meinpaket.BaseClass ist die Methode geschuetzteMethode als protected deklariert.
+In meinpaket.SamePackageClass können wir direkt auf diese Methode zugreifen, da sie im selben Paket liegt.
+------------------------------------------------------------------------------------------------------------------------
+2.Zugriff in einer Unterklasse:
+In paket1.BaseClass ist die Methode geschuetzteMethode als protected deklariert.
+In paket2.DerivedClass, die von BaseClass erbt, können wir auf die geschützte Methode zugreifen,
+weil DerivedClass eine Unterklasse von BaseClass ist, selbst wenn sie sich in einem anderen Paket befindet.
+------------------------------------------------------------------------------------------------------------------------
+Zusammenfassung der Zugriffsregeln für protected:
+Innerhalb derselben Klasse: Direkter Zugriff.
+Innerhalb desselben Pakets: Direkter Zugriff.
+In Unterklassen (auch in anderen Paketen): Direkter Zugriff.
+Nicht für Instanzen außerhalb des Pakets oder für Klassen, die keine Unterklassen sind.
+Mit diesen Beispielen sollten Sie ein gutes Verständnis dafür haben, wie man auf geschützte Methoden einer Klasse zugreift.
