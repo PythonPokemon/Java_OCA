@@ -1,0 +1,11 @@
+Konstruktoren schreiben
+Ein Konstruktor ist eine spezielle Methode, die aufgerufen wird, wenn ein neues Objekt der Klasse erstellt wird.
+
+class Player {
+  String name;
+
+  Player(String name) {
+    this.name = name;
+  }
+}
+------------------------------------------------------------------------------------------------------------------------

@@ -1,0 +1,14 @@
+Regeln und Best Practices bei der Verwendung von Enums
+1.Enum-Namen:
+
+Enum-Konstanten sollten in Großbuchstaben geschrieben werden.
+Der Name des Enums selbst sollte in PascalCase geschrieben werden (z.B. Day).
+
+2.Definition außerhalb von Methoden:
+
+Enums können innerhalb oder außerhalb von Klassen definiert werden,
+aber sie müssen immer außerhalb von Methoden definiert werden.
+
+3.Enum mit Methoden und Feldern:
+
+Enums können Methoden und Felder haben.

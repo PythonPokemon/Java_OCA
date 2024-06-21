@@ -1,0 +1,53 @@
+PascalCase ist eine Konvention zur Benennung von Bezeichnern (wie Klassen, Enums, Methoden) in der Programmierung, bei
+der jedes Wort im Bezeichner mit einem Großbuchstaben beginnt und keine Unterstriche oder Leerzeichen verwendet werden.
+Diese Konvention wird oft für Klassennamen, Enumnamen und Methodennamen in vielen Programmiersprachen verwendet.
+------------------------------------------------------------------------------------------------------------------------
+Beispiel:
+Angenommen, Sie haben ein Enum, das die Wochentage darstellt. Der Name des Enums sollte in PascalCase geschrieben werden,
+also Day statt day oder DAY.
+
+public enum Day {
+    MONDAY, TUESDAY, WEDNESDAY, THURSDAY, FRIDAY, SATURDAY, SUNDAY
+}
+------------------------------------------------------------------------------------------------------------------------
+Weitere Beispiele für PascalCase:
+------------------------------------------------------------------------------------------------------------------------
+Klassenname:
+
+public class MyClass {
+    // Klasseninhalt
+}
+------------------------------------------------------------------------------------------------------------------------
+Enumname:
+
+public enum Color {
+    RED, GREEN, BLUE
+}
+------------------------------------------------------------------------------------------------------------------------
+Methodenname:
+
+public void MyMethod() {
+    // Methodeninhalt
+}
+------------------------------------------------------------------------------------------------------------------------
+Kontrast zu anderen Namenskonventionen:
+------------------------------------------------------------------------------------------------------------------------
+1.camelCase:
+
+Wird oft für Methoden und Variablen verwendet.
+Beispiel: myVariable, calculateSum
+------------------------------------------------------------------------------------------------------------------------
+2.snake_case:
+
+Verwendet Unterstriche zur Trennung von Wörtern.
+Beispiel: my_variable, calculate_sum
+------------------------------------------------------------------------------------------------------------------------
+3.kebab-case:
+
+Verwendet Bindestriche zur Trennung von Wörtern (häufig in URLs und HTML-Attributen).
+Beispiel: my-variable, calculate-sum
+------------------------------------------------------------------------------------------------------------------------
+Zusammenfassung:
+PascalCase bedeutet, dass der Name des Enums (oder einer Klasse oder Methode) mit einem Großbuchstaben beginnt
+und jedes Wort im Bezeichner ebenfalls mit einem Großbuchstaben beginnt, ohne Unterstriche oder Leerzeichen.
+Diese Konvention verbessert die Lesbarkeit und Konsistenz des Codes.
