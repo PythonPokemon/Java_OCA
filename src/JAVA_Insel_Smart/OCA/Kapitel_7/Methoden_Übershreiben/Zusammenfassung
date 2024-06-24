@@ -1,0 +1,25 @@
+Zusammenfassung:
+Methodenüberschreibung: Die Methode der Oberklasse wird in der Unterklasse überschrieben,
+wenn eine Methode mit derselben Signatur definiert wird.
+
+Polymorphismus: Wenn ein Objekt der Unterklasse durch eine Referenz der Oberklasse referenziert wird,
+wird die Methode der Unterklasse aufgerufen, wenn sie überschrieben wurde.
+
+@Override-Annotation: Diese Annotation ist nicht notwendig für das Überschreiben selbst,
+dient aber als Hinweis und Schutzmechanismus gegen Fehler.
+
+Die Methode der Oberklasse wird also in der Unterklasse überschrieben, und die Methode der Unterklasse wird aufgerufen,
+wenn ein Objekt der Unterklasse durch eine Referenz der Oberklasse referenziert wird.
+------------------------------------------------------------------------------------------------------------------------
+Wichtige Punkte beim Methodenüberschreiben:
+
+Signatur der Methode:
+Der Methodenname, die Parameterliste und der Rückgabewert müssen identisch sein.
+
+Sichtbarkeit:
+Die Sichtbarkeit der Methode in der Unterklasse muss gleich oder größer sein als die Sichtbarkeit
+der Methode in der Oberklasse (z.B. eine protected Methode kann nicht als private in der Unterklasse deklariert werden).
+
+Inhalt der Methode:
+Der Inhalt der Methode (der Code innerhalb der Methode) kann in der Unterklasse unterschiedlich sein.
+Der Inhalt spielt keine Rolle beim Überschreiben selbst, sondern nur bei der Ausführung zur Laufzeit.

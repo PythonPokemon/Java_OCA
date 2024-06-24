@@ -1,0 +1,15 @@
+Zusammenfassung:
+Der instanceof-Operator wird verwendet, um zu überprüfen, ob ein Objekt eine Instanz einer bestimmten Klasse
+oder einer ihrer Unterklassen ist.
+Diese Überprüfung ist nützlich, um sicherzustellen, dass ein Objekt sicher in einen spezifischeren Typ
+umgewandelt werden kann (Downcasting).
+
+Regel: if (obj instanceof Unterklasse) { ... }
+Mit diesem einfachen Beispiel und den Erklärungen sollten die Konzepte des instanceof-Operators und seine Verwendung
+in Java klarer werden.
+
+
+
+
+
+
