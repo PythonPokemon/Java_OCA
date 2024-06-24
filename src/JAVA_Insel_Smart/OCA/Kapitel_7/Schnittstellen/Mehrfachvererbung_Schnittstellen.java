@@ -1,4 +1,7 @@
 package JAVA_Insel_Smart.OCA.Kapitel_7.Schnittstellen;
+// muss importiert werden, weil die im verzeichnis daneben liegen
+import JAVA_Insel_Smart.OCA.Kapitel_7.Schnittstellen.Separates_Beispiel.Electric;
+import JAVA_Insel_Smart.OCA.Kapitel_7.Schnittstellen.Separates_Beispiel.Vehicle;
 
 class SuperVehicle {
     public void startEngine() {

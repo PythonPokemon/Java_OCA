@@ -1,4 +1,4 @@
-package JAVA_Insel_Smart.OCA.Kapitel_7.Schnittstellen;
+package JAVA_Insel_Smart.OCA.Kapitel_7.Schnittstellen.Separates_Beispiel;
 
 // Klasse Car, die sowohl Vehicle als auch Electric implementiert
 class Car1 implements Vehicle, Electric {
