@@ -11,3 +11,43 @@ der Verwendung von Konstruktoren in der Vererbung in Java besser zu verstehen.
 Java unterstützt keine Mehrfachvererbung durch Klassen, da jede Klasse nur von einer anderen Klasse erben kann.
 Dies dient dazu, die Komplexität und die Probleme, die durch die Diamantenvererbung entstehen könnten, zu vermeiden.
 Allerdings unterstützt Java Mehrfachvererbung durch Schnittstellen (Interfaces).
+------------------------------------------------------------------------------------------------------------------------
+Die implizite Basisklasse java.lang.Object
+In Java erben alle Klassen direkt oder indirekt von der Klasse java.lang.Object.
+Dies bedeutet:
+dass jede Klasse automatisch alle Methoden der Object-Klasse erbt, wie toString(), equals(Object o), und hashCode().
+------------------------------------------------------------------------------------------------------------------------
+Einfach- und Mehrfachvererbung
+Java unterstützt nur Einfachvererbung, d.h., jede Klasse kann nur von einer einzigen Oberklasse erben.
+Dies vermeidet die Komplexität und Mehrdeutigkeit, die bei Mehrfachvererbung auftreten können.
+------------------------------------------------------------------------------------------------------------------------
+Sehen Kinder alles? Die Sichtbarkeit protected
+Der Zugriffsmodifizierer protected erlaubt es Unterklassen, auf die Felder und Methoden der Oberklasse zuzugreifen.
+Dies ermöglicht eine enge Kapselung und Wiederverwendbarkeit von Code innerhalb eines Pakets oder einer Klassenhierarchie.
+------------------------------------------------------------------------------------------------------------------------
+Regeln und wichtige Punkte: Für Konstruktoren
+------------------------------------------------------------------------------------------------------------------------
+1.Konstruktoren werden nicht vererbt:
+
+Konstruktoren der Oberklasse werden nicht automatisch auf die Unterklasse übertragen.
+Sie müssen explizit aufgerufen werden.
+------------------------------------------------------------------------------------------------------------------------
+2.Verwendung von super:
+
+Das Schlüsselwort super wird verwendet, um den Konstruktor der Oberklasse aufzurufen.
+Der Aufruf super(...) muss die erste Anweisung im Konstruktor der Unterklasse sein.
+Andernfalls führt dies zu einem Kompilierungsfehler.
+------------------------------------------------------------------------------------------------------------------------
+3.Initialisierung der Oberklasse:
+
+Beim Erstellen eines Objekts der Unterklasse wird zuerst der Konstruktor der Oberklasse aufgerufen,
+um sicherzustellen, dass alle Mitglieder der Oberklasse korrekt initialisiert sind,
+bevor die spezifischen Initialisierungen der Unterklasse erfolgen.
+------------------------------------------------------------------------------------------------------------------------
+4.Sichtbarkeit von Konstruktoren:
+
+Stellen Sie sicher, dass der Konstruktor der Oberklasse die richtige Sichtbarkeit (public, protected, oder default),
+damit er von der Unterklasse aufgerufen werden kann.
+Mit diesem einfachen Beispiel und den dazugehörigen Erklärungen sollten die Konzepte der Konstruktoren
+in der Vererbung und die Verwendung von super(...) klarer werden.
+------------------------------------------------------------------------------------------------------------------------

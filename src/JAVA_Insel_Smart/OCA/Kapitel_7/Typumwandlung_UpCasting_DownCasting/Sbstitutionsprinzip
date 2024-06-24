@@ -1,0 +1,3 @@
+Das Substitutionsprinzip
+Das Liskovsche Substitutionsprinzip besagt, dass eine Instanz einer Unterklasse überall dort verwendet werden kann,
+wo eine Instanz der Oberklasse erwartet wird.
