@@ -54,7 +54,7 @@ public class MethodenUeberschreibenBeispiel {
     public static void main(String[] args) {
         Oberklasse obj1 = new Oberklasse();
         Unterklasse obj2 = new Unterklasse();
-        Oberklasse obj3 = new Unterklasse();
+        Oberklasse obj3 = new Unterklasse(); // tatsächliche instanz der Unterklasse mit der referenz zur Oberklasse
 
         // Aufruf der Methode in der Oberklasse
         obj1.ausgabe(); // Ausgabe: Oberklasse |

@@ -59,11 +59,13 @@ class Oberklasse1 {
 }
 
 class Unterklasse1 extends Oberklasse1 {
+
     // Überschreiben der Methode in der Unterklasse
     @Override
     void ausgabe() {
+
         // Aufruf der Methode der Oberklasse
-        super.ausgabe();
+        super.ausgabe(); // ruft die methode der Oberklasse auf
         // Zusätzlicher Code in der Unterklasse
         System.out.println("Unterklasse");
     }
@@ -72,7 +74,9 @@ class Unterklasse1 extends Oberklasse1 {
 public class Methoden_Ueberschreiben_mit_Super {
     public static void main(String[] args) {
         Oberklasse1 obj1 = new Oberklasse1();
+
         Unterklasse1 obj2 = new Unterklasse1();
+
         Oberklasse1 obj3 = new Unterklasse1();
 
         // Aufruf der Methode in der Oberklasse

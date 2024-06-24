@@ -1,0 +1,32 @@
+Regeln und Best Practices
+------------------------------------------------------------------------------------------------------------------------
+1.Finale Methoden:
+
+Eine Methode, die als final deklariert ist, kann in keiner Unterklasse überschrieben werden.
+Dies stellt sicher, dass das Verhalten der Methode in allen Unterklassen gleich bleibt.
+
+Beispiel:
+
+final void finaleMethode() {
+    // Methode kann nicht überschrieben werden
+}
+------------------------------------------------------------------------------------------------------------------------
+2.Finale Klassen:
+
+Eine Klasse, die als final deklariert ist, kann nicht vererbt werden. Dies wird verwendet, um zu verhindern,
+dass andere Klassen von dieser Klasse erben.
+
+Beispiel:
+
+final class EndgueltigeKlasse {
+    // Klasse kann nicht erweitert werden
+}
+------------------------------------------------------------------------------------------------------------------------
+3.Verwendung von final:
+
+Verwenden Sie final für Methoden, wenn Sie sicherstellen möchten,
+dass das Verhalten der Methode nicht geändert werden kann.
+Verwenden Sie final für Klassen, wenn Sie sicherstellen möchten, dass die Klasse nicht erweitert werden kann.
+Dieses Beispiel zeigt, wie finale Klassen und Methoden in Java verwendet werden können
+und welche Regeln dabei beachtet werden müssen.
+------------------------------------------------------------------------------------------------------------------------

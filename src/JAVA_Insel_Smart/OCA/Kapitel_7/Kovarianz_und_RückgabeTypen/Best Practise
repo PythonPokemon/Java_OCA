@@ -1,0 +1,139 @@
+Regeln und Best Practices
+------------------------------------------------------------------------------------------------------------------------
+Kovariante Rückgabewerte:
+
+Bei der Überschreibung einer Methode in einer Unterklasse kann der Rückgabetyp der Methode spezifischer sein als
+der Rückgabetyp der Methode in der Oberklasse. Dies wird als kovarianter Rückgabewert bezeichnet.
+
+Beispiel:
+java
+Code kopieren
+class Oberklasse {
+    Oberklasse ausgabe() {
+        return this;
+    }
+}
+
+class Unterklasse extends Oberklasse {
+    @Override
+    Unterklasse ausgabe() {
+        return this;
+    }
+}
+------------------------------------------------------------------------------------------------------------------------
+Polymorphismus:
+
+Kovariante Rückgabewerte unterstützen den Polymorphismus, indem sie es ermöglichen, dass Methoden in Unterklassen
+spezifischere Typen zurückgeben, während die Methoden in Oberklassen allgemeinere Typen zurückgeben.
+------------------------------------------------------------------------------------------------------------------------
+also wenn ich das richtig verstanden habe, dann muss man wen man keine void methoden benutzt, return verwenden?
+
+Ja, genau! Wenn eine Methode in Java einen Rückgabewert hat (d.h. nicht void ist), dann muss sie das return-Schlüsselwort verwenden, um einen Wert zurückzugeben, der dem Rückgabetyp der Methode entspricht. Hier sind einige Details und Beispiele, um dies zu verdeutlichen.
+
+Erklärung und Beispiele
+Methoden mit Rückgabewert
+Wenn eine Methode einen bestimmten Rückgabewerttyp hat (z.B. int, String, boolean usw.), muss sie das return-Schlüsselwort verwenden, um einen Wert dieses Typs zurückzugeben.
+
+Beispiel 1: Methode mit Rückgabewert int
+
+java
+Code kopieren
+public int add(int a, int b) {
+    return a + b; // Gibt die Summe von a und b zurück
+}
+Beispiel 2: Methode mit Rückgabewert String
+
+java
+Code kopieren
+public String getGreeting(String name) {
+    return "Hello, " + name; // Gibt eine Begrüßung zurück
+}
+Beispiel 3: Methode mit Rückgabewert boolean
+
+java
+Code kopieren
+public boolean isEven(int number) {
+    return number % 2 == 0; // Gibt true zurück, wenn die Zahl gerade ist
+}
+Regeln und Best Practices
+Rückgabetyp muss übereinstimmen:
+
+Der Rückgabewert der Methode muss dem angegebenen Rückgabewerttyp entsprechen.
+Beispiel:
+java
+Code kopieren
+public double getPi() {
+    return 3.14159; // Rückgabewert ist ein double
+}
+Jeder Ausführungspfad muss einen Wert zurückgeben:
+
+Jede mögliche Ausführungspfad der Methode muss einen Rückgabewert haben.
+Beispiel:
+java
+Code kopieren
+public int max(int a, int b) {
+    if (a > b) {
+        return a; // Rückgabe, wenn a größer ist
+    } else {
+        return b; // Rückgabe, wenn b größer oder gleich ist
+    }
+}
+Rückgabe von Objekten:
+
+Methoden können auch Objekte zurückgeben.
+Beispiel:
+java
+Code kopieren
+public StringBuilder createStringBuilder() {
+    return new StringBuilder("Initial String");
+}
+Kovariante Rückgabetypen:
+
+Beim Überschreiben einer Methode in einer Unterklasse kann der Rückgabewert ein spezifischerer Typ sein.
+Beispiel:
+java
+Code kopieren
+class Oberklasse {
+    Oberklasse get() {
+        return this;
+    }
+}
+
+class Unterklasse extends Oberklasse {
+    @Override
+    Unterklasse get() {
+        return this;
+    }
+}
+------------------------------------------------------------------------------------------------------------------------
+Methoden ohne Rückgabewert (void)
+Wenn eine Methode keinen Rückgabewert hat, wird sie als void deklariert und benötigt kein return, außer um die Methode vorzeitig zu beenden.
+
+Beispiel 1: void-Methode ohne return
+
+java
+Code kopieren
+public void printMessage(String message) {
+    System.out.println(message); // Gibt die Nachricht aus
+}
+Beispiel 2: void-Methode mit return zum vorzeitigen Beenden
+
+java
+Code kopieren
+public void checkAndPrintMessage(String message) {
+    if (message == null) {
+        return; // Methode wird hier vorzeitig beendet
+    }
+    System.out.println(message);
+}
+Zusammenfassung
+Methoden mit Rückgabewert: Müssen return verwenden, um einen Wert zurückzugeben, der dem Rückgabetyp der Methode entspricht.
+Jeder Ausführungspfad muss einen Rückgabewert haben: In Methoden mit Rückgabewert muss jeder mögliche Ausführungspfad der Methode einen Wert zurückgeben.
+void-Methoden: Benötigen kein return, außer um die Methode vorzeitig zu beenden.
+Diese Regeln stellen sicher, dass Methoden in Java korrekt Werte zurückgeben und der Programmfluss klar und vorhersehbar bleibt.
+
+
+
+
+
+
