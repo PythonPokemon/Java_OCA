@@ -1,0 +1,4 @@
+Java unterstützt keine Mehrfachvererbung durch Klassen, da jede Klasse nur von einer anderen Klasse erben kann.
+Dies dient dazu, die Komplexität und die Probleme, die durch die Diamantenvererbung entstehen könnten, zu vermeiden.
+Allerdings unterstützt Java Mehrfachvererbung durch Schnittstellen (Interfaces).
+------------------------------------------------------------------------------------------------------------------------

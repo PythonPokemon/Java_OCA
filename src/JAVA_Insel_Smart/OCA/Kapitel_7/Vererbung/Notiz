@@ -1,0 +1,13 @@
+Zusammenfassung:
+Einfachvererbung: Eine Klasse kann nur von einer anderen Klasse erben. Eine Klasse kann jedoch mehrere Schnittstellen implementieren.
+Regel: class Subclass extends Superclass
+Sichtbarkeit protected: Geschützte Mitglieder sind innerhalb der gleichen Klasse, in Unterklassen und im selben Paket sichtbar.
+Regel: protected Mitglieder sind in der gleichen Klasse und in allen abgeleiteten Klassen sichtbar, selbst wenn sie in verschiedenen Paketen sind.
+Konstruktoren in der Vererbung und super(...): Konstruktoren der Basisklasse werden nicht vererbt. Sie müssen explizit in der abgeleiteten Klasse aufgerufen werden.
+Regel: Verwenden Sie super(...), um den Konstruktor der Basisklasse in der abgeleiteten Klasse aufzurufen.
+Diese Beispiele und Erklärungen sollten helfen, die Konzepte der Vererbung, der Sichtbarkeit protected und
+der Verwendung von Konstruktoren in der Vererbung in Java besser zu verstehen.
+------------------------------------------------------------------------------------------------------------------------
+Java unterstützt keine Mehrfachvererbung durch Klassen, da jede Klasse nur von einer anderen Klasse erben kann.
+Dies dient dazu, die Komplexität und die Probleme, die durch die Diamantenvererbung entstehen könnten, zu vermeiden.
+Allerdings unterstützt Java Mehrfachvererbung durch Schnittstellen (Interfaces).
