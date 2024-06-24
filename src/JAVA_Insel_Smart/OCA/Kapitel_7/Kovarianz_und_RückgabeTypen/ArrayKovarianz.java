@@ -12,7 +12,7 @@ class Unterklasse1a extends Oberklasse1a {
         System.out.println("Ich bin die Unterklasse");
     }
 }
-
+// 7.4.5 Array-Typen und Kovarianz
 public class ArrayKovarianz {
     public static void main(String[] args) {
         Unterklasse1a[] unterArray = new Unterklasse1a[10];
