@@ -1,8 +1,8 @@
-/*
-Kovariante Rückgabetypen
-Eine überschriebene Methode kann einen spezifischeren Rückgabetyp haben als die Methode in der Oberklasse,
-was als kovariante Rückgabe bezeichnet wird.
-* */
+///*
+//Kovariante Rückgabetypen
+//Eine überschriebene Methode kann einen spezifischeren Rückgabetyp haben als die Methode in der Oberklasse,
+//was als kovariante Rückgabe bezeichnet wird.
+//* */
 
 package JAVA_Insel_Smart.OCA.Kapitel_7.Kovarianz_und_RückgabeTypen;
 
