@@ -1,0 +1,16 @@
+Erklärung
+throws ArithmeticException
+Ausnahmebehandlung mit try-catch-Block:
+
+Die Methode dividiere enthält einen try-catch-Block, der die ArithmeticException direkt innerhalb der Methode behandelt.
+Bei einer Division durch Null wird eine Fehlermeldung ausgegeben und 0 zurückgegeben.
+Ausnahmebehandlung mit throws in der Methodensignatur:
+
+Die Methode dividiere deklariert throws ArithmeticException in ihrer Signatur.
+Die Ausnahme wird nicht innerhalb der Methode behandelt, sondern an die aufrufende Methode (main) weitergeleitet.
+Die aufrufende Methode (main) enthält einen try-catch-Block, um die Ausnahme zu behandeln.
+Fazit
+Durch diese Beispiele wird der Unterschied zwischen der direkten Behandlung von Ausnahmen innerhalb einer Methode
+und der Weiterleitung von Ausnahmen durch die Methodensignatur verdeutlicht.
+Der try-catch-Ansatz ermöglicht eine spezifische Behandlung innerhalb der Methode,
+ während der throws-Ansatz die Verantwortung für die Ausnahmebehandlung an die aufrufende Methode weitergibt.
