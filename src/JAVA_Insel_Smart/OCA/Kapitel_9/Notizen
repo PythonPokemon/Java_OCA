@@ -11,7 +11,37 @@ Diese sind nur sichtbar für die Methode, nicht für die gesamte Klasse.
 Geschachtelte Typen zeigen eine enge Abhängigkeit auf:
 Der geschachtelte Typ ist nur sinnvoll einzusetzen in Zusammenhang mit dem äußeren Typ.
 ------------------------------------------------------------------------------------------------------------------------
+Modifizierer und Sichtbarkeit:
 
+Erlaubt sind die Modifizierer abstract, final und einige Sichtbarkeitsmodifizierer.
+Normale Top-Level-Klassen können paketsichtbar oder public sein; geschachtelte Klassen dürfen ebenfalls public
+oder paketsichtbar, alternativ aber auch protected oder private sein.
+Eine private statische geschachtelte Klasse ist dabei wie eine normale private statische Variable zu verstehen:
+Sie kann nur von der umschließenden äußeren Klasse gesehen werden, aber nicht von anderen Top-Level-Klassen.
+protected an statischen geschachtelten Typen ermöglicht für den Compiler einen etwas effizienteren Bytecode,
+ist aber ansonsten nicht in Gebrauch.
 ------------------------------------------------------------------------------------------------------------------------
+Regeln und Best Practices
+------------------------------------------------------------------------------------------------------------------------
+1.Verwendung statischer geschachtelter Typen:
 
+Verwenden Sie statische geschachtelte Typen, wenn die geschachtelte Klasse unabhängig von der äußeren Klasse ist.
+Statische geschachtelte Typen haben keinen Zugriff auf die Instanzvariablen und -methoden der äußeren Klasse.
+------------------------------------------------------------------------------------------------------------------------
+2.Verwendung innerer Typen:
+
+Verwenden Sie innere Typen, wenn die geschachtelte Klasse auf die Instanzvariablen
+und -methoden der äußeren Klasse zugreifen muss.
+Innere Typen haben eine implizite Referenz auf eine Instanz der äußeren Klasse.
+------------------------------------------------------------------------------------------------------------------------
+3.Verwendung lokaler Typen:
+
+Verwenden Sie lokale Typen, wenn die Klasse nur innerhalb einer Methode benötigt wird.
+Lokale Typen können auf die finalen Variablen der Methode zugreifen, in der sie deklariert sind.
+------------------------------------------------------------------------------------------------------------------------
+4.Verwendung anonymer innerer Klassen:
+
+Verwenden Sie anonyme innere Klassen für einfache Implementierungen von Schnittstellen oder abstrakten Klassen.
+Anonyme innere Klassen sind nützlich für einmalige Implementierungen,
+ohne dass eine separate Klassendatei erstellt werden muss.
 ------------------------------------------------------------------------------------------------------------------------
