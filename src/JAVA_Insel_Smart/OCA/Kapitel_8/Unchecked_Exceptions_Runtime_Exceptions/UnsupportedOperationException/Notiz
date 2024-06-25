@@ -1,2 +1,43 @@
 UnsupportedOperationException
-– Wird ausgelöst, wenn eine Methode nicht unterstützt wird.
+– Die UnsupportedOperationException wird ausgelöst, wenn eine Methode aufgerufen wird, die nicht unterstützt wird.
+ies tritt häufig bei unveränderlichen Sammlungen oder speziellen Implementierungen von Schnittstellen auf,
+die bestimmte Operationen nicht unterstützen.
+------------------------------------------------------------------------------------------------------------------------
+Regeln und Best Practices
+------------------------------------------------------------------------------------------------------------------------
+1.Verwendung von unveränderlichen Sammlungen:
+
+Verwenden Sie Collections.unmodifiableList, Collections.unmodifiableSet, und Collections.unmodifiableMap,
+um unveränderliche Sammlungen zu erstellen.
+Seien Sie sich bewusst, dass diese Sammlungen keine Änderungen unterstützen:
+
+List<String> unveraenderlicheListe = Collections.unmodifiableList(liste);
+------------------------------------------------------------------------------------------------------------------------
+2.Überprüfen der Unterstützung von Operationen:
+
+Seien Sie sich bewusst, welche Operationen von der verwendeten Sammlung oder Implementierung unterstützt werden.
+Dokumentieren Sie die Methoden, die nicht unterstützt werden, um Klarheit zu schaffen:
+
+@Override
+public void unsupportedMethod() {
+    throw new UnsupportedOperationException("Diese Methode wird nicht unterstützt.");
+}
+------------------------------------------------------------------------------------------------------------------------
+3.Verwendung von try-catch-Block:
+
+Verwenden Sie try-catch-Blöcke, um potenzielle UnsupportedOperationException abzufangen und zu behandeln.
+Dies verhindert, dass Ihr Programm aufgrund einer nicht unterstützten Operation abstürzt:
+
+try {
+    unveraenderlicheListe.add("C");
+} catch (UnsupportedOperationException e) {
+    System.out.println("Fehler: Die Operation wird nicht unterstützt.");
+}
+------------------------------------------------------------------------------------------------------------------------
+Fazit
+Die UnsupportedOperationException ist eine häufige Ausnahme in Java, die auftritt, wenn eine Methode aufgerufen wird,
+die nicht unterstützt wird.
+Durch ordnungsgemäße Verwendung von unveränderlichen Sammlungen, das Überprüfen der Unterstützung von Operationen
+und das Abfangen der Ausnahme mit try-catch-Blöcken können Sie sicherstellen,
+dass Ihr Programm robust und fehlerresistent bleibt.
+------------------------------------------------------------------------------------------------------------------------
