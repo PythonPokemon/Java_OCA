@@ -1,2 +1,27 @@
 ArithmeticException
 – Wird ausgelöst, wenn ein mathematischer Fehler auftritt, wie Division durch null.
+------------------------------------------------------------------------------------------------------------------------
+Regeln und Best Practices
+------------------------------------------------------------------------------------------------------------------------
+Überprüfen auf Null:
+
+Überprüfen Sie immer, ob der Divisor null ist, bevor Sie eine Division durchführen.
+Verwenden Sie if-Bedingungen, um eine Division durch null zu verhindern:
+
+if (b != 0) {
+    int ergebnis = a / b;
+    System.out.println("Ergebnis: " + ergebnis);
+} else {
+    System.out.println("Fehler: Division durch null ist nicht erlaubt.");
+}
+------------------------------------------------------------------------------------------------------------------------
+Verwendung von try-catch-Block:
+
+Verwenden Sie try-catch-Blöcke, um potenzielle ArithmeticException abzufangen und zu behandeln.
+Dies verhindert, dass Ihr Programm aufgrund eines mathematischen Fehlers abstürzt.
+
+Aussagekräftige Fehlermeldungen:
+
+Geben Sie aussagekräftige Fehlermeldungen aus, um das Debuggen zu erleichtern und dem Benutzer klar zu machen,
+was schief gelaufen ist.
+------------------------------------------------------------------------------------------------------------------------

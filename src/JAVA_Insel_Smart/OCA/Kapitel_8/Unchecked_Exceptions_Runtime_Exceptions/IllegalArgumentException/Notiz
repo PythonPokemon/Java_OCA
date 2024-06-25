@@ -1,2 +1,40 @@
 IllegalArgumentException
 – Wird ausgelöst, wenn eine Methode einen ungültigen Parameter erhält.
+------------------------------------------------------------------------------------------------------------------------
+Regeln und Best Practices
+------------------------------------------------------------------------------------------------------------------------
+1.Validierung von Eingaben:
+
+Überprüfen Sie immer die Parameter von Methoden auf Gültigkeit, bevor Sie die eigentliche Verarbeitung durchführen.
+Verwenden Sie if-Bedingungen, um ungültige Parameter abzufangen und eine IllegalArgumentException auszulösen:
+
+public static void setzeAlter(int alter) {
+    if (alter < 0) {
+        throw new IllegalArgumentException("Alter darf nicht negativ sein.");
+    }
+    System.out.println("Das Alter ist: " + alter);
+}
+------------------------------------------------------------------------------------------------------------------------
+2.Aussagekräftige Fehlermeldungen:
+
+Geben Sie aussagekräftige Fehlermeldungen an, wenn Sie eine IllegalArgumentException auslösen.
+Dies hilft bei der Fehlersuche und macht klar, warum der Parameter ungültig ist:
+
+throw new IllegalArgumentException("Alter darf nicht negativ sein.");
+------------------------------------------------------------------------------------------------------------------------
+Verwendung von try-catch-Block:
+
+Verwenden Sie try-catch-Blöcke, um potenzielle IllegalArgumentException abzufangen und zu behandeln.
+Dies verhindert, dass Ihr Programm aufgrund ungültiger Eingaben abstürzt:
+
+try {
+    setzeAlter(-1);
+} catch (IllegalArgumentException e) {
+    System.out.println("Fehler: " + e.getMessage());
+}
+------------------------------------------------------------------------------------------------------------------------
+Fazit
+Die IllegalArgumentException ist eine nützliche Ausnahme, um ungültige Parameter in Methoden zu behandeln.
+Durch ordnungsgemäße Validierung der Eingaben, das Bereitstellen aussagekräftiger Fehlermeldungen
+und die Verwendung von try-catch-Blöcken können Sie sicherstellen, dass Ihr Programm robust und fehlerresistent bleibt.
+------------------------------------------------------------------------------------------------------------------------
