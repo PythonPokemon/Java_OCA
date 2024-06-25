@@ -1,0 +1,2 @@
+ClassNotFoundException
+– Wird ausgelöst, wenn ein Programm versucht, eine Klasse durch ihren Namen zu laden und die Klasse nicht gefunden wird.

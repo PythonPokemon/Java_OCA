@@ -1,0 +1,3 @@
+CloneNotSupportedException
+– Wird ausgelöst, wenn die clone-Methode in einer Klasse aufgerufen wird,
+die nicht das Cloneable-Interface implementiert.

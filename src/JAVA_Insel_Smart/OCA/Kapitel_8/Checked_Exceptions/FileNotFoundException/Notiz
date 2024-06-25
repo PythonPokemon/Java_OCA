@@ -1,0 +1,3 @@
+FileNotFoundException
+– Eine Unterklasse von IOException, die ausgelöst wird, wenn ein Versuch, eine Datei zu öffnen,
+die nicht existiert, fehlschlägt.

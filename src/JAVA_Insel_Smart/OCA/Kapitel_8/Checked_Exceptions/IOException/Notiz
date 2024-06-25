@@ -1,3 +1,6 @@
+IOException
+– Wird ausgelöst, wenn es Probleme mit der Eingabe-/Ausgabe-Operation gibt.
+
 Erklärung
 throws ArithmeticException
 Ausnahmebehandlung mit try-catch-Block:
