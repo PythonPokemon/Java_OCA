@@ -1,0 +1,29 @@
+Regeln und Best Practices
+------------------------------------------------------------------------------------------------------------------------
+1.Deklaration Abstrakter Methoden:
+
+Abstrakte Methoden werden in einer abstrakten Klasse deklariert und haben keine Implementierung.
+Jede Klasse, die von einer abstrakten Klasse erbt, muss alle abstrakten Methoden implementieren, es sei denn,
+die Unterklasse ist selbst abstrakt.
+------------------------------------------------------------------------------------------------------------------------
+2.Verwendung der @Override-Annotation:
+
+Verwenden Sie die @Override-Annotation, wenn Sie eine abstrakte Methode in einer Unterklasse implementieren.
+Dies stellt sicher, dass die Methode korrekt überschrieben wird.
+------------------------------------------------------------------------------------------------------------------------
+3.Keine Instanziierung Abstrakter Klassen:
+
+Abstrakte Klassen können nicht direkt instanziiert werden. Sie dienen nur als Vorlage für Unterklassen.
+------------------------------------------------------------------------------------------------------------------------
+4.Kombination von Abstrakten und Konkreten Methoden:
+
+Abstrakte Klassen können sowohl abstrakte als auch konkrete Methoden enthalten.
+Dies ermöglicht es, gemeinsamen Code in der abstrakten Klasse zu definieren,
+während spezifische Implementierungen in den Unterklassen bereitgestellt werden.
+------------------------------------------------------------------------------------------------------------------------
+Fazit
+Abstrakte Methoden in abstrakten Klassen ermöglichen es, bestimmte Funktionen in allen Unterklassen zu erzwingen.
+Dies stellt sicher, dass die Unterklassen bestimmte Methoden implementieren,
+was die Konsistenz und Vorhersagbarkeit des Codes erhöht.
+Durch die Kombination von abstrakten und konkreten Methoden in einer abstrakten Klasse können Sie gemeinsamen Code
+zentralisieren und gleichzeitig spezifische Implementierungen in den Unterklassen definieren.

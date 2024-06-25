@@ -1,0 +1,35 @@
+Beispiel für Abstrakte Klassen in Java
+Abstrakte Klassen in Java können nicht instanziiert werden und dienen dazu, gemeinsame Eigenschaften und Methoden
+für Unterklassen bereitzustellen. Eine abstrakte Klasse kann sowohl abstrakte Methoden (die keine Implementierung haben)
+als auch konkrete Methoden (die eine Implementierung haben) enthalten.
+Unterklassen müssen die abstrakten Methoden implementieren.
+------------------------------------------------------------------------------------------------------------------------
+Regeln und Best Practices
+------------------------------------------------------------------------------------------------------------------------
+1.Abstrakte Klassen und Methoden:
+
+Eine Klasse wird als abstrakt deklariert, wenn sie mindestens eine abstrakte Methode enthält oder wenn es sinnvoll ist,
+sie nicht zu instanziieren.
+Abstrakte Methoden haben keine Implementierung und müssen in den Unterklassen implementiert werden.
+------------------------------------------------------------------------------------------------------------------------
+2.Keine Instanziierung von Abstrakten Klassen:
+
+Abstrakte Klassen können nicht instanziiert werden. Sie dienen nur als Vorlage für Unterklassen.
+------------------------------------------------------------------------------------------------------------------------
+3.Kombination von Abstrakten und Konkreten Methoden:
+
+Abstrakte Klassen können sowohl abstrakte als auch konkrete Methoden enthalten.
+Dies ermöglicht es, gemeinsamen Code in der abstrakten Klasse zu definieren,
+während spezifische Implementierungen in den Unterklassen bereitgestellt werden.
+------------------------------------------------------------------------------------------------------------------------
+4.Verwendung der @Override-Annotation:
+
+Verwenden Sie die @Override-Annotation, wenn Sie eine abstrakte Methode in einer Unterklasse implementieren.
+Dies hilft sicherzustellen, dass die Methode korrekt implementiert wird und keine Tippfehler vorliegen.
+------------------------------------------------------------------------------------------------------------------------
+Fazit
+Abstrakte Klassen bieten eine Möglichkeit, gemeinsame Funktionalität in einer Basisklasse zu definieren
+und spezifische Implementierungen in Unterklassen zu erzwingen.
+Sie helfen dabei, Code zu strukturieren und zu organisieren, indem sie gemeinsame Eigenschaften und Methoden
+zentralisieren und dennoch die Flexibilität bieten, spezifische Details in den Unterklassen zu implementieren.
+------------------------------------------------------------------------------------------------------------------------
