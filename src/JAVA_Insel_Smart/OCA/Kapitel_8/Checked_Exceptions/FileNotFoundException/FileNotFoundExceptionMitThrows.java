@@ -30,14 +30,15 @@ import java.util.Scanner;
 public class FileNotFoundExceptionMitThrows {
     public static void main(String[] args) {
         try {
-            leseDatei("nicht_existierende_datei.txt");
+            leseDateiMethode("nicht_existierende_datei.txt");
         } catch (FileNotFoundException e) {
             System.out.println("Fehler: Datei nicht gefunden.");
         }
     }
 
-    public static void leseDatei(String dateiName) throws FileNotFoundException {
+    public static void leseDateiMethode(String dateiName) throws FileNotFoundException {
         Scanner scanner = new Scanner(new File(dateiName));
+
         while (scanner.hasNextLine()) {
             System.out.println(scanner.nextLine());
         }
