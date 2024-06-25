@@ -1,2 +1,17 @@
-VirtualMachineError – Eine Oberklasse für alle Fehler,
-die von der JVM ausgelöst werden, wenn sie in einem unnormalen Zustand ist.
+VirtualMachineError
+- ist eine Oberklasse für alle Fehler, die von der Java Virtual Machine (JVM) ausgelöst werden,
+wenn sie in einem unnormalen Zustand ist.
+
+Zwei häufige Unterklassen von VirtualMachineError sind OutOfMemoryError und StackOverflowError.
+
+Diese Fehler signalisieren schwerwiegende Probleme, die normalerweise nicht behandelt werden sollten,
+da sie auf grundlegende Probleme mit der JVM hinweisen.
+------------------------------------------------------------------------------------------------------------------------
+
+------------------------------------------------------------------------------------------------------------------------
+
+------------------------------------------------------------------------------------------------------------------------
+
+------------------------------------------------------------------------------------------------------------------------
+
+------------------------------------------------------------------------------------------------------------------------

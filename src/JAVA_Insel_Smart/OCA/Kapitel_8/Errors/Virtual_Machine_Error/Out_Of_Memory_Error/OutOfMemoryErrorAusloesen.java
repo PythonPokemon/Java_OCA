@@ -8,7 +8,7 @@ was zu einem OutOfMemoryError führt.
 ------------------------------------------------------------------------------------------------------------------------
 * */
 
-package JAVA_Insel_Smart.OCA.Kapitel_8.Errors.Out_Of_Memory_Error;
+package JAVA_Insel_Smart.OCA.Kapitel_8.Errors.Virtual_Machine_Error.Out_Of_Memory_Error;
 
 import java.util.ArrayList;
 import java.util.List;

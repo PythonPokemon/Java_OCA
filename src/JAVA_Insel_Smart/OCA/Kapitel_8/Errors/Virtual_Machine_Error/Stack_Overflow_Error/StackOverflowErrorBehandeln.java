@@ -10,7 +10,7 @@ Der try-catch-Block fängt den StackOverflowError ab, falls er dennoch auftritt,
 ------------------------------------------------------------------------------------------------------------------------
 * */
 
-package JAVA_Insel_Smart.OCA.Kapitel_8.Errors.Stack_Overflow_Error;
+package JAVA_Insel_Smart.OCA.Kapitel_8.Errors.Virtual_Machine_Error.Stack_Overflow_Error;
 
 public class StackOverflowErrorBehandeln {
     public static void main(String[] args) {
