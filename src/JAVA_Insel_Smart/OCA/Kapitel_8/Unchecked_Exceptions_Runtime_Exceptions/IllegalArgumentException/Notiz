@@ -1,0 +1,2 @@
+IllegalArgumentException
+– Wird ausgelöst, wenn eine Methode einen ungültigen Parameter erhält.

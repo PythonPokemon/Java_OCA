@@ -1,0 +1,2 @@
+VirtualMachineError – Eine Oberklasse für alle Fehler,
+die von der JVM ausgelöst werden, wenn sie in einem unnormalen Zustand ist.

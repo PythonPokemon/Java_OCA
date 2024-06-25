@@ -1,0 +1,3 @@
+NumberFormatException
+– Eine Unterklasse von IllegalArgumentException, die ausgelöst wird,
+wenn eine Zeichenkette in ein numerisches Format umgewandelt werden soll und dies fehlschlägt.

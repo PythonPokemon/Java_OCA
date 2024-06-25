@@ -13,7 +13,7 @@ wenn eine Division durch Null erfolgt.
 ------------------------------------------------------------------------------------------------------------------------
 * */
 
-package JAVA_Insel_Smart.OCA.Kapitel_8.Checked_Exceptions.IOException.In_der_Methodensignatur;
+package JAVA_Insel_Smart.OCA.Kapitel_8.Checked_Exceptions.IOException;
 
 public class DivisionMitThrows {
     public static void main(String[] args) {

@@ -13,7 +13,7 @@ da die Ausnahme bereits in der dividiere-Methode behandelt wird.
 ------------------------------------------------------------------------------------------------------------------------
 * */
 
-package JAVA_Insel_Smart.OCA.Kapitel_8.Checked_Exceptions.IOException.Try_Catch_Block;
+package JAVA_Insel_Smart.OCA.Kapitel_8.Checked_Exceptions.IOException;
 
 public class DivisionMitTryCatch {
     public static void main(String[] args) {

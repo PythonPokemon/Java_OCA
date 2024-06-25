@@ -1,0 +1,2 @@
+NullPointerException
+– Wird ausgelöst, wenn ein Programm versucht, auf ein Objekt zuzugreifen, das null ist.

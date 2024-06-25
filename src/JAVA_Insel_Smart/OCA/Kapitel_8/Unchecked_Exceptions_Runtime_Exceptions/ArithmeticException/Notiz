@@ -1,0 +1,2 @@
+ArithmeticException
+– Wird ausgelöst, wenn ein mathematischer Fehler auftritt, wie Division durch null.

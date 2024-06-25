@@ -1,0 +1,2 @@
+ArrayIndexOutOfBoundsException
+– Wird ausgelöst, wenn ein ungültiger Index für ein Array verwendet wird.

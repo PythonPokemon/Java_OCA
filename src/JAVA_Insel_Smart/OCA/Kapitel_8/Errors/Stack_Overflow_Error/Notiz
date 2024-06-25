@@ -1,0 +1,2 @@
+StackOverflowError – Wird ausgelöst,
+wenn der Stapelspeicher (Stack) voll ist, normalerweise durch unendliche Rekursion.

@@ -1,0 +1,2 @@
+ClassCastException
+– Wird ausgelöst, wenn ein ungültiger Typumwandlungsversuch (Cast) durchgeführt wird.

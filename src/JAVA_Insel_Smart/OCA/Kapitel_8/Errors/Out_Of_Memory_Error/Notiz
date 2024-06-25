@@ -1,0 +1,2 @@
+OutOfMemoryError – Wird ausgelöst,
+wenn der Java-Heap-Speicher erschöpft ist.
