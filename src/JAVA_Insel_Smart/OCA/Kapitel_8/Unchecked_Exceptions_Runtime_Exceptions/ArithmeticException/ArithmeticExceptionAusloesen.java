@@ -11,6 +11,7 @@ public class ArithmeticExceptionAusloesen {
         int a = 10;
         int b = 0;
         int ergebnis = a / b;  // Dies löst eine ArithmeticException aus
+
         System.out.println("Ergebnis: " + ergebnis);
     }
 }

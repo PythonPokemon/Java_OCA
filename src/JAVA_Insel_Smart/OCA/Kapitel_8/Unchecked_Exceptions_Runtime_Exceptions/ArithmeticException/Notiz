@@ -3,6 +3,22 @@ ArithmeticException
 ------------------------------------------------------------------------------------------------------------------------
 Regeln und Best Practices
 ------------------------------------------------------------------------------------------------------------------------
+1.Spezifische Ausnahmebehandlung:
+
+Fangen Sie spezifische Ausnahmen ab, wenn Sie genau wissen, welche Ausnahme auftreten kann
+und wie sie behandelt werden soll.
+Dies bietet eine präzisere Fehlerbehandlung und spezifische Fehlermeldungen.
+------------------------------------------------------------------------------------------------------------------------
+2.Allgemeine Ausnahmebehandlung:
+
+Verwenden Sie allgemeine Ausnahmen (Exception), um unerwartete Fehler abzufangen.
+Dies stellt sicher, dass das Programm nicht aufgrund einer nicht behandelten Ausnahme abstürzt.
+------------------------------------------------------------------------------------------------------------------------
+3.Verwendung von finally:
+
+Der finally-Block wird immer ausgeführt, unabhängig davon, ob eine Ausnahme aufgetreten ist oder nicht.
+Verwenden Sie finally, um Ressourcen freizugeben oder notwendige Aufräumarbeiten durchzuführen.
+------------------------------------------------------------------------------------------------------------------------
 Überprüfen auf Null:
 
 Überprüfen Sie immer, ob der Divisor null ist, bevor Sie eine Division durchführen.
