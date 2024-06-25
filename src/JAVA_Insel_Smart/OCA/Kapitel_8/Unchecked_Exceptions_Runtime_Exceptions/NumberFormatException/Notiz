@@ -1,3 +1,47 @@
 NumberFormatException
 – Eine Unterklasse von IllegalArgumentException, die ausgelöst wird,
 wenn eine Zeichenkette in ein numerisches Format umgewandelt werden soll und dies fehlschlägt.
+------------------------------------------------------------------------------------------------------------------------
+Regeln und Best Practices
+------------------------------------------------------------------------------------------------------------------------
+1.Überprüfen des Eingabeformats:
+
+Überprüfen Sie das Format der Eingabe, bevor Sie eine Konvertierung durchführen.
+Verwenden Sie reguläre Ausdrücke oder andere Methoden, um sicherzustellen, dass die Eingabe eine gültige Zahl ist:
+
+String zahlAlsText = "abc";
+if (zahlAlsText.matches("\\d+")) {
+    int zahl = Integer.parseInt(zahlAlsText);
+    System.out.println("Die Zahl ist: " + zahl);
+} else {
+    System.out.println("Fehler: Ungültiges Zahlenformat.");
+}
+------------------------------------------------------------------------------------------------------------------------
+2.Verwendung von try-catch-Block:
+
+Verwenden Sie try-catch-Blöcke, um potenzielle NumberFormatException abzufangen und zu behandeln.
+Dies verhindert, dass Ihr Programm aufgrund einer ungültigen Konvertierung abstürzt:
+
+try {
+    int zahl = Integer.parseInt(zahlAlsText);
+} catch (NumberFormatException e) {
+    System.out.println("Fehler: Ungültiges Zahlenformat.");
+}
+------------------------------------------------------------------------------------------------------------------------
+3.Geben Sie aussagekräftige Fehlermeldungen aus:
+
+Geben Sie klare und informative Fehlermeldungen aus, um das Debuggen zu erleichtern und den Benutzer zu informieren,
+warum die Konvertierung fehlgeschlagen ist:
+
+catch (NumberFormatException e) {
+    System.out.println("Fehler: Ungültiges Zahlenformat. Eingabe: " + zahlAlsText);
+}
+------------------------------------------------------------------------------------------------------------------------
+Fazit
+Die NumberFormatException ist eine häufige Ausnahme in Java, die auftritt,
+wenn eine Zeichenkette in ein numerisches Format umgewandelt werden soll und dies fehlschlägt.
+
+Durch ordnungsgemäße Überprüfung des Eingabeformats,
+die Verwendung von try-catch-Blöcken und das Bereitstellen klarer Fehlermeldungen können Sie sicherstellen,
+dass Ihr Programm robust und fehlerresistent bleibt.
+------------------------------------------------------------------------------------------------------------------------
