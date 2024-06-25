@@ -1,0 +1,48 @@
+Geschachtelte Ausnahmen mit einer arithmetischen Ausnahme in Java
+Geschachtelte Ausnahmen treten auf, wenn eine Ausnahme innerhalb eines catch-Blocks einer anderen Ausnahme ausgelöst wird.
+Dies kann nützlich sein, um detaillierte Fehlerinformationen zu bewahren und weiterzugeben.
+------------------------------------------------------------------------------------------------------------------------
+Regeln und Best Practices
+------------------------------------------------------------------------------------------------------------------------
+1.Verwenden von geschachtelten Ausnahmen:
+
+Geschachtelte Ausnahmen sind nützlich, um den ursprünglichen Kontext einer Ausnahme zu bewahren.
+Dies erleichtert das Debuggen und die Fehleranalyse.
+Verwenden Sie den Konstruktor von RuntimeException oder einer anderen Ausnahme, der eine Ursache (Throwable) akzeptiert,
+um geschachtelte Ausnahmen zu erzeugen:
+
+"Fehler bei der Berechnung", e);
+------------------------------------------------------------------------------------------------------------------------
+2.Überprüfen der Ursache einer Ausnahme:
+
+Wenn Sie eine Ausnahme behandeln, überprüfen Sie, ob eine geschachtelte Ausnahme vorhanden ist,
+und geben Sie deren Details aus:
+
+Throwable ursache = e.getCause();
+if (ursache != null) {
+    System.out.println("Ursache: " + ursache.getMessage());
+    ursache.printStackTrace();
+}
+------------------------------------------------------------------------------------------------------------------------
+3.Verwendung von try-catch-Blöcken:
+
+Verwenden Sie try-catch-Blöcke, um Ausnahmen abzufangen und detaillierte Fehlerinformationen bereitzustellen.
+Dies hilft, die Ursache von Fehlern zu identifizieren und zu beheben:
+
+try {
+    int result = berechne(10, 0);
+} catch (Exception e) {
+    System.out.println("Fehler: " + e.getMessage());
+    Throwable ursache = e.getCause();
+    if (ursache != null) {
+        System.out.println("Ursache: " + ursache.getMessage());
+        ursache.printStackTrace();
+    }
+}
+------------------------------------------------------------------------------------------------------------------------
+Fazit
+Geschachtelte Ausnahmen sind ein nützliches Werkzeug in Java, um den Kontext von Fehlern zu bewahren
+und detaillierte Fehlerinformationen bereitzustellen.
+Durch die Verwendung von geschachtelten Ausnahmen und die richtige Behandlung können Sie sicherstellen,
+dass Ihr Programm robust und fehlerresistent bleibt.
+------------------------------------------------------------------------------------------------------------------------
