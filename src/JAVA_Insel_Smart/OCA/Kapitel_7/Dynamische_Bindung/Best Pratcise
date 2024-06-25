@@ -1,0 +1,22 @@
+Regeln und Best Practices
+------------------------------------------------------------------------------------------------------------------------
+1.Methodenüberschreibung:
+
+Stellen Sie sicher, dass Sie die toString()-Methode in jeder Unterklasse überschreiben,
+wenn eine spezifische String-Darstellung benötigt wird.
+------------------------------------------------------------------------------------------------------------------------
+2.Polymorphismus:
+
+Nutzen Sie die Vorteile des Polymorphismus, indem Sie Methoden in der Oberklasse deklarieren und
+in den Unterklassen implementieren oder überschreiben.
+------------------------------------------------------------------------------------------------------------------------
+3.Verwendung der @Override-Annotation:
+
+Verwenden Sie die @Override-Annotation, um sicherzustellen, dass Sie die Methode korrekt überschreiben
+und keine Tippfehler oder Signaturfehler vorliegen.
+------------------------------------------------------------------------------------------------------------------------
+4.Vermeidung von Casting:
+
+Verlassen Sie sich auf dynamische Bindung und vermeiden Sie unnötiges Casting. Das Beispiel zeigt,
+dass der Methodenaufruf zur Laufzeit den richtigen Typ des Objekts berücksichtigt.
+------------------------------------------------------------------------------------------------------------------------
