@@ -1,3 +1,22 @@
+/*
+Erklärung
+------------------------------------------------------------------------------------------------------------------------
+1.Definition der Abstrakten Klasse:
+
+AbstrakteKlasse enthält eine abstrakte Methode abstrakteMethode() ohne Implementierung und eine konkrete Methode
+konkreteMethode() mit Implementierung.
+------------------------------------------------------------------------------------------------------------------------
+2.Erstellen einer Unterklasse:
+
+KonkreteKlasse erbt von AbstrakteKlasse und implementiert die abstrakte Methode abstrakteMethode().
+------------------------------------------------------------------------------------------------------------------------
+3.Instanziierung und Methodenaufrufe:
+
+Sie können keine Instanz von AbstrakteKlasse erstellen (new AbstrakteKlasse() ist nicht erlaubt).
+Sie können eine Instanz von KonkreteKlasse erstellen und sowohl die implementierte abstrakte Methode
+als auch die geerbte konkrete Methode aufrufen.
+------------------------------------------------------------------------------------------------------------------------
+* */
 package JAVA_Insel_Smart.OCA.Kapitel_7.Abstrakte_KLassen_und_Methoden;
 
 abstract class AbstrakteKlasse1 {
