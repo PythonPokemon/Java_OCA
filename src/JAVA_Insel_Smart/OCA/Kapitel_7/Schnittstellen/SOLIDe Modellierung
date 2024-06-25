@@ -1,0 +1,29 @@
+SOLIDe Modellierung
+Die SOLID-Prinzipien sind eine Reihe von Designprinzipien, die dazu beitragen, ein System verständlicher,
+flexibler und wartbarer zu machen.
+------------------------------------------------------------------------------------------------------------------------
+SOLID steht für:
+------------------------------------------------------------------------------------------------------------------------
+Single Responsibility Principle (SRP):
+
+Eine Klasse sollte nur eine Verantwortung haben.
+------------------------------------------------------------------------------------------------------------------------
+Open/Closed Principle (OCP):
+
+Softwarekomponenten sollten offen für Erweiterungen, aber geschlossen für Änderungen sein.
+------------------------------------------------------------------------------------------------------------------------
+Liskov Substitution Principle (LSP):
+
+Objekte einer Oberklasse sollten durch Objekte ihrer Unterklasse ersetzt werden können,
+ohne das System zu beeinträchtigen.
+------------------------------------------------------------------------------------------------------------------------
+Interface Segregation Principle (ISP):
+
+Schnittstellen sollten so gestaltet sein, dass implementierende Klassen nur Methoden implementieren müssen,
+die sie tatsächlich nutzen.
+------------------------------------------------------------------------------------------------------------------------
+Dependency Inversion Principle (DIP):
+
+High-Level-Module sollten nicht von Low-Level-Modulen abhängen.
+Beide sollten von abstrakten Schnittstellen abhängen.
+------------------------------------------------------------------------------------------------------------------------

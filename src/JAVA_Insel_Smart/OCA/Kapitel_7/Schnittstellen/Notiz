@@ -38,3 +38,28 @@ Dies hilft sicherzustellen, dass die Methode korrekt implementiert wird und kein
 
 Eine Klasse kann mehrere Schnittstellen implementieren. Dies wird durch Kommas getrennt angegeben.
 ------------------------------------------------------------------------------------------------------------------------
+Keine Kollisionsgefahr bei Mehrfachvererbung
+Schnittstellen erlauben es, mehrere Vererbungshierarchien zu kombinieren,
+ohne die Probleme der Mehrfachvererbung in Klassen.
+------------------------------------------------------------------------------------------------------------------------
+Regeln und Best Practices
+------------------------------------------------------------------------------------------------------------------------
+1.Konstanten in Schnittstellen:
+
+Konstanten in Schnittstellen sind immer public, static, und final. Dies muss nicht explizit angegeben werden, da es implizit ist.
+Konstanten sollten in Großbuchstaben mit Unterstrichen zwischen Wörtern benannt werden,
+um sie von Variablen zu unterscheiden und die Lesbarkeit zu verbessern (Konvention).
+------------------------------------------------------------------------------------------------------------------------
+2.Zugriff auf Konstanten:
+
+Da Konstanten static sind, kann auf sie über den Schnittstellennamen zugegriffen werden,
+ohne eine Instanz der Schnittstelle oder der implementierenden Klasse zu erstellen.
+Beispiel: System.out.println(Schnittstelle.KONSTANTE);
+------------------------------------------------------------------------------------------------------------------------
+3.Verwendung von Konstanten:
+
+Konstanten sollten für Werte verwendet werden,
+die sich nicht ändern und in mehreren Klassen oder Methoden verwendet werden.
+Konstanten in Schnittstellen können nützlich sein, um Standardwerte oder Konfigurationen zu definieren,
+die von allen implementierenden Klassen verwendet werden können.
+------------------------------------------------------------------------------------------------------------------------
