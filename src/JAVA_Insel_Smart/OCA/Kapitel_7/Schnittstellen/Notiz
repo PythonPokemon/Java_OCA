@@ -2,3 +2,39 @@ Java unterstützt keine Mehrfachvererbung durch Klassen, da jede Klasse nur von 
 Dies dient dazu, die Komplexität und die Probleme, die durch die Diamantenvererbung entstehen könnten, zu vermeiden.
 Allerdings unterstützt Java Mehrfachvererbung durch Schnittstellen (Interfaces).
 ------------------------------------------------------------------------------------------------------------------------
+Abstrakte Methoden in Schnittstellen
+Alle Methoden in einer Schnittstelle sind implizit abstrakt und öffentlich.
+
+Implementieren von Schnittstellen
+Eine Klasse implementiert eine Schnittstelle, indem sie die Methoden der Schnittstelle definiert.
+
+Beispiel:
+
+class Implementierung implements Schnittstelle {
+  @Override
+  public void methode() {
+    System.out.println("Implementierung der Methode");
+  }
+}
+------------------------------------------------------------------------------------------------------------------------
+Regeln und Best Practices
+1.Deklaration von Schnittstellen:
+
+Schnittstellen werden mit dem Schlüsselwort interface deklariert.
+Alle Methoden in einer Schnittstelle sind implizit public und abstract.
+------------------------------------------------------------------------------------------------------------------------
+2.Implementierung von Schnittstellen:
+
+Eine Klasse implementiert eine Schnittstelle mit dem Schlüsselwort implements.
+Die Klasse muss alle Methoden der Schnittstelle implementieren,
+ansonsten muss die Klasse selbst als abstract deklariert werden.
+------------------------------------------------------------------------------------------------------------------------
+3.Verwendung der @Override-Annotation:
+
+Verwenden Sie die @Override-Annotation, wenn Sie Methoden einer Schnittstelle implementieren.
+Dies hilft sicherzustellen, dass die Methode korrekt implementiert wird und keine Tippfehler vorliegen.
+------------------------------------------------------------------------------------------------------------------------
+4.Mehrere Schnittstellen implementieren:
+
+Eine Klasse kann mehrere Schnittstellen implementieren. Dies wird durch Kommas getrennt angegeben.
+------------------------------------------------------------------------------------------------------------------------
