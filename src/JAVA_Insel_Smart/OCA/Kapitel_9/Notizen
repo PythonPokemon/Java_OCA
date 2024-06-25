@@ -1,0 +1,17 @@
+Geschachtelte Klassen, Schnittstellen, Aufzählungen
+------------------------------------------------------------------------------------------------------------------------
+Bisher haben wir Klassen, Schnittstellen und Aufzählungen kennengelernt, die entweder allein in der Datei
+oder zusammen mit anderen Typen in einer Datei, also einer Kompilationseinheit, deklariert wurden.
+Es gibt darüber hinaus die Möglichkeit, eine Typdeklaration in eine andere Typdeklaration hineinzunehmen.
+Das ist sinnvoll, denn die Motivation dahinter ist, noch mehr Details zu verstecken,
+denn es gibt sehr lokale Typdeklarationen, die keine größere Sichtbarkeit brauchen.
+Das ist das gleiche Prinzip wie bei lokalen Variablen:
+
+Diese sind nur sichtbar für die Methode, nicht für die gesamte Klasse.
+Geschachtelte Typen zeigen eine enge Abhängigkeit auf:
+Der geschachtelte Typ ist nur sinnvoll einzusetzen in Zusammenhang mit dem äußeren Typ.
+------------------------------------------------------------------------------------------------------------------------
+
+------------------------------------------------------------------------------------------------------------------------
+
+------------------------------------------------------------------------------------------------------------------------
