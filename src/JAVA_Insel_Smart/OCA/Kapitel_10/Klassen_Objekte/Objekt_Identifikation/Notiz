@@ -1,0 +1,37 @@
+Regeln und Best Practices
+------------------------------------------------------------------------------------------------------------------------
+1.Überschreiben der toString()-Methode:
+
+Es ist eine gute Praxis, die toString()-Methode zu überschreiben, um eine nützliche
+und aussagekräftige Darstellung des Objekts zu bieten.
+Die Methode sollte Informationen zurückgeben, die für den Anwendungsfall relevant sind
+und das Objekt identifizieren können.
+------------------------------------------------------------------------------------------------------------------------
+2.Konsistente Darstellung:
+
+Die Darstellung sollte konsistent sein und die wichtigsten Attribute des Objekts enthalten,
+um eine einfache Identifizierung zu ermöglichen.
+Verwenden Sie ein leicht verständliches Format, um die Darstellung klar und lesbar zu machen.
+------------------------------------------------------------------------------------------------------------------------
+3.Verwendung der Methode toString():
+
+Verwenden Sie die toString()-Methode in Debugging-Ausgaben, Log-Nachrichten und überall dort,
+wo eine textuelle Darstellung des Objekts nützlich ist.
+------------------------------------------------------------------------------------------------------------------------
+4.Standard-Implementierung verstehen:
+
+Wenn toString() nicht überschrieben wird, gibt die Methode eine Zeichenkette zurück,
+die den Klassennamen und den Hashcode des Objekts enthält. Dies ist in den meisten Fällen nicht sehr nützlich.
+------------------------------------------------------------------------------------------------------------------------
+Fazit
+Das Überschreiben der toString()-Methode ist eine bewährte Praxis in Java,
+um eine nützliche und aussagekräftige Darstellung eines Objekts zu bieten.
+Durch das Bereitstellen einer klaren und informativen Darstellung des Objekts können Sie die Lesbarkeit
+und Wartbarkeit Ihres Codes verbessern und das Debugging und Logging erleichtern.
+------------------------------------------------------------------------------------------------------------------------
+
+
+
+
+
+

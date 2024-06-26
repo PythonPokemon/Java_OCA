@@ -1,0 +1,27 @@
+Regeln und Best Practices zum überschreiben der .equals() methode
+------------------------------------------------------------------------------------------------------------------------
+1.Reflexivität:
+
+x.equals(x) sollte immer true sein.
+------------------------------------------------------------------------------------------------------------------------
+2.Symmetrie:
+
+x.equals(y) sollte true sein, wenn y.equals(x) true ist.
+------------------------------------------------------------------------------------------------------------------------
+3.Transitivität:
+
+Wenn x.equals(y) true ist und y.equals(z) true ist, dann sollte auch x.equals(z) true sein.
+------------------------------------------------------------------------------------------------------------------------
+4.Konsistenz:
+
+Mehrfache Aufrufe von x.equals(y) sollten das gleiche Ergebnis liefern, solange keine der Objekte modifiziert werden.
+------------------------------------------------------------------------------------------------------------------------
+5.Nicht-Null:
+
+x.equals(null) sollte immer false sein.
+------------------------------------------------------------------------------------------------------------------------
+Fazit
+Das Überschreiben der equals-Methode ist wichtig, um die inhaltliche Gleichheit von Objekten in Java sicherzustellen.
+Durch das Verständnis und die korrekte Implementierung dieser Methode können Sie sicherstellen,
+dass Ihre Objekte korrekt verglichen werden.
+------------------------------------------------------------------------------------------------------------------------
