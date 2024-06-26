@@ -1,0 +1,16 @@
+Schwache Referenzen und Cleaner
+------------------------------------------------------------------------------------------------------------------------
+In Java gibt es verschiedene Arten von Referenzen, die unterschiedlich stark sind und unterschiedliche Zwecke erfüllen:
+
+Starke Referenzen:
+Dies sind die normalen Referenzen, die wir in der Regel verwenden. Solange eine starke Referenz auf ein Objekt verweist,
+kann das Objekt nicht durch den Garbage Collector entfernt werden.
+
+Schwache Referenzen (Weak References): Diese Referenzen erlauben es dem Garbage Collector,
+das referenzierte Objekt zu entfernen, wenn keine starken Referenzen mehr darauf verweisen.
+
+Weiche Referenzen (Soft References): Ähnlich wie schwache Referenzen, jedoch werden diese erst entfernt,
+wenn der Garbage Collector Speicher freigeben muss.
+
+Phantom-Referenzen: Diese werden verwendet, um Aktionen auszuführen, nachdem ein Objekt vom Garbage Collector
+als unbrauchbar markiert wurde.
