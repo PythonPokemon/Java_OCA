@@ -1,0 +1,41 @@
+Hashwerte über hashCode()
+------------------------------------------------------------------------------------------------------------------------
+Die Methode hashCode() liefert einen Hash-Wert des Objekts.
+Wenn equals() überschrieben wird, sollte auch hashCode() überschrieben werden, um die Konsistenz zu gewährleisten.
+Dies ist besonders wichtig, wenn Objekte in Hash-basierten Collections wie HashMap,
+HashSet und HashTable verwendet werden.
+------------------------------------------------------------------------------------------------------------------------
+Regeln und Best Practices
+------------------------------------------------------------------------------------------------------------------------
+1.Konsistenz von equals() und hashCode():
+
+Wenn equals() überschrieben wird, sollte auch hashCode() überschrieben werden, um sicherzustellen,
+dass gleiche Objekte denselben Hash-Wert haben.
+------------------------------------------------------------------------------------------------------------------------
+2.Reflexivität:
+
+x.equals(x) sollte immer true sein.
+------------------------------------------------------------------------------------------------------------------------
+3.Symmetrie:
+
+x.equals(y) sollte true sein, wenn y.equals(x) true ist.
+------------------------------------------------------------------------------------------------------------------------
+4.Transitivität:
+
+Wenn x.equals(y) true ist und y.equals(z) true ist, dann sollte auch x.equals(z) true sein.
+------------------------------------------------------------------------------------------------------------------------
+5.Konsistenz:
+
+Mehrfache Aufrufe von x.equals(y) sollten das gleiche Ergebnis liefern, solange keine der Objekte modifiziert werden.
+Mehrfache Aufrufe von x.hashCode() sollten das gleiche Ergebnis liefern, solange keine der Objekte modifiziert werden.
+------------------------------------------------------------------------------------------------------------------------
+6.Nicht-Null:
+
+x.equals(null) sollte immer false sein.
+------------------------------------------------------------------------------------------------------------------------
+Fazit
+Das Überschreiben der Methoden equals() und hashCode() ist entscheidend für die korrekte Funktionsweise
+von Hash-basierten Collections in Java. Durch die Implementierung dieser Methoden können Sie sicherstellen,
+dass Ihre Objekte korrekt verglichen und in Collections gespeichert werden.
+Die Konsistenz zwischen equals() und hashCode() ist dabei von größter Bedeutung, um unerwartetes Verhalten zu vermeiden.
+------------------------------------------------------------------------------------------------------------------------
