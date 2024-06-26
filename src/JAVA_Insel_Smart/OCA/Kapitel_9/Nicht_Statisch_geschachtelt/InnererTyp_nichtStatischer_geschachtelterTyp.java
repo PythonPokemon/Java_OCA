@@ -8,7 +8,7 @@ Die Klasse Inner ist eine innere Klasse.
 Sie kann nur innerhalb einer Instanz der äußeren Klasse OuterInner erstellt werden.
 * */
 
-package JAVA_Insel_Smart.OCA.Kapitel_9;
+package JAVA_Insel_Smart.OCA.Kapitel_9.Nicht_Statisch_geschachtelt;
 
 public class InnererTyp_nichtStatischer_geschachtelterTyp {
     class Inner {

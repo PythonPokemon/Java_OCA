@@ -8,7 +8,7 @@ Die Klasse Inner ist eine lokale Klasse, die innerhalb der Methode display dekla
 Sie kann nur innerhalb dieser Methode verwendet werden.
 * */
 
-package JAVA_Insel_Smart.OCA.Kapitel_9;
+package JAVA_Insel_Smart.OCA.Kapitel_9.Nicht_Statisch_geschachtelt;
 
 public class Lokaler_innerer_Typ {
     void display() {

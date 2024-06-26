@@ -8,7 +8,7 @@ Eine anonyme innere Klasse implementiert die Runnable-Schnittstelle und übersch
 Die anonyme innere Klasse hat keinen Namen und wird direkt an der Stelle der Instanziierung definiert.
 * */
 
-package JAVA_Insel_Smart.OCA.Kapitel_9;
+package JAVA_Insel_Smart.OCA.Kapitel_9.Nicht_Statisch_geschachtelt;
 
 public class Anonyme_innere_Klasse {
     void createRunnable() {

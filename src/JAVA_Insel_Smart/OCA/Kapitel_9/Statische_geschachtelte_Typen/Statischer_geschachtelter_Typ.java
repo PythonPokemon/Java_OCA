@@ -8,7 +8,7 @@ Die Klasse InnerStatic ist eine statische geschachtelte Klasse.
 Sie kann ohne eine Instanz der äußeren Klasse OuterStatic erstellt werden.
 * */
 
-package JAVA_Insel_Smart.OCA.Kapitel_9;
+package JAVA_Insel_Smart.OCA.Kapitel_9.Statische_geschachtelte_Typen;
 
 public class Statischer_geschachtelter_Typ {
     static class InnerStatic {
