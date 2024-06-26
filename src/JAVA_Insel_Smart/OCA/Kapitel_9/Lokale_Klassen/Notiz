@@ -1,0 +1,33 @@
+Lokale Klassen in Java
+Eine lokale Klasse ist eine Klasse, die innerhalb einer Methode definiert ist.
+Sie ist somit nur innerhalb des Blocks sichtbar, in dem sie definiert ist.
+Lokale Klassen können auf alle Elemente der äußeren Klasse sowie auf alle lokalen Variablen
+und Parameter der Methode zugreifen, in der sie definiert sind, sofern diese final oder effektiv final sind.
+------------------------------------------------------------------------------------------------------------------------
+Regeln und Best Practices
+------------------------------------------------------------------------------------------------------------------------
+1.Sichtbarkeit und Gültigkeitsbereich:
+
+Lokale Klassen sind nur innerhalb der Methode oder des Blocks sichtbar, in dem sie definiert sind.
+Sie können nicht von außerhalb dieser Methode oder dieses Blocks aus verwendet werden.
+------------------------------------------------------------------------------------------------------------------------
+2.Zugriff auf lokale Variablen:
+
+Lokale Klassen können auf lokale Variablen und Parameter der Methode zugreifen, in der sie definiert sind,
+wenn diese Variablen final oder effektiv final sind. Eine Variable ist effektiv final,
+wenn ihr Wert nach der Initialisierung nicht geändert wird.
+------------------------------------------------------------------------------------------------------------------------
+3.Verwendung von lokalen Klassen:
+
+Verwenden Sie lokale Klassen, wenn Sie eine Klasse nur innerhalb einer Methode oder eines Blocks benötigen
+und sie nicht außerhalb dieser Methode oder dieses Blocks sichtbar sein soll.
+------------------------------------------------------------------------------------------------------------------------
+4.Vermeidung von Komplexität:
+
+Da lokale Klassen nur in einem begrenzten Bereich sichtbar sind, sollten sie nicht zu komplex sein.
+Verwenden Sie sie für einfache Aufgaben, um den Code lesbar und wartbar zu halten.
+------------------------------------------------------------------------------------------------------------------------
+Fazit
+Lokale Klassen sind ein nützliches Werkzeug in Java, um Klassen innerhalb einer Methode oder eines Blocks zu definieren.
+Sie ermöglichen den Zugriff auf lokale Variablen und Parameter, sofern diese final oder effektiv final sind.
+------------------------------------------------------------------------------------------------------------------------
