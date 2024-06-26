@@ -10,7 +10,7 @@ Sie kann nur innerhalb dieser Methode verwendet werden.
 
 package JAVA_Insel_Smart.OCA.Kapitel_9;
 
-public class OuterLocal {
+public class Lokaler_innerer_Typ {
     void display() {
         class Inner {
             void showMessage() {
@@ -23,7 +23,7 @@ public class OuterLocal {
     }
 
     public static void main(String[] args) {
-        OuterLocal outer = new OuterLocal();
+        Lokaler_innerer_Typ outer = new Lokaler_innerer_Typ();
         outer.display();
     }
 }

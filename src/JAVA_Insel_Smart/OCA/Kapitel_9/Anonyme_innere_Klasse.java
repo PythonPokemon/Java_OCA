@@ -10,7 +10,7 @@ Die anonyme innere Klasse hat keinen Namen und wird direkt an der Stelle der Ins
 
 package JAVA_Insel_Smart.OCA.Kapitel_9;
 
-public class OuterAnonymous {
+public class Anonyme_innere_Klasse {
     void createRunnable() {
         Runnable r = new Runnable() {
             public void run() {
@@ -21,7 +21,7 @@ public class OuterAnonymous {
     }
 
     public static void main(String[] args) {
-        OuterAnonymous outer = new OuterAnonymous();
-        outer.createRunnable();
+        Anonyme_innere_Klasse objInstanzDummy = new Anonyme_innere_Klasse();
+        objInstanzDummy.createRunnable();
     }
 }

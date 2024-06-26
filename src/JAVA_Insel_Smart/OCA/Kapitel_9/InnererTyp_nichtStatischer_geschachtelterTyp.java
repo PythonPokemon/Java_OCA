@@ -10,7 +10,7 @@ Sie kann nur innerhalb einer Instanz der äußeren Klasse OuterInner erstellt we
 
 package JAVA_Insel_Smart.OCA.Kapitel_9;
 
-public class OuterInner {
+public class InnererTyp_nichtStatischer_geschachtelterTyp {
     class Inner {
         void showMessage() {
             System.out.println("Innerer Typ (nichtstatischer geschachtelter Typ)");
@@ -18,8 +18,8 @@ public class OuterInner {
     }
 
     public static void main(String[] args) {
-        OuterInner outer = new OuterInner();
-        OuterInner.Inner inner = outer.new Inner();
+        InnererTyp_nichtStatischer_geschachtelterTyp outer = new InnererTyp_nichtStatischer_geschachtelterTyp();
+        InnererTyp_nichtStatischer_geschachtelterTyp.Inner inner = outer.new Inner();
         inner.showMessage();
     }
 }

@@ -10,7 +10,7 @@ Sie kann ohne eine Instanz der äußeren Klasse OuterStatic erstellt werden.
 
 package JAVA_Insel_Smart.OCA.Kapitel_9;
 
-public class OuterStatic {
+public class Statischer_geschachtelter_Typ {
     static class InnerStatic {
         void showMessage() {
             System.out.println("Statischer geschachtelter Typ");
@@ -18,7 +18,7 @@ public class OuterStatic {
     }
 
     public static void main(String[] args) {
-        OuterStatic.InnerStatic inner = new OuterStatic.InnerStatic();
+        Statischer_geschachtelter_Typ.InnerStatic inner = new Statischer_geschachtelter_Typ.InnerStatic();
         inner.showMessage();
     }
 }
