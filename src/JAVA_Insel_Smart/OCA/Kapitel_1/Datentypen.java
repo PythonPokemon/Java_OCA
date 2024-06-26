@@ -31,7 +31,7 @@ package JAVA_Insel_Smart.OCA.Kapitel_1;
 public class Datentypen {
     public static void main(String[] args) {
 // Datentyp | Bezeichner | Wert
-        int zahl0;      // Dieser Ausdruck wurde nur deklariert, aber nicht initialisiert
+        int zahl0;      // Dieser Ausdruck wurde nur deklariert, aber nicht initialisiert |<---
         int zahl1 = 1;  // Dieser Ausdruck wurde deklariert & initialisiert, indem der wert 1 dem bezeichner zugewiesen wurde
         var zahl2 = 2;  // var stellt automatisch den Datentyp feste den man mit var deklariert und initialisiert.
         var zahl3 = 3.123;
