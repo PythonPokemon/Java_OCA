@@ -1,41 +1,41 @@
 /*
 Regeln zur Initialisierung von Konstanten zur Kompilierzeit
+------------------------------------------------------------------------------------------------------------------------
 Verwendung von final:
 
-Konstanten, die zur Kompilierzeit initialisiert werden, müssen mit dem Schlüsselwort final deklariert werden. Dies stellt sicher, dass ihr Wert nicht nach der Initialisierung geändert werden kann.
+Konstanten, die zur Kompilierzeit initialisiert werden, müssen mit dem Schlüsselwort final deklariert werden.
+Dies stellt sicher, dass ihr Wert nicht nach der Initialisierung geändert werden kann.
+
 Beispiel:
-java
-Code kopieren
 public static final int MAX_PLAYERS = 4;
+------------------------------------------------------------------------------------------------------------------------
 Statische Deklaration:
 
-Konstanten sollten auch als static deklariert werden, damit sie zur Klasse gehören und nicht zu einer bestimmten Instanz der Klasse.
+Konstanten sollten auch als static deklariert werden,
+damit sie zur Klasse gehören und nicht zu einer bestimmten Instanz der Klasse.
+
 Beispiel:
-java
-Code kopieren
 public static final String GAME_NAME = "Adventure";
+------------------------------------------------------------------------------------------------------------------------
 Direktinitialisierung bei der Deklaration:
 
 Konstanten müssen direkt bei ihrer Deklaration initialisiert werden. Der Wert muss zur Kompilierzeit bekannt sein.
+
 Beispiel:
-java
-Code kopieren
 public static final int MAX_PLAYERS = 4;
+------------------------------------------------------------------------------------------------------------------------
 Verwendung von Konstanten:
 
-Konstanten können direkt über den Klassennamen zugegriffen werden, ohne dass eine Instanz der Klasse erstellt werden muss.
+Konstanten können direkt über den Klassennamen zugegriffen werden,
+ohne dass eine Instanz der Klasse erstellt werden muss.
+
 Beispiel:
-java
-Code kopieren
 System.out.println(Game.MAX_PLAYERS);
-Dieses Beispiel zeigt, wie Konstanten zur Kompilierzeit initialisiert werden und welche Regeln dabei beachtet werden müssen. Solche Konstanten sind nützlich für feste Werte, die sich während der Ausführung des Programms nicht ändern sollen.
-
-
-
-
-
-
-
+------------------------------------------------------------------------------------------------------------------------
+Dieses Beispiel zeigt, wie Konstanten zur Kompilierzeit initialisiert werden
+und welche Regeln dabei beachtet werden müssen.
+Solche Konstanten sind nützlich für feste Werte, die sich während der Ausführung des Programms nicht ändern sollen.
+------------------------------------------------------------------------------------------------------------------------
 * */
 
 package JAVA_Insel_Smart.OCA.Kapitel_6.Klassen_und_Objektinitialisierung;
