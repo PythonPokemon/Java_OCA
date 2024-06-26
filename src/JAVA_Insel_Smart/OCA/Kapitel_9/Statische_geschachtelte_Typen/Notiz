@@ -1,0 +1,31 @@
+Regeln und Best Practices
+------------------------------------------------------------------------------------------------------------------------
+1.Verwendung von statischen geschachtelten Klassen:
+
+Verwenden Sie statische geschachtelte Klassen, wenn die geschachtelte Klasse unabhängig von der äußeren Klasse ist
+und keine Instanz der äußeren Klasse benötigt.
+Statische geschachtelte Klassen eignen sich gut für Utility-Klassen oder als Komponenten,
+die keine direkte Verbindung zur Instanz der äußeren Klasse haben.
+------------------------------------------------------------------------------------------------------------------------
+2.Zugriff auf statische Mitglieder:
+
+Statische geschachtelte Klassen können auf statische Mitglieder der äußeren Klasse zugreifen,
+sollten jedoch keine direkten Verweise auf nichtstatische Mitglieder der äußeren Klasse haben.
+------------------------------------------------------------------------------------------------------------------------
+3.Klare Namensgebung:
+
+Wählen Sie klare und eindeutige Namen für statische geschachtelte Klassen,
+um Verwirrung zu vermeiden und den Code lesbarer zu machen.
+------------------------------------------------------------------------------------------------------------------------
+4.Vermeidung von Verwirrung:
+
+Da statische geschachtelte Klassen innerhalb des Namensraums der äußeren Klasse definiert sind,
+kann dies zu Verwirrung führen.
+Stellen Sie sicher, dass der Code gut dokumentiert ist, um die Beziehung zwischen den Klassen klar zu machen.
+------------------------------------------------------------------------------------------------------------------------
+Fazit
+Statische geschachtelte Typen sind ein nützliches Werkzeug in Java, um Klassen oder Schnittstellen
+innerhalb einer anderen Klasse zu definieren, ohne eine Instanz der äußeren Klasse zu benötigen.
+
+Sie bieten einen eigenen Namensraum und ermöglichen eine klare Strukturierung des Codes.
+------------------------------------------------------------------------------------------------------------------------
