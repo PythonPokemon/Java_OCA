@@ -91,7 +91,7 @@ Beispielsweise kann die Potenzfunktion durch die Methode Math.pow() realisiert w
 double ergebnis = Math.pow(2, 3); // ergebnis ist 8.0
 ------------------------------------------------------------------------------------------------------------------------
 * */
-package JAVA_Insel_Smart.OCA.Kapitel_2;
+package JAVA_Insel_Smart.OCA.Kapitel_1;
 
 public class Ausdrücke_Operanden_Operatoren {
     public static void main(String[] args) {
