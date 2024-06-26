@@ -1,0 +1,29 @@
+Wrapper-Klassen und Autoboxing in Java
+Wrapper-Klassen in Java bieten eine Möglichkeit, primitive Datentypen als Objekte zu behandeln.
+Dies ist nützlich, wenn Methoden oder Datenstrukturen Objekte und keine primitiven Typen erwarten.
+Außerdem bieten Wrapper-Klassen zusätzliche Methoden zur Manipulation von Daten.
+------------------------------------------------------------------------------------------------------------------------
+Autoboxing und Unboxing
+Autoboxing ist der automatische Prozess, bei dem primitive Typen in ihre entsprechenden Wrapper-Objekte
+konvertiert werden.
+
+Unboxing ist der umgekehrte Prozess, bei dem Wrapper-Objekte in primitive Typen konvertiert werden.
+------------------------------------------------------------------------------------------------------------------------
+Regeln für die Verwendung von Wrapper-Klassen und Autoboxing
+------------------------------------------------------------------------------------------------------------------------
+1.Autoboxing und Unboxing: Java führt Autoboxing und Unboxing automatisch durch, wenn dies erforderlich ist.
+Dies erleichtert die Verwendung von primitiven Typen in generischen Klassen wie ArrayList.
+------------------------------------------------------------------------------------------------------------------------
+2.NullPointerException: Vorsicht bei Unboxing, wenn das Wrapper-Objekt null ist,
+wird eine NullPointerException ausgelöst.
+
+Integer i = null;
+int intValue = i; // Wirft NullPointerException
+------------------------------------------------------------------------------------------------------------------------
+3.Performance: Wrapper-Klassen sind weniger effizient als primitive Typen, da sie mehr Speicher benötigen
+und zusätzliche Methodenaufrufe erfordern.
+Verwende primitive Typen, wenn Performance kritisch ist.
+------------------------------------------------------------------------------------------------------------------------
+Diese einfachen Beispiele und Erklärungen sollten Anfängern helfen,
+die Verwendung von Wrapper-Klassen und Autoboxing in Java zu verstehen.
+------------------------------------------------------------------------------------------------------------------------
