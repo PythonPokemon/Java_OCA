@@ -99,6 +99,7 @@ package JAVA_Insel_Smart.OCA.Kapitel_10.Klassen_Objekte.Objekt_Identifikation.eq
 public class Punkt {
     private int x, y;
 
+    // Konstruktor
     public Punkt(int x, int y) {
         this.x = x;
         this.y = y;
