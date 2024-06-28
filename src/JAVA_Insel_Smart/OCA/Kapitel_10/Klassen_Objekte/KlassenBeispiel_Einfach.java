@@ -56,8 +56,8 @@ public class KlassenBeispiel_Einfach {
 
         // String Klasse
         String text = "Hallo Welt";
-        Class<?> stringClass = text.getClass();
-        System.out.println(stringClass.getName()); // Ausgabe: java.lang.String
+        Class<?> bezeichner1 = text.getClass();
+        System.out.println(bezeichner1.getName()); // Ausgabe: java.lang.String
 
         // Boolean Klasse
         Boolean bool = true;
