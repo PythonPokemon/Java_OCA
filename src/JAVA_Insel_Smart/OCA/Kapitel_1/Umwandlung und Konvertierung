@@ -1,0 +1,85 @@
+Unterschiede zwischen Umwandlung und Konvertierung
+------------------------------------------------------------------------------------------------------------------------
+Umwandlung (Casting):
+------------------------------------------------------------------------------------------------------------------------
+Primitive Typumwandlungen
+Diese betreffen grundlegende Datentypen wie int, float, double, char usw. Es gibt zwei Arten von Umwandlungen:
+------------------------------------------------------------------------------------------------------------------------
+Implizite Umwandlung (Widening): Der Compiler führt dies automatisch durch, wenn keine Daten verloren gehen.
+
+Zum Beispiel:
+
+int a = 100;
+double b = a;  // implizite Umwandlung von int zu double
+------------------------------------------------------------------------------------------------------------------------
+Explizite Umwandlung (Narrowing): Der Programmierer muss dies angeben, da es zu Datenverlust führen kann.
+
+Zum Beispiel:
+
+double a = 100.04;
+int b = (int) a;  // explizite Umwandlung von double zu int
+------------------------------------------------------------------------------------------------------------------------
+Referenztypumwandlungen
+Diese betreffen Objekte und Vererbungshierarchien:
+------------------------------------------------------------------------------------------------------------------------
+Aufwärtsumwandlung (Upcasting):
+Umwandlung eines Objekts in einen allgemeinen Typ. Dies ist immer sicher und implizit.
+
+Dog dog = new Dog();
+Animal animal = dog;  // implizite Aufwärtsumwandlung
+------------------------------------------------------------------------------------------------------------------------
+Abwärtsumwandlung (Downcasting):
+Umwandlung eines Objekts in einen spezialisierteren Typ.
+Dies muss explizit erfolgen und kann zur Laufzeit fehlschlagen, wenn der Typ nicht übereinstimmt.
+
+Animal animal = new Dog();
+Dog dog = (Dog) animal;  // explizite Abwärtsumwandlung
+------------------------------------------------------------------------------------------------------------------------
+Konvertierung:
+------------------------------------------------------------------------------------------------------------------------
+Konvertierung bezieht sich oft auf das Ändern des Formats eines Werts oder Objekts,
+sodass es in einem anderen Kontext verwendet werden kann.
+Dies kann auch den Wechsel zwischen inkompatiblen Typen beinhalten und ist in der Regel komplexer als einfaches Casting.
+Es gibt verschiedene Konvertierungen,
+wie z. B. die Umwandlung von Objekten in Strings oder das Parsen von Strings in numerische Typen.
+
+Beispiel: String zu int
+
+String s = "123";
+int a = Integer.parseInt(s);  // Konvertierung von String zu int
+------------------------------------------------------------------------------------------------------------------------
+Beispiel: Object zu String
+
+Object obj = 123;
+String s = obj.toString();  // Konvertierung von Object zu String
+------------------------------------------------------------------------------------------------------------------------
+Unterschiede zwischen Umwandlung und Konvertierung
+
+Umwandlung (Casting):
+
+Bezieht sich typischerweise auf das Ändern des Typs einer Variablen innerhalb des selben grundlegenden Datentyps
+(primitive oder Referenztypen).
+Kann implizit oder explizit sein.
+
+Beispiele: int zu double, Animal zu Dog.
+------------------------------------------------------------------------------------------------------------------------
+Konvertierung:
+
+Bezieht sich auf das Ändern des Formats oder Typs eines Werts, oft zwischen inkompatiblen Typen.
+Erfordert häufig spezielle Methoden oder Funktionen.
+
+Beispiele: String zu int, Object zu String.
+------------------------------------------------------------------------------------------------------------------------
+Zusammenfassung
+Während "Umwandlung" und "Konvertierung" in der Programmierung oft synonym verwendet werden, gibt es feine Unterschiede:
+
+Umwandlung (Casting) wird häufig für die Änderung des Typs innerhalb derselben Datentypenkategorie
+(primitive oder Referenztypen) verwendet.
+
+Konvertierung wird verwendet, um den Typ oder das Format eines Werts in einen anderen, oft inkompatiblen Typ zu ändern.
+------------------------------------------------------------------------------------------------------------------------
+
+
+
+
+
