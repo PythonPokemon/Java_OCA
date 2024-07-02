@@ -120,7 +120,7 @@ public class Ausdrücke_Operanden_Operatoren {
 //----------------------------------------------------------------------------------------------------------------------
 // Präfix- oder Postfix-Inkrement und -Dekrement
         int x = 5;
-        int y = ++x;    // y ist 6, x ist 6 (Präfix)
+        int y = ++x;    // y ist 6, x ist 6 (Präfix) |
         int z = x--;    // z ist 6, x ist 5 (Postfix)
         System.out.println(x);
         System.out.println(y);
