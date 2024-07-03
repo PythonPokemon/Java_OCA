@@ -1,0 +1,32 @@
+Unterschiede zwischen Array und ArrayList
+------------------------------------------------------------------------------------------------------------------------
+1.Größe:
+
+Array: Die Größe des Arrays ist fest und wird bei der Erstellung festgelegt.
+ArrayList: Die Größe der ArrayList ist dynamisch und passt sich an, wenn Elemente hinzugefügt oder entfernt werden.
+------------------------------------------------------------------------------------------------------------------------
+2.Flexibilität:
+
+Array: Arrays sind weniger flexibel, da ihre Größe nach der Initialisierung nicht geändert werden kann.
+ArrayList: ArrayLists bieten mehr Flexibilität, da sie viele Methoden wie add(), remove(), clear(), etc.
+zur Verfügung stellen.
+------------------------------------------------------------------------------------------------------------------------
+3.Leistung:
+
+Array: Arrays können schneller sein, da sie weniger Overhead haben und die Elemente direkt im Speicher platziert werden.
+ArrayList: ArrayLists sind etwas langsamer aufgrund des zusätzlichen Overheads für das dynamische Größenmanagement
+und die Methoden des Java Collection Frameworks.
+------------------------------------------------------------------------------------------------------------------------
+4.Typüberprüfung:
+
+Array: Arrays bieten zur Kompilierzeit eine starke Typüberprüfung.
+ArrayList: ArrayLists bieten ebenfalls zur Kompilierzeit eine starke Typüberprüfung,
+jedoch müssen Sie die Typen mit generischen Typen (<Type>) angeben.
+------------------------------------------------------------------------------------------------------------------------
+Zusammenfassung
+Arrays sind grundlegende Datenstrukturen mit fester Größe und geringerem Overhead, während ArrayLists dynamische,
+flexiblere Strukturen bieten, die viele nützliche Methoden zur Verfügung stellen, aber etwas mehr Overhead haben.
+Die Wahl zwischen Array und ArrayList hängt von den Anforderungen Ihres Programms ab.
+Wenn Sie eine feste Anzahl von Elementen haben und Leistung ein wichtiger Faktor ist, können Arrays besser geeignet sein.
+Wenn Sie jedoch eine flexible Größe und zusätzlichen Komfort benötigen, sind ArrayLists die bessere Wahl.
+------------------------------------------------------------------------------------------------------------------------
