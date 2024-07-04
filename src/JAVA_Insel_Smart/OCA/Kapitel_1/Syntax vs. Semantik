@@ -1,0 +1,14 @@
+Syntax vs. Semantik
+------------------------------------------------------------------------------------------------------------------------
+Syntax: Regeln, die festlegen, wie ein Programm geschrieben werden muss.
+
+Zum Beispiel:
+In Java müssen Anweisungen mit einem Semikolon ; enden.
+Ein if-Statement muss in der Form if (Bedingung) { Anweisungen } geschrieben werden.
+------------------------------------------------------------------------------------------------------------------------
+Semantik: Die Bedeutung der Anweisungen und die Auswirkungen, die sie auf die Ausführung des Programms haben.
+
+Zum Beispiel:
+Was passiert, wenn eine Variable zugewiesen wird?
+Was passiert, wenn eine Schleife durchlaufen wird?
+------------------------------------------------------------------------------------------------------------------------
