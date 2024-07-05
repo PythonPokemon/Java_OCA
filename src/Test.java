@@ -1,12 +1,16 @@
 public class Test {
-    public static void main(String args[]) {
-    }
-
-    void crazyLoop() {
-        int c = 0;
-        JACK: while (c < 8) {
-            JILL:System.out.println(c);
-            if (c > 3) break JACK; else c++;
+    public float parseFloat(String s){
+        float f = 0.0f;
+        try{
+            f = Float.valueOf(s).floatValue();
+            return f;
         }
+        catch(NumberFormatException nfe){
+            System.out.println("Invalid input " + s);
+            f = Float.NaN;
+            return f;
+        }
+        finally { System.out.println("finally"); }
+        return f;
     }
 }
