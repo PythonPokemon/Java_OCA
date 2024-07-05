@@ -35,7 +35,7 @@ public class Datentypen {
         int zahl1 = 1;  // Dieser Ausdruck wurde deklariert & initialisiert, indem der wert 1 dem bezeichner zugewiesen wurde
         var zahl2 = 2;  // var stellt automatisch den Datentyp feste den man mit var deklariert und initialisiert.
         var zahl3 = 3.123;
-//  Fließkommazahlen mit den Datentypen
+//  Fließkommazahlen mit den Datentypen..
         float f = 3.14f;
         double d = 3.14;
 // Ganzzahlige Datentypen
