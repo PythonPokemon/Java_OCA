@@ -127,8 +127,8 @@ public class Ausdrücke_Operanden_Operatoren {
 //        System.out.println(z);
 //----------------------------------------------------------------------------------------------------------------------
 // Zuweisung mit Operation (Verbundoperator): : +=, -=, *=, /=, %=:
-        // der bezeichner auf dem die werte referenziert sind, speichert immer den zuletzt initialisierten wert
-        // und benutzt diesen zur weiteren berechnung
+        // der bezeichner, bsp: 'zahl1' auf dem die werte referenziert sind, speichert immer den zuletzt
+        // initialisierten wert und benutzt diesen zur weiteren berechnung
         int zahl1 = 5;
         zahl1 += 3; // zahl ist jetzt 8
         zahl1 *= 2; // zahl ist jetzt 16
@@ -146,24 +146,24 @@ public class Ausdrücke_Operanden_Operatoren {
 //----------------------------------------------------------------------------------------------------------------------
 // Die relationalen Operatoren und die Gleichheitsoperatoren:
 //  == (gleich), != (ungleich), < (kleiner), > (größer), <= (kleiner oder gleich), >= (größer oder gleich):
-        boolean gleich = (5 == 5); // true
-        boolean ungleich = (5 != 3); // true
-        boolean kleiner = (3 < 5); // true
-        boolean größer = (5 > 3); // true
-        boolean kleinerGleich = (5 <= 5); // true
-        boolean größerGleich = (5 >= 3); // true
-        System.out.println(gleich);
-        System.out.println(ungleich);
-        System.out.println(kleiner);
-        System.out.println(größer);
-        System.out.println(kleinerGleich);
-        System.out.println(größerGleich);
+        boolean gleich = (5 == 5); // 5 ist 5 | true
+        boolean ungleich = (5 != 3); // 5 ist ungleich 3 | true
+        boolean kleiner = (3 < 5); // 3 ist kleiner als 5 | true
+        boolean größer = (5 > 3); // 5 ist größer als 3 |true
+        boolean kleinerGleich = (5 <= 5); // 5 ist kleiner oder gleich 5 true
+        boolean größerGleich = (3 >= 3); // 3 ist größer oder gleich 3 | true
+//        System.out.println(gleich);
+//        System.out.println(ungleich);
+//        System.out.println(kleiner);
+//        System.out.println(größer);
+//        System.out.println(kleinerGleich);
+//        System.out.println(größerGleich);
 //----------------------------------------------------------------------------------------------------------------------
 // Logische Operatoren: Nicht, Und, Oder, XOR
-        boolean nicht = !(5 == 5); // false
-        boolean und = (5 == 5) && (3 < 5); // true
-        boolean oder = (5 == 5) || (3 > 5); // true
-        boolean xor = (5 == 5) ^ (3 > 5); // true
+        boolean nicht = !(5 == 5); // negierte aussage, bedeutet, wenn 5 der 5 entspricht ist es falsch/false
+        boolean und = (5 == 5) && (3 < 5); // beide operationen müssen true sein: 5 ist 5 true & 3 ist kleiner 5 true
+        boolean oder = (5 == 5) || (3 > 5); // eine von beiden muss true sein: 5 ist 5 true | 3 ist größer als 5 false
+        boolean xor = (5 == 5) ^ (3 > 5); // true, wenn eine von beiden false ist: 5 ist 5 true | 3 größer 5 false
 //        System.out.println(nicht);
 //        System.out.println(und);
 //        System.out.println(oder);
@@ -172,24 +172,52 @@ public class Ausdrücke_Operanden_Operatoren {
 // Kurzschluss-Operatoren  && und ||
         boolean kurzschluss1 = (5 > 3) || (5 / 0 == 0); // true, keine Division durch 0
         boolean kurzschluss2 = (5 <= 5 && 1 > 3 || 5 == 5); // true | UND Operation false || ODER true 5 entspricht 5
+        boolean testKO1 = ((1 + 3) == 4 && 5 == 5); // true
+        boolean testKO2 = (((100 - 65) == 35) || ((1 + 1) == 2));// true
+
+        boolean ergebnisOP;
+        ergebnisOP = testKO1 == testKO2;
+
 //        System.out.println(kurzschluss1);
 //        System.out.println(kurzschluss2);
+//        System.out.println(testKO1);
+//        System.out.println(testKO2);
+//        System.out.println(ergebnisOP);
 //----------------------------------------------------------------------------------------------------------------------
 // Der Rang der Operatoren in der Auswertungsreihenfolge
         int ergebnis_1 = 5 + 3 * 2; // ergebnis ist 11, da Multiplikation vor Addition
         float ergebnis_2 = 2 + 4 / 2;
         double ergebnis_3 = 2.1 + 2.2;
+
+        // WrapperKlasse Integer
+        Integer berechnungLang = ((1 + 2 + 3 + 4) * 2 * (10 *2) );// 10 * 2 = 20 * 40 = 400
 //        System.out.println(ergebnis_1);
 //        System.out.println(ergebnis_2);
 //        System.out.println(ergebnis_3);
+//        System.out.println(berechnungLang);
 //----------------------------------------------------------------------------------------------------------------------
 // Die Typumwandlung (das Casting)
 // Syntax: Datentyp | Bezeichner | zuweisungsoperator = | Gewünschter Datentyp | Variablenwert
+        double gleitkommaZahl = 3.14;
+        int zahlCast1 = (int) gleitkommaZahl;// wandelt die gleitkommazahl in eine ganzzahl um | man kann bezeichner nehmen
+        float zahlCast2 = (float) 2;    // wandelt die Ganzzahl in eine Gleitkommazahl um | oder man nimmt, eine zahl
+        System.out.println(zahlCast1);
+        System.out.println(zahlCast2);
 
-        int zahlCast1 = (int) 3.14;     // wandelt die gleitkommazahl in eine ganzzahl um
-        float zahlCast2 = (float) 2;    // wandelt die Ganzzahl in eine Gleitkommazahl um
-//        System.out.println(zahlCast1);
-//        System.out.println(zahlCast2);
+        // Deklaration von datentypen und initialisierung
+        int ganzZahl1 = 1;
+        long langeZahl = 9_999_999;
+        float gleitKomma1 = 2.123f;
+
+        // Umwandlung von Datentypen
+        int komma_zu_ganzZahl = (int) gleitKomma1;
+        float ganzzahlZuKomma = (float) ganzZahl1;
+        double großeKommaZahl = (double) langeZahl;
+
+        // ausgabe nach der Umwandlung
+//        System.out.println(komma_zu_ganzZahl);
+//        System.out.println(ganzzahlZuKomma);
+//        System.out.println(großeKommaZahl);
 //----------------------------------------------------------------------------------------------------------------------
 // Überladenes Plus für Strings, um Zeichenketten zu verketten:
         String verkettungsFrage = "Hallo " + "Welt " + "wie geht " + "es dir heute?";
