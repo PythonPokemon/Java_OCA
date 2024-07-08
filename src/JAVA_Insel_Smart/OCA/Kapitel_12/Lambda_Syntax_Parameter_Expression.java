@@ -1,4 +1,10 @@
 /*
+Syntax (parameters) -> expression:
+------------------------------------------------------------------------------------------------------------------------
+Wird verwendet, wenn die Lambda-Funktion nur einen Ausdruck enthält.
+Der Ausdruck wird automatisch zurückgegeben.
+Beispiel: (a, b) -> a * b
+
 Multiplier multiplier = (a, b) -> a * b;:
 
 Lambda-Ausdruck, der zwei Parameter (a, b) nimmt und das Produkt zurückgibt.
