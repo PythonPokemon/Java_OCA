@@ -1,5 +1,17 @@
 Was sind Generics?
 ------------------------------------------------------------------------------------------------------------------------
+Warum Generics keine primitiven Typen unterstützen
+Generics in Java basieren auf Typ-Erasure, was bedeutet, dass die Generics-Informationen zur Laufzeit gelöscht werden.
+Die JVM sieht zur Laufzeit keine Unterschiede zwischen den verschiedenen Instanziierungen einer
+generischen Klasse oder Methode.
+Da primitive Typen keine Objekte sind, können sie nicht als Typparameter für Generics verwendet werden.
+
+Zusammenfassung
+Arrays: Unterstützen sowohl primitive Typen als auch Referenztypen.
+Generics: Unterstützen nur Referenztypen, daher müssen Wrapper-Klassen verwendet werden.
+Wrapper-Klassen: Erlauben es, primitive Typen in Generics zu verwenden, indem sie die primitiven Typen
+in Objekte umwandeln.
+------------------------------------------------------------------------------------------------------------------------
 Generics ermöglichen es dir, Klassen, Schnittstellen und Methoden so zu definieren,
 dass sie mit beliebigen Datentypen arbeiten können. Dies erhöht die Wiederverwendbarkeit und Typsicherheit des Codes.
 ------------------------------------------------------------------------------------------------------------------------

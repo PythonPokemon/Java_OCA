@@ -1,0 +1,23 @@
+Lambdas in Java wurden mit Java 8 eingeführt und bieten eine kompakte Möglichkeit,
+Funktionen als Argumente an Methoden zu übergeben. Lambdas sind insbesondere nützlich,
+wenn man mit funktionalen Interfaces arbeitet, die genau eine abstrakte Methode haben.
+Schauen wir uns drei Beispiele an: eine einfache Operation, eine Schleife und die Arbeit mit Arrays.
+------------------------------------------------------------------------------------------------------------------------
+Wichtige Regeln bei der Verwendung von Lambdas
+
+1.Funktionales Interface: Lambdas können nur verwendet werden, wenn ein funktionales Interface mit genau
+einer abstrakten Methode vorhanden ist.
+
+2.Syntax: (parameters) -> expression oder (parameters) -> { statements }.
+3.Typ-Inferenz: Der Compiler kann oft den Typ der Parameter ableiten, daher ist es nicht immer notwendig,
+diese explizit anzugeben.
+
+4.Lambda-Ausdrücke und Scoping: Lambdas haben Zugriff auf final oder effektiv final Variablen im umgebenden Kontext.
+------------------------------------------------------------------------------------------------------------------------
+Zusammenfassung
+
+Lambdas bieten eine elegante und prägnante Möglichkeit, anonyme Funktionen zu schreiben.
+Sie sind besonders nützlich in Kombination mit funktionalen Interfaces und ermöglichen einen klaren und lesbaren Code,
+insbesondere bei Operationen wie Iterationen, Filterungen und Transformationen.
+Mit diesen Beispielen hast du eine Grundlage, um Lambdas in deinen eigenen Projekten zu nutzen.
+------------------------------------------------------------------------------------------------------------------------
