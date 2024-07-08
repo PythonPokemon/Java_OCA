@@ -1,0 +1,47 @@
+Was sind Generics?
+------------------------------------------------------------------------------------------------------------------------
+Generics ermöglichen es dir, Klassen, Schnittstellen und Methoden so zu definieren,
+dass sie mit beliebigen Datentypen arbeiten können. Dies erhöht die Wiederverwendbarkeit und Typsicherheit des Codes.
+------------------------------------------------------------------------------------------------------------------------
+Regeln und Best Practices
+------------------------------------------------------------------------------------------------------------------------
+Typ-Parameter:
+
+Übliche Konventionen sind T für Typ, E für Element, K für Schlüssel und V für Wert.
+------------------------------------------------------------------------------------------------------------------------
+Einschränkungen:
+
+Du kannst generische Typen mit Einschränkungen versehen:
+
+public class NumberBox<T extends Number> {
+    private T content;
+
+    public void setContent(T content) {
+        this.content = content;
+    }
+
+    public T getContent() {
+        return content;
+    }
+}
+Hier muss T eine Unterklasse von Number sein.
+------------------------------------------------------------------------------------------------------------------------
+Rohtypen vermeiden:
+
+Verwende immer parametrisierten Typen anstelle von Rohtypen.
+
+Box<String> stringBox = new Box<>(); // Richtig
+Box rawBox = new Box(); // Falsch, vermeidet Typsicherheit
+------------------------------------------------------------------------------------------------------------------------
+Generische Arrays:
+
+Direkt generische Arrays zu erstellen ist problematisch:
+
+List<Integer>[] arrayOfLists = new List<Integer>[10]; // Kompiliert nicht
+
+Stattdessen benutze:
+
+List<Integer>[] arrayOfLists = (List<Integer>[]) new List<?>[10]; // Suppressed warning
+------------------------------------------------------------------------------------------------------------------------
+Durch diese Beispiele und Erklärungen solltest du einen guten Überblick über die Verwendung von Generics in Java haben.
+------------------------------------------------------------------------------------------------------------------------
