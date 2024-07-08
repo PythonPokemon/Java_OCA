@@ -31,7 +31,7 @@ public class LokaleVariable {
     //// Beispiel 3: Fehler bei nicht initialisierter Verwendung
 //    public static void main3(String[] args) {
 //        int zahl3; // Deklaration der lokalen Variablen
-//        System.out.println(zahl3); // Fehler: Variable 'zahl' might not have been initialized
+//        System.out.println(zahl3); // Fehler: Variable 'zahl3' wurde nicht initialisiert
 //    }
     public static void main4(String[] args) {
         for (int i = 0; i < 10; i++) {

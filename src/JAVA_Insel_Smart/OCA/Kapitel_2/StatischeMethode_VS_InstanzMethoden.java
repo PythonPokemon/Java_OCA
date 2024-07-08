@@ -11,6 +11,8 @@ Statische vs. Instanzmethoden
 Sind an eine spezifische Instanz einer Klasse gebunden.
 Können auf Instanzvariablen und andere Instanzmethoden zugreifen.
 Müssen über ein Objekt der Klasse aufgerufen werden.
+!!!
+nichtstatische Methoden können auf statische Methoden und statische Variablen zugreifen.
 ------------------------------------------------------------------------------------------------------------------------
 2.Statische Methoden:
 
@@ -21,7 +23,7 @@ Können über den Klassennamen aufgerufen werden.
 package JAVA_Insel_Smart.OCA.Kapitel_2;
 
 public class StatischeMethode_VS_InstanzMethoden {
-    int instanzVariable = 42;    // Instanzvariable
+    int instanzVariable = 42;    // Instanzvariable oder auch klassen variable Field genannt
 
     // Statische Methode | Können nur auf statische Variablen und andere statische Methoden zugreifen.
     public static void statischeMethode() {
@@ -40,8 +42,11 @@ public class StatischeMethode_VS_InstanzMethoden {
         StatischeMethode_VS_InstanzMethoden.statischeMethode();    // ohne dummy möglich
         // Aufruf der Instanz methode
         StatischeMethode_VS_InstanzMethoden obj = new StatischeMethode_VS_InstanzMethoden(); // Dummy Objekt, voraussetzung
+        // var ist ein equivalent das automatching durchführt
+        var obj2 = new StatischeMethode_VS_InstanzMethoden();
 
         // Aufruf der Instanzmethode
         obj.instanzMethode();
+        obj2.instanzMethode();
     }
 }

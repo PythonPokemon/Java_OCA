@@ -17,16 +17,17 @@ Um eine Instanzmethode aufzurufen, musst du daher ein Objekt der Klasse erstelle
 * */
 package JAVA_Insel_Smart.OCA.Kapitel_2;
 
-// class | sind Instanzen | die darin enthaltenen variablen = sind Instanzvariablen
+// klassen | sind Instanzen | die darin enthaltenen variablen = sind Instanzvariablen
 public class Instanzvariablen { // Das ist eine Instanz | bezeichner Instanzvariable
     int instanzVariable = 20;   // Instanzvariable | in der Klasse, aber außerhalb der methode
 
+//-----------------------------------Sichtbarkeit lokaler variablen von hier bis----------------------------------------
     public void methode(){
         int lokaleVariable = 10;    // lokale variable, innerhalb der methode
         System.out.println(lokaleVariable);
         System.out.println(instanzVariable);
     }
-
+//---------------------------------------bis hier-----------------------------------------------------------------------
     public static void main(String[] args){
         Instanzvariablen beispiel = new Instanzvariablen();
         beispiel.methode(); // Aufruf der Methode

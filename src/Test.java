@@ -1,16 +1,24 @@
 public class Test {
+
+    static void statischeMethode(){
+        System.out.println("Ich bin eine statische Methode" +
+                " mich kann man aufrufen wenn man meine methode statisch macht" +
+                " genial oder" +
+                "+++");
+    }
+
+    void nichtStatischeMethode(){
+        System.out.println("Ich bin nicht statisch, für mich braucht man ein Objekt dummy in der main" +
+                " damit man mich verwenden kann" +
+                " cool oder" +
+                " :-)");
+    }
+
     public static void main(String[] args) {
-        int ganzZahl1 = 1;
-        long langeZahl = 9_999_999;
-        float gleitKomma1 = 2.123f;
+        Test instanzObjekt = new Test(); // InstanzObjekt der Klasse Test
+        var instanzdummy2 = new Test(); // weiteres objekt mit verkürzter schreibweise anlegen?
+        instanzObjekt.nichtStatischeMethode();
 
-
-        int komma_zu_ganzZahl = (int) gleitKomma1;
-        float ganzzahlZuKomma = (float) ganzZahl1;
-        double großeKommaZahl = (double) langeZahl;
-
-        System.out.println(komma_zu_ganzZahl);
-        System.out.println(ganzzahlZuKomma);
-        System.out.println(großeKommaZahl);
+        Test.statischeMethode();
     }
 }
