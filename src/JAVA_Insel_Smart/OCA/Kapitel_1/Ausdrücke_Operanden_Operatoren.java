@@ -98,39 +98,51 @@ public class Ausdrücke_Operanden_Operatoren {
 
 // Zuweisungsoperator: '='
         int zahl0 = 10; // // Deklaration und Initialisierung einer lokalen Variablen
-        System.out.println(zahl0);  // methode zum Ausgeben der lokalen variable, aus der Konsole
+//        System.out.println(zahl0);  // methode zum Ausgeben der lokalen variable, aus der Konsole
 //----------------------------------------------------------------------------------------------------------------------
 //  Arithmetische Operatoren:  + (Addition), - (Subtraktion), * (Multiplikation), / (Division) und % (Modulus):
         int summe = 5 + 3;      // 8
         int differenz = 5 - 3;  // 2
         int produkt = 5 * 3;    // 15
         int quotient = 5 / 3;   // 1
-        int rest = 5 % 3;       // 2
-        System.out.println(summe);
-        System.out.println(differenz);
-        System.out.println(produkt);
-        System.out.println(quotient);
-        System.out.println(rest);
+        int rest = 5 % 4;       // 1 | modules gibt den rest an
+//        System.out.println(summe);
+//        System.out.println(differenz);
+//        System.out.println(produkt);
+//        System.out.println(quotient);
+//        System.out.println(rest);
 //----------------------------------------------------------------------------------------------------------------------
 // Unäres Minus und Plus  - und +
         int positiv = +5;   // 5
         int negativ = -5;   // -5
-        System.out.println(positiv);
-        System.out.println(negativ);
+//        System.out.println(positiv);
+//        System.out.println(negativ);
 //----------------------------------------------------------------------------------------------------------------------
 // Präfix- oder Postfix-Inkrement und -Dekrement
         int x = 5;
         int y = ++x;    // y ist 6, x ist 6 (Präfix) |
         int z = x--;    // z ist 6, x ist 5 (Postfix)
-        System.out.println(x);
-        System.out.println(y);
-        System.out.println(z);
+//        System.out.println(x);
+//        System.out.println(y);
+//        System.out.println(z);
 //----------------------------------------------------------------------------------------------------------------------
 // Zuweisung mit Operation (Verbundoperator): : +=, -=, *=, /=, %=:
+        // der bezeichner auf dem die werte referenziert sind, speichert immer den zuletzt initialisierten wert
+        // und benutzt diesen zur weiteren berechnung
         int zahl1 = 5;
         zahl1 += 3; // zahl ist jetzt 8
         zahl1 *= 2; // zahl ist jetzt 16
-        System.out.println(zahl1);
+//        System.out.println(zahl1);//16
+
+        // wenn der neue variable, bsp: 'zahl2' eine zuweisung, der alten variable 'zahl1 mit dem element (16)' erhält,
+        // wird die neue variable den zuletzt gespeicherten wert der anderen variable zugewiesen.
+        int zahl2;
+        zahl2 = zahl1;
+//        System.out.println(zahl2); // also erhält 'zahl2' nun den Datentyp int mit dem wert 16
+
+        int zahl3 = 4; //               4       16      16
+        int ergebnisVerbundoperator = zahl3 + zahl2 + zahl1;
+//        System.out.println(ergebnisVerbundoperator);// 36
 //----------------------------------------------------------------------------------------------------------------------
 // Die relationalen Operatoren und die Gleichheitsoperatoren:
 //  == (gleich), != (ungleich), < (kleiner), > (größer), <= (kleiner oder gleich), >= (größer oder gleich):
@@ -152,32 +164,32 @@ public class Ausdrücke_Operanden_Operatoren {
         boolean und = (5 == 5) && (3 < 5); // true
         boolean oder = (5 == 5) || (3 > 5); // true
         boolean xor = (5 == 5) ^ (3 > 5); // true
-        System.out.println(nicht);
-        System.out.println(und);
-        System.out.println(oder);
-        System.out.println(xor);
+//        System.out.println(nicht);
+//        System.out.println(und);
+//        System.out.println(oder);
+//        System.out.println(xor);
 //----------------------------------------------------------------------------------------------------------------------
 // Kurzschluss-Operatoren  && und ||
         boolean kurzschluss1 = (5 > 3) || (5 / 0 == 0); // true, keine Division durch 0
         boolean kurzschluss2 = (5 <= 5 && 1 > 3 || 5 == 5); // true | UND Operation false || ODER true 5 entspricht 5
-        System.out.println(kurzschluss1);
-        System.out.println(kurzschluss2);
+//        System.out.println(kurzschluss1);
+//        System.out.println(kurzschluss2);
 //----------------------------------------------------------------------------------------------------------------------
 // Der Rang der Operatoren in der Auswertungsreihenfolge
         int ergebnis_1 = 5 + 3 * 2; // ergebnis ist 11, da Multiplikation vor Addition
         float ergebnis_2 = 2 + 4 / 2;
         double ergebnis_3 = 2.1 + 2.2;
-        System.out.println(ergebnis_1);
-        System.out.println(ergebnis_2);
-        System.out.println(ergebnis_3);
+//        System.out.println(ergebnis_1);
+//        System.out.println(ergebnis_2);
+//        System.out.println(ergebnis_3);
 //----------------------------------------------------------------------------------------------------------------------
 // Die Typumwandlung (das Casting)
 // Syntax: Datentyp | Bezeichner | zuweisungsoperator = | Gewünschter Datentyp | Variablenwert
 
         int zahlCast1 = (int) 3.14;     // wandelt die gleitkommazahl in eine ganzzahl um
         float zahlCast2 = (float) 2;    // wandelt die Ganzzahl in eine Gleitkommazahl um
-        System.out.println(zahlCast1);
-        System.out.println(zahlCast2);
+//        System.out.println(zahlCast1);
+//        System.out.println(zahlCast2);
 //----------------------------------------------------------------------------------------------------------------------
 // Überladenes Plus für Strings, um Zeichenketten zu verketten:
         String verkettungsFrage = "Hallo " + "Welt " + "wie geht " + "es dir heute?";
