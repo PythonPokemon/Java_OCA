@@ -7,6 +7,8 @@ package JAVA_Insel_Smart.OCA.Kapitel_2.Switch_Case;
 public class Switch_Case_int {
     public static void main(String[] args) {
         int tag = 3;
+
+        // Syntax: switch, bezeichner, case und parameter blöcke, eventuelle breaks
         switch (tag) {
             case 1:
                 System.out.println("Montag");

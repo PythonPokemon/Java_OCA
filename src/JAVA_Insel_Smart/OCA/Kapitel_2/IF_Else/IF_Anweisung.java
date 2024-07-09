@@ -10,6 +10,7 @@ public class IF_Anweisung {
     public static void main(String[] args) {
         int zahl = 10;
 
+        // operationsblock
         if (zahl > 5) {
             System.out.println("Zahl ist größer als 5");
         }

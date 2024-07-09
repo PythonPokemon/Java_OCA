@@ -11,7 +11,7 @@ public class Do_While_Schleife {
     public static void main(String[] args) {
         int i = 0;
 
-
+        // führt erst aus und prüft dann die bedingung!
         do {
             System.out.println(i);
             i++;

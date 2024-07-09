@@ -1,0 +1,12 @@
+Zusammenfassung
+------------------------------------------------------------------------------------------------------------------------
+Runde Klammern ()
+werden in Bedingungen und Schleifen verwendet, um die 'Bedingung' oder den 'Ausdruck' anzugeben.
+------------------------------------------------------------------------------------------------------------------------
+Geschweifte Klammern {}
+definieren Blöcke von Code, die als Einheit betrachtet werden
+und bei Bedingungen, Schleifen, Methoden und Klassen verwendet werden.
+------------------------------------------------------------------------------------------------------------------------
+In diesen Blöcken wird normalerweise Code geschrieben, der ausgeführt werden soll,
+wenn die entsprechenden Bedingungen erfüllt sind oder wenn die Schleife oder Methode aufgerufen wird.
+------------------------------------------------------------------------------------------------------------------------
