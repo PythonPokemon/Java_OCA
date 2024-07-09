@@ -10,8 +10,7 @@ Eine Variable ist ein benannter Speicherbereich, der einen bestimmten Datentyp a
 In Java müssen Variablen deklariert werden, bevor sie verwendet werden können.
 Eine Deklaration erfolgt durch Angabe des Datentyps und des Variablennamens.
 
-java
-Code kopieren
+
 int zahl;
 2.1.1 Primitive Datentypen
 
@@ -27,15 +26,13 @@ Anweisungen sind die elementaren Bausteine eines Programms, die ausgeführt werd
 Ein Ausdruck ist eine Kombination von Variablen, Operatoren und Methodenaufrufen,
 die zu einem einzelnen Wert ausgewertet wird.
 
-java
-Code kopieren
+
 int ergebnis = zahl1 + zahl2;
 2.2.1 Zuweisungen
 
 Eine Zuweisung ist eine spezielle Art von Anweisung, bei der ein Wert einer Variablen zugewiesen wird.
 
-java
-Code kopieren
+
 int zahl = 5;
 2.3 Kontrollstrukturen
 
@@ -47,8 +44,7 @@ In Java gibt es drei grundlegende Kontrollstrukturen: Sequenz, Auswahl und Schle
 Die Auswahlstrukturen ermöglichen es, aufgrund von Bedingungen verschiedene Pfade im Programm zu gehen.
 Die häufigsten Auswahlstrukturen sind if, else if und switch.
 
-java
-Code kopieren
+
 if (bedingung) {
     // Anweisungen
 } else if (andereBedingung) {
@@ -62,8 +58,7 @@ Schleifenstrukturen ermöglichen es, eine Anweisung oder eine Gruppe von Anweisu
 solange eine bestimmte Bedingung erfüllt ist.
 Die wichtigsten Schleifenstrukturen in Java sind while, do-while und for.
 
-java
-Code kopieren
+
 while (bedingung) {
     // Anweisungen
 }
@@ -73,8 +68,7 @@ Methoden sind Blöcke von Code, die eine spezifische Aufgabe ausführen und opti
 akzeptieren und einen Ausgabewert (Rückgabewert) liefern können.
 Methoden werden deklariert und definiert, um den Code modular und wiederverwendbar zu machen.
 
-java
-Code kopieren
+
 public int addiere(int a, int b) {
     return a + b;
 }
@@ -84,8 +78,7 @@ Eine Methode wird durch eine Methodensignatur deklariert, die den Rückgabewert,
 den Methodennamen und die Parameterliste enthält.
 Die Methodendefinition enthält den eigentlichen Codeblock, der ausgeführt wird.
 
-java
-Code kopieren
+
 public int multipliziere(int x, int y) {
     int produkt = x * y;
     return produkt;
@@ -95,8 +88,7 @@ public int multipliziere(int x, int y) {
 Methoden werden aufgerufen, indem ihr Name gefolgt von der Argumentliste verwendet wird.
 Wenn die Methode einen Rückgabewert hat, kann dieser Wert einer Variablen zugewiesen oder direkt verwendet werden.
 
-java
-Code kopieren
+
 int ergebnis = multipliziere(5, 3);
 2.4.3 Überladen von Methoden
 
@@ -104,8 +96,7 @@ Methoden können überladen werden, indem mehrere Methoden mit demselben Namen,
 aber unterschiedlichen Parameterlisten definiert werden. Dies ermöglicht es,
 Methoden für verschiedene Eingabetypen oder -anzahlen anzubieten.
 
-java
-Code kopieren
+
 public int addiere(int a, int b) {
     return a + b;
 }
@@ -123,8 +114,7 @@ Arrays werden verwendet, um mehrere Werte in einer einzigen Datenstruktur zu spe
 Ein Array wird durch die Angabe des Datentyps und der Anzahl der Elemente deklariert.
 Die Initialisierung erfolgt entweder durch direkte Zuweisung oder durch Verwendung des new-Operators.
 
-java
-Code kopieren
+
 int[] zahlen = new int[5];
 zahlen[0] = 10;
 zahlen[1] = 20;
@@ -133,8 +123,7 @@ zahlen[1] = 20;
 Auf die Elemente eines Arrays wird über ihren Index zugegriffen, wobei der Index bei null beginnt.
 Elemente können gelesen und geändert werden.
 
-java
-Code kopieren
+
 int ersteZahl = zahlen[0];
 zahlen[2] = 30;
 2.5.3 Schleifen und Arrays
@@ -142,8 +131,7 @@ zahlen[2] = 30;
 Arrays werden häufig in Verbindung mit Schleifen verwendet, um auf alle Elemente zuzugreifen oder sie zu verarbeiten.
 Eine for-Schleife ist besonders nützlich für diesen Zweck.
 
-java
-Code kopieren
+
 for (int i = 0; i < zahlen.length; i++) {
     System.out.println(zahlen[i]);
 }
@@ -152,4 +140,4 @@ for (int i = 0; i < zahlen.length; i++) {
 Dieses Kapitel hat die grundlegenden Konzepte der imperativen Programmierung in Java behandelt.
 Es wurde erklärt, wie Variablen deklariert und initialisiert werden,
 wie Kontrollstrukturen den Programmfluss steuern und wie Methoden zur Modularisierung des Codes verwendet werden.
-Arrays wurden als wichtige Datenstruktur zur Verwaltung mehrerer Werte eingeführt
+Arrays wurden als wichtige Datenstruktur zur Verwaltung mehrerer Werte eingeführt.

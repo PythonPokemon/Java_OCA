@@ -7,14 +7,17 @@ wenn eine Bedingung wahr ist:
 package JAVA_Insel_Smart.OCA.Kapitel_2.IF_Else;
 
 public class IF_Anweisung_Vermehrt_Statisch {
-    int zahlNormal = 10;
-   static int zahlStatisch = 20;
+    // Fields
+    int zahlNormal = 10; // 'nicht-Statische' Klassen variablen können nicht in methoden Blöcken aufgerufen werden!
+   static int zahlStatisch = 20; // 'Statische' Klassen variablen können in methodenblöcken aufgerufen werden.
 
-    public static void main(String[] args) {
+
+//----------------------------------------------------------------------------------------------------------------------
+    public static void main(String[] args) { // Methodenkörper von hier --->
         int zahl = 10;
 
-// es gehen auch mehrere if Anweisungen in der main methode, die auf die gleiche variable zugreifen
-        if (zahl > 5) { // zugriff auf die lokale variable, innerhalb der methode
+    // es gehen auch mehrere if Anweisungen in der main methode, die auf die gleiche variable zugreifen
+        if (zahl > 5) { // zugriff auf die lokale variable, nur innerhalb der methode
             System.out.println("Zahl ist größer als 5");
         }
 
@@ -24,5 +27,6 @@ public class IF_Anweisung_Vermehrt_Statisch {
         }
 
 
-    }
+    }// Methodenkörper bis hier <---
+//----------------------------------------------------------------------------------------------------------------------
 }
