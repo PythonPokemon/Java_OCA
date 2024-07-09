@@ -59,11 +59,11 @@ public class For_Schleife_Break_Continue {
             if (i == 5) {
                 break; // Schleife wird beendet
             }
-            if (i % 2 == 0) {
+            if (i % 2 == 0) { // 1 oder 2 steht für ungerades oder gerades ergebnis von Modulo
+                              // mit anderen worten, wenn das ergebnis i in diesem fall, gerade ist == continue
                 continue; // Nächste Iteration wird fortgesetzt
             }
             System.out.println(i);
         }
-
     }
 }
