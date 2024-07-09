@@ -1,0 +1,15 @@
+In Java kann die switch-Anweisung verwendet werden, um basierend auf dem Wert einer Variablen (dem Schalter)
+verschiedene Zweige des Codes auszuführen.
+
+Die switch-Anweisung unterstützt verschiedene Datentypen für die Schaltervariable.
+Hier sind die Datentypen, die in einer switch-Anweisung verwendet werden können,
+sowie einige Details zu den möglichen Operationen:
+------------------------------------------------------------------------------------------------------------------------
+Unterstützte Datentypen in einer switch-Anweisung
+int: Ganzzahlen
+byte: Byte-Werte
+short: Kurze Ganzzahlen
+char: Zeichen
+String: Zeichenketten (seit Java 7)
+Enum: Aufzählungstypen (Enum)
+------------------------------------------------------------------------------------------------------------------------

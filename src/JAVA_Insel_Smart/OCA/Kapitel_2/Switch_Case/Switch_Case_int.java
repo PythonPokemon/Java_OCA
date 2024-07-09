@@ -2,9 +2,9 @@
 Die switch-Anweisung ist nützlich, wenn Sie eine Variable gegen eine Reihe von Werten vergleichen möchten.
 Sie bietet eine übersichtliche Alternative zu mehreren if-else-Anweisungen:
 * */
-package JAVA_Insel_Smart.OCA.Kapitel_2;
+package JAVA_Insel_Smart.OCA.Kapitel_2.Switch_Case;
 
-public class Switch_Case {
+public class Switch_Case_int {
     public static void main(String[] args) {
         int tag = 3;
         switch (tag) {
