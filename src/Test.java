@@ -10,7 +10,7 @@ public class Test {
 //            System.out.println(i);
 //        }
 
-        // mit new wird immer ein  neues String Objekt erzeugt, im Heap
+        // mit 'new' wird immer ein neues String Objekt erzeugt, im Heap
         String s1 = new String("Java"); //Line 3 | 1
         // Hier wird explizit im String pool geprüft, ob da Literal bereits vorhanden ist
         String s2 = "JaVa"; //Line 4| 2

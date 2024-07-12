@@ -35,10 +35,16 @@ während der allgemeine Heap für alle anderen Objekte, einschließlich mit new 
 
 package JAVA_Insel_Smart.OCA.Kapitel_1;
 
+import JAVA_Insel_Smart.OCA.Kapitel_10.System_IdentityHashCode.Standard_SystemIdentityHashCode;
+
 public class String_Beispiel {
     public static void main(String[] args) {
+
+        // Hier wird explizit im String pool geprüft, ob da Literal bereits vorhanden ist
         String s1 = "Java"; // String-Literal im String Pool
-        String s2 = "Java"; // Wiederverwendung des String-Literals im String Pool
+        String s2 = "Java"; // Wiederverwendung des String-Literals im String Pool | Deshalb kein neues Objekt !!!
+
+        // mit 'new' wird immer ein neues String Objekt erzeugt, im Heap
         String s3 = new String("Java"); // Neues String-Objekt im Heap
         String s4 = new String("Java"); // Wieder ein neues String-Objekt im Heap
 
@@ -50,5 +56,11 @@ public class String_Beispiel {
         // Inhalte vergleichen
         System.out.println(s1.equals(s3)); // true, der Inhalt ist gleich
         System.out.println(s3.equals(s4)); // true, der Inhalt ist gleich
+
+        // Identitätsprüfung mit dem Hashcode
+        System.out.println(System.identityHashCode(s1));
+        System.out.println(System.identityHashCode(s2));
+        System.out.println(System.identityHashCode(s3));
+        System.out.println(System.identityHashCode(s4));
     }
 }
