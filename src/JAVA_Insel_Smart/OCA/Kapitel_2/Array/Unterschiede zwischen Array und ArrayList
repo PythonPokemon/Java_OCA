@@ -30,3 +30,18 @@ Die Wahl zwischen Array und ArrayList hängt von den Anforderungen Ihres Program
 Wenn Sie eine feste Anzahl von Elementen haben und Leistung ein wichtiger Faktor ist, können Arrays besser geeignet sein.
 Wenn Sie jedoch eine flexible Größe und zusätzlichen Komfort benötigen, sind ArrayLists die bessere Wahl.
 ------------------------------------------------------------------------------------------------------------------------
+Zusammenfassung
+------------------------------------------------------------------------------------------------------------------------
+Arrays:
+
+Arrays können sowohl primitive Datentypen als auch Objekte speichern.
+Bei Arrays von primitiven Datentypen werden die Werte direkt als primitive Werte im Speicher gespeichert.
+Bei Arrays von Objekten werden die Objekte im Heap gespeichert und das Array speichert die Referenzen auf diese Objekte.
+------------------------------------------------------------------------------------------------------------------------
+ArrayList:
+
+ArrayList kann nur Objekte speichern.
+Primitive Datentypen müssen durch Autoboxing in ihre entsprechenden Wrapper-Klassen umgewandelt werden,
+bevor sie zu einer ArrayList hinzugefügt werden.
+Die ArrayList speichert die Referenzen auf die Objekte, die im Heap gespeichert werden.
+------------------------------------------------------------------------------------------------------------------------

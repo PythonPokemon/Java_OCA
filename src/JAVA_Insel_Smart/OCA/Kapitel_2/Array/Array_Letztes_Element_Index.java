@@ -3,8 +3,8 @@ import java.util.List;
 import java.util.ArrayList;
 
 public class Array_Letztes_Element_Index {
-    public static void main(String[] args) throws Exception {
-        List al = new ArrayList(); // Array größe 2
+    public static void main(String[] args)  {
+        List al = new ArrayList(); // Array größe 2 | ArrayList, die nur Objekte speichern können.
         al.add(111); //index 0
         al.add(222);// index 1
         System.out.println("Array länge ist: " + al.size()); // gibt die größe des arrays an, also alle indexe, in dem fall 2
