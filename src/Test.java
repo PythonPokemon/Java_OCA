@@ -4,24 +4,17 @@ import java.util.ArrayList;
 
 
 public class Test {
-    public static void main(String[] args) {
+    public static void main(String[] args) throws Exception {
+        List al = new ArrayList(); // Array größe 2
+        al.add(111); //index 0
+        al.add(222);// index 1
+//        System.out.println(al.size()); // gibt die größe des arrays an, also alle indexe, in dem fall 2
+//        System.out.println(al.get(0)); // gib das Element aus index 0 aus
 
-//        for (int i = 0; i < 1000; i++) {
-//            System.out.println(i);
-//        }
-
-        // mit 'new' wird immer ein neues String Objekt erzeugt, im Heap
-        String s1 = new String("Java"); //Line 3 | 1
-        // Hier wird explizit im String pool geprüft, ob da Literal bereits vorhanden ist
-        String s2 = "JaVa"; //Line 4| 2
-        String s3 = "JaVa"; //Line 5| wie 2 also kein neues
-        String s4 = "Java"; //Line 6 | 3
-        String s5 = "Java"; //Line 7 | wie 3 also kein neues
-
-        System.out.println(System.identityHashCode(s1));
-        System.out.println(System.identityHashCode(s2));
-        System.out.println(System.identityHashCode(s3));
-        System.out.println(System.identityHashCode(s4));
-        System.out.println(System.identityHashCode(s5));
+        //  Alternativ, um das letzte Element sicher zu erhalten
+        // Zugriff auf das letzte Element
+        // Um auf das letzte Element zuzugreifen, verwenden Sie get(size() - 1).
+        // Beispiel: Wenn size() 2 zurückgibt, dann ist der höchste gültige Index 1 (2 - 1).
+        System.out.println(al.get(al.size() -1)); // methode geht
     }
 }
