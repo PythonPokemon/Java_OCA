@@ -35,7 +35,7 @@ class Student {
     }
 }
 
-public class Test {
+public class TestClass {
     public static void main(String[] args) {
         Student s1 = new Student(); // Standardkonstruktor
         Student s2 = new Student("James", 25); // Überladener Konstruktor
@@ -69,7 +69,7 @@ class Rectangle {
     }
 }
 
-public class Test {
+public class TestClass {
     public static void main(String[] args) {
         Rectangle square = new Rectangle(5); // Konstruktor mit einem Parameter
         Rectangle rectangle = new Rectangle(5, 10); // Konstruktor mit zwei Parametern

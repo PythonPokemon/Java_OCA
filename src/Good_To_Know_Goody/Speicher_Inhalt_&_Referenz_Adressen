@@ -68,7 +68,7 @@ Das bedeutet, dass == nur true zurückgibt, wenn beide Variablen auf dasselbe Ob
 
 Hier ein kurzes Beispiel, um den Unterschied zwischen == und equals zu verdeutlichen:
 
-public class Test {
+public class TestClass {
     public static void main(String[] args) {
         // Erstellen von zwei String-Objekten mit demselben Inhalt
         String str1 = new String("Hello");
@@ -96,7 +96,7 @@ Da str1 und str2 beide den String "Hello" enthalten, ergibt str1.equals(str2) tr
 Autoboxing und Unboxing bei Wrapper-Klassen
 Autoboxing und Unboxing können ebenfalls zu Verwirrung führen. Hier ein Beispiel:
 
-public class Test {
+public class TestClass {
     public static void main(String[] args) {
         Integer num1 = 128;
         Integer num2 = 128;
@@ -108,7 +108,7 @@ public class Test {
 Für Integer-Werte zwischen -128 und 127 verwendet Java ein Caching,
 daher gibt der Vergleich mit == in diesem Bereich true zurück, wenn der Wert gleich ist:
 ------------------------------------------------------------------------------------------------------------------------
-public class Test {
+public class TestClass {
     public static void main(String[] args) {
         Integer num1 = 127;
         Integer num2 = 127;
@@ -149,7 +149,7 @@ Dies bedeutet, dass mehrere Referenzen auf dasselbe Objekt im Speicher in der Li
 import java.util.ArrayList;
 import java.util.List;
 
-public class Test {
+public class TestClass {
     public static void main(String[] args) {
         List<StringBuilder> list = new ArrayList<>();
         StringBuilder sb = new StringBuilder("Hello");
