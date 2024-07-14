@@ -13,7 +13,7 @@ class A1 {
 class B1 extends A1 {
     // Klasseninhalt von Person
 }
-public class Objekt_Casting_Implizit {
+public class Objekt_UpCasting_Implizit {
     public static void main(String[] args) {
 
         B1 b = new B1(); // Erstellen eines Objekts der Klasse B
