@@ -64,6 +64,8 @@ public class Objekt_Referenz {
         // damit man ein neues Objekt vom Typ A an den Konstruktor von Person referenzieren kann,
         // muss man entweder die Klasse A an Person vererben oder eine explizite Typumwandlung vollziehen!
         A a4 = new Person(); // Erlaubt, weil Person von A erbt
+
+
 //        Person p3 = new A(); // <--- warum geht das nicht?
 
         System.out.println(a1);
