@@ -4,6 +4,9 @@ Downcasting (explizit):
 Das Zuweisen eines Objekts der Oberklasse (Elternklasse) zu einer Referenz
 der Unterklasse (KindKlasse) erfordert ein explizites Casting.
 Dies ist nur sicher, wenn das tatsächliche Objekt, auf das verwiesen wird, auch eine Instanz der Unterklasse ist.
+------------------------------------------------------------------------------------------------------------------------
+wenn das objekt das nicht von der Kindklasse wäre das der Oberklasse referenziert ist,
+würde das zu einer ClassCastExceptio führen!
 * */
 package JAVA_Insel_Smart.OCA.Kapitel_1;
 
