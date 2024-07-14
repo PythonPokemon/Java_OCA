@@ -22,6 +22,7 @@ public class Objekt_DownCasting_Explizit {
         Elternklasse eltern = new KindKlasse();  // Erstellen eines KindKlasse-Objekts und Upcasting auf Elternklasse
 
         // Umwandlung des fundamentalen Typs, zu der die Referenz zeigt
+        // Explizit            |<---------|von der 'eltern' variable in der sich, das Kindklassen Objekt befindet
         KindKlasse kind = (KindKlasse) eltern;   // Explizites Downcasting:
                                                  // Elternklasse-Referenz wird in KindKlasse-Referenz umgewandelt
 
