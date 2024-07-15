@@ -48,7 +48,7 @@ public class String_Beispiel {
         String s3 = new String("Java"); // Neues String-Objekt im Heap
         String s4 = new String("Java"); // Wieder ein neues String-Objekt im Heap
 
-        // Vergleiche der Referenzen, also die Speicher Adresse
+        // Vergleicht, ob die Referenzen auf dieselbe Speicheradresse zeigen
         System.out.println(s1 == s2); // true, s1 und s2 referenzieren dasselbe Objekt im String Pool
         System.out.println(s1 == s3); // false, s1 ist im String Pool, s3 ist im Heap
         System.out.println(s3 == s4); // false, s3 und s4 sind unterschiedliche Objekte im Heap
