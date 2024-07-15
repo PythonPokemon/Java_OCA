@@ -13,8 +13,12 @@ public class Array_Deklaration_Ininitalisierung {
         // Variante 1
         int [] a = new int[4];
 
-        System.out.println("Gibt die Speicheradresse des Arrays aus---> " + a + " <---das auf die Variable a Referenziert ist!");
-        System.out.println("Gibt vom default-Konstruktor das Element " + a[0] + " aus Index 0 aus, da es nicht initialisiert wurde!");
+        System.out.println("Gibt die Speicheradresse des Arrays aus---> " + a + " " +
+                "<---das auf die Variable a Referenziert ist!");
+
+        System.out.println("Gibt vom default-Konstruktor das Element " + a[0] + " " +
+                "aus Index 0 aus, da es nicht initialisiert wurde!");
+
         System.out.println(a[1]);
         System.out.println(a[2]);
         System.out.println(a[3]);
