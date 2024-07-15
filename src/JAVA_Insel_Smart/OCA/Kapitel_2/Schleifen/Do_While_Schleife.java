@@ -13,9 +13,9 @@ public class Do_While_Schleife {
 
         // führt erst aus und prüft dann die bedingung!
         do {
-            System.out.println(i);
-            i++;
-        } while (i < 5);
+            System.out.println(i);// gibt die variable i in der Konsole aus, bei jedem durchlauf der Iteration
+            i++;                  // erhöht den Wert, auf den 'i' vereist um +1 | bedeutet von 0 auf 1
+        } while (i < 5);          // solange der Wert den 'i' referenziert kleiner 5 ist!
 
     }
 }

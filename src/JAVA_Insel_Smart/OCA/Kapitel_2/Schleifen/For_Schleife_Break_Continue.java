@@ -57,11 +57,8 @@ public class For_Schleife_Break_Continue {
     public static void main(String[] args) {
         for (int i = 0; i < 10; i++) {
             if (i == 5) {
-                break; // Schleife wird beendet
-            }
-            if (i % 2 == 0) { // 1 oder 2 steht für ungerades oder gerades ergebnis von Modulo
-                              // mit anderen worten, wenn das ergebnis i in diesem fall, gerade ist == continue
-                continue; // Nächste Iteration wird fortgesetzt
+                break; // Schleife wird beendet, wenn i kleiner 5 ist | also 1,2,3,4 |
+            // continue; // setzt, die schleife ab hier fort, also solnage i kleiner 10 ist | 1,2,3,4,5,6,7,8,9 |
             }
             System.out.println(i);
         }

@@ -30,8 +30,9 @@ public class Instanzvariablen { // Das ist eine Instanz | bezeichner Instanzvari
 //---------------------------------------bis hier-----------------------------------------------------------------------
     public static void main(String[] args){
         Instanzvariablen beispiel = new Instanzvariablen();
-        beispiel.methode(); // Aufruf der Methode
-
+        beispiel.methode(); // Aufruf der Methode, die wiederum methoden beinhaltet:
+                            // jeweils: die lokale variable, das ist die variable innerhalb einer methode
+                            // jeweils: Instanzvariable das ist die variable, die zu de
 
 /*
 Um eine Instanzvariable in einer methode aufzurufen braucht man eine dummy objekt.

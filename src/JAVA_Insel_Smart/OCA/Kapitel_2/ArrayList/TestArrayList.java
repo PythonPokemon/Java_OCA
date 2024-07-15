@@ -4,17 +4,19 @@ import java.util.ArrayList;
 
 class Person {
     String name;
-    int age;
+    String geschlecht;
+    int alter;
 
-    // Konstruktor
-    Person(String name, int age) {
+    // Expliziter Konstruktor
+    Person(String name, String geschlecht, int alter) {
         this.name = name;
-        this.age = age;
+        this.geschlecht = geschlecht;
+        this.alter = alter;
     }
 
     // Methode zur Rückgabe der Personendetails als String
     public String getDetails() {
-        return name + ", " + age + " years old";
+        return name + ": " + geschlecht + ": " + alter + " ist jahre alt";
     }
 }
 
@@ -24,9 +26,9 @@ public class TestArrayList {
         ArrayList<Person> persons = new ArrayList<>();
 
         // Hinzufügen von Person-Objekten zur ArrayList
-        persons.add(new Person("Alice", 30));
-        persons.add(new Person("Bob", 25));
-        persons.add(new Person("Charlie", 35));
+        persons.add(new Person("Alice", "Weiblich",30));
+        persons.add(new Person("Bob", "Männlich",25));
+        persons.add(new Person("Charlie", "Divers",35));
 
         // Ausgabe der Details jeder Person in der ArrayList
         for (Person person : persons) {

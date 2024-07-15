@@ -1,6 +1,6 @@
 /*
 Verzweigung mit der if-Anweisung
-
+------------------------------------------------------------------------------------------------------------------------
 Die einfachste Form der bedingten Anweisung ist die if-Anweisung, die einen Block von Anweisungen nur dann ausführt,
 wenn eine Bedingung wahr ist:
 * */
@@ -21,12 +21,10 @@ public class IF_Anweisung_Vermehrt_Statisch {
             System.out.println("Zahl ist größer als 5");
         }
 
-
         if (zahlStatisch > 4) {
+            // Methodenblock  (<------------von hier, bis hier-----------------)
             System.out.println("die Zahl " + zahlStatisch + " ist größer als 4");
         }
-
-
     }// Methodenkörper bis hier <---
 //----------------------------------------------------------------------------------------------------------------------
 }
