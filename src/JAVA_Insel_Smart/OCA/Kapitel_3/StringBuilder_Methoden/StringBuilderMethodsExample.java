@@ -12,8 +12,8 @@ public class StringBuilderMethodsExample {
         // indexOf(String str)
         // Gibt die Position des ersten Vorkommens der angegebenen Zeichenkette zurück.
         StringBuilder sb2 = new StringBuilder("Hello");
-        int indexOfStr = sb2.indexOf("ll"); // 2
-        System.out.println("indexOf(\"ll\"): " + indexOfStr);
+        int indexOfStr = sb2.indexOf("ll"); // gibt die Indexposition des ersten Zeichenvorkommens auf, also 2
+        System.out.println("" + indexOfStr);//
 
         // lastIndexOf(String str)
         // Gibt die Position des letzten Vorkommens der angegebenen Zeichenkette zurück.
@@ -28,10 +28,10 @@ public class StringBuilderMethodsExample {
         System.out.println("length(): " + length);
 
         // replace(int start, int end, String str)
-        // Ersetzt die Zeichen im angegebenen Bereich durch die neue Zeichenkette.
+        // ersetzt die Zeichen Elemente im angegebenen Bereich durch die neue Zeichenkette.
         StringBuilder sb5 = new StringBuilder("Hello");
-        sb5.replace(0, 2, "He"); // "Hello" -> "Hello"
-        System.out.println("replace(0, 2, \"He\"): " + sb5);
+        sb5.replace(0, 2, "AO"); // ansprache durch start & End-Index | "Hello" -> "AOllo"
+        System.out.println("ändert die Zeichenkette: " + sb5);
 
         // substring(int start)
         // Gibt die Teilzeichenkette ab der angegebenen Position zurück.
