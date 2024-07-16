@@ -149,24 +149,29 @@ public class StringBuilderMethodsExample {
 
         // insert(int offset, char c)
         // Fügt das Zeichen an der angegebenen Position ein.
+        // in diesem fall Index 1 was 'e' wäre, doch stattdessen wird 'e'
+        // und der rest einfach nach hinten verschoben in der Indexierung
         StringBuilder sb24 = new StringBuilder("Hello");
-        sb24.insert(1, 'X'); // "Hello" -> "HXello"
-        System.out.println("insert(1, 'X'): " + sb24);
+        sb24.insert(1, 'X'); // "Hello" -> "H'X'ello"
+        System.out.println(sb24);
 
         // insert(int offset, char[] str)
         // Fügt das Zeichenarray an der angegebenen Position ein.
+        // in diesem fall Index 1 was 'e' wäre, doch stattdessen wird 'e'
+        // und der rest einfach nach hinten verschoben in der Indexierung
         StringBuilder sb25 = new StringBuilder("Hello");
         sb25.insert(1, new char[] {'A', 'B', 'C'}); // "Hello" -> "HABCello"
-        System.out.println("insert(1, new char[] {'A', 'B', 'C'}): " + sb25);
+        System.out.println(sb25);
 
         // insert(int offset, CharSequence s)
         // Fügt die Zeichenfolge an der angegebenen Position ein.
         StringBuilder sb26 = new StringBuilder("Hello");
-        sb26.insert(1, "Insert"); // "Hello" -> "HInsertello"
-        System.out.println("insert(1, \"Insert\"): " + sb26);
+        sb26.insert(1, "Insert"); // "Hello" -> "H'Insert'ello"
+        System.out.println(sb26);
 
         // insert(int dstOffset, CharSequence s, int start, int end)
         // Fügt einen Teil der Zeichenfolge an der angegebenen Position ein.
+        // Start Index 1
         StringBuilder sb27 = new StringBuilder("Hello");
         sb27.insert(1, "0123456789", 1, 4); // "Hello" -> "H123ello"
         System.out.println("insert(1, \"0123456789\", 1, 4): " + sb27);
@@ -175,54 +180,54 @@ public class StringBuilderMethodsExample {
         // Fügt die Gleitkommazahl an der angegebenen Position ein.
         StringBuilder sb28 = new StringBuilder("Hello");
         sb28.insert(1, 2.71); // "Hello" -> "H2.71ello"
-        System.out.println("insert(1, 2.71): " + sb28);
+        System.out.println(sb28);
 
         // insert(int offset, float f)
         // Fügt die Fließkommazahl an der angegebenen Position ein.
         StringBuilder sb29 = new StringBuilder("Hello");
         sb29.insert(1, 3.14f); // "Hello" -> "H3.14ello"
-        System.out.println("insert(1, 3.14f): " + sb29);
+        System.out.println(sb29);
 
         // insert(int offset, int i)
         // Fügt die ganze Zahl an der angegebenen Position ein.
         StringBuilder sb30 = new StringBuilder("Hello");
         sb30.insert(1, 42); // "Hello" -> "H42ello"
-        System.out.println("insert(1, 42): " + sb30);
+        System.out.println(sb30);
 
         // insert(int offset, long l)
         // Fügt die lange ganze Zahl an der angegebenen Position ein.
         StringBuilder sb31 = new StringBuilder("Hello");
-        sb31.insert(1, 9876543210L); // "Hello" -> "H9876543210ello"
-        System.out.println("insert(1, 9876543210L): " + sb31);
+        sb31.insert(1, 9876543210L); // "Hello" -> "H'9876543210'ello"
+        System.out.println(sb31);
 
         // insert(int offset, Object obj)
         // Fügt die Zeichenkette der Objekt-Darstellung an der angegebenen Position ein.
         StringBuilder sb32 = new StringBuilder("Hello");
         sb32.insert(1, new Object()); // Ausgabe variiert, da Object's toString() verwendet wird
-        System.out.println("insert(1, new Object()): " + sb32);
+        System.out.println(sb32);
 
         // insert(int offset, String str)
         // Fügt die Zeichenkette an der angegebenen Position ein.
         StringBuilder sb33 = new StringBuilder("Hello");
-        sb33.insert(1, "World"); // "Hello" -> "HWorldello"
-        System.out.println("insert(1, \"World\"): " + sb33);
+        sb33.insert(1, "World"); // "Hello" -> "H'World'ello"
+        System.out.println(sb33);
 
         // reverse()
         // Kehrt die Zeichenfolge um.
         StringBuilder sb34 = new StringBuilder("Hello");
         sb34.reverse(); // "Hello" -> "olleH"
-        System.out.println("reverse(): " + sb34);
+        System.out.println(sb34);
 
         // setCharAt(int index, char ch)
         // Setzt das Zeichen an der angegebenen Position.
         StringBuilder sb35 = new StringBuilder("Hello");
-        sb35.setCharAt(0, 'A'); // "Hello" -> "Aello"
-        System.out.println("setCharAt(0, 'A'): " + sb35);
+        sb35.setCharAt(0, 'A'); // "Hello" -> "'A'ello"
+        System.out.println(sb35);
 
         // setLength(int newLength)
         // Kürzt oder füllt die Zeichenfolge auf die neue Länge.
         StringBuilder sb36 = new StringBuilder("Hello");
         sb36.setLength(10); // "Hello" -> "Hello     "
-        System.out.println("setLength(10): " + sb36);
+        System.out.println(sb36);
     }
 }
