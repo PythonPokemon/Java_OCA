@@ -4,113 +4,165 @@ public class StringMethodsExample {
 
     public static void main(String[] args) {
         // charAt(int index)
-        String str = "Hello";
-        char ch = str.charAt(1); // 'e'
+        // Gibt das Zeichen an der angegebenen Position zurück.
+        String str1 = "Hello";
+        char ch = str1.charAt(1); // 'e'
         System.out.println("charAt(1): " + ch);
 
         // compareTo(String anotherString)
-        int cmp = str.compareTo("World"); // Negative value, because "Hello" < "World"
-        System.out.println("compareTo(\"World\"): " + cmp);
+        // Vergleicht die Zeichenkette lexikographisch mit einer anderen Zeichenkette.
+        String str2 = "Hello";
+        int compareToResult = str2.compareTo("World"); // Negative value
+        System.out.println("compareTo(\"World\"): " + compareToResult);
 
         // concat(String str)
-        String concatStr = str.concat(" World"); // "Hello World"
-        System.out.println("concat(\" World\"): " + concatStr);
+        // Verkettet die angegebene Zeichenkette mit der aktuellen Zeichenkette.
+        String str3 = "Hello";
+        String concatResult = str3.concat(" World"); // "Hello World"
+        System.out.println("concat(\" World\"): " + concatResult);
 
         // contains(CharSequence s)
-        boolean contains = str.contains("ell"); // true
-        System.out.println("contains(\"ell\"): " + contains);
+        // Prüft, ob die Zeichenkette die angegebene Zeichenfolge enthält.
+        String str4 = "Hello";
+        boolean containsResult = str4.contains("ell"); // true
+        System.out.println("contains(\"ell\"): " + containsResult);
 
         // endsWith(String suffix)
-        boolean endsWith = str.endsWith("lo"); // true
-        System.out.println("endsWith(\"lo\"): " + endsWith);
+        // Prüft, ob die Zeichenkette mit der angegebenen Zeichenfolge endet.
+        String str5 = "Hello";
+        boolean endsWithResult = str5.endsWith("lo"); // true
+        System.out.println("endsWith(\"lo\"): " + endsWithResult);
 
         // equals(Object anObject)
-        boolean equals = str.equals("Hello"); // true
-        System.out.println("equals(\"Hello\"): " + equals);
+        // Vergleicht die Zeichenkette auf Gleichheit mit einem anderen Objekt.
+        String str6 = "Hello";
+        boolean equalsResult = str6.equals("Hello"); // true
+        System.out.println("equals(\"Hello\"): " + equalsResult);
 
         // equalsIgnoreCase(String anotherString)
-        boolean equalsIgnoreCase = str.equalsIgnoreCase("hello"); // true
-        System.out.println("equalsIgnoreCase(\"hello\"): " + equalsIgnoreCase);
+        // Vergleicht die Zeichenkette auf Gleichheit mit einer anderen Zeichenkette, ignoriert Groß-/Kleinschreibung.
+        String str7 = "Hello";
+        boolean equalsIgnoreCaseResult = str7.equalsIgnoreCase("hello"); // true
+        System.out.println("equalsIgnoreCase(\"hello\"): " + equalsIgnoreCaseResult);
 
         // indexOf(int ch)
-        int indexOfCh = str.indexOf('l'); // 2
-        System.out.println("indexOf('l'): " + indexOfCh);
+        // Gibt die Position des ersten Vorkommens des angegebenen Zeichens zurück.
+        String str8 = "Hello";
+        int indexOfChar = str8.indexOf('l'); // 2
+        System.out.println("indexOf('l'): " + indexOfChar);
 
         // indexOf(String str)
-        int indexOfStr = str.indexOf("lo"); // 3
+        // Gibt die Position des ersten Vorkommens der angegebenen Zeichenkette zurück.
+        String str9 = "Hello";
+        int indexOfStr = str9.indexOf("lo"); // 3
         System.out.println("indexOf(\"lo\"): " + indexOfStr);
 
         // isEmpty()
-        boolean isEmpty = str.isEmpty(); // false
-        System.out.println("isEmpty(): " + isEmpty);
+        // Prüft, ob die Zeichenkette leer ist.
+        String str10 = "Hello";
+        boolean isEmptyResult = str10.isEmpty(); // false
+        System.out.println("isEmpty(): " + isEmptyResult);
 
         // lastIndexOf(int ch)
-        int lastIndexOfCh = str.lastIndexOf('l'); // 3
-        System.out.println("lastIndexOf('l'): " + lastIndexOfCh);
+        // Gibt die Position des letzten Vorkommens des angegebenen Zeichens zurück.
+        String str11 = "Hello";
+        int lastIndexOfChar = str11.lastIndexOf('l'); // 3
+        System.out.println("lastIndexOf('l'): " + lastIndexOfChar);
 
         // lastIndexOf(String str)
-        int lastIndexOfStr = str.lastIndexOf("lo"); // 3
+        // Gibt die Position des letzten Vorkommens der angegebenen Zeichenkette zurück.
+        String str12 = "Hello";
+        int lastIndexOfStr = str12.lastIndexOf("lo"); // 3
         System.out.println("lastIndexOf(\"lo\"): " + lastIndexOfStr);
 
         // length()
-        int length = str.length(); // 5
-        System.out.println("length(): " + length);
+        // Gibt die Länge der Zeichenkette zurück.
+        String str13 = "Hello";
+        int lengthResult = str13.length(); // 5
+        System.out.println("length(): " + lengthResult);
 
         // replace(char oldChar, char newChar)
-        String replaceChar = str.replace('l', 'p'); // "Heppo"
-        System.out.println("replace('l', 'p'): " + replaceChar);
+        // Ersetzt alle Vorkommen eines Zeichens durch ein neues Zeichen.
+        String str14 = "Hello";
+        String replaceCharResult = str14.replace('l', 'p'); // "Heppo"
+        System.out.println("replace('l', 'p'): " + replaceCharResult);
 
         // replace(CharSequence target, CharSequence replacement)
-        String replaceSequence = str.replace("ll", "yy"); // "Heyyo"
-        System.out.println("replace(\"ll\", \"yy\"): " + replaceSequence);
+        // Ersetzt alle Vorkommen einer Zeichenfolge durch eine neue Zeichenfolge.
+        String str15 = "Hello";
+        String replaceSequenceResult = str15.replace("ll", "yy"); // "Heyyo"
+        System.out.println("replace(\"ll\", \"yy\"): " + replaceSequenceResult);
 
         // replaceAll(String regex, String replacement)
-        String replaceAll = str.replaceAll("l", "p"); // "Heppo"
-        System.out.println("replaceAll(\"l\", \"p\"): " + replaceAll);
+        // Ersetzt alle Vorkommen eines regulären Ausdrucks durch eine neue Zeichenfolge.
+        String str16 = "Hello123";
+        String replaceAllResult = str16.replaceAll("\\d", ""); // "Hello"
+        System.out.println("replaceAll(\"\\d\", \"\"): " + replaceAllResult);
 
         // replaceFirst(String regex, String replacement)
-        String replaceFirst = str.replaceFirst("l", "p"); // "Heplo"
-        System.out.println("replaceFirst(\"l\", \"p\"): " + replaceFirst);
+        // Ersetzt das erste Vorkommen eines regulären Ausdrucks durch eine neue Zeichenfolge.
+        String str17 = "Hello123";
+        String replaceFirstResult = str17.replaceFirst("\\d", ""); // "Hello23"
+        System.out.println("replaceFirst(\"\\d\", \"\"): " + replaceFirstResult);
 
         // split(String regex)
-        String[] splitArray = str.split("l"); // ["He", "", "o"]
-        System.out.println("split(\"l\"): " + java.util.Arrays.toString(splitArray));
+        // Teilt die Zeichenkette anhand des angegebenen regulären Ausdrucks.
+        String str18 = "one,two,three";
+        String[] splitResult = str18.split(","); // ["one", "two", "three"]
+        System.out.println("split(\",\"): " + java.util.Arrays.toString(splitResult));
 
         // split(String regex, int limit)
-        String[] splitArrayLimit = str.split("l", 2); // ["He", "lo"]
-        System.out.println("split(\"l\", 2): " + java.util.Arrays.toString(splitArrayLimit));
+        // Teilt die Zeichenkette anhand des angegebenen regulären Ausdrucks, begrenzt auf die angegebene Anzahl von Teilen.
+        String str19 = "one,two,three";
+        String[] splitLimitResult = str19.split(",", 2); // ["one", "two,three"]
+        System.out.println("split(\",\", 2): " + java.util.Arrays.toString(splitLimitResult));
 
         // startsWith(String prefix)
-        boolean startsWith = str.startsWith("He"); // true
-        System.out.println("startsWith(\"He\"): " + startsWith);
+        // Prüft, ob die Zeichenkette mit der angegebenen Zeichenfolge beginnt.
+        String str20 = "Hello";
+        boolean startsWithResult = str20.startsWith("He"); // true
+        System.out.println("startsWith(\"He\"): " + startsWithResult);
 
         // substring(int beginIndex)
-        String substring1 = str.substring(2); // "llo"
-        System.out.println("substring(2): " + substring1);
+        // Gibt die Teilzeichenkette ab der angegebenen Position zurück.
+        String str21 = "Hello";
+        String substring1Result = str21.substring(2); // "llo"
+        System.out.println("substring(2): " + substring1Result);
 
         // substring(int beginIndex, int endIndex)
-        String substring2 = str.substring(1, 4); // "ell"
-        System.out.println("substring(1, 4): " + substring2);
+        // Gibt die Teilzeichenkette vom Startindex bis zum Endindex zurück.
+        String str22 = "Hello";
+        String substring2Result = str22.substring(1, 3); // "el"
+        System.out.println("substring(1, 3): " + substring2Result);
 
         // toCharArray()
-        char[] charArray = str.toCharArray(); // ['H', 'e', 'l', 'l', 'o']
-        System.out.println("toCharArray(): " + java.util.Arrays.toString(charArray));
+        // Wandelt die Zeichenkette in ein Zeichenarray um.
+        String str23 = "Hello";
+        char[] toCharArrayResult = str23.toCharArray(); // ['H', 'e', 'l', 'l', 'o']
+        System.out.println("toCharArray(): " + java.util.Arrays.toString(toCharArrayResult));
 
         // toLowerCase()
-        String lowerCase = str.toLowerCase(); // "hello"
-        System.out.println("toLowerCase(): " + lowerCase);
+        // Wandelt alle Zeichen der Zeichenkette in Kleinbuchstaben um.
+        String str24 = "Hello";
+        String toLowerCaseResult = str24.toLowerCase(); // "hello"
+        System.out.println("toLowerCase(): " + toLowerCaseResult);
 
         // toUpperCase()
-        String upperCase = str.toUpperCase(); // "HELLO"
-        System.out.println("toUpperCase(): " + upperCase);
+        // Wandelt alle Zeichen der Zeichenkette in Großbuchstaben um.
+        String str25 = "Hello";
+        String toUpperCaseResult = str25.toUpperCase(); // "HELLO"
+        System.out.println("toUpperCase(): " + toUpperCaseResult);
 
         // trim()
-        String strWithSpaces = "   Hello   ";
-        String trimmed = strWithSpaces.trim(); // "Hello"
-        System.out.println("trim(): " + trimmed);
+        // Entfernt führende und nachfolgende Leerzeichen aus der Zeichenkette.
+        String str26 = "   Hello   ";
+        String trimResult = str26.trim(); // "Hello"
+        System.out.println("trim(): " + trimResult);
 
         // toString()
-        String toString = str.toString(); // "Hello"
-        System.out.println("toString(): " + toString);
+        // Gibt die Zeichenkette zurück.
+        String str27 = "Hello";
+        String toStringResult = str27.toString(); // "Hello"
+        System.out.println("toString(): " + toStringResult);
     }
 }
