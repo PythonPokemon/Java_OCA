@@ -127,25 +127,25 @@ public class StringBuilderMethodsExample {
         // Fügt die Zeichenkette an das Ende der Zeichenkette an.
         StringBuilder sb20 = new StringBuilder("Hello");
         sb20.append("Test"); // "Hello" -> "HelloTest"
-        System.out.println("append(\"Test\"): " + sb20);
+        System.out.println(sb20);
 
         // delete(int start, int end)
         // Löscht die Zeichen im angegebenen Bereich.
         StringBuilder sb21 = new StringBuilder("Hello Java");
         sb21.delete(6, 10); // "Hello Java" -> "Hello "
-        System.out.println("delete(6, 10): " + sb21);
+        System.out.println(sb21);
 
         // deleteCharAt(int index)
         // Löscht das Zeichen an der angegebenen Position.
         StringBuilder sb22 = new StringBuilder("Hello");
         sb22.deleteCharAt(0); // "Hello" -> "ello"
-        System.out.println("deleteCharAt(0): " + sb22);
+        System.out.println(sb22);
 
         // insert(int offset, boolean b)
         // Fügt den booleschen Wert an der angegebenen Position ein.
         StringBuilder sb23 = new StringBuilder("Hello");
-        sb23.insert(1, false); // "Hello" -> "Hfalseello"
-        System.out.println("insert(1, false): " + sb23);
+        sb23.insert(1, false); // "Hello" -> "H'false'ello"
+        System.out.println(sb23);
 
         // insert(int offset, char c)
         // Fügt das Zeichen an der angegebenen Position ein.
