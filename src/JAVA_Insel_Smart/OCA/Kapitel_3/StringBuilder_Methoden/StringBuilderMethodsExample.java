@@ -37,7 +37,7 @@ public class StringBuilderMethodsExample {
         // Gibt die Teilzeichenkette ab der angegebenen Position zurück.
         StringBuilder sb6 = new StringBuilder("Hello");
         String substring1 = sb6.substring(2); // "llo"
-        System.out.println("substring(2): " + substring1);
+        System.out.println("Gibt eine Teilzeichenkette ab Start-Index aus: " + substring1);
 
         // substring(int start, int end)
         // Gibt die Teilzeichenkette vom Startindex bis zum Endindex zurück.
@@ -53,69 +53,75 @@ public class StringBuilderMethodsExample {
 
         // append(boolean b)
         // Fügt den booleschen Wert an das Ende der Zeichenkette an.
-        StringBuilder sb9 = new StringBuilder("Hello");
-        sb9.append(true); // "Hello" -> "Hellotrue"
-        System.out.println("append(true): " + sb9);
+        StringBuilder sb9 = new StringBuilder("Hello: ");
+        sb9.append(true); // "Hello: " -> "Hello true"
+        System.out.println(sb9);
 
         // append(char c)
         // Fügt das Zeichen an das Ende der Zeichenkette an.
         StringBuilder sb10 = new StringBuilder("Hello");
         sb10.append('!'); // "Hello" -> "Hello!"
-        System.out.println("append('!'): " + sb10);
+        System.out.println(sb10);
 
         // append(char[] str)
         // Fügt das Zeichenarray an das Ende der Zeichenkette an.
+        /*
+        * bedeutet das etwas das ein separates Objekt erstellt wird mit einem Char Array die Elemente beinhalten,
+        * und das StringBuilder Objekt auch ein separates Objekt ist.
+        * die append methode die elemente aus dem Char Objekt an die Elemente des Stringbuilder Objekts anfügt? = JA
+         * */
         StringBuilder sb11 = new StringBuilder("Hello");
         sb11.append(new char[] {' ', 'J', 'a', 'v', 'a'}); // "Hello" -> "Hello Java"
-        System.out.println("append(new char[] {' ', 'J', 'a', 'v', 'a'}): " + sb11);
+        System.out.println(sb11);
 
         // append(char[] str, int offset, int len)
         // Fügt einen Teil des Zeichenarrays an das Ende der Zeichenkette an.
         StringBuilder sb12 = new StringBuilder("Hello");
         sb12.append(new char[] {'H', 'e', 'l', 'l', 'o'}, 1, 3); // "Hello" -> "Helloell"
-        System.out.println("append(new char[] {'H', 'e', 'l', 'l', 'o'}, 1, 3): " + sb12);
+        System.out.println(sb12);
 
         // append(CharSequence s)
         // Fügt die Zeichenfolge an das Ende der Zeichenkette an.
         StringBuilder sb13 = new StringBuilder("Hello");
         sb13.append(" World"); // "Hello" -> "Hello World"
-        System.out.println("append(\" World\"): " + sb13);
+        System.out.println(sb13);
 
         // append(CharSequence s, int start, int end)
         // Fügt einen Teil der Zeichenfolge an das Ende der Zeichenkette an.
         StringBuilder sb14 = new StringBuilder("Hello");
         sb14.append("Programming", 0, 3); // "Hello" -> "HelloPro"
-        System.out.println("append(\"Programming\", 0, 3): " + sb14);
+        System.out.println(sb14);
 
         // append(double d)
         // Fügt die Gleitkommazahl an das Ende der Zeichenkette an.
-        StringBuilder sb15 = new StringBuilder("Hello");
+        StringBuilder sb15 = new StringBuilder("Hello ");
         sb15.append(1.23); // "Hello" -> "Hello1.23"
-        System.out.println("append(1.23): " + sb15);
+        System.out.println(sb15);
 
         // append(float f)
         // Fügt die Fließkommazahl an das Ende der Zeichenkette an.
         StringBuilder sb16 = new StringBuilder("Hello");
         sb16.append(4.56f); // "Hello" -> "Hello4.56"
-        System.out.println("append(4.56f): " + sb16);
+        System.out.println(sb16);
 
         // append(int i)
         // Fügt die ganze Zahl an das Ende der Zeichenkette an.
-        StringBuilder sb17 = new StringBuilder("Hello");
+        StringBuilder sb17 = new StringBuilder("Hello ");
         sb17.append(789); // "Hello" -> "Hello789"
-        System.out.println("append(789): " + sb17);
+        System.out.println(sb17);
 
         // append(long lng)
         // Fügt die lange ganze Zahl an das Ende der Zeichenkette an.
-        StringBuilder sb18 = new StringBuilder("Hello");
+        StringBuilder sb18 = new StringBuilder("Hello ");
         sb18.append(123456789L); // "Hello" -> "Hello123456789"
-        System.out.println("append(123456789L): " + sb18);
+        System.out.println(sb18);
 
         // append(Object obj)
         // Fügt die Zeichenkette der Objekt-Darstellung an das Ende der Zeichenkette an.
+        //hier wird einfach am Ende der Elemente eines objekts noch die speicher adresse eines neuen Objektes eingefügt
         StringBuilder sb19 = new StringBuilder("Hello");
         sb19.append(new Object()); // Ausgabe variiert, da Object's toString() verwendet wird
-        System.out.println("append(new Object()): " + sb19);
+        System.out.println( sb19);
 
         // append(String str)
         // Fügt die Zeichenkette an das Ende der Zeichenkette an.
