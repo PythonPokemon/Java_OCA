@@ -1,24 +1,32 @@
-class Person {
-    String name; // Instanzvariable
-    int age; // Instanzvariable
-    static int population = 0; // Klassenvariable
+class Parent {
+    int VALUE = 10;
 
-    Person(String name, int age) {
-        this.name = name;
-        this.age = age;
-        population++; // Erhöht die Klassenvariable
+    void printValues() {
+        System.out.println("Methode der Oberklasse");
+    }
+}
+
+class Child extends Parent {
+    // Diese Variable blendet die final Variable VALUE der Oberklasse aus.
+    int VALUE = 20;
+
+    @Override
+    protected void printValues() {
+        System.out.println("Methode der Unterklasse");
+        System.out.println("Child VALUE: " + VALUE); // Gibt 20 aus
+        System.out.println("Parent VALUE: " + super.VALUE); // Gibt 10 aus
     }
 }
 
 public class TestClass {
     public static void main(String[] args) {
-        Person person1 = new Person("Alice", 30);// +1 neues Objekt
-        Person person2 = new Person("Bob", 25);// +1 neues Objekt
+        Parent parent = new Parent();// Oberklasse-Referenz auf ein Oberklasse-Objekt
+        parent.printValues();// Ruft die Methode der Oberklasse auf
 
-        // Ausgabe: Population: verändert sich statisch bei allen Objekte,
-        // in diesem Beispiel erhöht sich die 'Klassen variable' pro neu erstellten Objekt
-        System.out.println("Population: " + Person.population);
-        System.out.println("Objekt 1: " + person1.name + " " + (Person.population)); //0 +1 = 1
-        System.out.println("Objekt 2: " + person2.name + " " + (Person.population));// 1 +1 = 2
+        Child child = new Child();// Unterklasse-Referenz auf ein Unterklasse-Objekt
+        child.printValues();// Ruft die Methode der Unterklasse auf
+
+        Parent parent1 = new Child();// Oberklasse-Referenz auf ein Unterklasse-Objekt
+        parent1.printValues();// Ruft die Methode der Unterklasse auf
     }
 }
