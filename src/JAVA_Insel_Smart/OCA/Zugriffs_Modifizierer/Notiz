@@ -1,0 +1,17 @@
+Klassenmitglieder und ihre Zugriffsmodifizierer
+------------------------------------------------------------------------------------------------------------------------
+Default (kein Modifizierer):
+Sichtbarkeit: Paket-geschützt (package-private)
+Zugriff: Nur innerhalb desselben Pakets.
+------------------------------------------------------------------------------------------------------------------------
+private:
+Sichtbarkeit: Nur innerhalb der deklarierenden Klasse.
+Zugriff: Nur innerhalb der Klasse AccessTest selbst.
+------------------------------------------------------------------------------------------------------------------------
+protected:
+Sichtbarkeit: Unterklassen und innerhalb desselben Pakets.
+Zugriff: Unterklassen in anderen Paketen können über Vererbung darauf zugreifen, nicht aber über eine Instanz der Klasse.
+------------------------------------------------------------------------------------------------------------------------
+public:
+Sichtbarkeit: Überall.
+Zugriff: Von überall her, sofern die Klasse importiert wurde oder sich im gleichen Paket befindet.
