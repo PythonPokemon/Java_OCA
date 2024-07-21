@@ -25,8 +25,6 @@ public class TestClass {
         Parent parent = new Parent();// Oberklasse-Referenz auf ein Oberklasse-Objekt
         parent.printValues();// Ruft die Methode der Oberklasse auf
 
-
-
         Child child = new Child();// Unterklasse-Referenz auf ein Unterklasse-Objekt
         child.printValues();// Ruft die Methode der Unterklasse auf
 
