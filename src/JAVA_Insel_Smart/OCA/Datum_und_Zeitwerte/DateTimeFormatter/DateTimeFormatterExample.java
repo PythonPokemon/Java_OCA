@@ -22,17 +22,19 @@ import java.time.format.DateTimeFormatter;
 
 public class DateTimeFormatterExample {
     public static void main(String[] args) {
+
+        // Vorgabe des Musters, zum Umformatieren
         // Erstellen eines DateTimeFormatter mit einem bestimmten Muster
-        DateTimeFormatter formatter = DateTimeFormatter.ofPattern("dd/MM/yyyy");
+        DateTimeFormatter refMain = DateTimeFormatter.ofPattern("dd/MM/yyyy");
 
         // Formatieren eines LocalDate-Objekts
         LocalDate date = LocalDate.of(2023, 7, 8);
-        String formattedDate = date.format(formatter);
+        String formattedDate = date.format(refMain);
         System.out.println("Formatiertes Datum: " + formattedDate); // Ausgabe: 08/07/2023
 
         // Parsen eines Strings in ein LocalDate-Objekt
         String dateString = "25/12/2022";
-        LocalDate parsedDate = LocalDate.parse(dateString, formatter);
+        LocalDate parsedDate = LocalDate.parse(dateString, refMain);
         System.out.println("Geparstes Datum: " + parsedDate); // Ausgabe: 2022-12-25
 
         // Formatieren eines LocalDateTime-Objekts

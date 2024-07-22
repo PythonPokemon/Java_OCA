@@ -3,6 +3,8 @@ package JAVA_Insel_Smart.OCA.Datum_und_Zeitwerte.DateTimeFormatter;
 import java.time.LocalDateTime;
 import java.time.format.DateTimeFormatter;
 
+
+
 public class AusführlichesFormatBeispiel {
     public static void main(String[] args) {
         LocalDateTime aktuell = LocalDateTime.now();

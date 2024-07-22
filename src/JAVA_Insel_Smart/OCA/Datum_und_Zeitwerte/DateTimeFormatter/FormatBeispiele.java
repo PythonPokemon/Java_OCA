@@ -66,15 +66,17 @@ public class FormatBeispiele {
         LocalDateTime dateTime = LocalDateTime.of(2023, 12, 25, 15, 30, 0);
 
         // Verschiedene Muster /Pattern
-        DateTimeFormatter formatter1 = DateTimeFormatter.ofPattern("dd/MM/yyyy");
-        DateTimeFormatter formatter2 = DateTimeFormatter.ofPattern("MM/dd/yyyy");
-        DateTimeFormatter formatter3 = DateTimeFormatter.ofPattern("yyyy-MM-dd");
-        DateTimeFormatter formatter4 = DateTimeFormatter.ofPattern("dd MMM yyyy");
-        DateTimeFormatter formatter5 = DateTimeFormatter.ofPattern("HH:mm:ss");
-        DateTimeFormatter formatter6 = DateTimeFormatter.ofPattern("hh:mm a");
-        DateTimeFormatter formatter7 = DateTimeFormatter.ofPattern("yyyy.MM.dd G 'at' HH:mm:ss z");
-        DateTimeFormatter formatter8 = DateTimeFormatter.ofPattern("dd/MM/yyyy HH:mm:ss");
-        DateTimeFormatter formatter9 = DateTimeFormatter.ofPattern("yyyy-MM-dd'T'HH:mm:ss.SSS'Z'");
+        // Datum: Signatur entweder mit Bindestrich '-' oder Querstrich '/' zwischen den literalen
+        DateTimeFormatter formatter1 = DateTimeFormatter.ofPattern("dd/MM/yyyy");//25/12/2023
+        DateTimeFormatter formatter2 = DateTimeFormatter.ofPattern("MM/dd/yyyy");//12/25/2023
+        DateTimeFormatter formatter3 = DateTimeFormatter.ofPattern("yyyy-MM-dd");//2023-12-25
+        DateTimeFormatter formatter4 = DateTimeFormatter.ofPattern("dd MMM yyyy");//25 Dez. 2023
+        // Zeit
+        DateTimeFormatter formatter5 = DateTimeFormatter.ofPattern("HH:mm:ss");//15:30:00
+        DateTimeFormatter formatter6 = DateTimeFormatter.ofPattern("hh:mm a");//03:30 PM
+        DateTimeFormatter formatter7 = DateTimeFormatter.ofPattern("yyyy.MM.dd G 'at' HH:mm:ss z");// ------|
+        DateTimeFormatter formatter8 = DateTimeFormatter.ofPattern("dd/MM/yyyy HH:mm:ss");//25/12/2023 15:30:00
+        DateTimeFormatter formatter9 = DateTimeFormatter.ofPattern("yyyy-MM-dd'T'HH:mm:ss.SSS'Z'");//2023-12-25T15:30:00.000Z
 
         // Formatieren
         System.out.println("Pattern 1: " + dateTime.format(formatter1));
