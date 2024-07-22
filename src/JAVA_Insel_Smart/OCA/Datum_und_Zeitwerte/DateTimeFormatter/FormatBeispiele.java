@@ -1,59 +1,11 @@
 /*
-Datums-Muster
+Format Muster / Pattern
 ------------------------------------------------------------------------------------------------------------------------
-"dd/MM/yyyy": Tag/Monat/Jahr (z.B. 25/12/2023)
-"MM/dd/yyyy": Monat/Tag/Jahr (z.B. 12/25/2023)
-"yyyy/MM/dd": Jahr/Monat/Tag (z.B. 2023/12/25)
-"dd-MM-yyyy": Tag-Monat-Jahr (z.B. 25-12-2023)
-"yyyy-MM-dd": ISO-Standardformat (z.B. 2023-12-25)
-"dd MMM yyyy": Tag Monat Jahr (z.B. 25 Dez 2023)
-"MMM dd, yyyy": Monat Tag, Jahr (z.B. Dez 25, 2023)
-"EEEE, MMM dd, yyyy": Wochentag, Monat Tag, Jahr (z.B. Montag, Dez 25, 2023)
-"yyyy.MM.dd G 'at' HH:mm
+beim Umformatieren von Datumsangaben mit DateTimeFormatter in Java können Sie das Formatmuster (Pattern) frei bestimmen
+und dabei entscheiden, ob Sie mit dem Tag, Monat oder Jahr beginnen.
 
-z": Jahr.Monat.Tag Ära 'um' Stunde:Minute
-
-Zeitzone (z.B. 2023.12.25 AD um 15:30:00 PST)
-"EEE, dd MMM yyyy HH:mm
-
-z": Wochentag, Tag Monat Jahr Stunde:Minute
-Zeitzone (z.B. Mon, 25 Dec 2023 15:30:00 PST)
-------------------------------------------------------------------------------------------------------------------------
-Zeit-Muster
-
-"HH:mm
-": Stunde:Minute
-im 24-Stunden-Format (z.B. 15:30:00)
-
-"hh:mm
-a": Stunde:Minute
-im 12-Stunden-Format mit AM/PM (z.B. 03:30:00 PM)
-
-"HH
-": Stunde
-im 24-Stunden-Format (z.B. 15:30)
-
-"hh
-a": Stunde
-im 12-Stunden-Format mit AM/PM (z.B. 03:30 PM)
-
-"HH:mm
-.SSS": Stunde:Minute
-.Millisekunden (z.B. 15:30:00.123)
-
-"HH:mm
-.SSSSSS": Stunde:Minute
-.Mikrosekunden (z.B. 15:30:00.123456)
-------------------------------------------------------------------------------------------------------------------------
-Datums- und Zeitmuster kombinieren
-"dd/MM/yyyy HH:mm
-": Datum und Zeit im 24-Stunden-Format (z.B. 25/12/2023 15:30:00)
-
-"dd-MM-yyyy hh
-a": Datum und Zeit im 12-Stunden-Format mit AM/PM (z.B. 25-12-2023 03:30 PM)
-
-"yyyy-MM-dd'T'HH:mm
-.SSS'Z'": ISO 8601 Datums- und Zeitformat (z.B. 2023-12-25T15:30:00.123Z)
+Der DateTimeFormatter erlaubt es Ihnen, verschiedene Muster zu definieren,
+um das Datum entsprechend Ihren Anforderungen darzustellen.
 ------------------------------------------------------------------------------------------------------------------------
 * */
 
