@@ -75,17 +75,23 @@ public class LocalDateExample {
         System.out.println("Geparstes Datum: " + datumUmwandlung);
 
         // Addieren von Tagen (+)
+        // benötigt die Referenz variable von LocalDate.now(), als voraussetzung!
+        // um zu der Datums ausgabe die tage hinzu, zu addieren.
         LocalDate datumPlusTage = aktuellesDatum.plusDays(10);
         System.out.println("Datum plus 10 Tage: " + datumPlusTage);
 
         // Subtrahieren von Tagen (-)
+        // benötigt die Referenz variable von LocalDate.now(), als voraussetzung!
+        // um zu der Datums ausgabe die Tage abzuziehen.
         LocalDate dateMinusDays = aktuellesDatum.minusDays(10);
         System.out.println("Datum minus 10 Tage: " + dateMinusDays);
 
         // Abrufen von Tag, Monat und Jahr
-        int day = aktuellesDatum.getDayOfMonth();
-        int month = aktuellesDatum.getMonthValue();
-        int year = aktuellesDatum.getYear();
-        System.out.println("Tag: " + day + ", Monat: " + month + ", Jahr: " + year);
+        // benötigt die Referenz variable von LocalDate.now(), als voraussetzung!
+        // um aktuelle Daten explizit auszugeben, wie: tag, monat, jahr
+        int tag = aktuellesDatum.getDayOfMonth();
+        int monat = aktuellesDatum.getMonthValue();
+        int jahr = aktuellesDatum.getYear();
+        System.out.println("Tag: " + tag + ", Monat: " + monat + ", Jahr: " + jahr);
     }
 }
