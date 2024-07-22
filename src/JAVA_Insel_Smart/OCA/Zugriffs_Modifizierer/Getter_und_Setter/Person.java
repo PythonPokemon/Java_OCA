@@ -11,10 +11,15 @@ Setter: um den privaten Member einen neuen Wert zuzuweisen.
 package JAVA_Insel_Smart.OCA.Zugriffs_Modifizierer.Getter_und_Setter;
 
 public class Person {
+
     // Private Felder
     private String name;
     private int alter;
+    private int test;
 
+
+//----------------------------------------------------------------------------------------------------------------------
+    // Getter und Setter für 'name'
     // Getter: zum Abrufen der privaten Instanzvariable 'name' | String Default wert: null
     public String getName() {
         return name;
@@ -25,6 +30,8 @@ public class Person {
         this.name = name;
     }
 
+//----------------------------------------------------------------------------------------------------------------------
+    // Getter und Setter für 'alter'
     // Getter: zum Abrufen der privaten Instanzvariable 'age' | String Default wert: 0
     public int getAlter() {
         return alter;
@@ -35,14 +42,25 @@ public class Person {
         this.alter = alter;
     }
 
+//----------------------------------------------------------------------------------------------------------------------
     // Main-Methode zum Testen
     public static void main(String[] args) {
-        Person person = new Person(); // Erstellen eines Person-Objekts
 
+        //
+        Person person = new Person(); // Erstellen eines Person-Objekts | Instanz der Klasse 'Person'
+
+        // die Instanz/Objekt-Referenz variable 'person' ruft die getter/setter methoden auf!
+        // bzw. nur die setter um den privaten variablen einen neuen wert zuzuweisen mit der setter methode!
         person.setName("Alice"); // Setzen des Namens
         person.setAlter(30); // Setzen des Alters
 
+        // Ausgabe über methodenaufruf in einer methode
         System.out.println("Name: " + person.getName()); // Abrufen des Namens
         System.out.println("Alter: " + person.getAlter()); // Abrufen des Alters
+
+        // Ausgabe über parameter aufruf durch die Instanz
+        System.out.println(person.test);
+        System.out.println(person.name);
+        System.out.println(person.alter);
     }
 }
