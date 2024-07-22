@@ -2,6 +2,8 @@
 DateTimeFormatter
 ------------------------------------------------------------------------------------------------------------------------
 Wichtige Methoden:
+diese Methoden sind statische Methoden, deswegen muss man auch kein new davor schreiben,
+weil methoden direkt aufgerufen werden können, ohne dass eine Instanz der Klasse erstellt werden muss.
 
 ofPattern(String pattern)
 format(TemporalAccessor temporal)

@@ -1,0 +1,64 @@
+Ja, bei der Verwendung von DateTimeFormatter-Mustern in Java gibt es bestimmte Regeln und Konventionen,
+insbesondere was die Groß- und Kleinschreibung der Formatzeichen angeht.
+------------------------------------------------------------------------------------------------------------------------
+Hier sind die wichtigsten Punkte, die Sie beachten sollten:
+------------------------------------------------------------------------------------------------------------------------
+Groß- und Kleinschreibung der Formatzeichen
+Die Groß- und Kleinschreibung der Formatzeichen ist wichtig, da sie unterschiedliche Bedeutungen haben:
+------------------------------------------------------------------------------------------------------------------------
+y: Jahr (Jahr als Zahl, z.B. 2023)
+
+y: Vierstellige oder kürzere Jahreszahl (z.B. 2023, 23 für das Jahr 2023).
+yy: Zweistellige Jahreszahl (z.B. 23 für das Jahr 2023).
+yyyy: Vierstellige Jahreszahl (z.B. 2023).
+------------------------------------------------------------------------------------------------------------------------
+M: Monat (Monat als Zahl oder Text)
+
+M: Monat als Zahl ohne führende Null (z.B. 7 für Juli).
+MM: Monat als Zahl mit führender Null (z.B. 07 für Juli).
+MMM: Abgekürzter Monatsname (z.B. Jul für Juli).
+MMMM: Vollständiger Monatsname (z.B. July für Juli).
+------------------------------------------------------------------------------------------------------------------------
+d: Tag (Tag des Monats)
+
+d: Tag des Monats ohne führende Null (z.B. 5).
+dd: Tag des Monats mit führender Null (z.B. 05).
+------------------------------------------------------------------------------------------------------------------------
+E: Wochentag (Tag der Woche als Text)
+
+E: Abgekürzter Wochentag (z.B. Mon für Montag).
+EEEE: Vollständiger Wochentag (z.B. Monday).
+------------------------------------------------------------------------------------------------------------------------
+H: Stunde im 24-Stunden-Format (0-23)
+
+H: Stunde ohne führende Null (z.B. 9).
+HH: Stunde mit führender Null (z.B. 09).
+------------------------------------------------------------------------------------------------------------------------
+h: Stunde im 12-Stunden-Format (1-12)
+
+h: Stunde ohne führende Null (z.B. 9).
+hh: Stunde mit führender Null (z.B. 09).
+------------------------------------------------------------------------------------------------------------------------
+m: Minute
+
+m: Minute ohne führende Null (z.B. 5).
+mm: Minute mit führender Null (z.B. 05).
+------------------------------------------------------------------------------------------------------------------------
+s: Sekunde (kleines s)
+
+s: Sekunde ohne führende Null (z.B. 7).
+ss: Sekunde mit führender Null (z.B. 07).
+------------------------------------------------------------------------------------------------------------------------
+S: Millisekunde (großes S)
+
+S: Millisekunde (z.B. 7).
+SSS: Millisekunde mit führenden Nullen (z.B. 007).
+------------------------------------------------------------------------------------------------------------------------
+a: AM/PM-Marker
+
+a: AM oder PM (z.B. AM oder PM).
+------------------------------------------------------------------------------------------------------------------------
+z: Zeitzone
+
+z: Zeitzone (z.B. PST).
+------------------------------------------------------------------------------------------------------------------------
