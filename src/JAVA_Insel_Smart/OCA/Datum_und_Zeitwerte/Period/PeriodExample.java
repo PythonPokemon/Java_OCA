@@ -37,7 +37,7 @@ public class PeriodExample {
         // Zeitspanne zwischen startDatum und endDatum beträgt 3-Jahre, 6-Monate, 7-Tage | P3Y6M7D
         LocalDate startDatum = LocalDate.of(2020, 1, 1);
         LocalDate endDatum = LocalDate.of(2023, 7, 8);
-        Period zwischenPeriod = Period.between(startDatum, endDatum);
+        Period zwischenPeriod = Period.between(startDatum, endDatum);// übergabe der ReferenzVariable als Parameter
         System.out.println("Zwischenzeit: " + zwischenPeriod); // Ausgabe: P3Y6M7D
 
         // Hinzufügen von Tagen zu einer Period
