@@ -2,8 +2,17 @@ class Parent {
     int VALUE = 10;
     int i = 10;
 
+
     void printValues() {
         System.out.println("Methode der Oberklasse");
+    }
+
+    public int getVALUE() {
+        return VALUE;
+    }
+
+    public void setVALUE(int VALUE) {
+        this.VALUE = VALUE;
     }
 }
 
