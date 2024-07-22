@@ -3,7 +3,7 @@ LocalDate
 ------------------------------------------------------------------------------------------------------------------------
 Wichtige Methoden:
 
-diese Methoden statische Methoden sind, deswegen muss man auch kein new davor schreiben,
+diese Methoden sind statische Methoden, deswegen muss man auch kein new davor schreiben,
 weil methoden direkt aufgerufen werden können, ohne dass eine Instanz der Klasse erstellt werden muss.
 ------------------------------------------------------------------------------------------------------------------------
 Statische Methoden und Parsing

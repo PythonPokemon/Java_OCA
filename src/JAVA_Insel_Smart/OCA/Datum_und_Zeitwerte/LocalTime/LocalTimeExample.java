@@ -2,6 +2,11 @@
 LocalTime
 ------------------------------------------------------------------------------------------------------------------------
 Wichtige Methoden:
+
+diese Methoden sind statische Methoden, deswegen muss man auch kein new davor schreiben,
+weil methoden direkt aufgerufen werden können, ohne dass eine Instanz der Klasse erstellt werden muss.
+------------------------------------------------------------------------------------------------------------------------
+Wichtige Methoden:
 now()
 of(int hour, int minute)
 parse(CharSequence text)
