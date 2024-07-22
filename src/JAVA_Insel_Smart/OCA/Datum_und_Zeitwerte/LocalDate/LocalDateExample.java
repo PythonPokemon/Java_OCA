@@ -71,8 +71,8 @@ public class LocalDateExample {
         // Parse ein Datum von einem String
         //.parse() Methode | Analysiert den Typ und wandelt ihn in Ganzzahlen in ein String um.
         // WICHTIG trennung durch: bindestrich
-        LocalDate datumUmwandlung = LocalDate.parse("2023-07-08");
-        System.out.println("Geparstes Datum: " + datumUmwandlung);
+        LocalDate datumStringZuInt = LocalDate.parse("2023-07-08");
+        System.out.println("Geparstes Datum: " + datumStringZuInt);
 
         // Addieren von Tagen (+)
         // benötigt die Referenz variable von LocalDate.now(), als voraussetzung!
@@ -83,8 +83,8 @@ public class LocalDateExample {
         // Subtrahieren von Tagen (-)
         // benötigt die Referenz variable von LocalDate.now(), als voraussetzung!
         // um zu der Datums ausgabe die Tage abzuziehen.
-        LocalDate dateMinusDays = aktuellesDatum.minusDays(10);
-        System.out.println("Datum minus 10 Tage: " + dateMinusDays);
+        LocalDate datumMinusTage = aktuellesDatum.minusDays(10);
+        System.out.println("Datum minus 10 Tage: " + datumMinusTage);
 
         // Abrufen von Tag, Monat und Jahr
         // benötigt die Referenz variable von LocalDate.now(), als voraussetzung!

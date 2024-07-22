@@ -19,29 +19,29 @@ import java.time.LocalTime;
 public class LocalTimeExample {
     public static void main(String[] args) {
         // Erzeugt die aktuelle Uhrzeit
-        LocalTime currentTime = LocalTime.now();
-        System.out.println("Aktuelle Uhrzeit: " + currentTime);
+        LocalTime aktelleUhrzeit = LocalTime.now();
+        System.out.println("Aktuelle Uhrzeit: " + aktelleUhrzeit);
 
         // Erzeugt eine bestimmte Uhrzeit
-        LocalTime specificTime = LocalTime.of(14, 30);
-        System.out.println("Spezielle Uhrzeit: " + specificTime);
+        LocalTime spezielleUhrzeit = LocalTime.of(14, 30);
+        System.out.println("Spezielle Uhrzeit: " + spezielleUhrzeit);
 
         // Parse eine Uhrzeit von einem String
-        LocalTime parsedTime = LocalTime.parse("18:45");
-        System.out.println("Geparste Uhrzeit: " + parsedTime);
+        LocalTime uhrzeitStringZuInt = LocalTime.parse("18:45");
+        System.out.println("Geparste Uhrzeit: " + uhrzeitStringZuInt);
 
         // Hinzufügen von Stunden
-        LocalTime timePlusHours = currentTime.plusHours(2);
-        System.out.println("Uhrzeit plus 2 Stunden: " + timePlusHours);
+        LocalTime zeitPlusStunden = aktelleUhrzeit.plusHours(2);
+        System.out.println("Uhrzeit plus 2 Stunden: " + zeitPlusStunden);
 
         // Subtrahieren von Stunden
-        LocalTime timeMinusHours = currentTime.minusHours(2);
-        System.out.println("Uhrzeit minus 2 Stunden: " + timeMinusHours);
+        LocalTime zeitMinusStunden = aktelleUhrzeit.minusHours(2);
+        System.out.println("Uhrzeit minus 2 Stunden: " + zeitMinusStunden);
 
         // Abrufen von Stunden und Minuten
-        int hour = currentTime.getHour();
-        int minute = currentTime.getMinute();
-        int second = currentTime.getSecond();
-        System.out.println("Stunde: " + hour + ", Minute: " + minute + ", Sekunde: " + second);
+        int stunden = aktelleUhrzeit.getHour();
+        int minuten = aktelleUhrzeit.getMinute();
+        int sekunden = aktelleUhrzeit.getSecond();
+        System.out.println("Stunde: " + stunden + ", Minute: " + minuten + ", Sekunde: " + sekunden);
     }
 }
