@@ -1,19 +1,15 @@
 class Parent {
+    // Klassen Member
+    //static....
+
+    // Instanz Member
     int VALUE = 10;
     int i = 10;
-
 
     void printValues() {
         System.out.println("Methode der Oberklasse");
     }
 
-    public int getVALUE() {
-        return VALUE;
-    }
-
-    public void setVALUE(int VALUE) {
-        this.VALUE = VALUE;
-    }
 }
 
 class Child extends Parent {
@@ -43,5 +39,10 @@ public class TestClass {
         Parent parent1 = new Child();// Oberklasse-Referenz auf ein Unterklasse-Objekt
         parent1.printValues();// Ruft die Methode der Unterklasse auf
         System.out.println(parent1);
+
+
+        new String("Jens");
+        System.out.println(new String("Jens").concat(" Simon"));
+
     }
 }
