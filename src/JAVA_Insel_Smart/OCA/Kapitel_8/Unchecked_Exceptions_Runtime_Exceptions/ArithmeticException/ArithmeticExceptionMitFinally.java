@@ -37,5 +37,6 @@ public class ArithmeticExceptionMitFinally {
         } finally {
             System.out.println("Dieser Block wird immer ausgeführt, unabhängig davon, ob eine Ausnahme aufgetreten ist oder nicht.");
         }
+
     }
 }
