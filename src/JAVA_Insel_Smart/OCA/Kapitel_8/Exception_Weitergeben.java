@@ -2,7 +2,7 @@
 also wenn ich das richtig verstanden habe, dann wird die divisionsDurchführungsmethode, die die Ausnahme weiter wirft,
 in einem try block aus der main Methode aufgerufen, ausgeführt und die Ausnahme abgefangen und auch weiter geworfen,
 die main methode fängt ebenfalls die geworfene Ausnahme und gibt, die Ausgabe des Stacktraces zur Fehlerverfolgung an,
-wenn jedoch die divisionsDurchführungsmethode keine Ausnahme weiter werfen würde, dann wäre es hier zu Ende,
+wenn jedoch die divisionsDurchführungsmethode keine Ausnahme weiter werfen würde, dann wäre es zu Ende
 nach dem ersten print dieser methode, richtig
 * */
 
