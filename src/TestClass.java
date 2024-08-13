@@ -1,28 +1,12 @@
-class Test {
-    public int a;
-    public int b;
-
-// Initialsierung : aller Fields
-    public Test(int a, int b) {
-        this.a = a;
-        this.b = b;
-    }
-
-
-    public Test() {
-        this(10, 10); // a und b werden beide mit 10 initialisiert
-    }
-
-}
+import java.util.ArrayList;
+import java.util.List;
 
 public class TestClass {
     public static void main(String[] args) {
-    Test aRef = new Test();
-
-
-        System.out.println(aRef.a);
-        System.out.println(aRef.b);
-
+        int [] arr = {3, 2, 1};
+        for(int i : arr) {
+            System.out.println(arr[i]);
+        }
 
     }
 }
